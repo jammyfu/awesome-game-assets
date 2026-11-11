@@ -13,7 +13,8 @@ REQUIRED = [
     "docs/project-governance/WORKLOG.md", "docs/project-governance/DECISIONS.md",
     "docs/project-governance/ACCEPTANCE.md", "docs/project-governance/CHANGELOG.md",
     "docs/AUTOMATION_COMMANDS.md", "docs/LONG_RUNNING_AUTONOMY.md", "docs/image-prompts.md",
-    "data/entries.json", "data/image-prompts.json", ".github/workflows/ci.yml",
+    "data/entries.json", "data/image-prompts.json", "data/warnings.json",
+    "WARNING.md", "WARNING.zh-CN.md", ".github/workflows/ci.yml",
 ]
 
 
