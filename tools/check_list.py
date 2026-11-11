@@ -11,7 +11,7 @@ from __future__ import annotations
 import re
 import sys
 
-from common import MAX_IMAGE_BYTES, ROOT, load_entries, load_prompts
+from common import MAX_IMAGE_BYTES, ROOT, load_entries, load_prompts, load_warnings
 
 REQUIRED = ["id", "category", "name", "url", "license", "license_zh", "license_source", "en", "zh", "image"]
 CJK = re.compile(r"[\u4e00-\u9fff]")
@@ -24,6 +24,10 @@ TELEMETRY = re.compile(
 )
 TEXT_SUFFIXES = {".md", ".json", ".py", ".yml", ".yaml", ".txt", ".html", ".js", ".toml"}
 SKIP_TELEMETRY_SCAN = {"tools/check_list.py", "tests/test_check_list.py"}
+# The warning list is exempt from the banned-keyword checks by design.
+WARNING_FILES = {"WARNING.md", "WARNING.zh-CN.md", "data/warnings.json"}
+WARN_TYPES = {"piracy", "crack", "paid-redistribution", "star-farming", "malware"}
+INSTALL_WORDS = re.compile(r"\b(download|install|setup\.exe|unzip|extract|password)\b|下载步骤|安装步骤|安装方法|下载方法|解压|密码|/releases|\.(exe|zip|rar|7z|msi|dmg)\b", re.I)
 
 
 def norm(url: str) -> str:
@@ -123,6 +127,8 @@ def readme_urls(text: str) -> list[str]:
 def check_readmes(data: dict, errors: list[str]) -> None:
     en = (ROOT / "README.md").read_text(encoding="utf-8")
     zh = (ROOT / "README.zh-CN.md").read_text(encoding="utf-8")
+    if "WARNING.md" not in en or "WARNING.zh-CN.md" not in zh:
+        errors.append("READMEs must link to the warning list")
     if "README.zh-CN.md" not in en or "README.md" not in zh:
         errors.append("READMEs must link to each other")
     en_urls, zh_urls = readme_urls(en), readme_urls(zh)
@@ -156,6 +162,55 @@ def check_telemetry(errors: list[str]) -> None:
             errors.append(f"{rel}: telemetry/tracker pattern '{m.group(0)}'")
 
 
+def check_warnings(errors: list[str]) -> None:
+    w = load_warnings()
+    if set(w["types"]) != WARN_TYPES:
+        errors.append("warnings.json types must be exactly " + ", ".join(sorted(WARN_TYPES)))
+    main_urls = {norm(e["url"]) for e in load_entries()["entries"]}
+    seen = set()
+    for e in w["entries"]:
+        rid = e.get("repo", "?")
+        for k in ("repo", "url", "type", "en", "zh"):
+            if not e.get(k):
+                errors.append(f"warning {rid}: missing {k}")
+        if e.get("type") not in WARN_TYPES:
+            errors.append(f"warning {rid}: bad type {e.get('type')}")
+        u = e.get("url", "")
+        if not re.fullmatch(r"https://github\.com/[^/]+/[^/]+", u) and not re.fullmatch(r"https://[^/]+/?", u):
+            errors.append(f"warning {rid}: link must be a repo or site home page only")
+        if norm(u) in seen:
+            errors.append(f"warning {rid}: duplicate")
+        seen.add(norm(u))
+        if norm(u) in main_urls:
+            errors.append(f"warning {rid}: also in the main list")
+        for k in ("en", "zh"):
+            m = INSTALL_WORDS.search(e.get(k, ""))
+            if m:
+                errors.append(f"warning {rid}: download/install wording '{m.group(0)}' in {k}")
+        img = e.get("image")
+        if img and not img.get("src", "").startswith("https://"):
+            errors.append(f"warning {rid}: image must be a hotlinked https URL")
+    for name in ("WARNING.md", "WARNING.zh-CN.md"):
+        text = (ROOT / name).read_text(encoding="utf-8")
+        if "> [!CAUTION]" not in text:
+            errors.append(f"{name}: missing caution box")
+        items = [l for l in text.splitlines() if l.startswith("- ") and "](https://github.com/" in l]
+        if len(items) != len(w["entries"]):
+            errors.append(f"{name}: item count differs from data/warnings.json")
+        if any(not l.startswith("- ⚠️ ") for l in items):
+            errors.append(f"{name}: every item must start with ⚠️")
+    # never store warning images in the repo
+    img_dir = ROOT / "docs" / "images"
+    if img_dir.exists():
+        for p in img_dir.iterdir():
+            if p.name.startswith("warning"):
+                errors.append(f"{p.name}: warning images must not be stored in the repo")
+    for e in w["entries"]:
+        img = (e.get("image") or {}).get("src", "")
+        if img and not img.startswith("https://"):
+            errors.append(f"warning {e['repo']}: local image path not allowed")
+
+
 def run() -> list[str]:
     errors: list[str] = []
     data = load_entries()
@@ -164,6 +219,7 @@ def run() -> list[str]:
     check_images(data, load_prompts(), errors)
     check_readmes(data, errors)
     check_telemetry(errors)
+    check_warnings(errors)
     return errors
 
 

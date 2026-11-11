@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import sys
 
-from common import ROOT, load_entries, load_prompts
+from common import ROOT, load_entries, load_prompts, load_warnings
 
 TEXT = {
     "en": {
@@ -17,6 +17,7 @@ TEXT = {
         "switch": "**English** · [简体中文](README.zh-CN.md)",
         "intro": "A curated list of openly licensed game assets and tools: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.",
         "contents": "## Contents",
+        "warn_line": "> ⚠️ Repositories we found that look like piracy, cracks, paid-asset redistribution, star farming or malware are listed separately in [WARNING.md](WARNING.md) so you can avoid them. Do not use them.",
         "rules_h": "## Inclusion rules",
         "rules": [
             "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
@@ -42,6 +43,7 @@ TEXT = {
         "switch": "[English](README.md) · **简体中文**",
         "intro": "精选许可证清楚的游戏素材和工具：3D 模型、2D 精灵、贴图材质、音效、特效、技能 / 施法演示、动画和编辑器。每条写明地址、在来源页核实过的许可证，以及适合做什么。",
         "contents": "## 目录",
+        "warn_line": "> ⚠️ 搜到的疑似盗版、破解、付费素材二次分发、刷星或恶意软件仓库单独列在 [WARNING.zh-CN.md](WARNING.zh-CN.md)，用于避坑，请勿使用。",
         "rules_h": "## 收录规则",
         "rules": [
             "只收在项目或官网上写清许可证的来源。按素材单独授权的会标明，使用前请逐个确认。",
@@ -78,7 +80,7 @@ def anchor(title: str) -> str:
 def render(lang: str) -> str:
     t = TEXT[lang]
     data = load_entries()
-    lines = [t["title"], "", t["switch"], "", t["intro"], "", t["contents"], ""]
+    lines = [t["title"], "", t["switch"], "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     for c in data["categories"]:
         lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
     lines += ["", t["rules_h"], ""]
@@ -131,7 +133,61 @@ def render_prompts() -> str:
     return "\n".join(lines)
 
 
+WARN_TEXT = {
+    "en": {
+        "title": "# ⚠️ WARNING: repositories to avoid",
+        "switch": "**English** · [简体中文](WARNING.zh-CN.md) · [Back to the list](README.md)",
+        "caution": [
+            "> [!CAUTION]",
+            "> **These repositories may infringe copyright or contain malware.** This page exists only to help you avoid them. We do not recommend downloading, running or using anything from them.",
+            "> Links point to repository pages only, never to releases or files. Checked on {date}; report them to GitHub if you agree.",
+        ],
+        "types_h": "## Count by type",
+        "list_h": "## List",
+        "type": "Type",
+        "risk": "Risk",
+    },
+    "zh": {
+        "title": "# ⚠️ 警示清单：请避开这些仓库",
+        "switch": "[English](WARNING.md) · **简体中文** · [返回清单](README.zh-CN.md)",
+        "caution": [
+            "> [!CAUTION]",
+            "> **这些仓库可能侵权或含恶意软件。** 本页仅用于避坑，不建议下载、运行或使用其中任何内容。",
+            "> 链接只指向仓库首页，不指向 release 或文件。核查日期 {date}；如认同可向 GitHub 举报。",
+        ],
+        "types_h": "## 各类型条数",
+        "list_h": "## 清单",
+        "type": "类型",
+        "risk": "风险",
+    },
+}
+
+
+def render_warning(lang: str) -> str:
+    t = WARN_TEXT[lang]
+    w = load_warnings()
+    lines = [t["title"], "", t["switch"], ""]
+    lines += [c.format(date=w["checked_on"]) for c in t["caution"]]
+    lines += ["", t["types_h"], ""]
+    for key, names in w["types"].items():
+        n = sum(1 for e in w["entries"] if e["type"] == key)
+        lines.append(f"- {names[lang]}: {n}")
+    lines += ["", t["list_h"], ""]
+    for e in w["entries"]:
+        if lang == "zh":
+            body = f'**{t["type"]}：**{w["types"][e["type"]][lang]}。**{t["risk"]}：**{e[lang]}'
+        else:
+            body = f'**{t["type"]}:** {w["types"][e["type"]][lang]}. **{t["risk"]}:** {e[lang]}'
+        lines.append(f'- ⚠️ [{e["repo"]}]({e["url"]}) — {body}')
+        if e.get("image"):
+            lines.append(f'  <br><img src="{e["image"]["src"]}" alt="{e["repo"]}" width="200">')
+    lines.append("")
+    return "\n".join(lines)
+
+
 OUTPUTS = {
+    "WARNING.md": lambda: render_warning("en"),
+    "WARNING.zh-CN.md": lambda: render_warning("zh"),
     "README.md": lambda: render("en"),
     "README.zh-CN.md": lambda: render("zh"),
     "docs/image-prompts.md": render_prompts,
