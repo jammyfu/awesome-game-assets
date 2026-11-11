@@ -110,6 +110,98 @@
       "per_asset_license": true
     },
     {
+      "id": "polyfork",
+      "category": "models",
+      "name": "Polyfork",
+      "url": "https://polyfork.dev/assets",
+      "license": "Free low-poly meshes: CC-BY-4.0 or Polyfork licence (your choice); ES modules and HD editions: Polyfork licence only",
+      "license_zh": "免费低多边形模型文件：CC-BY-4.0 或 Polyfork 许可（二选一）；ES 模块和 HD 版：仅 Polyfork 许可",
+      "license_source": "https://polyfork.dev/licensing",
+      "en": "3,000+ free low-poly 3D models as GLB plus a three.js ES module; credit Polyfork under CC BY, or use the no-credit licence without redistributing files. Paid tiers add HD editions.",
+      "zh": "3000+ 个免费低多边形 3D 模型，GLB 加 three.js ES 模块；走 CC BY 要署名 Polyfork，走 Polyfork 许可不用署名但不能转发文件。付费档另有 HD 版。",
+      "image": {
+        "type": "original",
+        "src": "https://polyfork.dev/img/og.png",
+        "source": "https://polyfork.dev/assets"
+      }
+    },
+    {
+      "id": "the-base-mesh",
+      "category": "models",
+      "name": "The Base Mesh",
+      "url": "https://www.thebasemesh.com/",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://www.thebasemesh.com/",
+      "en": "1,250+ real-world-scale base meshes for greyboxing, sculpting and prototyping.",
+      "zh": "1250+ 个按真实尺寸做的基础网格，适合白盒搭场景、雕刻起稿和做原型。",
+      "image": {
+        "type": "original",
+        "src": "https://static.wixstatic.com/media/b36d2d_080f2dd3e7cc497cba4f0152b7fefcf5%7Emv2.png/v1/fit/w_2500,h_1330,al_c/b36d2d_080f2dd3e7cc497cba4f0152b7fefcf5%7Emv2.png",
+        "source": "https://www.thebasemesh.com/"
+      },
+      "via": [
+        "madjin/awesome-cc0"
+      ]
+    },
+    {
+      "id": "game-icons",
+      "category": "models",
+      "name": "Game-icons.net",
+      "url": "https://game-icons.net/",
+      "license": "CC-BY-3.0",
+      "license_zh": "CC-BY-3.0",
+      "license_source": "https://game-icons.net/about.html",
+      "en": "4,000+ free SVG/PNG game icons (skills, items, status effects); credit each icon's author.",
+      "zh": "4000+ 个 SVG/PNG 游戏图标（技能、道具、状态），按要求给每个图标作者署名。",
+      "image": {
+        "type": "original",
+        "src": "https://game-icons.net/icons/ffffff/000000/1x1/caro-asercion/tarot-21-the-world.svg",
+        "source": "https://game-icons.net/"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "controller-prompts",
+      "category": "models",
+      "name": "Those Awesome Guys: Controller & Keyboard Prompts",
+      "url": "https://thoseawesomeguys.com/prompts/",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://thoseawesomeguys.com/prompts/",
+      "en": "Button prompt icons for keyboard, mouse and common controllers, for tutorials and input hints.",
+      "zh": "键盘、鼠标和常见手柄的按键提示图标，做新手引导和操作提示用。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-controller-prompts.webp"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "lpc-generator",
+      "category": "models",
+      "name": "LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+      "url": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+      "license": "GPL-3.0 (code); art per asset (CC0 / CC-BY / CC-BY-SA / OGA-BY / GPL)",
+      "license_zh": "GPL-3.0（代码）；美术按素材单独授权（CC0 / CC-BY / CC-BY-SA / OGA-BY / GPL）",
+      "license_source": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator#licensing-and-attribution-credits",
+      "en": "Browser generator for layered RPG character spritesheets with walk, slash and cast animations; exports a credits file.",
+      "zh": "网页版 RPG 角色精灵表生成器，分层拼装，含行走、劈砍、施法动画，可导出署名清单。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/master/readme-images/example.png",
+        "source": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ],
+      "per_asset_license": true
+    },
+    {
       "id": "polyhaven",
       "category": "textures",
       "name": "Poly Haven",
@@ -139,6 +231,26 @@
         "file": "docs/images/entry-ambientcg.webp"
       },
       "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "awesomebump",
+      "category": "textures",
+      "name": "kmkolasinski/AwesomeBump",
+      "url": "https://github.com/kmkolasinski/AwesomeBump",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/kmkolasinski/AwesomeBump",
+      "en": "Generates normal, height, specular, AO, roughness and metallic maps from a single image (last updated 2023).",
+      "zh": "从一张图生成法线、高度、高光、AO、粗糙度和金属度贴图（最后更新 2023 年）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/kmkolasinski/AwesomeBump/Release/Sources/resources/promo/githubimage5.jpg",
+        "source": "https://github.com/kmkolasinski/AwesomeBump"
+      },
+      "via": [
+        "Calinou/awesome-gamedev",
+        "madjin/awesome-cc0"
+      ]
     },
     {
       "id": "freesound",
@@ -187,6 +299,44 @@
         "source": "https://github.com/chr15m/jsfxr"
       },
       "license_zh": "Unlicense"
+    },
+    {
+      "id": "rfxgen",
+      "category": "audio",
+      "name": "raysan5/rfxgen",
+      "url": "https://github.com/raysan5/rfxgen",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/raysan5/rfxgen",
+      "en": "Small sfxr-style sound effect generator from the raylib author; desktop and web.",
+      "zh": "raylib 作者做的小型 sfxr 风格音效生成器，桌面版和网页版都有。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/raysan5/rfxgen/master/screenshots/rfxgen_v500_shot01.png",
+        "source": "https://github.com/raysan5/rfxgen"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "boscaceoil-blue",
+      "category": "audio",
+      "name": "YuriSizov/boscaceoil-blue",
+      "url": "https://github.com/YuriSizov/boscaceoil-blue",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/YuriSizov/boscaceoil-blue/blob/main/LICENSE",
+      "en": "Beginner-friendly step-sequencer music maker, a modern port of Terry Cavanagh's Bosca Ceoil; good for game loops and jingles.",
+      "zh": "新手友好的步进音序器作曲工具，是 Terry Cavanagh 的 Bosca Ceoil 现代移植版，适合做游戏循环配乐和短旋律。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/YuriSizov/boscaceoil-blue/main/dist/logo-full.png",
+        "source": "https://github.com/YuriSizov/boscaceoil-blue"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
     },
     {
       "id": "three-quarks",
@@ -253,6 +403,25 @@
       "license_zh": "CC0-1.0"
     },
     {
+      "id": "jangafx-vdb",
+      "category": "vfx",
+      "name": "JangaFX Free VDB Animations",
+      "url": "https://jangafx.com/software/embergen/download/free-vdb-animations/",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://jangafx.com/software/embergen/download/free-vdb-animations/",
+      "en": "Free volumetric fire, smoke and explosion simulations (OpenVDB) for Blender, Houdini and offline renders.",
+      "zh": "免费体积火焰、烟雾、爆炸模拟（OpenVDB），用于 Blender、Houdini 和离线渲染。",
+      "image": {
+        "type": "original",
+        "src": "https://jangafx.com/opengraph-image.png?opengraph-image.2xwmfd9hv7l5u.png",
+        "source": "https://jangafx.com/"
+      },
+      "via": [
+        "madjin/awesome-cc0"
+      ]
+    },
+    {
       "id": "linear-ability-casting",
       "category": "abilities",
       "name": "achrefelouafi/LinearAbiltyCastingThreeJS",
@@ -283,6 +452,38 @@
         "source": "https://github.com/jammyfu/open-game-skills"
       },
       "license_zh": "MIT"
+    },
+    {
+      "id": "gas-documentation",
+      "category": "abilities",
+      "name": "tranek/GASDocumentation",
+      "url": "https://github.com/tranek/GASDocumentation",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/tranek/GASDocumentation",
+      "en": "Unofficial in-depth guide to Unreal Engine 5's Gameplay Ability System with a multiplayer sample project (UE 5.3).",
+      "zh": "非官方的 Unreal Engine 5 Gameplay Ability System 深度指南，附多人示例工程（UE 5.3）。",
+      "image": {
+        "type": "original",
+        "src": "https://github.com/tranek/GASDocumentation/raw/master/Images/gameplaytageditor.png",
+        "source": "https://github.com/tranek/GASDocumentation"
+      }
+    },
+    {
+      "id": "ex-gas-unity",
+      "category": "abilities",
+      "name": "No78Vino/gameplay-ability-system-for-unity",
+      "url": "https://github.com/No78Vino/gameplay-ability-system-for-unity",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/No78Vino/gameplay-ability-system-for-unity",
+      "en": "Unity implementation of Unreal's Gameplay Ability System (tags, attributes, effects, abilities); partial and still in progress. Docs in Chinese.",
+      "zh": "Unreal Gameplay Ability System 的 Unity 实现（标签、属性、效果、技能），功能部分完成、仍在完善，文档为中文。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/No78Vino/gameplay-ability-system-for-unity/EX-GAS-1.0/Wiki/QQ20240313114652.png",
+        "source": "https://github.com/No78Vino/gameplay-ability-system-for-unity"
+      }
     },
     {
       "id": "quaternius-ual",
@@ -317,6 +518,44 @@
       "license_zh": "CC0-1.0"
     },
     {
+      "id": "synfig",
+      "category": "animation",
+      "name": "synfig/synfig",
+      "url": "https://github.com/synfig/synfig",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/synfig/synfig",
+      "en": "2D vector and bone animation software for cutscenes and character animation.",
+      "zh": "2D 矢量和骨骼动画软件，做过场和角色动画。",
+      "image": {
+        "type": "original",
+        "src": "https://www.synfig.org/wp-content/uploads/2018/02/screenshot-07.png",
+        "source": "https://www.synfig.org/"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "piskel",
+      "category": "animation",
+      "name": "piskelapp/piskel",
+      "url": "https://github.com/piskelapp/piskel",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/piskelapp/piskel",
+      "en": "Web-based sprite editor for frame-by-frame pixel animation, exports GIF and spritesheets.",
+      "zh": "网页版精灵编辑器，逐帧做像素动画，可导出 GIF 和精灵表。",
+      "image": {
+        "type": "original",
+        "src": "https://www.piskelapp.com/assets/home/screenshot.png",
+        "source": "https://www.piskelapp.com/"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
       "id": "blender",
       "category": "tools",
       "name": "Blender",
@@ -330,7 +569,11 @@
         "src": "https://code.blender.org/wp-content/uploads/2018/12/springrg.jpg",
         "source": "https://github.com/blender/blender"
       },
-      "license_zh": "GPL-3.0-or-later（发行版）"
+      "license_zh": "GPL-3.0-or-later（发行版）",
+      "link_note": {
+        "en": "official site returns 403 to automated checks; license verified manually",
+        "zh": "官网对自动检查返回 403，许可证已人工核实"
+      }
     },
     {
       "id": "material-maker",
@@ -440,6 +683,37 @@
         "file": "docs/images/entry-godot-demos.webp"
       },
       "license_zh": "MIT"
+    },
+    {
+      "id": "krita",
+      "category": "tools",
+      "name": "KDE/krita",
+      "url": "https://github.com/KDE/krita",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/KDE/krita",
+      "en": "Digital painting app for concept art, textures and hand-drawn animation.",
+      "zh": "数字绘画软件，画概念图、贴图和手绘动画。",
+      "image": {
+        "type": "original",
+        "src": "https://krita.org/images/hero-image-50.webp",
+        "source": "https://krita.org/en/"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "repo": "Calinou/awesome-gamedev",
+      "url": "https://github.com/Calinou/awesome-gamedev",
+      "license": "CC-BY-SA-4.0"
+    },
+    {
+      "repo": "madjin/awesome-cc0",
+      "url": "https://github.com/madjin/awesome-cc0",
+      "license": "CC0-1.0"
     }
   ]
 }

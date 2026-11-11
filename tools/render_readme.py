@@ -28,6 +28,10 @@ TEXT = {
         "cover_alt": "Category cover (original illustration)",
         "illustration": "illustration",
         "img_from": "image: project",
+        "via": "listed in",
+        "credits_h": "## Credits",
+        "credits": "Some entries were found through these lists. We only took the pointers: every source was re-checked (license, reachability) and every description was rewritten for this list, nothing was copied wholesale. Entries found this way say *listed in* with a link to the list.",
+        "credits_cols": "| List | License |",
         "contrib": "## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md). Edit `data/entries.json`, then run `python3 tools/render_readme.py` and `python3 tools/verify.py`.",
         "license": "## License\n\nThe list text is [CC0 1.0](LICENSE). Linked assets and tools keep their own licenses. Preview images belong to their projects and are linked, not copied.",
         "lang": "en",
@@ -48,6 +52,10 @@ TEXT = {
         "cover_alt": "分类封面（原创示意图）",
         "illustration": "示意图",
         "img_from": "图片来源：项目",
+        "via": "参考清单",
+        "credits_h": "## 致谢 / 参考清单",
+        "credits": "部分条目是从下面这些清单里发现的。我们只借了线索：每个来源都重新核实了许可证和可达性，描述全部为本清单重写，没有整份照搬。通过它们找到的条目会写「参考清单」并链接原清单。",
+        "credits_cols": "| 清单 | 许可证 |",
         "contrib": "## 参与贡献\n\n见 [CONTRIBUTING.md](CONTRIBUTING.md)。改 `data/entries.json`，再跑 `python3 tools/render_readme.py` 和 `python3 tools/verify.py`。",
         "license": "## 许可证\n\n清单文字采用 [CC0 1.0](LICENSE)。链接的素材和工具各自沿用原许可证。预览图归原项目所有，只引用不复制。",
         "lang": "zh",
@@ -83,10 +91,17 @@ def render(lang: str) -> str:
             else:
                 pic = f'<img src="{img["file"]}" alt="{e["name"]} ({t["illustration"]})" width="160">'
                 credit = f'<br><sub>*{t["illustration"]}*</sub>'
+            for v in e.get("via", []):
+                credit += f'<br><sub>{t["via"]} [{v}](https://github.com/{v})</sub>'
+            if e.get("link_note"):
+                credit += f'<br><sub>⚠ {e["link_note"][lang]}</sub>'
             lic_text = e["license_zh"] if lang == "zh" else e["license"]
             lic = f"[{lic_text}]({e['license_source']})"
             desc = e[lang].replace("|", "\\|")
             lines.append(f'| {pic} | [{e["name"]}]({e["url"]}){credit} | {lic} | {desc} |')
+    lines += ["", t["credits_h"], "", t["credits"], "", t["credits_cols"], "| --- | --- |"]
+    for c in data.get("credits", []):
+        lines.append(f'| [{c["repo"]}]({c["url"]}) | {c["license"]} |')
     lines += ["", t["contrib"], "", t["license"], ""]
     return "\n".join(lines)
 

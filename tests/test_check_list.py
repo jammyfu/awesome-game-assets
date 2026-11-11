@@ -47,6 +47,22 @@ class ListTests(unittest.TestCase):
         check_list.check_entries(d, errs)
         self.assertTrue(any("duplicate link" in e for e in errs))
 
+    def test_duplicate_link_www_and_fragment(self):
+        self.assertEqual(check_list.norm("https://www.Example.com/a/#x"), check_list.norm("https://example.com/a"))
+
+    def test_via_must_be_credited(self):
+        d = copy.deepcopy(self.data)
+        d["entries"][0]["via"] = ["someone/unknown-list"]
+        errs = []
+        check_list.check_credits(d, errs)
+        self.assertTrue(any("not in credits" in e for e in errs))
+
+    def test_credits_section_rendered(self):
+        for lang in ("en", "zh"):
+            text = render_readme.render(lang)
+            for c in self.data["credits"]:
+                self.assertIn(c["url"], text)
+
     def test_banned_keyword_fails(self):
         d = copy.deepcopy(self.data)
         d["entries"][0]["name"] = "Pro Activator"

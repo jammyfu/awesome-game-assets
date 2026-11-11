@@ -27,7 +27,8 @@ SKIP_TELEMETRY_SCAN = {"tools/check_list.py", "tests/test_check_list.py"}
 
 
 def norm(url: str) -> str:
-    return url.lower().rstrip("/")
+    u = url.lower().split("#")[0].rstrip("/")
+    return u.replace("://www.", "://")
 
 
 def check_entries(data: dict, errors: list[str]) -> None:
@@ -65,6 +66,17 @@ def check_entries(data: dict, errors: list[str]) -> None:
                 errors.append(f"{eid}: banned keyword in {k}")
             if OTHER_SCRIPTS.search(e.get(k, "")):
                 errors.append(f"{eid}: only English and Chinese allowed in {k}")
+
+
+def check_credits(data: dict, errors: list[str]) -> None:
+    credited = {c["repo"] for c in data.get("credits", [])}
+    for c in data.get("credits", []):
+        if not (c.get("repo") and c.get("url", "").startswith("https://") and c.get("license")):
+            errors.append(f"credit needs repo, https url and license: {c}")
+    for e in data["entries"]:
+        for v in e.get("via", []):
+            if v not in credited:
+                errors.append(f"{e['id']}: via {v} is not in credits")
 
 
 def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
@@ -115,6 +127,11 @@ def check_readmes(data: dict, errors: list[str]) -> None:
         errors.append("READMEs must link to each other")
     en_urls, zh_urls = readme_urls(en), readme_urls(zh)
     want = [e["url"] for e in data["entries"]]
+    for name, urls in (("README.md", en_urls), ("README.zh-CN.md", zh_urls)):
+        normed = [norm(u) for u in urls]
+        dups = sorted({u for u in normed if normed.count(u) > 1})
+        if dups:
+            errors.append(f"{name}: duplicate links {dups}")
     if len(en_urls) != len(zh_urls):
         errors.append(f"EN/ZH entry count differs: {len(en_urls)} vs {len(zh_urls)}")
     if sorted(en_urls) != sorted(want) or sorted(zh_urls) != sorted(want):
@@ -143,6 +160,7 @@ def run() -> list[str]:
     errors: list[str] = []
     data = load_entries()
     check_entries(data, errors)
+    check_credits(data, errors)
     check_images(data, load_prompts(), errors)
     check_readmes(data, errors)
     check_telemetry(errors)

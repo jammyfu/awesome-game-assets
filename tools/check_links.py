@@ -4,15 +4,18 @@ GitHub entry is public, not archived, and its API `license` field matches the
 listed license. Standard library only. Sends no data anywhere beyond the
 requests themselves (no telemetry).
 
-403/429 answers are reported as warnings because some sites block bots and CI
-IP ranges; anything else >= 400 or a connection error fails.
+403/429 answers and timeouts are reported as warnings (kept, marked in the
+list when persistent) because some sites block bots and CI IP ranges; 404 and
+any other >= 400 or a connection error fails. Failures are retried twice.
 """
 from __future__ import annotations
 
 import json
 import os
 import re
+import socket
 import sys
+import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
@@ -23,15 +26,33 @@ UA = "Mozilla/5.0 (compatible; awesome-game-assets-linkcheck)"
 GH = re.compile(r"^https://github\.com/([^/]+/[^/]+)/?$")
 
 
-def fetch(url: str, method: str = "GET") -> int:
-    req = urllib.request.Request(url, method=method, headers={"User-Agent": UA, "Range": "bytes=0-1023"})
+TIMEOUT = -1
+
+
+def fetch_once(url: str) -> int:
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Range": "bytes=0-1023"})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status
     except urllib.error.HTTPError as e:
         return e.code
+    except (TimeoutError, socket.timeout):
+        return TIMEOUT
+    except urllib.error.URLError as e:
+        return TIMEOUT if isinstance(e.reason, (TimeoutError, socket.timeout)) else 0
     except Exception:
         return 0
+
+
+def fetch(url: str) -> int:
+    code = fetch_once(url)
+    for _ in range(2):  # retry transient failures
+        if code in (0, TIMEOUT, 429) or code >= 500:
+            time.sleep(2)
+            code = fetch_once(url)
+        else:
+            break
+    return code
 
 
 def github_repo(full: str) -> dict:
@@ -56,6 +77,8 @@ def main() -> int:
     for url, code in results.items():
         if code in (403, 429):
             warnings.append(f"{code} (bot-blocked?) {url}")
+        elif code == TIMEOUT:
+            warnings.append(f"timeout {url}")
         elif code == 0 or code >= 400:
             errors.append(f"{code or 'unreachable'} {url}")
     for e in data["entries"]:

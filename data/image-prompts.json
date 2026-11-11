@@ -16,6 +16,7 @@
     "docs/images/entry-ambientcg.webp": "Scanned PBR material spheres in a row: rough concrete, polished marble, bark, fabric and metal, each with subtle separate map layers peeling off behind it.",
     "docs/images/entry-tiled.webp": "An orthogonal tile map editor concept: a top-down village map assembled from square tiles, with a tile palette panel and layer stack floating beside it.",
     "docs/images/entry-lmms.webp": "A music sequencer concept: a piano roll with colorful note blocks, a row of step-sequencer pads and knobs, floating in space.",
-    "docs/images/entry-godot-demos.webp": "A collection of small floating demo scenes on islands: a 2D platformer level, a 3D physics playground with cubes, and a UI menu panel, all generic shapes."
+    "docs/images/entry-godot-demos.webp": "A collection of small floating demo scenes on islands: a 2D platformer level, a 3D physics playground with cubes, and a UI menu panel, all generic shapes.",
+    "docs/images/entry-controller-prompts.webp": "A neat sheet of generic game input prompt icons: four round face buttons each marked only with one, two, three or four small dots (absolutely no triangle, circle, cross or square symbols, no letters), a directional pad, analog sticks, shoulder triggers, keyboard keys and a mouse, all generic, no brand shapes or brand colors. (Regenerated once: the first try drew console-brand face-button symbols.)"
   }
 }
