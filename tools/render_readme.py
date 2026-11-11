@@ -20,7 +20,8 @@ TEXT = {
         "rules_h": "## Inclusion rules",
         "rules": [
             "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
-            "No pirated, cracked or star-farmed repositories.",
+            "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
+            "Every link is checked: 404s are removed; sites that answer automated checks with 403 or time out are kept and marked ⚠.",
             "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
             "Preview images are the project's own images, linked from the original address (credited in each row). Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).",
         ],
@@ -44,7 +45,8 @@ TEXT = {
         "rules_h": "## 收录规则",
         "rules": [
             "只收在项目或官网上写清许可证的来源。按素材单独授权的会标明，使用前请逐个确认。",
-            "不收盗版、破解或刷星的仓库。",
+            "不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。",
+            "每条链接都检查过：404 剔除；对自动检查返回 403 或超时的保留并标 ⚠。",
             "许可证于 {date} 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。",
             "预览图用项目自己的图，直接引用原地址（每行注明出处）。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [docs/image-prompts.md](docs/image-prompts.md)。",
         ],

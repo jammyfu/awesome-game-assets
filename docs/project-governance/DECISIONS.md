@@ -18,3 +18,8 @@
 ### 按素材授权的来源
 
 - OpenGameArt、Freesound、glTF-Sample-Assets 每个素材 / 模型单独标注许可证，属于「许可证清楚」，收录并标明需逐个确认。
+
+### 参考他人清单的方式
+
+- Calinou/awesome-gamedev 是 CC-BY-SA-4.0：只把它当线索（链接和事实），不复制其文字，描述全部重写，并在 Credits 署名，避免把本清单变成其衍生作品。
+- madjin/awesome-cc0 是 CC0：同样只借线索、重写描述并署名。

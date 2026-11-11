@@ -17,7 +17,8 @@ A curated list of openly licensed game assets and tools: 3D models, sprites, tex
 ## Inclusion rules
 
 - Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.
-- No pirated, cracked or star-farmed repositories.
+- No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.
+- Every link is checked: 404s are removed; sites that answer automated checks with 403 or time out are kept and marked ⚠.
 - Licenses were checked on 2026-11-12 via the GitHub API `license` field or the official license page linked in each row.
 - Preview images are the project's own images, linked from the original address (credited in each row). Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).
 
