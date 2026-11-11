@@ -1,0 +1,12 @@
+# AGENTS.md
+
+## Working Rules
+
+- `CURRENT_PLAN.md` is the only current execution entry point; `MASTER_PLAN.md` is the roadmap; `TODO_BACKLOG.md` holds candidates.
+- `data/entries.json` is the single source of truth. Never hand-edit `README.md`, `README.zh-CN.md` or `docs/image-prompts.md`; run `python3 tools/render_readme.py`.
+- Only English and Chinese. Every entry needs URL, verified license (with the page it was verified on), and use in both languages.
+- Verify licenses for real: GitHub API `license` field for repos, the official license page for websites. Unclear license = do not add. No pirated, cracked or star-farmed repos. Never make up data.
+- Images: prefer the project's own preview, hotlinked from its original address with credit. Only for covers or entries without an original image, add an original generated image to `docs/images/` (WebP/PNG, < 300 KB) and its prompt to `data/image-prompts.json`. Never copy third-party images into the repo.
+- Zero telemetry: no analytics, trackers, counters or visitor badges.
+- Always run `python3 tools/verify.py` (offline) and `python3 tools/check_links.py` (network) before claiming completion.
+- Changes go through a PR; do not push content to `main` directly. When the current plan is done, run `python3 tools/next_plan.py`.

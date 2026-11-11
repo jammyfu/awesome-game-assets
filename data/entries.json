@@ -1,0 +1,445 @@
+{
+  "verified_on": "2026-11-12",
+  "categories": [
+    {
+      "id": "models",
+      "en": "3D Models & 2D Sprites",
+      "zh": "3D 模型与 2D 素材",
+      "cover": "docs/images/cover-models.webp"
+    },
+    {
+      "id": "textures",
+      "en": "Textures & Materials",
+      "zh": "贴图与材质",
+      "cover": "docs/images/cover-textures.webp"
+    },
+    {
+      "id": "audio",
+      "en": "Sound Effects & Audio",
+      "zh": "音效与音频",
+      "cover": "docs/images/cover-audio.webp"
+    },
+    {
+      "id": "vfx",
+      "en": "VFX & Particles",
+      "zh": "特效与粒子",
+      "cover": "docs/images/cover-vfx.webp"
+    },
+    {
+      "id": "abilities",
+      "en": "Ability, Casting & Combat Demos",
+      "zh": "技能 / 施法 / 战斗演示",
+      "cover": "docs/images/cover-abilities.webp"
+    },
+    {
+      "id": "animation",
+      "en": "Animation",
+      "zh": "动画",
+      "cover": "docs/images/cover-animation.webp"
+    },
+    {
+      "id": "tools",
+      "en": "Tools",
+      "zh": "工具",
+      "cover": "docs/images/cover-tools.webp"
+    }
+  ],
+  "entries": [
+    {
+      "id": "kenney",
+      "category": "models",
+      "name": "Kenney Game Assets",
+      "url": "https://kenney.nl/assets",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "Thousands of consistent 2D sprites, UI, 3D models and sound packs; great for prototypes and game jams.",
+      "zh": "上千套风格统一的 2D 精灵、UI、3D 模型和音效包，适合做原型和 Game Jam。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-kenney.webp"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "quaternius",
+      "category": "models",
+      "name": "Quaternius",
+      "url": "https://quaternius.com/",
+      "license": "CC0-1.0",
+      "license_source": "https://quaternius.com/faq.html",
+      "en": "Low-poly 3D packs (characters, nature, buildings, weapons) in FBX/OBJ/glTF; free packs are CC0.",
+      "zh": "低多边形 3D 素材包（角色、自然、建筑、武器），FBX/OBJ/glTF 格式，免费包为 CC0。",
+      "image": {
+        "type": "original",
+        "src": "https://quaternius.com/assets/images/fullres/metadata.jpg",
+        "source": "https://quaternius.com/"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "opengameart",
+      "category": "models",
+      "name": "OpenGameArt.org",
+      "url": "https://opengameart.org/",
+      "license": "Per asset (CC0 / CC-BY / CC-BY-SA / GPL / OGA-BY)",
+      "license_source": "https://opengameart.org/content/faq",
+      "en": "Community library of 2D, 3D, music and SFX; each asset page states its license, so check before use.",
+      "zh": "社区共享的 2D、3D、音乐和音效库；每个素材页都标明许可证，使用前逐个确认。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-opengameart.webp"
+      },
+      "license_zh": "按素材单独授权（CC0 / CC-BY / CC-BY-SA / GPL / OGA-BY）",
+      "per_asset_license": true
+    },
+    {
+      "id": "gltf-sample-assets",
+      "category": "models",
+      "name": "KhronosGroup/glTF-Sample-Assets",
+      "url": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "license": "Per model (mostly CC0 / CC-BY-4.0; a few under custom terms, see REUSE.toml)",
+      "license_source": "https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/LICENSES",
+      "en": "Reference glTF models for testing loaders, PBR materials and engine import pipelines.",
+      "zh": "官方 glTF 参考模型，适合测试加载器、PBR 材质和引擎导入流程。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/GlassHurricaneCandleHolder/screenshot/screenshot.jpg",
+        "source": "https://github.com/KhronosGroup/glTF-Sample-Assets"
+      },
+      "license_zh": "按模型单独授权（多为 CC0 / CC-BY-4.0，少数为自定义条款，见 REUSE.toml）",
+      "per_asset_license": true
+    },
+    {
+      "id": "polyhaven",
+      "category": "textures",
+      "name": "Poly Haven",
+      "url": "https://polyhaven.com/",
+      "license": "CC0-1.0",
+      "license_source": "https://polyhaven.com/license",
+      "en": "High-quality PBR textures, HDRIs and photoscanned models; ideal for realistic scenes and lighting.",
+      "zh": "高质量 PBR 贴图、HDRI 环境光和扫描模型，适合写实场景和打光。",
+      "image": {
+        "type": "original",
+        "src": "https://cdn.polyhaven.com/site_images/home/window_rend.jpg?width=630&quality=95",
+        "source": "https://polyhaven.com/"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "ambientcg",
+      "category": "textures",
+      "name": "ambientCG",
+      "url": "https://ambientcg.com/",
+      "license": "CC0-1.0",
+      "license_source": "https://docs.ambientcg.com/license/",
+      "en": "Large CC0 library of PBR materials, HDRIs and models with multiple resolutions.",
+      "zh": "大量 CC0 PBR 材质、HDRI 和模型，提供多种分辨率。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-ambientcg.webp"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "freesound",
+      "category": "audio",
+      "name": "Freesound",
+      "url": "https://freesound.org/",
+      "license": "Per sound (CC0 / CC-BY-4.0 / CC-BY-NC-4.0)",
+      "license_source": "https://freesound.org/help/faq/",
+      "en": "Huge community sound library; filter by license (CC0 or CC-BY for commercial games) and credit when required.",
+      "zh": "超大社区音效库；按许可证筛选（商用游戏选 CC0 或 CC-BY），需要署名时照做。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-freesound.webp"
+      },
+      "license_zh": "按音效单独授权（CC0 / CC-BY-4.0 / CC-BY-NC-4.0）",
+      "per_asset_license": true
+    },
+    {
+      "id": "sonniss-gdc",
+      "category": "audio",
+      "name": "Sonniss #GameAudioGDC Bundles",
+      "url": "https://sonniss.com/gameaudiogdc",
+      "license": "Royalty-free (Sonniss license: commercial use, no attribution required)",
+      "license_source": "https://sonniss.com/gameaudiogdc",
+      "en": "Yearly free bundles of professional SFX, royalty-free for commercial games.",
+      "zh": "每年免费放出的专业音效合集，商用游戏免版税。",
+      "image": {
+        "type": "original",
+        "src": "https://cdn.sonniss.com/storage/2025/03/Sonniss-Metaimage.png",
+        "source": "https://sonniss.com/gameaudiogdc"
+      },
+      "license_zh": "免版税（Sonniss 许可：可商用，无需署名）"
+    },
+    {
+      "id": "jsfxr",
+      "category": "audio",
+      "name": "chr15m/jsfxr",
+      "url": "https://github.com/chr15m/jsfxr",
+      "license": "Unlicense",
+      "license_source": "https://github.com/chr15m/jsfxr",
+      "en": "Browser-based retro sound effect generator (sfxr port) for jumps, coins, hits and lasers.",
+      "zh": "浏览器里的复古音效生成器（sfxr 移植），一键出跳跃、金币、受击、激光音。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/chr15m/jsfxr/master/screenshot.png",
+        "source": "https://github.com/chr15m/jsfxr"
+      },
+      "license_zh": "Unlicense"
+    },
+    {
+      "id": "three-quarks",
+      "category": "vfx",
+      "name": "Alchemist0823/three.quarks",
+      "url": "https://github.com/Alchemist0823/three.quarks",
+      "license": "MIT",
+      "license_source": "https://github.com/Alchemist0823/three.quarks",
+      "en": "General-purpose particle system / VFX engine for three.js, with a visual editor.",
+      "zh": "three.js 通用粒子 / 特效引擎，带可视化编辑器。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/Alchemist0823/three.quarks/master/landing.png",
+        "source": "https://github.com/Alchemist0823/three.quarks"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "three-nebula",
+      "category": "vfx",
+      "name": "creativelifeform/three-nebula",
+      "url": "https://github.com/creativelifeform/three-nebula",
+      "license": "MIT",
+      "license_source": "https://github.com/creativelifeform/three-nebula",
+      "en": "WebGL particle engine for three.js; JSON-defined emitters for fire, smoke and magic effects.",
+      "zh": "three.js 的 WebGL 粒子引擎，用 JSON 定义发射器，做火焰、烟雾、魔法特效。",
+      "image": {
+        "type": "original",
+        "src": "https://three-nebula.org/og/og-image.jpg",
+        "source": "https://three-nebula.org/"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "effekseer",
+      "category": "vfx",
+      "name": "effekseer/Effekseer",
+      "url": "https://github.com/effekseer/Effekseer",
+      "license": "MIT",
+      "license_source": "https://github.com/effekseer/Effekseer",
+      "en": "Particle effect editor and runtime with plugins for Unity, Unreal, Godot and web.",
+      "zh": "粒子特效编辑器和运行时，支持 Unity、Unreal、Godot 和 Web。",
+      "image": {
+        "type": "original",
+        "src": "https://img.youtube.com/vi/WwNX9TO7guA/0.jpg",
+        "source": "https://github.com/effekseer/Effekseer"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "kenney-particle-pack",
+      "category": "vfx",
+      "name": "Kenney Particle Pack",
+      "url": "https://kenney.nl/assets/particle-pack",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/assets/particle-pack",
+      "en": "80 particle sprites (smoke, fire, sparks, magic) to drop into any particle system.",
+      "zh": "80 张粒子贴图（烟、火、火花、魔法），可直接放进任意粒子系统。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/particle-pack/d50c7fc9b6-1677578655/preview.png",
+        "source": "https://kenney.nl/assets/particle-pack"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "linear-ability-casting",
+      "category": "abilities",
+      "name": "achrefelouafi/LinearAbiltyCastingThreeJS",
+      "url": "https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS",
+      "license": "MIT",
+      "license_source": "https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS",
+      "en": "three.js demo of line-cast and far-cast abilities (aim arrow, target circle, beam, lance, meteor) with HUD.",
+      "zh": "three.js 技能施法演示：直线施法和远程落点（瞄准箭头、目标圈、光束、冰矛、陨石），带 HUD。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/achrefelouafi/LinearAbiltyCastingThreeJS/main/docs/screenshots/nova-beam.jpg",
+        "source": "https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "open-game-skills",
+      "category": "abilities",
+      "name": "jammyfu/open-game-skills",
+      "url": "https://github.com/jammyfu/open-game-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/jammyfu/open-game-skills",
+      "en": "Agent skills for building games with coding agents: game feel, combat, camera and engine adapters, with runnable examples.",
+      "zh": "给编程 Agent 用的游戏开发 skill：手感、战斗、镜头、引擎适配，附可运行示例。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/jammyfu/open-game-skills/main/docs/showcase/punchbox-fighter-finisher-flame.gif",
+        "source": "https://github.com/jammyfu/open-game-skills"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "quaternius-ual",
+      "category": "animation",
+      "name": "Quaternius Universal Animation Library",
+      "url": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "license": "CC0-1.0",
+      "license_source": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "en": "120+ humanoid animations (locomotion, combat, emotes) on a universal rig, ready to retarget in Unity, Unreal and Godot.",
+      "zh": "120+ 人形动画（移动、战斗、表情动作），通用骨骼，可在 Unity、Unreal、Godot 里重定向。",
+      "image": {
+        "type": "original",
+        "src": "https://quaternius.com/assets/images/fullres/universalanimationlibrary.jpg",
+        "source": "https://quaternius.com/packs/universalanimationlibrary.html"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kenney-animated-characters",
+      "category": "animation",
+      "name": "Kenney Animated Characters",
+      "url": "https://kenney.nl/assets/animated-characters-1",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/assets/animated-characters-1",
+      "en": "Rigged, animated low-poly characters for quick 3D prototypes.",
+      "zh": "带骨骼和动画的低多边形角色，适合快速做 3D 原型。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/animated-characters-protagonists/98921ae406-1674931821/preview.png",
+        "source": "https://kenney.nl/assets/animated-characters-1"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "blender",
+      "category": "tools",
+      "name": "Blender",
+      "url": "https://www.blender.org/",
+      "license": "GPL-3.0-or-later (binaries)",
+      "license_source": "https://www.blender.org/about/license/",
+      "en": "Free 3D suite for modeling, rigging, animation and baking game assets; your output is yours.",
+      "zh": "免费 3D 全家桶：建模、绑骨、动画、烘焙；做出来的作品归你。",
+      "image": {
+        "type": "original",
+        "src": "https://code.blender.org/wp-content/uploads/2018/12/springrg.jpg",
+        "source": "https://github.com/blender/blender"
+      },
+      "license_zh": "GPL-3.0-or-later（发行版）"
+    },
+    {
+      "id": "material-maker",
+      "category": "tools",
+      "name": "RodZill4/material-maker",
+      "url": "https://github.com/RodZill4/material-maker",
+      "license": "MIT",
+      "license_source": "https://github.com/RodZill4/material-maker",
+      "en": "Node-based procedural texture and material authoring tool built on Godot.",
+      "zh": "基于 Godot 的节点式程序化贴图 / 材质制作工具。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/RodZill4/material-maker/master/material_maker/doc/images/screenshot.png",
+        "source": "https://github.com/RodZill4/material-maker"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "pixelorama",
+      "category": "tools",
+      "name": "Orama-Interactive/Pixelorama",
+      "url": "https://github.com/Orama-Interactive/Pixelorama",
+      "license": "MIT",
+      "license_source": "https://github.com/Orama-Interactive/Pixelorama",
+      "en": "Pixel art editor for sprites, tiles and frame animation; runs on desktop and web.",
+      "zh": "像素画编辑器，画精灵、图块和逐帧动画；桌面和网页都能用。",
+      "image": {
+        "type": "original",
+        "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2779170/ss_54395040c25b243cb82a3bd68778e19e04b43ade.1920x1080.jpg?t=1719424898",
+        "source": "https://github.com/Orama-Interactive/Pixelorama"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "tiled",
+      "category": "tools",
+      "name": "mapeditor/tiled",
+      "url": "https://github.com/mapeditor/tiled",
+      "license": "GPL-2.0 (editor) / BSD-2-Clause (libtiled)",
+      "license_source": "https://github.com/mapeditor/tiled/blob/master/COPYING",
+      "en": "Flexible tile map / level editor; exports TMX/JSON used by most 2D engines.",
+      "zh": "灵活的瓦片地图 / 关卡编辑器，导出的 TMX/JSON 被大多数 2D 引擎支持。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-tiled.webp"
+      },
+      "license_zh": "GPL-2.0（编辑器）/ BSD-2-Clause（libtiled）"
+    },
+    {
+      "id": "ldtk",
+      "category": "tools",
+      "name": "deepnight/ldtk",
+      "url": "https://github.com/deepnight/ldtk",
+      "license": "MIT",
+      "license_source": "https://github.com/deepnight/ldtk",
+      "en": "Modern, lightweight 2D level editor with auto-layer tiling and typed entity fields.",
+      "zh": "现代轻量 2D 关卡编辑器，支持自动图层铺块和带类型的实体字段。",
+      "image": {
+        "type": "original",
+        "src": "https://ldtk.io/wp-content/uploads/2021/05/open-graph.png",
+        "source": "https://ldtk.io/"
+      },
+      "license_zh": "MIT"
+    },
+    {
+      "id": "audacity",
+      "category": "tools",
+      "name": "audacity/audacity",
+      "url": "https://github.com/audacity/audacity",
+      "license": "GPL-3.0",
+      "license_source": "https://github.com/audacity/audacity/blob/master/LICENSE.txt",
+      "en": "Audio editor for trimming, layering and cleaning up game sound effects.",
+      "zh": "音频编辑器，剪切、叠加、降噪游戏音效。",
+      "image": {
+        "type": "original",
+        "src": "https://www.audacityteam.org/og-image.png",
+        "source": "https://www.audacityteam.org/"
+      },
+      "license_zh": "GPL-3.0"
+    },
+    {
+      "id": "lmms",
+      "category": "tools",
+      "name": "LMMS/lmms",
+      "url": "https://github.com/LMMS/lmms",
+      "license": "GPL-2.0",
+      "license_source": "https://github.com/LMMS/lmms",
+      "en": "Free music production software (sequencer, synths, sampler) for game soundtracks and stingers.",
+      "zh": "免费编曲软件（音序器、合成器、采样器），做游戏配乐和短提示音。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-lmms.webp"
+      },
+      "license_zh": "GPL-2.0"
+    },
+    {
+      "id": "godot-demo-projects",
+      "category": "tools",
+      "name": "godotengine/godot-demo-projects",
+      "url": "https://github.com/godotengine/godot-demo-projects",
+      "license": "MIT",
+      "license_source": "https://github.com/godotengine/godot-demo-projects",
+      "en": "Official Godot demo and template projects (2D, 3D, physics, UI) to learn from or start with.",
+      "zh": "Godot 官方示例和模板项目（2D、3D、物理、UI），可以照着学或直接起步。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-godot-demos.webp"
+      },
+      "license_zh": "MIT"
+    }
+  ]
+}
