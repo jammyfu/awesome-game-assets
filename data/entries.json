@@ -8,6 +8,12 @@
       "cover": "docs/images/cover-models.webp"
     },
     {
+      "id": "ui",
+      "en": "UI, Icons & HUD",
+      "zh": "UI、图标与 HUD",
+      "cover": "docs/images/cover-ui.webp"
+    },
+    {
       "id": "textures",
       "en": "Textures & Materials",
       "zh": "贴图与材质",
@@ -20,9 +26,15 @@
       "cover": "docs/images/cover-audio.webp"
     },
     {
+      "id": "fonts",
+      "en": "Fonts",
+      "zh": "字体",
+      "cover": "docs/images/cover-fonts.webp"
+    },
+    {
       "id": "vfx",
-      "en": "VFX & Particles",
-      "zh": "特效与粒子",
+      "en": "VFX, Particles & Shaders",
+      "zh": "特效、粒子与着色器",
       "cover": "docs/images/cover-vfx.webp"
     },
     {
@@ -33,15 +45,51 @@
     },
     {
       "id": "animation",
-      "en": "Animation",
-      "zh": "动画",
+      "en": "Animation & Motion Capture",
+      "zh": "动画与动捕",
       "cover": "docs/images/cover-animation.webp"
     },
     {
+      "id": "physics",
+      "en": "Physics",
+      "zh": "物理",
+      "cover": "docs/images/cover-physics.webp"
+    },
+    {
+      "id": "ai",
+      "en": "Game AI & Pathfinding",
+      "zh": "游戏 AI 与寻路",
+      "cover": "docs/images/cover-ai.webp"
+    },
+    {
+      "id": "procgen",
+      "en": "Procedural Generation",
+      "zh": "程序化生成",
+      "cover": "docs/images/cover-procgen.webp"
+    },
+    {
+      "id": "engines",
+      "en": "Engines & Frameworks",
+      "zh": "引擎与框架",
+      "cover": "docs/images/cover-engines.webp"
+    },
+    {
       "id": "tools",
-      "en": "Tools",
-      "zh": "工具",
+      "en": "Tools & Pipelines",
+      "zh": "工具与管线",
       "cover": "docs/images/cover-tools.webp"
+    },
+    {
+      "id": "aigen",
+      "en": "AI Asset Generation & Agent Skills",
+      "zh": "AI 素材生成与 Agent Skill",
+      "cover": "docs/images/cover-aigen.webp"
+    },
+    {
+      "id": "lists",
+      "en": "Curated Lists & Design References",
+      "zh": "其他清单与设计参考",
+      "cover": "docs/images/cover-lists.webp"
     }
   ],
   "entries": [
@@ -145,43 +193,6 @@
       ]
     },
     {
-      "id": "game-icons",
-      "category": "models",
-      "name": "Game-icons.net",
-      "url": "https://game-icons.net/",
-      "license": "CC-BY-3.0",
-      "license_zh": "CC-BY-3.0",
-      "license_source": "https://game-icons.net/about.html",
-      "en": "4,000+ free SVG/PNG game icons (skills, items, status effects); credit each icon's author.",
-      "zh": "4000+ 个 SVG/PNG 游戏图标（技能、道具、状态），按要求给每个图标作者署名。",
-      "image": {
-        "type": "original",
-        "src": "https://game-icons.net/icons/ffffff/000000/1x1/caro-asercion/tarot-21-the-world.svg",
-        "source": "https://game-icons.net/"
-      },
-      "via": [
-        "Calinou/awesome-gamedev"
-      ]
-    },
-    {
-      "id": "controller-prompts",
-      "category": "models",
-      "name": "Those Awesome Guys: Controller & Keyboard Prompts",
-      "url": "https://thoseawesomeguys.com/prompts/",
-      "license": "CC0-1.0",
-      "license_zh": "CC0-1.0",
-      "license_source": "https://thoseawesomeguys.com/prompts/",
-      "en": "Button prompt icons for keyboard, mouse and common controllers, for tutorials and input hints.",
-      "zh": "键盘、鼠标和常见手柄的按键提示图标，做新手引导和操作提示用。",
-      "image": {
-        "type": "generated",
-        "file": "docs/images/entry-controller-prompts.webp"
-      },
-      "via": [
-        "Calinou/awesome-gamedev"
-      ]
-    },
-    {
       "id": "lpc-generator",
       "category": "models",
       "name": "LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
@@ -200,6 +211,122 @@
         "Calinou/awesome-gamedev"
       ],
       "per_asset_license": true
+    },
+    {
+      "id": "makehuman",
+      "category": "models",
+      "name": "makehumancommunity/makehuman",
+      "url": "https://github.com/makehumancommunity/makehuman",
+      "license": "AGPL-3.0 (code) / CC0-1.0 (bundled assets)",
+      "license_zh": "AGPL-3.0（代码）/ CC0-1.0（自带素材）",
+      "license_source": "https://github.com/makehumancommunity/makehuman",
+      "en": "Parametric 3D human character creator; exported characters and bundled assets are CC0.",
+      "zh": "参数化 3D 人物角色生成器；导出的角色和自带素材为 CC0。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-makehuman.webp"
+      }
+    },
+    {
+      "id": "univrm",
+      "category": "models",
+      "name": "vrm-c/UniVRM",
+      "url": "https://github.com/vrm-c/UniVRM",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/vrm-c/UniVRM",
+      "en": "Unity importer/exporter for VRM humanoid avatars (glTF-based), with spring bones and expressions.",
+      "zh": "Unity 的 VRM 人形角色导入导出工具（基于 glTF），支持弹簧骨骼和表情。",
+      "image": {
+        "type": "original",
+        "src": "https://vrm.dev/en/images/vrm/card.png",
+        "source": "https://vrm.dev/en"
+      }
+    },
+    {
+      "id": "polygonalmind-cc0",
+      "category": "models",
+      "name": "PolygonalMind/initiative-opensource-release",
+      "url": "https://github.com/PolygonalMind/initiative-opensource-release",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://github.com/PolygonalMind/initiative-opensource-release",
+      "en": "CC0 releases from Polygonal Mind, including the 100 Avatars character packs and 3D environments.",
+      "zh": "Polygonal Mind 的 CC0 开源发布，含 100 Avatars 角色包和 3D 场景。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/PolygonalMind/initiative-opensource-release/main/images/PolygonalMind_Logo.jpg",
+        "source": "https://github.com/PolygonalMind/initiative-opensource-release"
+      }
+    },
+    {
+      "id": "game-icons",
+      "category": "ui",
+      "name": "Game-icons.net",
+      "url": "https://game-icons.net/",
+      "license": "CC-BY-3.0",
+      "license_zh": "CC-BY-3.0",
+      "license_source": "https://game-icons.net/about.html",
+      "en": "4,000+ free SVG/PNG game icons (skills, items, status effects); credit each icon's author.",
+      "zh": "4000+ 个 SVG/PNG 游戏图标（技能、道具、状态），按要求给每个图标作者署名。",
+      "image": {
+        "type": "original",
+        "src": "https://game-icons.net/icons/ffffff/000000/1x1/caro-asercion/tarot-21-the-world.svg",
+        "source": "https://game-icons.net/"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "controller-prompts",
+      "category": "ui",
+      "name": "Those Awesome Guys: Controller & Keyboard Prompts",
+      "url": "https://thoseawesomeguys.com/prompts/",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://thoseawesomeguys.com/prompts/",
+      "en": "Button prompt icons for keyboard, mouse and common controllers, for tutorials and input hints.",
+      "zh": "键盘、鼠标和常见手柄的按键提示图标，做新手引导和操作提示用。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-controller-prompts.webp"
+      },
+      "via": [
+        "Calinou/awesome-gamedev"
+      ]
+    },
+    {
+      "id": "imgui",
+      "category": "ui",
+      "name": "ocornut/imgui",
+      "url": "https://github.com/ocornut/imgui",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/ocornut/imgui",
+      "en": "Immediate-mode GUI library (Dear ImGui) for debug menus, in-game tools and editors.",
+      "zh": "即时模式 GUI 库（Dear ImGui），做调试菜单、游戏内工具和编辑器。",
+      "image": {
+        "type": "original",
+        "src": "https://github.com/user-attachments/assets/6c76658c-302f-403b-af26-d517e2bfb0d4",
+        "source": "https://github.com/ocornut/imgui"
+      }
+    },
+    {
+      "id": "kenney-ui-pack",
+      "category": "ui",
+      "name": "Kenney UI Pack",
+      "url": "https://kenney.nl/assets/ui-pack",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://kenney.nl/assets/ui-pack",
+      "en": "430 UI elements (buttons, sliders, panels) in several colors for menus and HUDs.",
+      "zh": "430 个 UI 元素（按钮、滑条、面板），多种配色，做菜单和 HUD。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/ui-pack/ab9e396e4d-1718203978/preview.png",
+        "source": "https://kenney.nl/assets/ui-pack"
+      }
     },
     {
       "id": "polyhaven",
@@ -251,6 +378,38 @@
         "Calinou/awesome-gamedev",
         "madjin/awesome-cc0"
       ]
+    },
+    {
+      "id": "armorpaint",
+      "category": "textures",
+      "name": "armory3d/armorpaint",
+      "url": "https://github.com/armory3d/armorpaint",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/armory3d/armorpaint",
+      "en": "3D painting tool for PBR texturing of models (source; prebuilt binaries are sold separately).",
+      "zh": "PBR 3D 贴图绘制工具（源码开源，官方预编译版另售）。",
+      "image": {
+        "type": "original",
+        "src": "https://armorpaint.org/img/git.jpg",
+        "source": "https://github.com/armory3d/armorpaint"
+      }
+    },
+    {
+      "id": "laigter",
+      "category": "textures",
+      "name": "azagaya/laigter",
+      "url": "https://github.com/azagaya/laigter",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/azagaya/laigter",
+      "en": "Generates normal, specular and occlusion maps for 2D sprites to get dynamic lighting.",
+      "zh": "给 2D 精灵生成法线、高光和遮蔽贴图，实现动态光照。",
+      "image": {
+        "type": "original",
+        "src": "https://user-images.githubusercontent.com/46932830/87454669-acbf9300-c5da-11ea-932a-fa4ec67e705f.png",
+        "source": "https://github.com/azagaya/laigter"
+      }
     },
     {
       "id": "freesound",
@@ -339,6 +498,200 @@
       ]
     },
     {
+      "id": "miniaudio",
+      "category": "audio",
+      "name": "mackron/miniaudio",
+      "url": "https://github.com/mackron/miniaudio",
+      "license": "Unlicense or MIT-0 (your choice)",
+      "license_zh": "Unlicense 或 MIT-0（二选一）",
+      "license_source": "https://github.com/mackron/miniaudio",
+      "en": "Single-file C audio playback and capture library with mixing and effects; easy to embed in engines.",
+      "zh": "单文件 C 音频播放 / 录音库，带混音和效果，好嵌进引擎。",
+      "image": {
+        "type": "original",
+        "src": "https://miniaud.io/img/miniaudio_wide.png",
+        "source": "https://github.com/mackron/miniaudio"
+      }
+    },
+    {
+      "id": "soloud",
+      "category": "audio",
+      "name": "jarikomppa/soloud",
+      "url": "https://github.com/jarikomppa/soloud",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/jarikomppa/soloud",
+      "en": "Easy, portable C++ audio engine for games with 3D sound, filters and speech synthesis.",
+      "zh": "简单易移植的 C++ 游戏音频引擎，支持 3D 音效、滤波器和语音合成。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.github.com/jarikomppa/soloud/master/soloud.png",
+        "source": "https://github.com/jarikomppa/soloud"
+      }
+    },
+    {
+      "id": "tonejs",
+      "category": "audio",
+      "name": "Tonejs/Tone.js",
+      "url": "https://github.com/Tonejs/Tone.js",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Tonejs/Tone.js",
+      "en": "Web Audio framework for interactive music: synths, effects and scheduling in the browser.",
+      "zh": "Web Audio 交互音乐框架：浏览器里的合成器、效果器和节拍调度。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-tonejs.webp"
+      }
+    },
+    {
+      "id": "howler",
+      "category": "audio",
+      "name": "goldfire/howler.js",
+      "url": "https://github.com/goldfire/howler.js",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/goldfire/howler.js",
+      "en": "JavaScript audio library for web games: sprites, spatial audio and cross-browser playback.",
+      "zh": "网页游戏音频库：音频精灵、空间音效、跨浏览器播放。",
+      "image": {
+        "type": "original",
+        "src": "https://s3.amazonaws.com/howler.js/howler-logo.png",
+        "source": "https://github.com/goldfire/howler.js"
+      }
+    },
+    {
+      "id": "surge",
+      "category": "audio",
+      "name": "surge-synthesizer/surge",
+      "url": "https://github.com/surge-synthesizer/surge",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/surge-synthesizer/surge",
+      "en": "Surge XT, a powerful open-source synthesizer for designing game music and sound effects.",
+      "zh": "Surge XT，强大的开源合成器，做游戏音乐和音效。",
+      "image": {
+        "type": "original",
+        "src": "https://dev.azure.com/surge-synthesizer/surge/_apis/build/status/surge-synthesizer.surge?branchName=main",
+        "source": "https://github.com/surge-synthesizer/surge"
+      }
+    },
+    {
+      "id": "bfxr",
+      "category": "audio",
+      "name": "increpare/bfxr",
+      "url": "https://github.com/increpare/bfxr",
+      "license": "Apache-2.0 (stated in README)",
+      "license_zh": "Apache-2.0（README 中声明）",
+      "license_source": "https://github.com/increpare/bfxr#readme",
+      "en": "Retro sound effect generator (extended sfxr) for jumps, pickups and explosions.",
+      "zh": "复古音效生成器（sfxr 增强版），做跳跃、拾取、爆炸音。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-bfxr.webp"
+      },
+      "license_in_readme": true
+    },
+    {
+      "id": "pixabay-sfx",
+      "category": "audio",
+      "name": "Pixabay Sound Effects",
+      "url": "https://pixabay.com/sound-effects/",
+      "license": "Pixabay Content License (free, no attribution; no standalone resale)",
+      "license_zh": "Pixabay 内容许可（免费、免署名；不得原样转卖）",
+      "license_source": "https://pixabay.com/service/license-summary/",
+      "en": "Large library of royalty-free sound effects and music under the Pixabay Content License.",
+      "zh": "大量免版税音效和音乐，采用 Pixabay 内容许可。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-pixabay-sfx.webp"
+      },
+      "link_note": {
+        "en": "site returns 403 to automated checks; license verified manually",
+        "zh": "网站对自动检查返回 403，许可证已人工核实"
+      }
+    },
+    {
+      "id": "google-fonts",
+      "category": "fonts",
+      "name": "google/fonts",
+      "url": "https://github.com/google/fonts",
+      "license": "Per family (OFL-1.1 / Apache-2.0 / UFL)",
+      "license_zh": "按字体家族单独授权（OFL-1.1 / Apache-2.0 / UFL）",
+      "license_source": "https://github.com/google/fonts#license",
+      "en": "All Google Fonts families as source files; each folder name is its license. Many support CJK.",
+      "zh": "Google Fonts 全部字体源文件；目录名就是许可证，不少支持中日韩。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-google-fonts.webp"
+      },
+      "per_asset_license": true
+    },
+    {
+      "id": "departure-mono",
+      "category": "fonts",
+      "name": "rektdeckard/departure-mono",
+      "url": "https://github.com/rektdeckard/departure-mono",
+      "license": "OFL-1.1 (font) / MIT (site)",
+      "license_zh": "OFL-1.1（字体）/ MIT（网站）",
+      "license_source": "https://github.com/rektdeckard/departure-mono",
+      "en": "Monospaced pixel font with a retro-futuristic look for HUDs and terminals.",
+      "zh": "复古未来感的等宽像素字体，适合 HUD 和终端界面。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/rektdeckard/departure-mono/main/public/assets/departure-og.png",
+        "source": "https://github.com/rektdeckard/departure-mono"
+      }
+    },
+    {
+      "id": "fusion-pixel-font",
+      "category": "fonts",
+      "name": "TakWolf/fusion-pixel-font",
+      "url": "https://github.com/TakWolf/fusion-pixel-font",
+      "license": "OFL-1.1 (font) / MIT (build code)",
+      "license_zh": "OFL-1.1（字体）/ MIT（构建程序）",
+      "license_source": "https://github.com/TakWolf/fusion-pixel-font",
+      "en": "Open pixel font covering Chinese, Japanese, Korean and Latin, in 8/10/12 px sizes.",
+      "zh": "开源泛中日韩像素字体，覆盖中日韩和拉丁字符，有 8/10/12 像素尺寸。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/TakWolf/fusion-pixel-font/master/docs/logo@2x.png",
+        "source": "https://github.com/TakWolf/fusion-pixel-font"
+      }
+    },
+    {
+      "id": "ark-pixel-font",
+      "category": "fonts",
+      "name": "TakWolf/ark-pixel-font",
+      "url": "https://github.com/TakWolf/ark-pixel-font",
+      "license": "OFL-1.1 (font) / MIT (build code)",
+      "license_zh": "OFL-1.1（字体）/ MIT（构建程序）",
+      "license_source": "https://github.com/TakWolf/ark-pixel-font",
+      "en": "Open pixel font for CJK and Latin, designed for pixel-art games.",
+      "zh": "开源中日韩像素字体（方舟像素字体），为像素风游戏设计。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/TakWolf/ark-pixel-font/master/docs/readme-banner.png",
+        "source": "https://github.com/TakWolf/ark-pixel-font"
+      }
+    },
+    {
+      "id": "kenney-fonts",
+      "category": "fonts",
+      "name": "Kenney Fonts",
+      "url": "https://kenney.nl/assets/kenney-fonts",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://kenney.nl/assets/kenney-fonts",
+      "en": "11 playful game fonts from Kenney, free for any project.",
+      "zh": "Kenney 的 11 款游戏风格字体，任何项目都能用。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/kenney-fonts/703183582c-1677661704/preview.png",
+        "source": "https://kenney.nl/assets/kenney-fonts"
+      }
+    },
+    {
       "id": "three-quarks",
       "category": "vfx",
       "name": "Alchemist0823/three.quarks",
@@ -422,6 +775,70 @@
       ]
     },
     {
+      "id": "postprocessing",
+      "category": "vfx",
+      "name": "pmndrs/postprocessing",
+      "url": "https://github.com/pmndrs/postprocessing",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/pmndrs/postprocessing",
+      "en": "Post-processing effects library for three.js: bloom, depth of field, SMAA, tone mapping and more.",
+      "zh": "three.js 后处理特效库：泛光、景深、SMAA 抗锯齿、色调映射等。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-postprocessing.webp"
+      }
+    },
+    {
+      "id": "gdquest-godot-shaders",
+      "category": "vfx",
+      "name": "gdquest-demos/godot-shaders",
+      "url": "https://github.com/gdquest-demos/godot-shaders",
+      "license": "MIT (code) / CC-BY-NC-SA-4.0 (art)",
+      "license_zh": "MIT（代码）/ CC-BY-NC-SA-4.0（美术）",
+      "license_source": "https://github.com/gdquest-demos/godot-shaders",
+      "en": "Open-source Godot shader demos (dissolve, outline, water, toon and more) with readable code.",
+      "zh": "开源 Godot 着色器示例（溶解、描边、水面、卡通渲染等），代码易读。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/gdquest-demos/godot-shaders/main/img/banner-shader-secrets.png",
+        "source": "https://github.com/gdquest-demos/godot-shaders"
+      }
+    },
+    {
+      "id": "gdquest-godot-vfx",
+      "category": "vfx",
+      "name": "gdquest-demos/godot-visual-effects",
+      "url": "https://github.com/gdquest-demos/godot-visual-effects",
+      "license": "MIT (code) / CC-BY-NC-SA-4.0 (art)",
+      "license_zh": "MIT（代码）/ CC-BY-NC-SA-4.0（美术）",
+      "license_source": "https://github.com/gdquest-demos/godot-visual-effects",
+      "en": "Godot visual-effects demos: particles, explosions, impacts and magic spells to learn from.",
+      "zh": "Godot 视觉特效示例：粒子、爆炸、受击、魔法技能，可以照着学。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/gdquest-demos/godot-visual-effects/master/img/banner-vfx-secrets.png",
+        "source": "https://github.com/gdquest-demos/godot-visual-effects"
+      }
+    },
+    {
+      "id": "godotshaders-com",
+      "category": "vfx",
+      "name": "Godot Shaders",
+      "url": "https://godotshaders.com/",
+      "license": "Per shader (CC0 / MIT / GPL-3.0); images not covered",
+      "license_zh": "按着色器单独授权（CC0 / MIT / GPL-3.0）；配图不在授权内",
+      "license_source": "https://godotshaders.com/license/",
+      "en": "Community library of Godot shaders; each post states its license, which covers the code only.",
+      "zh": "Godot 着色器社区库；每个帖子标明许可证，只覆盖代码。",
+      "image": {
+        "type": "original",
+        "src": "https://godotshaders.com/wp-content/uploads/2021/01/godotshaders_logo_blue.png",
+        "source": "https://godotshaders.com/"
+      },
+      "per_asset_license": true
+    },
+    {
       "id": "linear-ability-casting",
       "category": "abilities",
       "name": "achrefelouafi/LinearAbiltyCastingThreeJS",
@@ -483,6 +900,37 @@
         "type": "original",
         "src": "https://raw.githubusercontent.com/No78Vino/gameplay-ability-system-for-unity/EX-GAS-1.0/Wiki/QQ20240313114652.png",
         "source": "https://github.com/No78Vino/gameplay-ability-system-for-unity"
+      }
+    },
+    {
+      "id": "gasshooter",
+      "category": "abilities",
+      "name": "tranek/GASShooter",
+      "url": "https://github.com/tranek/GASShooter",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/tranek/GASShooter",
+      "en": "Advanced Unreal GAS sample: multiplayer FPS/TPS with weapons, abilities and prediction.",
+      "zh": "进阶 Unreal GAS 示例：多人 FPS/TPS，含武器、技能和预测。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-gasshooter.webp"
+      }
+    },
+    {
+      "id": "narxim-gas",
+      "category": "abilities",
+      "name": "Narxim/Narxim-GAS-Example",
+      "url": "https://github.com/Narxim/Narxim-GAS-Example",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Narxim/Narxim-GAS-Example",
+      "en": "Clean Unreal Gameplay Ability System template project with attributes and abilities set up.",
+      "zh": "干净的 Unreal Gameplay Ability System 模板工程，已配好属性和技能。",
+      "image": {
+        "type": "original",
+        "src": "https://github.com/user-attachments/assets/2518ffc8-ef3b-4bbf-bcce-48d00338237a",
+        "source": "https://github.com/Narxim/Narxim-GAS-Example"
       }
     },
     {
@@ -554,6 +1002,641 @@
       "via": [
         "Calinou/awesome-gamedev"
       ]
+    },
+    {
+      "id": "bandai-namco-motion",
+      "category": "animation",
+      "name": "BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset",
+      "url": "https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset",
+      "license": "CC-BY-NC-4.0 (datasets) / MIT (scripts)",
+      "license_zh": "CC-BY-NC-4.0（数据集）/ MIT（脚本）",
+      "license_source": "https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset#license",
+      "en": "Motion-capture datasets with many styles of walking, fighting and gestures; non-commercial use only.",
+      "zh": "动捕数据集，含多种风格的走路、格斗和手势动作；仅限非商业使用。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset/master/src/Bandai-Namco-Research-Motiondataset-1/movie_walk.gif",
+        "source": "https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset"
+      },
+      "per_asset_license": true,
+      "license_in_readme": true
+    },
+    {
+      "id": "dragonbones-js",
+      "category": "animation",
+      "name": "DragonBones/DragonBonesJS",
+      "url": "https://github.com/DragonBones/DragonBonesJS",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/DragonBones/DragonBonesJS",
+      "en": "JavaScript runtimes for DragonBones 2D skeletal animation (Pixi, Phaser, Egret and more).",
+      "zh": "DragonBones 2D 骨骼动画的 JavaScript 运行时（支持 Pixi、Phaser、Egret 等）。",
+      "image": {
+        "type": "original",
+        "src": "https://dragonbones.github.io/demo/demos.jpg",
+        "source": "https://github.com/DragonBones/DragonBonesJS"
+      }
+    },
+    {
+      "id": "box2d",
+      "category": "physics",
+      "name": "erincatto/box2d",
+      "url": "https://github.com/erincatto/box2d",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/erincatto/box2d",
+      "en": "Widely used 2D rigid-body physics engine in C.",
+      "zh": "C 写的 2D 刚体物理引擎，应用很广。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-box2d.webp"
+      }
+    },
+    {
+      "id": "jolt",
+      "category": "physics",
+      "name": "jrouwe/JoltPhysics",
+      "url": "https://github.com/jrouwe/JoltPhysics",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/jrouwe/JoltPhysics",
+      "en": "Fast multi-threaded 3D rigid-body physics engine for games and VR.",
+      "zh": "高性能多线程 3D 刚体物理引擎，适合游戏和 VR。",
+      "image": {
+        "type": "original",
+        "src": "https://jrouwe.nl/jolt/Horizon_Forbidden_West.png",
+        "source": "https://github.com/jrouwe/JoltPhysics"
+      }
+    },
+    {
+      "id": "bullet3",
+      "category": "physics",
+      "name": "bulletphysics/bullet3",
+      "url": "https://github.com/bulletphysics/bullet3",
+      "license": "Zlib (except Extras and third-party libs)",
+      "license_zh": "Zlib（Extras 和第三方库除外）",
+      "license_source": "https://github.com/bulletphysics/bullet3",
+      "en": "Mature 3D physics SDK for collision detection, rigid and soft bodies.",
+      "zh": "成熟的 3D 物理 SDK：碰撞检测、刚体和软体。",
+      "image": {
+        "type": "original",
+        "src": "https://pybullet.org/wordpress/wp-content/uploads/2019/03/cropped-pybullet.png",
+        "source": "https://github.com/bulletphysics/bullet3"
+      }
+    },
+    {
+      "id": "rapier",
+      "category": "physics",
+      "name": "dimforge/rapier",
+      "url": "https://github.com/dimforge/rapier",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/dimforge/rapier",
+      "en": "2D and 3D physics engine in Rust, also available for JavaScript via WASM.",
+      "zh": "Rust 写的 2D/3D 物理引擎，也能通过 WASM 在 JavaScript 里用。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/dimforge/rapier/master/assets/rapier-logo.jpg",
+        "source": "https://github.com/dimforge/rapier"
+      }
+    },
+    {
+      "id": "cannon-es",
+      "category": "physics",
+      "name": "pmndrs/cannon-es",
+      "url": "https://github.com/pmndrs/cannon-es",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/pmndrs/cannon-es",
+      "en": "Lightweight 3D physics engine for the web, often paired with three.js.",
+      "zh": "轻量网页 3D 物理引擎，常和 three.js 搭配。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/pmndrs/cannon-es/master/screenshots/docs.png",
+        "source": "https://github.com/pmndrs/cannon-es"
+      }
+    },
+    {
+      "id": "matter-js",
+      "category": "physics",
+      "name": "liabru/matter-js",
+      "url": "https://github.com/liabru/matter-js",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/liabru/matter-js",
+      "en": "2D rigid-body physics engine for the web with a simple API.",
+      "zh": "网页 2D 刚体物理引擎，接口简单。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-matter-js.webp"
+      }
+    },
+    {
+      "id": "physx",
+      "category": "physics",
+      "name": "NVIDIA-Omniverse/PhysX",
+      "url": "https://github.com/NVIDIA-Omniverse/PhysX",
+      "license": "BSD-3-Clause",
+      "license_zh": "BSD-3-Clause",
+      "license_source": "https://github.com/NVIDIA-Omniverse/PhysX",
+      "en": "NVIDIA PhysX SDK, the 3D physics engine behind many commercial engines.",
+      "zh": "NVIDIA PhysX SDK，许多商业引擎背后的 3D 物理引擎。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-physx.webp"
+      }
+    },
+    {
+      "id": "recast",
+      "category": "ai",
+      "name": "recastnavigation/recastnavigation",
+      "url": "https://github.com/recastnavigation/recastnavigation",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/recastnavigation/recastnavigation",
+      "en": "Navmesh generation (Recast) and pathfinding / crowd simulation (Detour) for 3D games.",
+      "zh": "3D 游戏导航网格生成（Recast）和寻路 / 群体模拟（Detour）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/recastnavigation/recastnavigation/main/Docs/Images/screenshot.png",
+        "source": "https://github.com/recastnavigation/recastnavigation"
+      }
+    },
+    {
+      "id": "pathfinding-js",
+      "category": "ai",
+      "name": "qiao/PathFinding.js",
+      "url": "https://github.com/qiao/PathFinding.js",
+      "license": "MIT (stated in README)",
+      "license_zh": "MIT（README 中声明）",
+      "license_source": "https://github.com/qiao/PathFinding.js#license",
+      "en": "Grid pathfinding library for JavaScript (A*, Dijkstra, JPS) with an online visualizer.",
+      "zh": "JavaScript 网格寻路库（A*、Dijkstra、JPS），附在线可视化。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-pathfinding-js.webp"
+      },
+      "license_in_readme": true
+    },
+    {
+      "id": "behaviortree-cpp",
+      "category": "ai",
+      "name": "BehaviorTree/BehaviorTree.CPP",
+      "url": "https://github.com/BehaviorTree/BehaviorTree.CPP",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/BehaviorTree/BehaviorTree.CPP",
+      "en": "C++ behavior tree library with XML trees and the Groot visual editor.",
+      "zh": "C++ 行为树库，XML 定义行为树，配 Groot 可视化编辑器。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/BehaviorTree/BehaviorTree.CPP/master/docs/groot-screenshot.png",
+        "source": "https://github.com/BehaviorTree/BehaviorTree.CPP"
+      }
+    },
+    {
+      "id": "yuka",
+      "category": "ai",
+      "name": "Mugen87/yuka",
+      "url": "https://github.com/Mugen87/yuka",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Mugen87/yuka",
+      "en": "JavaScript game AI library: steering, state machines, goals, navmesh and perception.",
+      "zh": "JavaScript 游戏 AI 库：转向行为、状态机、目标驱动、导航网格和感知。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-yuka.webp"
+      }
+    },
+    {
+      "id": "limboai",
+      "category": "ai",
+      "name": "limbonaut/limboai",
+      "url": "https://github.com/limbonaut/limboai",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/limbonaut/limboai",
+      "en": "Behavior trees and state machines for Godot 4 with a visual editor and debugger.",
+      "zh": "Godot 4 的行为树和状态机，带可视化编辑器和调试器。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/limbonaut/limboai/master/doc/images/behavior-tree-editor-debugger.png",
+        "source": "https://github.com/limbonaut/limboai"
+      }
+    },
+    {
+      "id": "beehave",
+      "category": "ai",
+      "name": "bitbrain/beehave",
+      "url": "https://github.com/bitbrain/beehave",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/bitbrain/beehave",
+      "en": "Behavior tree addon for Godot with a debug view for NPC logic.",
+      "zh": "Godot 行为树插件，带 NPC 逻辑调试视图。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/bitbrain/beehave/godot-4.x/docs/assets/example.png",
+        "source": "https://github.com/bitbrain/beehave"
+      }
+    },
+    {
+      "id": "three-pathfinding",
+      "category": "ai",
+      "name": "donmccurdy/three-pathfinding",
+      "url": "https://github.com/donmccurdy/three-pathfinding",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/donmccurdy/three-pathfinding",
+      "en": "Navmesh pathfinding for three.js scenes.",
+      "zh": "three.js 场景的导航网格寻路。",
+      "image": {
+        "type": "original",
+        "src": "https://user-images.githubusercontent.com/1848368/34424850-d79e5a24-ebf4-11e7-87c4-afc75cdc41bd.png",
+        "source": "https://github.com/donmccurdy/three-pathfinding"
+      }
+    },
+    {
+      "id": "wfc",
+      "category": "procgen",
+      "name": "mxgmn/WaveFunctionCollapse",
+      "url": "https://github.com/mxgmn/WaveFunctionCollapse",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/mxgmn/WaveFunctionCollapse",
+      "en": "The original Wave Function Collapse algorithm for generating tile maps and textures from examples.",
+      "zh": "原版波函数坍缩算法，从样例生成瓦片地图和纹理。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/mxgmn/WaveFunctionCollapse/master/images/wfc.png",
+        "source": "https://github.com/mxgmn/WaveFunctionCollapse"
+      }
+    },
+    {
+      "id": "debroglie",
+      "category": "procgen",
+      "name": "BorisTheBrave/DeBroglie",
+      "url": "https://github.com/BorisTheBrave/DeBroglie",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/BorisTheBrave/DeBroglie",
+      "en": "C# constraint-based procedural generation library (WFC and more) with many tile constraints.",
+      "zh": "C# 约束式程序化生成库（WFC 等），支持多种图块约束。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-debroglie.webp"
+      }
+    },
+    {
+      "id": "fastnoiselite",
+      "category": "procgen",
+      "name": "Auburn/FastNoiseLite",
+      "url": "https://github.com/Auburn/FastNoiseLite",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Auburn/FastNoiseLite",
+      "en": "Portable noise library (Perlin, Simplex, Cellular) in many languages for terrain and textures.",
+      "zh": "多语言可移植噪声库（Perlin、Simplex、Cellular），做地形和纹理。",
+      "image": {
+        "type": "original",
+        "src": "https://user-images.githubusercontent.com/1349548/275292148-242e95c7-94e7-4801-bc4a-d683a8822382.png",
+        "source": "https://github.com/Auburn/FastNoiseLite"
+      }
+    },
+    {
+      "id": "godot-wfc",
+      "category": "procgen",
+      "name": "AlexeyBond/godot-constraint-solving",
+      "url": "https://github.com/AlexeyBond/godot-constraint-solving",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/AlexeyBond/godot-constraint-solving",
+      "en": "Wave Function Collapse addon for Godot 4 tile maps and grid maps.",
+      "zh": "Godot 4 的波函数坍缩插件，用于 TileMap 和 GridMap。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/AlexeyBond/godot-constraint-solving/master/screenshots/2d-tilemap-0.png",
+        "source": "https://github.com/AlexeyBond/godot-constraint-solving"
+      }
+    },
+    {
+      "id": "spaceship-generator",
+      "category": "procgen",
+      "name": "a1studmuffin/SpaceshipGenerator",
+      "url": "https://github.com/a1studmuffin/SpaceshipGenerator",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/a1studmuffin/SpaceshipGenerator",
+      "en": "Blender script that generates textured 3D spaceships from a random seed (older, last updated 2024).",
+      "zh": "Blender 脚本，用随机种子生成带贴图的 3D 飞船（较老，最后更新 2024 年）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/a1studmuffin/SpaceshipGenerator/master/screenshots/spaceships_grid.jpg",
+        "source": "https://github.com/a1studmuffin/SpaceshipGenerator"
+      }
+    },
+    {
+      "id": "godot",
+      "category": "engines",
+      "name": "godotengine/godot",
+      "url": "https://github.com/godotengine/godot",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/godotengine/godot",
+      "en": "Free open-source 2D and 3D game engine with its own editor and GDScript/C#.",
+      "zh": "免费开源 2D/3D 游戏引擎，自带编辑器，支持 GDScript/C#。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/godotengine/godot-design/master/screenshots/editor_tps_demo_1920x1080.jpg",
+        "source": "https://github.com/godotengine/godot"
+      }
+    },
+    {
+      "id": "bevy",
+      "category": "engines",
+      "name": "bevyengine/bevy",
+      "url": "https://github.com/bevyengine/bevy",
+      "license": "Apache-2.0 or MIT",
+      "license_zh": "Apache-2.0 或 MIT",
+      "license_source": "https://github.com/bevyengine/bevy",
+      "en": "Data-driven game engine in Rust built on an ECS.",
+      "zh": "Rust 写的数据驱动游戏引擎，基于 ECS。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-bevy.webp"
+      }
+    },
+    {
+      "id": "defold",
+      "category": "engines",
+      "name": "defold/defold",
+      "url": "https://github.com/defold/defold",
+      "license": "Defold License 1.0 (Apache-2.0 based)",
+      "license_zh": "Defold 许可 1.0（基于 Apache-2.0）",
+      "license_source": "https://github.com/defold/defold",
+      "en": "Lightweight engine for 2D/3D games with Lua scripting and one-click multi-platform builds.",
+      "zh": "轻量 2D/3D 引擎，Lua 脚本，一键多平台打包。",
+      "image": {
+        "type": "original",
+        "src": "https://defold.com/images/logo/others/moonactive-github.png",
+        "source": "https://github.com/defold/defold"
+      }
+    },
+    {
+      "id": "raylib",
+      "category": "engines",
+      "name": "raysan5/raylib",
+      "url": "https://github.com/raysan5/raylib",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/raysan5/raylib",
+      "en": "Simple C library for learning and making games, with bindings for 60+ languages.",
+      "zh": "简单的 C 游戏库，适合入门，有 60 多种语言绑定。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/raysan5/raylib/master/logo/raylib_logo_animation.gif",
+        "source": "https://github.com/raysan5/raylib"
+      }
+    },
+    {
+      "id": "love2d",
+      "category": "engines",
+      "name": "love2d/love",
+      "url": "https://github.com/love2d/love",
+      "license": "Zlib",
+      "license_zh": "Zlib",
+      "license_source": "https://github.com/love2d/love",
+      "en": "LÖVE, a 2D game framework in Lua.",
+      "zh": "LÖVE，Lua 写游戏的 2D 框架。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-love2d.webp"
+      }
+    },
+    {
+      "id": "phaser",
+      "category": "engines",
+      "name": "phaserjs/phaser",
+      "url": "https://github.com/phaserjs/phaser",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/phaserjs/phaser",
+      "en": "HTML5 2D game framework for desktop and mobile browsers.",
+      "zh": "HTML5 2D 游戏框架，桌面和手机浏览器都能跑。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/phaserjs/phaser/master/changelog/v4/assets/phaser4-logo.png",
+        "source": "https://github.com/phaserjs/phaser"
+      }
+    },
+    {
+      "id": "threejs",
+      "category": "engines",
+      "name": "mrdoob/three.js",
+      "url": "https://github.com/mrdoob/three.js",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/mrdoob/three.js",
+      "en": "JavaScript 3D library (WebGL/WebGPU) behind most 3D web games and demos.",
+      "zh": "JavaScript 3D 库（WebGL/WebGPU），多数网页 3D 游戏和演示都基于它。",
+      "image": {
+        "type": "original",
+        "src": "https://threejs.org/files/share.png",
+        "source": "https://threejs.org/"
+      }
+    },
+    {
+      "id": "babylonjs",
+      "category": "engines",
+      "name": "BabylonJS/Babylon.js",
+      "url": "https://github.com/BabylonJS/Babylon.js",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/BabylonJS/Babylon.js",
+      "en": "Full-featured web 3D game and rendering engine with a playground and editor.",
+      "zh": "功能完整的网页 3D 游戏 / 渲染引擎，带在线 Playground 和编辑器。",
+      "image": {
+        "type": "original",
+        "src": "https://dev.azure.com/babylonjs/ContinousIntegration/_apis/build/status/CI?branchName=master",
+        "source": "https://github.com/BabylonJS/Babylon.js"
+      }
+    },
+    {
+      "id": "o3de",
+      "category": "engines",
+      "name": "o3de/o3de",
+      "url": "https://github.com/o3de/o3de",
+      "license": "Apache-2.0 or MIT",
+      "license_zh": "Apache-2.0 或 MIT",
+      "license_source": "https://github.com/o3de/o3de",
+      "en": "Open 3D Engine, a modular AAA-grade 3D engine from the Linux Foundation.",
+      "zh": "Open 3D Engine，Linux 基金会旗下的模块化 3A 级 3D 引擎。",
+      "image": {
+        "type": "original",
+        "src": "https://o3de.org/wp-content/uploads/2023/06/black-bg-logo.jpg",
+        "source": "https://o3de.org"
+      }
+    },
+    {
+      "id": "stride",
+      "category": "engines",
+      "name": "stride3d/stride",
+      "url": "https://github.com/stride3d/stride",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/stride3d/stride",
+      "en": "C# 3D game engine with an editor, formerly Xenko.",
+      "zh": "C# 3D 游戏引擎，带编辑器，前身是 Xenko。",
+      "image": {
+        "type": "original",
+        "src": "https://stride3d.net/images/external/script-editor.png",
+        "source": "https://github.com/stride3d/stride"
+      }
+    },
+    {
+      "id": "monogame",
+      "category": "engines",
+      "name": "MonoGame/MonoGame",
+      "url": "https://github.com/MonoGame/MonoGame",
+      "license": "Ms-PL",
+      "license_zh": "Ms-PL",
+      "license_source": "https://github.com/MonoGame/MonoGame",
+      "en": "C# framework for cross-platform 2D/3D games (XNA successor).",
+      "zh": "C# 跨平台 2D/3D 游戏框架（XNA 继任者）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/MonoGame/MonoGame.Samples/refs/heads/3.8.2/Images/Platformer2D-Sample.png",
+        "source": "https://github.com/MonoGame/MonoGame"
+      }
+    },
+    {
+      "id": "libgdx",
+      "category": "engines",
+      "name": "libgdx/libgdx",
+      "url": "https://github.com/libgdx/libgdx",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/libgdx/libgdx",
+      "en": "Java game framework for desktop, Android, iOS and web.",
+      "zh": "Java 游戏框架，支持桌面、安卓、iOS 和网页。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/libgdx/libgdx/master/libgdx_logo.svg#gh-light-mode-only",
+        "source": "https://github.com/libgdx/libgdx"
+      }
+    },
+    {
+      "id": "excalibur",
+      "category": "engines",
+      "name": "excaliburjs/Excalibur",
+      "url": "https://github.com/excaliburjs/Excalibur",
+      "license": "BSD-2-Clause",
+      "license_zh": "BSD-2-Clause",
+      "license_source": "https://github.com/excaliburjs/Excalibur",
+      "en": "TypeScript 2D game engine for the web.",
+      "zh": "TypeScript 写的网页 2D 游戏引擎。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/excaliburjs/Excalibur/main/assets/logo.png",
+        "source": "https://github.com/excaliburjs/Excalibur"
+      }
+    },
+    {
+      "id": "pixijs",
+      "category": "engines",
+      "name": "pixijs/pixijs",
+      "url": "https://github.com/pixijs/pixijs",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/pixijs/pixijs",
+      "en": "Fast 2D WebGL/WebGPU renderer for web games and interactive graphics.",
+      "zh": "高速 2D WebGL/WebGPU 渲染器，做网页游戏和交互图形。",
+      "image": {
+        "type": "original",
+        "src": "https://pixijs.io/create-pixi/img/demo.gif",
+        "source": "https://github.com/pixijs/pixijs"
+      }
+    },
+    {
+      "id": "playcanvas",
+      "category": "engines",
+      "name": "playcanvas/engine",
+      "url": "https://github.com/playcanvas/engine",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/playcanvas/engine",
+      "en": "WebGL/WebGPU 3D game engine (runtime) for the web.",
+      "zh": "网页 WebGL/WebGPU 3D 游戏引擎（运行时）。",
+      "image": {
+        "type": "original",
+        "src": "https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/14705/319531/O4J4VU-image-25.jpg",
+        "source": "https://github.com/playcanvas/engine"
+      }
+    },
+    {
+      "id": "kaplay",
+      "category": "engines",
+      "name": "kaplayjs/kaplay",
+      "url": "https://github.com/kaplayjs/kaplay",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/kaplayjs/kaplay",
+      "en": "Beginner-friendly JavaScript game library (successor of Kaboom.js).",
+      "zh": "新手友好的 JavaScript 游戏库（Kaboom.js 的继任者）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/kaplayjs/kaplay/master/kaplay.webp",
+        "source": "https://github.com/kaplayjs/kaplay"
+      }
+    },
+    {
+      "id": "ebitengine",
+      "category": "engines",
+      "name": "hajimehoshi/ebiten",
+      "url": "https://github.com/hajimehoshi/ebiten",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/hajimehoshi/ebiten",
+      "en": "Ebitengine, a simple 2D game engine for Go.",
+      "zh": "Ebitengine，Go 语言的简单 2D 游戏引擎。",
+      "image": {
+        "type": "original",
+        "src": "https://ebitengine.org/images/overview2.png",
+        "source": "https://github.com/hajimehoshi/ebiten"
+      }
+    },
+    {
+      "id": "fyrox",
+      "category": "engines",
+      "name": "FyroxEngine/Fyrox",
+      "url": "https://github.com/FyroxEngine/Fyrox",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/FyroxEngine/Fyrox",
+      "en": "3D and 2D game engine in Rust with a scene editor.",
+      "zh": "Rust 写的 3D/2D 游戏引擎，带场景编辑器。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/FyroxEngine/Fyrox/master/pics/logo.png",
+        "source": "https://github.com/FyroxEngine/Fyrox"
+      }
+    },
+    {
+      "id": "heaps",
+      "category": "engines",
+      "name": "HeapsIO/heaps",
+      "url": "https://github.com/HeapsIO/heaps",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/HeapsIO/heaps",
+      "en": "Cross-platform 2D/3D game engine for Haxe.",
+      "zh": "Haxe 语言的跨平台 2D/3D 游戏引擎。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/HeapsIO/heaps.io/master/assets/logo/logo-heaps-color.png",
+        "source": "https://github.com/HeapsIO/heaps"
+      }
     },
     {
       "id": "blender",
@@ -702,6 +1785,367 @@
       "via": [
         "Calinou/awesome-gamedev"
       ]
+    },
+    {
+      "id": "libresprite",
+      "category": "tools",
+      "name": "LibreSprite/LibreSprite",
+      "url": "https://github.com/LibreSprite/LibreSprite",
+      "license": "GPL-2.0",
+      "license_zh": "GPL-2.0",
+      "license_source": "https://github.com/LibreSprite/LibreSprite",
+      "en": "Free pixel-art and sprite animation editor (fork of the last GPL Aseprite).",
+      "zh": "免费像素画和精灵动画编辑器（从最后一个 GPL 版 Aseprite 分叉）。",
+      "image": {
+        "type": "original",
+        "src": "https://i.imgur.com/UOLKpPA.png",
+        "source": "https://github.com/LibreSprite/LibreSprite"
+      }
+    },
+    {
+      "id": "free-tex-packer",
+      "category": "tools",
+      "name": "odrick/free-tex-packer",
+      "url": "https://github.com/odrick/free-tex-packer",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/odrick/free-tex-packer",
+      "en": "Free texture-atlas packer with exporters for Phaser, Pixi, Unity, Godot and more.",
+      "zh": "免费图集打包工具，可导出 Phaser、Pixi、Unity、Godot 等格式。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/odrick/free-tex-packer/master/electron/build/icons/96x96.png",
+        "source": "https://github.com/odrick/free-tex-packer"
+      }
+    },
+    {
+      "id": "ogmo",
+      "category": "tools",
+      "name": "Ogmo-Editor-3/OgmoEditor3-CE",
+      "url": "https://github.com/Ogmo-Editor-3/OgmoEditor3-CE",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Ogmo-Editor-3/OgmoEditor3-CE",
+      "en": "Free, engine-agnostic 2D level editor with tiles, entities and decals (last updated 2024).",
+      "zh": "免费、不绑引擎的 2D 关卡编辑器，支持图块、实体和贴花（最后更新 2024 年）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/Ogmo-Editor-3/OgmoEditor3-CE/master/assets/gfx/logo.png",
+        "source": "https://github.com/Ogmo-Editor-3/OgmoEditor3-CE"
+      }
+    },
+    {
+      "id": "trenchbroom",
+      "category": "tools",
+      "name": "TrenchBroom/TrenchBroom",
+      "url": "https://github.com/TrenchBroom/TrenchBroom",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/TrenchBroom/TrenchBroom",
+      "en": "Brush-based 3D level editor for Quake-style maps, usable with Godot via plugins.",
+      "zh": "Quake 风格的笔刷式 3D 关卡编辑器，可借插件用于 Godot。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/TrenchBroom/TrenchBroom/master/app/TrenchBroom/resources/graphics/images/AppIcon.png",
+        "source": "https://github.com/TrenchBroom/TrenchBroom"
+      }
+    },
+    {
+      "id": "blockbench",
+      "category": "tools",
+      "name": "JannisX11/blockbench",
+      "url": "https://github.com/JannisX11/blockbench",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/JannisX11/blockbench",
+      "en": "Low-poly and voxel-style 3D model editor with texturing and animation.",
+      "zh": "低多边形 / 方块风 3D 模型编辑器，可画贴图、做动画。",
+      "image": {
+        "type": "original",
+        "src": "https://web.blockbench.net/content/front_page_app.png",
+        "source": "https://github.com/JannisX11/blockbench"
+      }
+    },
+    {
+      "id": "goxel",
+      "category": "tools",
+      "name": "guillaumechereau/goxel",
+      "url": "https://github.com/guillaumechereau/goxel",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/guillaumechereau/goxel",
+      "en": "Open-source voxel editor for 3D models and scenes.",
+      "zh": "开源体素编辑器，做 3D 模型和场景。",
+      "image": {
+        "type": "original",
+        "src": "https://goxel.xyz/gallery/thibault-fisherman-house.jpg",
+        "source": "https://github.com/guillaumechereau/goxel"
+      }
+    },
+    {
+      "id": "gltf-transform",
+      "category": "tools",
+      "name": "donmccurdy/glTF-Transform",
+      "url": "https://github.com/donmccurdy/glTF-Transform",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/donmccurdy/glTF-Transform",
+      "en": "CLI and SDK to optimize glTF/GLB: compression, texture resize, deduplication.",
+      "zh": "优化 glTF/GLB 的命令行和 SDK：压缩、缩贴图、去重。",
+      "image": {
+        "type": "original",
+        "src": "https://gltf-transform.dev/media/kicker.jpg",
+        "source": "https://github.com/donmccurdy/glTF-Transform"
+      }
+    },
+    {
+      "id": "meshoptimizer",
+      "category": "tools",
+      "name": "zeux/meshoptimizer",
+      "url": "https://github.com/zeux/meshoptimizer",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/zeux/meshoptimizer",
+      "en": "Mesh optimization library and gltfpack tool for smaller, faster 3D assets.",
+      "zh": "网格优化库和 gltfpack 工具，让 3D 资产更小更快。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-meshoptimizer.webp"
+      }
+    },
+    {
+      "id": "assimp",
+      "category": "tools",
+      "name": "assimp/assimp",
+      "url": "https://github.com/assimp/assimp",
+      "license": "BSD-3-Clause (modified)",
+      "license_zh": "BSD-3-Clause（修改版）",
+      "license_source": "https://github.com/assimp/assimp",
+      "en": "Open Asset Import Library: loads 40+ 3D formats into one data structure.",
+      "zh": "开放资产导入库：把 40 多种 3D 格式读成统一数据结构。",
+      "image": {
+        "type": "original",
+        "src": "https://www.assimp.org/dragonsplash.png",
+        "source": "https://www.assimp.org"
+      }
+    },
+    {
+      "id": "trellis",
+      "category": "aigen",
+      "name": "microsoft/TRELLIS",
+      "url": "https://github.com/microsoft/TRELLIS",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/microsoft/TRELLIS",
+      "en": "Image/text-to-3D model generation (meshes, radiance fields, Gaussians) from Microsoft.",
+      "zh": "微软的图像 / 文本生成 3D 模型（网格、辐射场、高斯）。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/microsoft/TRELLIS/main/assets/logo.webp",
+        "source": "https://github.com/microsoft/TRELLIS"
+      }
+    },
+    {
+      "id": "triposr",
+      "category": "aigen",
+      "name": "VAST-AI-Research/TripoSR",
+      "url": "https://github.com/VAST-AI-Research/TripoSR",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/VAST-AI-Research/TripoSR",
+      "en": "Fast single-image to 3D mesh reconstruction model.",
+      "zh": "单张图快速重建 3D 网格的模型。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/figures/teaser800.gif",
+        "source": "https://github.com/VAST-AI-Research/TripoSR"
+      }
+    },
+    {
+      "id": "instantmesh",
+      "category": "aigen",
+      "name": "TencentARC/InstantMesh",
+      "url": "https://github.com/TencentARC/InstantMesh",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/TencentARC/InstantMesh",
+      "en": "Single image to 3D mesh generation with multi-view diffusion.",
+      "zh": "单张图生成 3D 网格，基于多视角扩散。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-instantmesh.webp"
+      }
+    },
+    {
+      "id": "comfyui",
+      "category": "aigen",
+      "name": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "license": "GPL-3.0",
+      "license_zh": "GPL-3.0",
+      "license_source": "https://github.com/Comfy-Org/ComfyUI",
+      "en": "Node-based UI for diffusion models to generate textures, sprites and concept art.",
+      "zh": "扩散模型的节点式界面，生成贴图、精灵和概念图。",
+      "image": {
+        "type": "original",
+        "src": "https://github.com/user-attachments/assets/36e065e0-bfae-4456-8c7f-8369d5ea48a2",
+        "source": "https://github.com/Comfy-Org/ComfyUI"
+      }
+    },
+    {
+      "id": "audiocraft",
+      "category": "aigen",
+      "name": "facebookresearch/audiocraft",
+      "url": "https://github.com/facebookresearch/audiocraft",
+      "license": "MIT (code); model weights CC-BY-NC-4.0",
+      "license_zh": "MIT（代码）；模型权重 CC-BY-NC-4.0",
+      "license_source": "https://github.com/facebookresearch/audiocraft",
+      "en": "Meta's audio generation library (MusicGen, AudioGen) for music and sound effects; weights are non-commercial.",
+      "zh": "Meta 的音频生成库（MusicGen、AudioGen），生成音乐和音效；权重仅限非商业。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-audiocraft.webp"
+      }
+    },
+    {
+      "id": "hunyuan3d-2",
+      "category": "aigen",
+      "name": "Tencent-Hunyuan/Hunyuan3D-2",
+      "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "license": "Tencent Hunyuan 3D 2.0 Community License (not valid in EU, UK, South Korea)",
+      "license_zh": "腾讯混元 3D 2.0 社区许可（不适用于欧盟、英国、韩国）",
+      "license_source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "en": "Text/image-to-3D generation with textured meshes; check the territory and usage limits in its license.",
+      "zh": "文本 / 图像生成带贴图的 3D 网格；使用前看清许可里的地区和用途限制。",
+      "image": {
+        "type": "original",
+        "src": "https://github.com/user-attachments/assets/efb402a1-0b09-41e0-a6cb-259d442e76aa",
+        "source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2"
+      }
+    },
+    {
+      "id": "awesome-gamedev-agent-skills",
+      "category": "aigen",
+      "name": "gamedev-skills/awesome-gamedev-agent-skills",
+      "url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "en": "Collection of game-dev skills and a router for AI coding agents.",
+      "zh": "给 AI 编程 Agent 用的游戏开发 skill 合集和路由。",
+      "image": {
+        "type": "original",
+        "src": "https://skills.sh/b/gamedev-skills/awesome-gamedev-agent-skills",
+        "source": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills"
+      }
+    },
+    {
+      "id": "magictools",
+      "category": "lists",
+      "name": "ellisonleao/magictools",
+      "url": "https://github.com/ellisonleao/magictools",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/ellisonleao/magictools",
+      "en": "Long-running list of game development resources: engines, art, audio, tools.",
+      "zh": "老牌游戏开发资源清单：引擎、美术、音频、工具。",
+      "image": {
+        "type": "original",
+        "src": "https://cdn.rawgit.com/ellisonleao/magictools/7d8012bc/magicbg.jpg",
+        "source": "https://github.com/ellisonleao/magictools"
+      }
+    },
+    {
+      "id": "calinou-awesome-gamedev",
+      "category": "lists",
+      "name": "Calinou/awesome-gamedev",
+      "url": "https://github.com/Calinou/awesome-gamedev",
+      "license": "CC-BY-SA-4.0",
+      "license_zh": "CC-BY-SA-4.0",
+      "license_source": "https://github.com/Calinou/awesome-gamedev",
+      "en": "List of free software and free culture resources for making games.",
+      "zh": "制作游戏用的自由软件和自由文化资源清单。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-awesome-gamedev.webp"
+      }
+    },
+    {
+      "id": "awesome-cc0",
+      "category": "lists",
+      "name": "madjin/awesome-cc0",
+      "url": "https://github.com/madjin/awesome-cc0",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://github.com/madjin/awesome-cc0",
+      "en": "List of CC0 assets from across the web: models, textures, sound.",
+      "zh": "全网 CC0 素材清单：模型、贴图、声音。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-awesome-cc0.webp"
+      }
+    },
+    {
+      "id": "fronkon-awesome-gamedev",
+      "category": "lists",
+      "name": "FronkonGames/Awesome-Gamedev",
+      "url": "https://github.com/FronkonGames/Awesome-Gamedev",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/FronkonGames/Awesome-Gamedev",
+      "en": "Curated list of game development resources: tools, tutorials, libraries.",
+      "zh": "精选游戏开发资源：工具、教程、库。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/FronkonGames/Awesome-Gamedev/main/images/banner.png",
+        "source": "https://github.com/FronkonGames/Awesome-Gamedev"
+      }
+    },
+    {
+      "id": "awesome-learn-gamedev",
+      "category": "lists",
+      "name": "dawdle-deer/awesome-learn-gamedev",
+      "url": "https://github.com/dawdle-deer/awesome-learn-gamedev",
+      "license": "CC0-1.0",
+      "license_zh": "CC0-1.0",
+      "license_source": "https://github.com/dawdle-deer/awesome-learn-gamedev",
+      "en": "Curated learning resources for game development.",
+      "zh": "游戏开发学习资源精选。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/dawdle-deer/awesome-learn-gamedev/main/images/KittyIcon.png",
+        "source": "https://github.com/dawdle-deer/awesome-learn-gamedev"
+      }
+    },
+    {
+      "id": "awesome-godot",
+      "category": "lists",
+      "name": "Calinou/awesome-godot",
+      "url": "https://github.com/Calinou/awesome-godot",
+      "license": "CC-BY-4.0",
+      "license_zh": "CC-BY-4.0",
+      "license_source": "https://github.com/Calinou/awesome-godot",
+      "en": "Curated list of Godot plugins, scripts, templates and projects.",
+      "zh": "Godot 插件、脚本、模板和项目精选清单。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-awesome-godot.webp"
+      }
+    },
+    {
+      "id": "game-programming-patterns",
+      "category": "lists",
+      "name": "munificent/game-programming-patterns",
+      "url": "https://github.com/munificent/game-programming-patterns",
+      "license": "MIT (code) / CC-BY-NC-ND-4.0 (book text)",
+      "license_zh": "MIT（代码）/ CC-BY-NC-ND-4.0（书的正文）",
+      "license_source": "https://github.com/munificent/game-programming-patterns",
+      "en": "Source of the free online book Game Programming Patterns (design patterns for game code).",
+      "zh": "免费在线书《游戏编程模式》的源码（游戏代码设计模式）。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-gpp.webp"
+      }
     }
   ],
   "credits": [

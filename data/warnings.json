@@ -1,0 +1,196 @@
+{
+  "checked_on": "2026-11-12",
+  "types": {
+    "piracy": {
+      "en": "Piracy",
+      "zh": "盗版"
+    },
+    "crack": {
+      "en": "Crack",
+      "zh": "破解"
+    },
+    "paid-redistribution": {
+      "en": "Paid asset redistribution",
+      "zh": "付费素材二次分发"
+    },
+    "star-farming": {
+      "en": "Star farming",
+      "zh": "刷星"
+    },
+    "malware": {
+      "en": "Suspected malware",
+      "zh": "疑似恶意软件"
+    }
+  },
+  "entries": [
+    {
+      "repo": "crowncloudknot/ZBrush-crackedess-2026",
+      "url": "https://github.com/crowncloudknot/ZBrush-crackedess-2026",
+      "type": "malware",
+      "en": "Advertises a cracked ZBrush 2026; repos like this commonly ship protected archives or loaders with malware.",
+      "zh": "宣称提供破解版 ZBrush 2026；这类仓库常附带加密压缩包或加载器，可能含恶意软件。"
+    },
+    {
+      "repo": "RifPupsish/zbrush-full-version-unlocked",
+      "url": "https://github.com/RifPupsish/zbrush-full-version-unlocked",
+      "type": "malware",
+      "en": "Promises a ZBrush crack with license key; typical malware lure.",
+      "zh": "宣称提供带激活码的 ZBrush 破解，是典型的恶意软件诱饵。"
+    },
+    {
+      "repo": "heidaro479/ZBrush-Crack-New",
+      "url": "https://github.com/heidaro479/ZBrush-Crack-New",
+      "type": "malware",
+      "en": "Named as a ZBrush crack and its README sends readers to off-GitHub domains; strong malware signal.",
+      "zh": "以 ZBrush 破解为名，README 把人引到 GitHub 以外的下载域名，强烈的恶意软件信号。"
+    },
+    {
+      "repo": "ladyinred-1000g/Pixologic_ZBrush_Crack",
+      "url": "https://github.com/ladyinred-1000g/Pixologic_ZBrush_Crack",
+      "type": "malware",
+      "en": "Named as a ZBrush crack and its README sends readers to off-GitHub domains; strong malware signal.",
+      "zh": "以 ZBrush 破解为名，README 把人引到 GitHub 以外的下载域名，强烈的恶意软件信号。"
+    },
+    {
+      "repo": "erriridzu7k8/Pixologic-ZBrush-Crack",
+      "url": "https://github.com/erriridzu7k8/Pixologic-ZBrush-Crack",
+      "type": "crack",
+      "en": "Named as a ZBrush crack; infringes the license.",
+      "zh": "以 ZBrush 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "SoftCrakced2157/Zbrush-Crack",
+      "url": "https://github.com/SoftCrakced2157/Zbrush-Crack",
+      "type": "crack",
+      "en": "Named as a ZBrush crack and holds files; infringes the license and may carry malware.",
+      "zh": "以 ZBrush 破解为名且含文件，侵犯授权，可能含恶意软件。"
+    },
+    {
+      "repo": "ciabibcenpiwl182/Aseprite-Crack",
+      "url": "https://github.com/ciabibcenpiwl182/Aseprite-Crack",
+      "type": "crack",
+      "en": "Named as an Aseprite crack; Aseprite is paid software (use LibreSprite instead).",
+      "zh": "以 Aseprite 破解为名；Aseprite 是付费软件（可改用 LibreSprite）。"
+    },
+    {
+      "repo": "avantagamestudio/aseprite_crack",
+      "url": "https://github.com/avantagamestudio/aseprite_crack",
+      "type": "crack",
+      "en": "Named as an Aseprite crack; infringes the license.",
+      "zh": "以 Aseprite 破解为名，侵犯授权。",
+      "image": {
+        "src": "https://raw.githubusercontent.com/avantagamestudio/aseprite_crack/main/images/error.png",
+        "source": "https://github.com/avantagamestudio/aseprite_crack"
+      }
+    },
+    {
+      "repo": "jasonrozar/3ds-max-unlocked-edition",
+      "url": "https://github.com/jasonrozar/3ds-max-unlocked-edition",
+      "type": "malware",
+      "en": "Promises an unlocked 3ds Max with license key; typical malware lure.",
+      "zh": "宣称提供带激活码的 3ds Max 解锁版，是典型的恶意软件诱饵。"
+    },
+    {
+      "repo": "djhaos9607/3ds-max-pc-setup",
+      "url": "https://github.com/djhaos9607/3ds-max-pc-setup",
+      "type": "malware",
+      "en": "Advertises a 3ds Max crack setup; likely malware.",
+      "zh": "宣传 3ds Max 破解安装，疑似恶意软件。"
+    },
+    {
+      "repo": "pqwoebest/Maya-Crack",
+      "url": "https://github.com/pqwoebest/Maya-Crack",
+      "type": "crack",
+      "en": "Named as an Autodesk Maya crack; infringes the license.",
+      "zh": "以 Autodesk Maya 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "erismihovs1/Maya-Crack",
+      "url": "https://github.com/erismihovs1/Maya-Crack",
+      "type": "crack",
+      "en": "Named as an Autodesk Maya crack; infringes the license.",
+      "zh": "以 Autodesk Maya 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "Lumis015/maya-crack",
+      "url": "https://github.com/Lumis015/maya-crack",
+      "type": "crack",
+      "en": "Named as an Autodesk Maya crack; infringes the license.",
+      "zh": "以 Autodesk Maya 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "alinlol223-del/Fl-Studio-Cracked",
+      "url": "https://github.com/alinlol223-del/Fl-Studio-Cracked",
+      "type": "crack",
+      "en": "Named as a cracked FL Studio; infringes Image-Line's license.",
+      "zh": "以 FL Studio 破解版为名，侵犯 Image-Line 授权。"
+    },
+    {
+      "repo": "FrokuT/fls-prog-free",
+      "url": "https://github.com/FrokuT/fls-prog-free",
+      "type": "malware",
+      "en": "Keyword-stuffed 'FL Studio free / crack' repository; likely malware lure.",
+      "zh": "堆砌「FL Studio 免费 / 破解」关键词，疑似恶意软件诱饵。",
+      "image": {
+        "src": "https://github.com/FrokuT/fls-prog-free/assets/150760279/3a8038a6-7dfc-4447-a2f9-b6f783877f32",
+        "source": "https://github.com/FrokuT/fls-prog-free"
+      }
+    },
+    {
+      "repo": "killerFrostA/FL-Studio-crack",
+      "url": "https://github.com/killerFrostA/FL-Studio-crack",
+      "type": "crack",
+      "en": "Named as an FL Studio crack; infringes the license.",
+      "zh": "以 FL Studio 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "phamza385384/Houdini-Crack",
+      "url": "https://github.com/phamza385384/Houdini-Crack",
+      "type": "crack",
+      "en": "Named as a SideFX Houdini crack; infringes the license.",
+      "zh": "以 SideFX Houdini 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "cebimayasc93/iClone-Character-Creator-Crack",
+      "url": "https://github.com/cebimayasc93/iClone-Character-Creator-Crack",
+      "type": "malware",
+      "en": "Promises cracked iClone Character Creator with license key; typical malware lure.",
+      "zh": "宣称提供带激活码的 iClone Character Creator 破解版，是典型的恶意软件诱饵。"
+    },
+    {
+      "repo": "tiomauvulnu73/iClone-Character-Creator-Crack",
+      "url": "https://github.com/tiomauvulnu73/iClone-Character-Creator-Crack",
+      "type": "crack",
+      "en": "Named as an iClone Character Creator crack; infringes the license.",
+      "zh": "以 iClone Character Creator 破解为名，侵犯授权。"
+    },
+    {
+      "repo": "Kartoffles/substance-crack-",
+      "url": "https://github.com/Kartoffles/substance-crack-",
+      "type": "crack",
+      "en": "Named as a Substance crack; infringes Adobe's license.",
+      "zh": "以 Substance 破解为名，侵犯 Adobe 授权。"
+    },
+    {
+      "repo": "royz/envato-elements-downloader",
+      "url": "https://github.com/royz/envato-elements-downloader",
+      "type": "paid-redistribution",
+      "en": "Bulk-downloads Envato Elements subscription assets; mass downloading and re-sharing may break Envato's terms.",
+      "zh": "批量下载 Envato Elements 订阅素材；批量下载和再分享可能违反 Envato 条款。"
+    },
+    {
+      "repo": "themepluginorg/envato-elements-downloader",
+      "url": "https://github.com/themepluginorg/envato-elements-downloader",
+      "type": "paid-redistribution",
+      "en": "Envato Elements bulk downloader; same terms risk.",
+      "zh": "Envato Elements 批量下载器，同样有违反条款的风险。"
+    },
+    {
+      "repo": "reworkup-dotcom/gh-repo-clone-neopostmodern-cgtrader-downloader",
+      "url": "https://github.com/reworkup-dotcom/gh-repo-clone-neopostmodern-cgtrader-downloader",
+      "type": "malware",
+      "en": "Copycat of another downloader under a misleading name; copycat repos are a common malware vector.",
+      "zh": "用误导性名字复制他人下载器；这类山寨仓是常见的恶意软件渠道。"
+    }
+  ]
+}

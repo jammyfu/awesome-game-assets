@@ -20,7 +20,7 @@ import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
-from common import load_entries
+from common import load_entries, load_warnings
 
 UA = "Mozilla/5.0 (compatible; awesome-game-assets-linkcheck)"
 GH = re.compile(r"^https://github\.com/([^/]+/[^/]+)/?$")
@@ -71,6 +71,11 @@ def main() -> int:
         targets.update([e["url"], e["license_source"]])
         if e["image"]["type"] == "original":
             targets.update([e["image"]["src"], e["image"]["source"]])
+    warn = load_warnings()
+    for w in warn["entries"]:
+        targets.add(w["url"])
+        if w.get("image"):
+            targets.add(w["image"]["src"])
     with ThreadPoolExecutor(8) as ex:
         results = dict(zip(sorted(targets), ex.map(fetch, sorted(targets))))
     errors, warnings = [], []
@@ -95,8 +100,8 @@ def main() -> int:
         if repo.get("archived"):
             warnings.append(f"{e['id']}: repository is archived")
         spdx = (repo.get("license") or {}).get("spdx_id") or "NONE"
-        if spdx == "NONE" and e.get("per_asset_license"):
-            warnings.append(f"{e['id']}: no repo-level license; per-asset licenses ({e['license_source']})")
+        if spdx == "NONE" and (e.get("per_asset_license") or e.get("license_in_readme")):
+            warnings.append(f"{e['id']}: no license file detected by GitHub; license verified at {e['license_source']}")
         elif spdx == "NONE":
             errors.append(f"{e['id']}: GitHub reports no license")
         elif spdx != "NOASSERTION" and spdx not in e["license"]:

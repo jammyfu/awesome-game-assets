@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 import check_list  # noqa: E402
 import next_plan  # noqa: E402
 import render_readme  # noqa: E402
-from common import load_entries, load_prompts  # noqa: E402
+from common import ROOT, load_entries, load_prompts, load_warnings  # noqa: E402
 
 
 class ListTests(unittest.TestCase):
@@ -108,6 +108,42 @@ class ListTests(unittest.TestCase):
         prompts = load_prompts()["images"]
         for c in self.data["categories"]:
             self.assertIn(c["cover"], prompts)
+
+    def test_warning_files_have_caution_box_and_marks(self):
+        for lang in ("en", "zh"):
+            text = render_readme.render_warning(lang)
+            self.assertIn("> [!CAUTION]", text)
+            items = [l for l in text.splitlines() if l.startswith("- ") and "](https://github.com/" in l]
+            self.assertEqual(len(items), len(load_warnings()["entries"]))
+            self.assertTrue(all(l.startswith("- ⚠️ ") for l in items))
+
+    def test_no_warning_images_stored_in_repo(self):
+        stored = {p.name for p in (ROOT / "docs" / "images").iterdir()}
+        for e in load_warnings()["entries"]:
+            img = e.get("image")
+            if img:
+                self.assertTrue(img["src"].startswith("https://"))
+                self.assertNotIn(img["src"].rsplit("/", 1)[-1], stored)
+        self.assertFalse(any(n.startswith("warning") for n in stored))
+
+    def test_no_download_or_install_steps_in_warnings(self):
+        for e in load_warnings()["entries"]:
+            for k in ("en", "zh"):
+                self.assertIsNone(check_list.INSTALL_WORDS.search(e[k]), e["repo"])
+            self.assertNotIn("/releases", e["url"])
+        bad = copy.deepcopy(load_warnings())
+        self.assertIsNotNone(check_list.INSTALL_WORDS.search("Download the setup.exe and install it"))
+        self.assertIsNotNone(check_list.INSTALL_WORDS.search("解压后输入密码"))
+
+    def test_warning_keywords_exempt_but_main_list_not(self):
+        errs = []
+        check_list.check_entries(load_entries(), errs)
+        self.assertEqual(errs, [])
+        self.assertTrue(any(check_list.BANNED.search(e["repo"]) for e in load_warnings()["entries"]))
+
+    def test_readmes_link_to_warning_list(self):
+        self.assertIn("WARNING.md", render_readme.render("en"))
+        self.assertIn("WARNING.zh-CN.md", render_readme.render("zh"))
 
     def test_plan_check(self):
         self.assertEqual(next_plan.check(next_plan.TEMPLATE), [])
