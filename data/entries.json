@@ -4774,6 +4774,68 @@
         "src": "https://opengameart.org/sites/default/files/dungeon_pre_small.png",
         "source": "https://opengameart.org/content/a-blocky-dungeon"
       }
+    },
+    {
+      "id": "gdx-ai",
+      "category": "ai",
+      "name": "libgdx/gdx-ai",
+      "url": "https://github.com/libgdx/gdx-ai",
+      "license": "Apache-2.0",
+      "license_zh": "Apache-2.0",
+      "license_source": "https://github.com/libgdx/gdx-ai",
+      "en": "Game AI framework for libGDX: steering behaviors, state machines, behavior trees, pathfinding and messaging.",
+      "zh": "libGDX 的游戏 AI 框架：转向行为、状态机、行为树、寻路和消息系统。",
+      "image": {
+        "type": "original",
+        "src": "https://cloud.githubusercontent.com/assets/2366334/4677025/64ae592a-55e2-11e4-8a31-31c2941ff995.png",
+        "source": "https://github.com/libgdx/gdx-ai"
+      }
+    },
+    {
+      "id": "jumper",
+      "category": "ai",
+      "name": "Yonaba/Jumper",
+      "url": "https://github.com/Yonaba/Jumper",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Yonaba/Jumper",
+      "en": "Fast grid pathfinding library for Lua (LÖVE etc.) with A*, Jump Point Search and other finders.",
+      "zh": "Lua 网格寻路库（可用于 LÖVE 等），含 A*、跳点搜索（JPS）等算法。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-jumper.webp"
+      }
+    },
+    {
+      "id": "crystalai",
+      "category": "ai",
+      "name": "igiagkiozis/CrystalAI",
+      "url": "https://github.com/igiagkiozis/CrystalAI",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/igiagkiozis/CrystalAI",
+      "en": "Utility-based AI framework in C# that scores options to pick agent actions.",
+      "zh": "C# 效用 AI 框架，给候选行为打分来决定智能体动作。",
+      "image": {
+        "type": "generated",
+        "file": "docs/images/entry-crystalai.webp"
+      }
+    },
+    {
+      "id": "bonsai-bt",
+      "category": "ai",
+      "name": "Sollimann/bonsai",
+      "url": "https://github.com/Sollimann/bonsai",
+      "license": "MIT",
+      "license_zh": "MIT",
+      "license_source": "https://github.com/Sollimann/bonsai",
+      "en": "Behavior tree library for Rust with a visualizer, usable in games and robotics.",
+      "zh": "Rust 行为树库，带可视化工具，可用于游戏和机器人。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/Sollimann/bonsai/main/docs/resources/gifs/bonsai.gif",
+        "source": "https://github.com/Sollimann/bonsai"
+      }
     }
   ],
   "credits": [

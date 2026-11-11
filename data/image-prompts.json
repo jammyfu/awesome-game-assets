@@ -95,6 +95,8 @@
     "docs/images/entry-leafwing-abilities.webp": "A row of glowing ability buttons with cooldown rings and charge pips above a simple faceless capsule hero casting a blue projectile.",
     "docs/images/entry-castagne.webp": "Two simple faceless capsule fighters facing off on a 2D stage, with hitbox and hurtbox rectangles in red and green and a frame-data timeline below.",
     "docs/images/entry-entity-spell-system.webp": "A spellbook-like node network: floating spell cards connected to buff and debuff icons and a small stat sheet, abstract rune symbols, no text.",
-    "docs/images/entry-pattern-combo.webp": "A sequence of directional arrow and button-press shapes flowing into a chain of three slash arcs, showing an input combo turning into an attack string."
+    "docs/images/entry-pattern-combo.webp": "A sequence of directional arrow and button-press shapes flowing into a chain of three slash arcs, showing an input combo turning into an attack string.",
+    "docs/images/entry-jumper.webp": "A grid map with obstacle blocks where a path line jumps between key points diagonally across open cells, with the jump points highlighted as coral dots.",
+    "docs/images/entry-crystalai.webp": "A utility-AI decision board: several floating option cards with score bars of different heights, the highest one glowing, connected to a simple faceless capsule agent."
   }
 }
