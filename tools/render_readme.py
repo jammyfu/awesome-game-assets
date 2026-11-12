@@ -22,7 +22,7 @@ TEXT = {
         "rules": [
             "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
             "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
-            "Every link is checked: 404s are removed; sites that answer automated checks with 403 or time out are kept and marked ⚠.",
+            "Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.",
             "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
             "Embedded third-party previews require an explicit reuse-license record; other media are linked at the source. Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).",
         ],
@@ -39,7 +39,7 @@ TEXT = {
         "lang": "en",
     },
     "zh": {
-        "title": "# Awesome Game Assets（开源游戏素材清单）",
+        "title": "# Awesome Game Assets（游戏素材导航）",
         "switch": "[English](README.md) · **简体中文**",
         "intro": "精选许可证清楚的游戏素材和工具：3D 模型、2D 精灵、贴图材质、音效、特效、技能 / 施法演示、动画和编辑器。每条写明地址、在来源页核实过的许可证，以及适合做什么。",
         "contents": "## 目录",
@@ -48,7 +48,7 @@ TEXT = {
         "rules": [
             "只收在项目或官网上写清许可证的来源。按素材单独授权的会标明，使用前请逐个确认。",
             "不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。",
-            "每条链接都检查过：404 剔除；对自动检查返回 403 或超时的保留并标 ⚠。",
+            "自动检查报告失效、被拦截或超时的来源；警告不等于已验证可达。",
             "许可证于 {date} 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。",
             "第三方预览仅在记录明确再使用许可时嵌入；其他媒体只链接原始来源。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [docs/image-prompts.md](docs/image-prompts.md)。",
         ],
@@ -149,9 +149,9 @@ def render_prompts() -> str:
     lines = [
         "# Image prompts / 配图提示词",
         "",
-        "Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; project previews are linked from their original addresses.",
+        "Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; only previews with reuse-license evidence are embedded.",
         "",
-        "`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，项目预览图直接引用原地址。",
+        "`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，仅嵌入有再使用许可依据的预览。",
         "",
         f"- Tool / 工具: {p['tool']}",
         f"- Date / 日期: {p['date']}",

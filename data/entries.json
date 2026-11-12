@@ -4886,6 +4886,33 @@
     "value": null,
     "group_order": "Reusable asset packs first; tools follow in category navigation. All categories retain their existing topical order.",
     "tie_break": "Existing dataset order within each category",
-    "reason": "A complete 2D scene, rigged 3D characters and UI cover three distinct prototyping needs."
+    "reason": "A complete 2D scene, rigged 3D characters and UI cover three distinct prototyping needs.",
+    "confidence": "Catalog membership and featured CC0 declarations checked; recent popularity unknown.",
+    "topics": [
+      {
+        "topic_id": "kenney-pixel-platformer",
+        "source": "https://kenney.nl/assets/pixel-platformer",
+        "priority_basis": "editorial_priority",
+        "heat_status": "unknown",
+        "metric": null,
+        "value": null
+      },
+      {
+        "topic_id": "quaternius-base-characters",
+        "source": "https://quaternius.com/packs/universalbasecharacters.html",
+        "priority_basis": "editorial_priority",
+        "heat_status": "unknown",
+        "metric": null,
+        "value": null
+      },
+      {
+        "topic_id": "kenney-ui-pack",
+        "source": "https://kenney.nl/assets/ui-pack",
+        "priority_basis": "editorial_priority",
+        "heat_status": "unknown",
+        "metric": null,
+        "value": null
+      }
+    ]
   }
 }

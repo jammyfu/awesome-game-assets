@@ -29,3 +29,5 @@ Open a pull request; CI runs the same checks.
 ## Homepage and catalog
 
 Both READMEs and `docs/catalog*.md` are generated. Featured IDs live in `data/entries.json` under `discovery`; keep ordering evidence current. Third-party previews require an explicit `image.reuse_license` and `image.license_source`, not merely a repository code license. Without media rights, use a source-page link.
+
+中英首页与完整目录均自动生成。精选 ID 与排序依据放在 `data/entries.json` 的 `discovery` 中。第三方媒体须记录 `image.reuse_license` 和 `image.license_source`；没有明确媒体授权时只链接来源，代码许可不能替代图片授权。

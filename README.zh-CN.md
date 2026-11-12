@@ -1,4 +1,4 @@
-# Awesome Game Assets（开源游戏素材清单）
+# Awesome Game Assets（游戏素材导航）
 
 [English](README.md) · **简体中文**
 
