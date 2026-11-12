@@ -1,6 +1,6 @@
 # Awesome Game Assets
 
-**English** · [简体中文](catalog.zh-CN.md)
+**English** · [简体中文](catalog.zh-CN.md) · [繁體中文](catalog.zh-TW.md) · [日本語](catalog.ja.md) · [한국어](catalog.ko.md)
 
 [Back to overview](../README.md)
 

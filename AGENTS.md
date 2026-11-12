@@ -4,7 +4,7 @@
 
 - `CURRENT_PLAN.md` is the only current execution entry point; `MASTER_PLAN.md` is the roadmap; `TODO_BACKLOG.md` holds candidates.
 - `data/entries.json` is the single source of truth. Never hand-edit `README.md`, `README.zh-CN.md` or `docs/image-prompts.md`; run `python3 tools/render_readme.py`.
-- Only English and Chinese. Every entry needs URL, verified license (with the page it was verified on), and use in both languages.
+- Maintain English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean. Every entry needs URL, verified license and a complete description in all five languages. `data/locales/` holds translations; update them when English sources change. Run `tools/check_locales.py`; never refresh source hashes without reviewing translations. Use natural Taiwan terminology (專案、程式碼、授權、檔案、音訊), not mechanical character conversion.
 - Verify licenses for real: GitHub API `license` field for repos, the official license page for websites. Unclear license = do not add. No pirated, cracked or star-farmed repos. Never make up data.
 - Images: prefer the project's own preview, hotlinked from its original address with credit. Only for covers or entries without an original image, add an original generated image to `docs/images/` (WebP/PNG, < 300 KB) and its prompt to `data/image-prompts.json`. Never copy third-party images into the repo.
 - Zero telemetry: no analytics, trackers, counters or visitor badges.
@@ -13,9 +13,9 @@
 
 ## Owner-required presentation
 
-- Keep all 297 resources in genuine category-grouped comparison tables in both READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
+- Keep all 297 resources in genuine category-grouped comparison tables in all five READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
 - For narrow screens, reduce column count and use GitHub's native table scrolling. Keep project/source, preview attribution, license evidence and description. Test actual GitHub rendering and disclose horizontal table scrolling.
-- Keep an original, project-specific game-themed hero in both README languages. Record the real generation prompt/tool; do not relabel third-party art as original.
+- Keep an original, project-specific game-themed hero in all five README languages. Record the real generation prompt/tool; do not relabel third-party art as original.
 
 ## Original previews and compact tables
 
@@ -24,3 +24,5 @@
 - Default to 15 visible entries per category, the rest in native details/summary containing real tables. Keep all entries and test expansion on GitHub.
 - State practical use conditions first, followed by the linked license in parentheses on a new line. Preserve noncommercial, attribution, share-alike and per-asset boundaries.
 - Sort comparable GitHub entries using dated total-star evidence; never invent missing website popularity or call total stars recent growth.
+
+- Never hand-edit generated README/catalog locale files. Translate all descriptions, categories, practical license summaries and interface copy; preserve proper names, source URLs and canonical license identifiers.
