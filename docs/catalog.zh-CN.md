@@ -1,0 +1,2685 @@
+# Awesome Game Assets（游戏素材导航）
+
+[English](catalog.md) · **简体中文**
+
+[返回首页](../README.zh-CN.md)
+
+精选许可证清楚的游戏素材和工具：3D 模型、2D 精灵、贴图材质、音效、特效、技能 / 施法演示、动画和编辑器。每条写明地址、在来源页核实过的许可证，以及适合做什么。
+
+> ⚠️ 搜到的疑似盗版、破解、付费素材二次分发、刷星或恶意软件仓库单独列在 [../WARNING.zh-CN.md](../WARNING.zh-CN.md)，用于避坑，请勿使用。
+
+## 目录
+
+- [3D 模型与 2D 素材](#3d-模型与-2d-素材)
+- [UI、图标与 HUD](#ui图标与-hud)
+- [贴图与材质](#贴图与材质)
+- [音效与音频](#音效与音频)
+- [字体](#字体)
+- [特效、粒子与着色器](#特效粒子与着色器)
+- [技能 / 施法 / 战斗演示](#技能--施法--战斗演示)
+- [动画与动捕](#动画与动捕)
+- [物理](#物理)
+- [游戏 AI 与寻路](#游戏-ai-与寻路)
+- [程序化生成](#程序化生成)
+- [引擎与框架](#引擎与框架)
+- [工具与管线](#工具与管线)
+- [AI 素材生成与 Agent Skill](#ai-素材生成与-agent-skill)
+- [其他清单与设计参考](#其他清单与设计参考)
+
+## 收录规则
+
+- 只收在项目或官网上写清许可证的来源。按素材单独授权的会标明，使用前请逐个确认。
+- 不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。
+- 自动检查报告失效、被拦截或超时的来源；警告不等于已验证可达。
+- 许可证于 2026-11-12 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。
+- 第三方预览仅在记录明确再使用许可时嵌入；其他媒体只链接原始来源。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [image-prompts.md](image-prompts.md)。
+
+## 3D 模型与 2D 素材
+
+<img src="images/cover-models.webp" alt="分类封面（原创示意图）: 3D 模型与 2D 素材" width="640">
+
+### [Kenney Game Assets](https://kenney.nl/assets)
+
+<img src="images/entry-kenney.webp" alt="Kenney Game Assets (示意图)" width="160">
+
+上千套风格统一的 2D 精灵、UI、3D 模型和音效包，适合做原型和 Game Jam。
+
+**许可:** [CC0-1.0](https://kenney.nl/support)
+
+<sub>*示意图*</sub>
+
+### [Quaternius](https://quaternius.com/)
+
+[查看原始来源](https://quaternius.com/)
+
+低多边形 3D 素材包（角色、自然、建筑、武器），FBX/OBJ/glTF 格式，免费包为 CC0。
+
+**许可:** [CC0-1.0](https://quaternius.com/faq.html)
+
+### [OpenGameArt.org](https://opengameart.org/)
+
+<img src="images/entry-opengameart.webp" alt="OpenGameArt.org (示意图)" width="160">
+
+社区共享的 2D、3D、音乐和音效库；每个素材页都标明许可证，使用前逐个确认。
+
+**许可:** [按素材单独授权（CC0 / CC-BY / CC-BY-SA / GPL / OGA-BY）](https://opengameart.org/content/faq)
+
+<sub>*示意图*</sub>
+
+### [KhronosGroup/glTF-Sample-Assets](https://github.com/KhronosGroup/glTF-Sample-Assets)
+
+[查看原始来源](https://github.com/KhronosGroup/glTF-Sample-Assets)
+
+官方 glTF 参考模型，适合测试加载器、PBR 材质和引擎导入流程。
+
+**许可:** [按模型单独授权（多为 CC0 / CC-BY-4.0，少数为自定义条款，见 REUSE.toml）](https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/LICENSES)
+
+### [Polyfork](https://polyfork.dev/assets)
+
+[查看原始来源](https://polyfork.dev/assets)
+
+3000+ 个免费低多边形 3D 模型，GLB 加 three.js ES 模块；走 CC BY 要署名 Polyfork，走 Polyfork 许可不用署名但不能转发文件。付费档另有 HD 版。
+
+**许可:** [免费低多边形模型文件：CC-BY-4.0 或 Polyfork 许可（二选一）；ES 模块和 HD 版：仅 Polyfork 许可](https://polyfork.dev/licensing)
+
+### [The Base Mesh](https://www.thebasemesh.com/)
+
+[查看原始来源](https://www.thebasemesh.com/)
+
+1250+ 个按真实尺寸做的基础网格，适合白盒搭场景、雕刻起稿和做原型。
+
+**许可:** [CC0-1.0](https://www.thebasemesh.com/)
+
+<sub>参考清单 [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)</sub>
+
+### [LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator)
+
+[查看原始来源](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator)
+
+网页版 RPG 角色精灵表生成器，分层拼装，含行走、劈砍、施法动画，可导出署名清单。
+
+**许可:** [GPL-3.0（代码）；美术按素材单独授权（CC0 / CC-BY / CC-BY-SA / OGA-BY / GPL）](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator#licensing-and-attribution-credits)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [makehumancommunity/makehuman](https://github.com/makehumancommunity/makehuman)
+
+<img src="images/entry-makehuman.webp" alt="makehumancommunity/makehuman (示意图)" width="160">
+
+参数化 3D 人物角色生成器；导出的角色和自带素材为 CC0。
+
+**许可:** [AGPL-3.0（代码）/ CC0-1.0（自带素材）](https://github.com/makehumancommunity/makehuman)
+
+<sub>*示意图*</sub>
+
+### [vrm-c/UniVRM](https://github.com/vrm-c/UniVRM)
+
+[查看原始来源](https://vrm.dev/en)
+
+Unity 的 VRM 人形角色导入导出工具（基于 glTF），支持弹簧骨骼和表情。
+
+**许可:** [MIT](https://github.com/vrm-c/UniVRM)
+
+### [PolygonalMind/initiative-opensource-release](https://github.com/PolygonalMind/initiative-opensource-release)
+
+[查看原始来源](https://github.com/PolygonalMind/initiative-opensource-release)
+
+Polygonal Mind 的 CC0 开源发布，含 100 Avatars 角色包和 3D 场景。
+
+**许可:** [CC0-1.0](https://github.com/PolygonalMind/initiative-opensource-release)
+
+### [sparklinlabs/superpowers-asset-packs](https://github.com/sparklinlabs/superpowers-asset-packs)
+
+[查看原始来源](https://github.com/sparklinlabs/superpowers-asset-packs)
+
+Superpowers 引擎的 CC0 素材包：2D 与 3D，含角色、载具、背景、射击和平台跳跃套装。
+
+**许可:** [CC0-1.0](https://github.com/sparklinlabs/superpowers-asset-packs)
+
+### [umasteeringgroup/UMA](https://github.com/umasteeringgroup/UMA)
+
+[查看原始来源](https://github.com/umasteeringgroup/UMA)
+
+Unity 多用途角色系统：可换装、按 DNA 调体型，并自动合并贴图。
+
+**许可:** [MIT](https://github.com/umasteeringgroup/UMA)
+
+### [dicebear/dicebear](https://github.com/dicebear/dicebear)
+
+[查看原始来源](https://www.dicebear.com)
+
+头像库，按种子生成多种风格的 SVG 头像；用前看各风格自己的许可。
+
+**许可:** [MIT（代码；各头像风格另有许可）](https://github.com/dicebear/dicebear)
+
+### [Kenney Modular Characters](https://kenney.nl/assets/modular-characters)
+
+[查看原始来源](https://kenney.nl/assets/modular-characters)
+
+可拼装的 2D 角色部件，能组合出很多俯视或侧视角色。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/modular-characters)
+
+### [Kenney Roguelike Characters](https://kenney.nl/assets/roguelike-characters)
+
+[查看原始来源](https://kenney.nl/assets/roguelike-characters)
+
+16x16 像素 Roguelike 角色精灵，含装备和服饰。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/roguelike-characters)
+
+### [Kenney Platformer Characters](https://kenney.nl/assets/platformer-characters)
+
+[查看原始来源](https://kenney.nl/assets/platformer-characters)
+
+侧视平台跳跃角色，含走、跳等姿势。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/platformer-characters)
+
+### [Kenney Toon Characters](https://kenney.nl/assets/toon-characters)
+
+[查看原始来源](https://kenney.nl/assets/toon-characters)
+
+卡通 2D 角色，多种姿势，适合休闲游戏。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/toon-characters)
+
+### [Quaternius Universal Base Characters](https://quaternius.com/packs/universalbasecharacters.html)
+
+<img src="https://quaternius.com/assets/images/fullres/universalbasecharacters.jpg" alt="Quaternius Universal Base Characters" width="160">
+
+已绑定骨骼的低多边形基础角色，配合 Quaternius 通用动画库使用。
+
+**许可:** [CC0-1.0](https://quaternius.com/packs/universalbasecharacters.html)
+
+<sub>图片来源：项目 [Quaternius Universal Base Characters](https://quaternius.com/packs/universalbasecharacters.html)</sub>
+
+### [Quaternius Modular Character Outfits - Fantasy](https://quaternius.com/packs/modularcharacteroutfitsfantasy.html)
+
+[查看原始来源](https://quaternius.com/packs/modularcharacteroutfitsfantasy.html)
+
+Quaternius 基础角色的模块化奇幻服装（盔甲、长袍、帽子）。
+
+**许可:** [CC0-1.0](https://quaternius.com/packs/modularcharacteroutfitsfantasy.html)
+
+### [Liberated Pixel Cup (LPC) Base Assets](https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)
+
+[查看原始来源](https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)
+
+Liberated Pixel Cup 基础精灵和地图图块，是庞大 LPC 角色美术生态的源头。
+
+**许可:** [CC-BY-SA-3.0 / GPL-3.0](https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles)
+
+### [Kenney Pixel Platformer](https://kenney.nl/assets/pixel-platformer)
+
+<img src="https://kenney.nl/media/pages/assets/pixel-platformer/bf585643f0-1696667860/samplea.png" alt="Kenney Pixel Platformer" width="160">
+
+18x18 像素平台跳跃图块、角色和道具。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/pixel-platformer)
+
+<sub>图片来源：项目 [Kenney Pixel Platformer](https://kenney.nl/assets/pixel-platformer)</sub>
+
+### [Kenney 1-Bit Pack](https://kenney.nl/assets/1-bit-pack)
+
+[查看原始来源](https://kenney.nl/assets/1-bit-pack)
+
+1000 多个 1-bit 16x16 图块，地牢、城镇、科幻等都有。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/1-bit-pack)
+
+### [Kenney Tiny Dungeon](https://kenney.nl/assets/tiny-dungeon)
+
+[查看原始来源](https://kenney.nl/assets/tiny-dungeon)
+
+小巧的 16x16 地牢图块、英雄和怪物。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/tiny-dungeon)
+
+### [Kenney Tiny Town](https://kenney.nl/assets/tiny-town)
+
+[查看原始来源](https://kenney.nl/assets/tiny-town)
+
+小巧的 16x16 城镇图块：房屋、篱笆和自然景物。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/tiny-town)
+
+### [16x16 DungeonTileset II](https://0x72.itch.io/dungeontileset-ii)
+
+[查看原始来源](https://0x72.itch.io/dungeontileset-ii)
+
+16x16 地牢图块，含带动画的角色、怪物和武器。
+
+**许可:** [CC0-1.0（素材）/ MIT（代码）](https://0x72.itch.io/dungeontileset-ii)
+
+### [16x16 Fantasy tileset](https://opengameart.org/content/16x16-fantasy-tileset)
+
+[查看原始来源](https://opengameart.org/content/16x16-fantasy-tileset)
+
+Game Boy / 红白机风的迷你角色和奇幻道具，适合 Roguelike 和 RPG。
+
+**许可:** [CC-BY-SA-3.0](https://opengameart.org/content/16x16-fantasy-tileset)
+
+### [A Blocky Dungeon](https://opengameart.org/content/a-blocky-dungeon)
+
+[查看原始来源](https://opengameart.org/content/a-blocky-dungeon)
+
+方块风 16x16 地牢图块，含门、开关和动画道具（不含角色）。
+
+**许可:** [CC0-1.0](https://opengameart.org/content/a-blocky-dungeon)
+
+## UI、图标与 HUD
+
+<img src="images/cover-ui.webp" alt="分类封面（原创示意图）: UI、图标与 HUD" width="640">
+
+### [Game-icons.net](https://game-icons.net/)
+
+[查看原始来源](https://game-icons.net/)
+
+4000+ 个 SVG/PNG 游戏图标（技能、道具、状态），按要求给每个图标作者署名。
+
+**许可:** [CC-BY-3.0](https://game-icons.net/about.html)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [Those Awesome Guys: Controller & Keyboard Prompts](https://thoseawesomeguys.com/prompts/)
+
+<img src="images/entry-controller-prompts.webp" alt="Those Awesome Guys: Controller & Keyboard Prompts (示意图)" width="160">
+
+键盘、鼠标和常见手柄的按键提示图标，做新手引导和操作提示用。
+
+**许可:** [CC0-1.0](https://thoseawesomeguys.com/prompts/)
+
+<sub>*示意图*</sub><br><sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [ocornut/imgui](https://github.com/ocornut/imgui)
+
+[查看原始来源](https://github.com/ocornut/imgui)
+
+即时模式 GUI 库（Dear ImGui），做调试菜单、游戏内工具和编辑器。
+
+**许可:** [MIT](https://github.com/ocornut/imgui)
+
+### [Kenney UI Pack](https://kenney.nl/assets/ui-pack)
+
+<img src="https://kenney.nl/media/pages/assets/ui-pack/ab9e396e4d-1718203978/preview.png" alt="Kenney UI Pack" width="160">
+
+430 个 UI 元素（按钮、滑条、面板），多种配色，做菜单和 HUD。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/ui-pack)
+
+<sub>图片来源：项目 [Kenney UI Pack](https://kenney.nl/assets/ui-pack)</sub>
+
+### [mikke89/RmlUi](https://github.com/mikke89/RmlUi)
+
+[查看原始来源](https://github.com/mikke89/RmlUi)
+
+C++ 游戏 UI 库，用类 HTML/CSS 文档搭界面，支持数据绑定和动画。
+
+**许可:** [MIT](https://github.com/mikke89/RmlUi)
+
+### [Immediate-Mode-UI/Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)
+
+[查看原始来源](https://github.com/Immediate-Mode-UI/Nuklear)
+
+单头文件 ANSI C 即时模式 GUI，做工具和游戏内菜单。
+
+**许可:** [MIT or Unlicense](https://github.com/Immediate-Mode-UI/Nuklear)
+
+### [emilk/egui](https://github.com/emilk/egui)
+
+[查看原始来源](https://github.com/emilk/egui)
+
+Rust 的易用即时模式 GUI，原生和网页都能跑，常用于 Rust 游戏工具。
+
+**许可:** [MIT OR Apache-2.0](https://github.com/emilk/egui)
+
+### [nicbarker/clay](https://github.com/nicbarker/clay)
+
+[查看原始来源](https://github.com/nicbarker/clay)
+
+C 语言高性能 UI 布局库，类 flexbox 布局，与渲染器无关。
+
+**许可:** [Zlib](https://github.com/nicbarker/clay)
+
+### [memononen/nanovg](https://github.com/memononen/nanovg)
+
+[查看原始来源](https://github.com/memononen/nanovg)
+
+基于 OpenGL 的抗锯齿 2D 矢量绘图库，做 UI 和可视化。
+
+**许可:** [Zlib](https://github.com/memononen/nanovg)
+
+### [CedricGuillemet/ImGuizmo](https://github.com/CedricGuillemet/ImGuizmo)
+
+[查看原始来源](https://github.com/CedricGuillemet/ImGuizmo)
+
+Dear ImGui 的即时模式 3D 操作手柄（移动、旋转、缩放）等编辑器控件。
+
+**许可:** [MIT](https://github.com/CedricGuillemet/ImGuizmo)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [epezent/implot](https://github.com/epezent/implot)
+
+[查看原始来源](https://github.com/epezent/implot)
+
+Dear ImGui 的即时模式绘图，适合性能分析和调试曲线。
+
+**许可:** [MIT](https://github.com/epezent/implot)
+
+### [ebitenui/ebitenui](https://github.com/ebitenui/ebitenui)
+
+[查看原始来源](https://github.com/ebitenui/ebitenui)
+
+Go 语言 Ebitengine 游戏的 UI 引擎和控件库。
+
+**许可:** [MIT](https://github.com/ebitenui/ebitenui)
+
+### [facebook/yoga](https://github.com/facebook/yoga)
+
+[查看原始来源](https://yogalayout.dev/)
+
+可嵌入的 flexbox 布局引擎，可在 C++、C#、JavaScript 里驱动游戏 UI 布局。
+
+**许可:** [MIT](https://github.com/facebook/yoga)
+
+### [wjakob/nanogui](https://github.com/wjakob/nanogui)
+
+<img src="images/entry-nanogui.webp" alt="wjakob/nanogui (示意图)" width="160">
+
+极简 C++/Python OpenGL GUI 库，适合快速做工具面板。
+
+**许可:** [BSD-3-Clause](https://github.com/wjakob/nanogui)
+
+<sub>*示意图*</sub>
+
+### [vladbat00/bevy_egui](https://github.com/vladbat00/bevy_egui)
+
+[查看原始来源](https://github.com/vladbat00/bevy_egui)
+
+把 egui 接进 Bevy 引擎，做调试面板和游戏内编辑器。
+
+**许可:** [MIT](https://github.com/vladbat00/bevy_egui)
+
+### [Kenney Crosshair Pack](https://kenney.nl/assets/crosshair-pack)
+
+[查看原始来源](https://kenney.nl/assets/crosshair-pack)
+
+准星和瞄准图标合集，做射击游戏和瞄准 UI。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/crosshair-pack)
+
+### [Kenney Cursor Pack](https://kenney.nl/assets/cursor-pack)
+
+[查看原始来源](https://kenney.nl/assets/cursor-pack)
+
+鼠标指针和光标图标，适合游戏菜单和策略游戏。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/cursor-pack)
+
+### [Kenney UI Pack (RPG Expansion)](https://kenney.nl/assets/ui-pack-rpg-expansion)
+
+[查看原始来源](https://kenney.nl/assets/ui-pack-rpg-expansion)
+
+RPG 风格 UI 元素：面板、血条、按钮和边框。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/ui-pack-rpg-expansion)
+
+### [RPG GUI construction kit v1.0](https://opengameart.org/content/rpg-gui-construction-kit-v10)
+
+[查看原始来源](https://opengameart.org/content/rpg-gui-construction-kit-v10)
+
+RPG GUI 拼装套件，含边框、条和按钮，拼奇幻风菜单。
+
+**许可:** [CC-BY-3.0](https://opengameart.org/content/rpg-gui-construction-kit-v10)
+
+### [Sci-fi User Interface](https://opengameart.org/content/sci-fi-user-interface)
+
+[查看原始来源](https://opengameart.org/content/sci-fi-user-interface)
+
+科幻风界面元素，做未来感 HUD 和菜单。
+
+**许可:** [CC0-1.0](https://opengameart.org/content/sci-fi-user-interface)
+
+## 贴图与材质
+
+<img src="images/cover-textures.webp" alt="分类封面（原创示意图）: 贴图与材质" width="640">
+
+### [Poly Haven](https://polyhaven.com/)
+
+[查看原始来源](https://polyhaven.com/)
+
+高质量 PBR 贴图、HDRI 环境光和扫描模型，适合写实场景和打光。
+
+**许可:** [CC0-1.0](https://polyhaven.com/license)
+
+### [ambientCG](https://ambientcg.com/)
+
+<img src="images/entry-ambientcg.webp" alt="ambientCG (示意图)" width="160">
+
+大量 CC0 PBR 材质、HDRI 和模型，提供多种分辨率。
+
+**许可:** [CC0-1.0](https://docs.ambientcg.com/license/)
+
+<sub>*示意图*</sub>
+
+### [kmkolasinski/AwesomeBump](https://github.com/kmkolasinski/AwesomeBump)
+
+[查看原始来源](https://github.com/kmkolasinski/AwesomeBump)
+
+从一张图生成法线、高度、高光、AO、粗糙度和金属度贴图（最后更新 2023 年）。
+
+**许可:** [GPL-3.0](https://github.com/kmkolasinski/AwesomeBump)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub><br><sub>参考清单 [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)</sub>
+
+### [armory3d/armorpaint](https://github.com/armory3d/armorpaint)
+
+[查看原始来源](https://github.com/armory3d/armorpaint)
+
+PBR 3D 贴图绘制工具（源码开源，官方预编译版另售）。
+
+**许可:** [Zlib](https://github.com/armory3d/armorpaint)
+
+### [azagaya/laigter](https://github.com/azagaya/laigter)
+
+[查看原始来源](https://github.com/azagaya/laigter)
+
+给 2D 精灵生成法线、高光和遮蔽贴图，实现动态光照。
+
+**许可:** [GPL-3.0](https://github.com/azagaya/laigter)
+
+## 音效与音频
+
+<img src="images/cover-audio.webp" alt="分类封面（原创示意图）: 音效与音频" width="640">
+
+### [Freesound](https://freesound.org/)
+
+<img src="images/entry-freesound.webp" alt="Freesound (示意图)" width="160">
+
+超大社区音效库；按许可证筛选（商用游戏选 CC0 或 CC-BY），需要署名时照做。
+
+**许可:** [按音效单独授权（CC0 / CC-BY-4.0 / CC-BY-NC-4.0）](https://freesound.org/help/faq/)
+
+<sub>*示意图*</sub>
+
+### [Sonniss #GameAudioGDC Bundles](https://sonniss.com/gameaudiogdc)
+
+[查看原始来源](https://sonniss.com/gameaudiogdc)
+
+每年免费放出的专业音效合集，商用游戏免版税。
+
+**许可:** [免版税（Sonniss 许可：可商用，无需署名）](https://sonniss.com/gameaudiogdc)
+
+### [chr15m/jsfxr](https://github.com/chr15m/jsfxr)
+
+[查看原始来源](https://github.com/chr15m/jsfxr)
+
+浏览器里的复古音效生成器（sfxr 移植），一键出跳跃、金币、受击、激光音。
+
+**许可:** [Unlicense](https://github.com/chr15m/jsfxr)
+
+### [raysan5/rfxgen](https://github.com/raysan5/rfxgen)
+
+[查看原始来源](https://github.com/raysan5/rfxgen)
+
+raylib 作者做的小型 sfxr 风格音效生成器，桌面版和网页版都有。
+
+**许可:** [Zlib](https://github.com/raysan5/rfxgen)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [YuriSizov/boscaceoil-blue](https://github.com/YuriSizov/boscaceoil-blue)
+
+[查看原始来源](https://github.com/YuriSizov/boscaceoil-blue)
+
+新手友好的步进音序器作曲工具，是 Terry Cavanagh 的 Bosca Ceoil 现代移植版，适合做游戏循环配乐和短旋律。
+
+**许可:** [MIT](https://github.com/YuriSizov/boscaceoil-blue/blob/main/LICENSE)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [mackron/miniaudio](https://github.com/mackron/miniaudio)
+
+[查看原始来源](https://github.com/mackron/miniaudio)
+
+单文件 C 音频播放 / 录音库，带混音和效果，好嵌进引擎。
+
+**许可:** [Unlicense 或 MIT-0（二选一）](https://github.com/mackron/miniaudio)
+
+### [jarikomppa/soloud](https://github.com/jarikomppa/soloud)
+
+[查看原始来源](https://github.com/jarikomppa/soloud)
+
+简单易移植的 C++ 游戏音频引擎，支持 3D 音效、滤波器和语音合成。
+
+**许可:** [Zlib](https://github.com/jarikomppa/soloud)
+
+### [Tonejs/Tone.js](https://github.com/Tonejs/Tone.js)
+
+<img src="images/entry-tonejs.webp" alt="Tonejs/Tone.js (示意图)" width="160">
+
+Web Audio 交互音乐框架：浏览器里的合成器、效果器和节拍调度。
+
+**许可:** [MIT](https://github.com/Tonejs/Tone.js)
+
+<sub>*示意图*</sub>
+
+### [goldfire/howler.js](https://github.com/goldfire/howler.js)
+
+[查看原始来源](https://github.com/goldfire/howler.js)
+
+网页游戏音频库：音频精灵、空间音效、跨浏览器播放。
+
+**许可:** [MIT](https://github.com/goldfire/howler.js)
+
+### [surge-synthesizer/surge](https://github.com/surge-synthesizer/surge)
+
+[查看原始来源](https://github.com/surge-synthesizer/surge)
+
+Surge XT，强大的开源合成器，做游戏音乐和音效。
+
+**许可:** [GPL-3.0](https://github.com/surge-synthesizer/surge)
+
+### [increpare/bfxr](https://github.com/increpare/bfxr)
+
+<img src="images/entry-bfxr.webp" alt="increpare/bfxr (示意图)" width="160">
+
+复古音效生成器（sfxr 增强版），做跳跃、拾取、爆炸音。
+
+**许可:** [Apache-2.0（README 中声明）](https://github.com/increpare/bfxr#readme)
+
+<sub>*示意图*</sub>
+
+### [Pixabay Sound Effects](https://pixabay.com/sound-effects/)
+
+<img src="images/entry-pixabay-sfx.webp" alt="Pixabay Sound Effects (示意图)" width="160">
+
+大量免版税音效和音乐，采用 Pixabay 内容许可。
+
+**许可:** [Pixabay 内容许可（免费、免署名；不得原样转卖）](https://pixabay.com/service/license-summary/)
+
+<sub>*示意图*</sub><br><sub>⚠ 网站对自动检查返回 403，许可证已人工核实</sub>
+
+### [ValveSoftware/steam-audio](https://github.com/ValveSoftware/steam-audio)
+
+<img src="images/entry-steam-audio.webp" alt="ValveSoftware/steam-audio (示意图)" width="160">
+
+空间音频 SDK：HRTF、遮挡和基于物理的混响，提供 Unity、Unreal、FMOD 插件。
+
+**许可:** [Apache-2.0](https://github.com/ValveSoftware/steam-audio)
+
+<sub>*示意图*</sub>
+
+### [kcat/openal-soft](https://github.com/kcat/openal-soft)
+
+<img src="images/entry-openal-soft.webp" alt="kcat/openal-soft (示意图)" width="160">
+
+OpenAL 3D 音频 API 的软件实现，支持 HRTF 和环绕声输出。
+
+**许可:** [LGPL-2.0-or-later](https://github.com/kcat/openal-soft)
+
+<sub>*示意图*</sub>
+
+### [tesselode/kira](https://github.com/tesselode/kira)
+
+<img src="images/entry-kira.webp" alt="tesselode/kira (示意图)" width="160">
+
+Rust 游戏音频库，参数可补间，有混音轨、时钟和效果器。
+
+**许可:** [MIT OR Apache-2.0](https://github.com/tesselode/kira)
+
+<sub>*示意图*</sub>
+
+### [LabSound/LabSound](https://github.com/LabSound/LabSound)
+
+[查看原始来源](https://github.com/LabSound/LabSound)
+
+基于音频图的 C++ 引擎，源自 WebKit 的 WebAudio，适合游戏和交互应用。
+
+**许可:** [BSD-2-Clause / BSD-3-Clause](https://github.com/LabSound/LabSound)
+
+### [tildearrow/furnace](https://github.com/tildearrow/furnace)
+
+[查看原始来源](https://github.com/tildearrow/furnace)
+
+多系统芯片音乐编曲器，模拟几十种经典音源芯片，做复古音乐。
+
+**许可:** [GPL-2.0-or-later](https://github.com/tildearrow/furnace)
+
+### [milkytracker/MilkyTracker](https://github.com/milkytracker/MilkyTracker)
+
+[查看原始来源](https://github.com/milkytracker/MilkyTracker)
+
+兼容 FastTracker II 的音乐编曲器，做 MOD/XM 芯片乐和游戏配乐。
+
+**许可:** [GPL-3.0（MilkyPlay 库：BSD-3-Clause）](https://github.com/milkytracker/MilkyTracker)
+
+## 字体
+
+<img src="images/cover-fonts.webp" alt="分类封面（原创示意图）: 字体" width="640">
+
+### [google/fonts](https://github.com/google/fonts)
+
+<img src="images/entry-google-fonts.webp" alt="google/fonts (示意图)" width="160">
+
+Google Fonts 全部字体源文件；目录名就是许可证，不少支持中日韩。
+
+**许可:** [按字体家族单独授权（OFL-1.1 / Apache-2.0 / UFL）](https://github.com/google/fonts#license)
+
+<sub>*示意图*</sub>
+
+### [rektdeckard/departure-mono](https://github.com/rektdeckard/departure-mono)
+
+[查看原始来源](https://github.com/rektdeckard/departure-mono)
+
+复古未来感的等宽像素字体，适合 HUD 和终端界面。
+
+**许可:** [OFL-1.1（字体）/ MIT（网站）](https://github.com/rektdeckard/departure-mono)
+
+### [TakWolf/fusion-pixel-font](https://github.com/TakWolf/fusion-pixel-font)
+
+[查看原始来源](https://github.com/TakWolf/fusion-pixel-font)
+
+开源泛中日韩像素字体，覆盖中日韩和拉丁字符，有 8/10/12 像素尺寸。
+
+**许可:** [OFL-1.1（字体）/ MIT（构建程序）](https://github.com/TakWolf/fusion-pixel-font)
+
+### [TakWolf/ark-pixel-font](https://github.com/TakWolf/ark-pixel-font)
+
+[查看原始来源](https://github.com/TakWolf/ark-pixel-font)
+
+开源中日韩像素字体（方舟像素字体），为像素风游戏设计。
+
+**许可:** [OFL-1.1（字体）/ MIT（构建程序）](https://github.com/TakWolf/ark-pixel-font)
+
+### [Kenney Fonts](https://kenney.nl/assets/kenney-fonts)
+
+[查看原始来源](https://kenney.nl/assets/kenney-fonts)
+
+Kenney 的 11 款游戏风格字体，任何项目都能用。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/kenney-fonts)
+
+### [IdreesInc/Monocraft](https://github.com/IdreesInc/Monocraft)
+
+[查看原始来源](https://github.com/IdreesInc/Monocraft)
+
+方块风等宽字体，灵感来自 Minecraft 字体，带编程连字。
+
+**许可:** [OFL-1.1](https://github.com/IdreesInc/Monocraft)
+
+### [the-moonwitch/Cozette](https://github.com/the-moonwitch/Cozette)
+
+[查看原始来源](https://github.com/the-moonwitch/Cozette)
+
+小号位图字体，字形覆盖广，适合复古 UI 和终端。
+
+**许可:** [MIT](https://github.com/the-moonwitch/Cozette)
+
+### [fcambus/spleen](https://github.com/fcambus/spleen)
+
+<img src="images/entry-spleen.webp" alt="fcambus/spleen (示意图)" width="160">
+
+等宽位图字体，从 5x8 到 32x64 多种尺寸，像素 UI 很清晰。
+
+**许可:** [BSD-2-Clause](https://github.com/fcambus/spleen)
+
+<sub>*示意图*</sub>
+
+### [sgigou/NF-Pixels](https://github.com/sgigou/NF-Pixels)
+
+[查看原始来源](https://github.com/sgigou/NF-Pixels)
+
+免费像素字体，有常规和粗体，适合复古游戏文字。
+
+**许可:** [OFL-1.1](https://github.com/sgigou/NF-Pixels)
+
+### [scott0107000/BoutiqueBitmap7x7](https://github.com/scott0107000/BoutiqueBitmap7x7)
+
+[查看原始来源](https://github.com/scott0107000/BoutiqueBitmap7x7)
+
+开源 7x7 点阵字体，覆盖中文、日文和拉丁字母。
+
+**许可:** [OFL-1.1](https://github.com/scott0107000/BoutiqueBitmap7x7)
+
+### [monogram](https://datagoblin.itch.io/monogram)
+
+[查看原始来源](https://datagoblin.itch.io/monogram)
+
+monogram：免费等宽像素字体，字符覆盖广。
+
+**许可:** [CC0-1.0](https://datagoblin.itch.io/monogram)
+
+### [m5x7](https://managore.itch.io/m5x7)
+
+[查看原始来源](https://managore.itch.io/m5x7)
+
+m5x7：Daniel Linssen 的小巧易读像素字体。
+
+**许可:** [CC0-1.0](https://managore.itch.io/m5x7)
+
+### [Pixeloid](https://ggbot.itch.io/pixeloid-font)
+
+[查看原始来源](https://ggbot.itch.io/pixeloid-font)
+
+Pixeloid：像素字体家族，有无衬线、等宽和粗体。
+
+**许可:** [OFL-1.1](https://ggbot.itch.io/pixeloid-font)
+
+### [The League of Moveable Type](https://www.theleagueofmoveabletype.com/)
+
+[查看原始来源](https://www.theleagueofmoveabletype.com/)
+
+开源展示字体铸字坊，字体都用 SIL OFL 许可。
+
+**许可:** [OFL-1.1](https://www.theleagueofmoveabletype.com/)
+
+## 特效、粒子与着色器
+
+<img src="images/cover-vfx.webp" alt="分类封面（原创示意图）: 特效、粒子与着色器" width="640">
+
+### [Alchemist0823/three.quarks](https://github.com/Alchemist0823/three.quarks)
+
+[查看原始来源](https://github.com/Alchemist0823/three.quarks)
+
+three.js 通用粒子 / 特效引擎，带可视化编辑器。
+
+**许可:** [MIT](https://github.com/Alchemist0823/three.quarks)
+
+### [creativelifeform/three-nebula](https://github.com/creativelifeform/three-nebula)
+
+[查看原始来源](https://three-nebula.org/)
+
+three.js 的 WebGL 粒子引擎，用 JSON 定义发射器，做火焰、烟雾、魔法特效。
+
+**许可:** [MIT](https://github.com/creativelifeform/three-nebula)
+
+### [effekseer/Effekseer](https://github.com/effekseer/Effekseer)
+
+[查看原始来源](https://github.com/effekseer/Effekseer)
+
+粒子特效编辑器和运行时，支持 Unity、Unreal、Godot 和 Web。
+
+**许可:** [MIT](https://github.com/effekseer/Effekseer)
+
+### [Kenney Particle Pack](https://kenney.nl/assets/particle-pack)
+
+[查看原始来源](https://kenney.nl/assets/particle-pack)
+
+80 张粒子贴图（烟、火、火花、魔法），可直接放进任意粒子系统。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/particle-pack)
+
+### [JangaFX Free VDB Animations](https://jangafx.com/software/embergen/download/free-vdb-animations/)
+
+[查看原始来源](https://jangafx.com/)
+
+免费体积火焰、烟雾、爆炸模拟（OpenVDB），用于 Blender、Houdini 和离线渲染。
+
+**许可:** [CC0-1.0](https://jangafx.com/software/embergen/download/free-vdb-animations/)
+
+<sub>参考清单 [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)</sub>
+
+### [pmndrs/postprocessing](https://github.com/pmndrs/postprocessing)
+
+<img src="images/entry-postprocessing.webp" alt="pmndrs/postprocessing (示意图)" width="160">
+
+three.js 后处理特效库：泛光、景深、SMAA 抗锯齿、色调映射等。
+
+**许可:** [Zlib](https://github.com/pmndrs/postprocessing)
+
+<sub>*示意图*</sub>
+
+### [gdquest-demos/godot-shaders](https://github.com/gdquest-demos/godot-shaders)
+
+[查看原始来源](https://github.com/gdquest-demos/godot-shaders)
+
+开源 Godot 着色器示例（溶解、描边、水面、卡通渲染等），代码易读。
+
+**许可:** [MIT（代码）/ CC-BY-NC-SA-4.0（美术）](https://github.com/gdquest-demos/godot-shaders)
+
+### [gdquest-demos/godot-visual-effects](https://github.com/gdquest-demos/godot-visual-effects)
+
+[查看原始来源](https://github.com/gdquest-demos/godot-visual-effects)
+
+Godot 视觉特效示例：粒子、爆炸、受击、魔法技能，可以照着学。
+
+**许可:** [MIT（代码）/ CC-BY-NC-SA-4.0（美术）](https://github.com/gdquest-demos/godot-visual-effects)
+
+### [Godot Shaders](https://godotshaders.com/)
+
+[查看原始来源](https://godotshaders.com/)
+
+Godot 着色器社区库；每个帖子标明许可证，只覆盖代码。
+
+**许可:** [按着色器单独授权（CC0 / MIT / GPL-3.0）；配图不在授权内](https://godotshaders.com/license/)
+
+### [CyberAgentGameEntertainment/NovaShader](https://github.com/CyberAgentGameEntertainment/NovaShader)
+
+[查看原始来源](https://github.com/CyberAgentGameEntertainment/NovaShader)
+
+Unity URP 多功能粒子着色器，含扭曲、溶解、流动贴图等。
+
+**许可:** [MIT](https://github.com/CyberAgentGameEntertainment/NovaShader)
+
+### [pixijs-userland/particle-emitter](https://github.com/pixijs-userland/particle-emitter)
+
+<img src="images/entry-particle-emitter.webp" alt="pixijs-userland/particle-emitter (示意图)" width="160">
+
+PixiJS 粒子系统，配可视化编辑器，做火焰、烟雾、火花等 2D 特效。
+
+**许可:** [MIT](https://github.com/pixijs-userland/particle-emitter)
+
+<sub>*示意图*</sub>
+
+### [djeedai/bevy_hanabi](https://github.com/djeedai/bevy_hanabi)
+
+<img src="images/entry-bevy-hanabi.webp" alt="djeedai/bevy_hanabi (示意图)" width="160">
+
+Bevy 的 GPU 粒子系统插件，可处理大量粒子。
+
+**许可:** [MIT OR Apache-2.0](https://github.com/djeedai/bevy_hanabi)
+
+<sub>*示意图*</sub>
+
+### [haowg/GODOT-VFX-LIBRARY](https://github.com/haowg/GODOT-VFX-LIBRARY)
+
+[查看原始来源](https://github.com/haowg/GODOT-VFX-LIBRARY)
+
+Godot 4 动作游戏特效合集：受击、刀光、爆炸、光环等粒子和着色器。
+
+**许可:** [MIT](https://github.com/haowg/GODOT-VFX-LIBRARY)
+
+### [Chrisknyfe/boujie_water_shader](https://github.com/Chrisknyfe/boujie_water_shader)
+
+[查看原始来源](https://github.com/Chrisknyfe/boujie_water_shader)
+
+Godot 4 风格化水面着色器，含波浪、泡沫和折射。
+
+**许可:** [MIT](https://github.com/Chrisknyfe/boujie_water_shader)
+
+### [Arnklit/Waterways](https://github.com/Arnklit/Waterways)
+
+[查看原始来源](https://github.com/Arnklit/Waterways)
+
+Godot 插件：用贝塞尔曲线生成河流网格并烘焙流向和泡沫贴图。
+
+**许可:** [MIT](https://github.com/Arnklit/Waterways)
+
+### [gdquest-demos/godot-4-stylized-sky](https://github.com/gdquest-demos/godot-4-stylized-sky)
+
+[查看原始来源](https://github.com/gdquest-demos/godot-4-stylized-sky)
+
+Godot 4 开源风格化天空着色器，含太阳、月亮、云和星空。
+
+**许可:** [MIT（代码）/ CC-BY-NC-SA-4.0（美术）](https://github.com/gdquest-demos/godot-4-stylized-sky)
+
+### [stegu/webgl-noise](https://github.com/stegu/webgl-noise)
+
+<img src="images/entry-webgl-noise.webp" alt="stegu/webgl-noise (示意图)" width="160">
+
+GLSL 的 simplex、Perlin 和蜂窝噪声函数，做程序化着色器。
+
+**许可:** [MIT](https://github.com/stegu/webgl-noise)
+
+<sub>*示意图*</sub>
+
+### [wwwtyro/glsl-atmosphere](https://github.com/wwwtyro/glsl-atmosphere)
+
+[查看原始来源](https://github.com/wwwtyro/glsl-atmosphere)
+
+GLSL 天空渲染，含瑞利散射和米氏散射，做真实天空。
+
+**许可:** [Unlicense](https://github.com/wwwtyro/glsl-atmosphere)
+
+### [Cyanilux/URP_ShaderGraphCustomLighting](https://github.com/Cyanilux/URP_ShaderGraphCustomLighting)
+
+<img src="images/entry-urp-custom-lighting.webp" alt="Cyanilux/URP_ShaderGraphCustomLighting (示意图)" width="160">
+
+Unity URP Shader Graph 的自定义光照子图，适合卡通和风格化渲染。
+
+**许可:** [MIT](https://github.com/Cyanilux/URP_ShaderGraphCustomLighting)
+
+<sub>*示意图*</sub>
+
+## 技能 / 施法 / 战斗演示
+
+<img src="images/cover-abilities.webp" alt="分类封面（原创示意图）: 技能 / 施法 / 战斗演示" width="640">
+
+### [achrefelouafi/LinearAbiltyCastingThreeJS](https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS)
+
+[查看原始来源](https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS)
+
+three.js 技能施法演示：直线施法和远程落点（瞄准箭头、目标圈、光束、冰矛、陨石），带 HUD。
+
+**许可:** [MIT](https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS)
+
+### [jammyfu/open-game-skills](https://github.com/jammyfu/open-game-skills)
+
+[查看原始来源](https://github.com/jammyfu/open-game-skills)
+
+给编程 Agent 用的游戏开发 skill：手感、战斗、镜头、引擎适配，附可运行示例。
+
+**许可:** [MIT](https://github.com/jammyfu/open-game-skills)
+
+### [tranek/GASDocumentation](https://github.com/tranek/GASDocumentation)
+
+[查看原始来源](https://github.com/tranek/GASDocumentation)
+
+非官方的 Unreal Engine 5 Gameplay Ability System 深度指南，附多人示例工程（UE 5.3）。
+
+**许可:** [MIT](https://github.com/tranek/GASDocumentation)
+
+### [No78Vino/gameplay-ability-system-for-unity](https://github.com/No78Vino/gameplay-ability-system-for-unity)
+
+[查看原始来源](https://github.com/No78Vino/gameplay-ability-system-for-unity)
+
+Unreal Gameplay Ability System 的 Unity 实现（标签、属性、效果、技能），功能部分完成、仍在完善，文档为中文。
+
+**许可:** [MIT](https://github.com/No78Vino/gameplay-ability-system-for-unity)
+
+### [tranek/GASShooter](https://github.com/tranek/GASShooter)
+
+<img src="images/entry-gasshooter.webp" alt="tranek/GASShooter (示意图)" width="160">
+
+进阶 Unreal GAS 示例：多人 FPS/TPS，含武器、技能和预测。
+
+**许可:** [MIT](https://github.com/tranek/GASShooter)
+
+<sub>*示意图*</sub>
+
+### [Narxim/Narxim-GAS-Example](https://github.com/Narxim/Narxim-GAS-Example)
+
+[查看原始来源](https://github.com/Narxim/Narxim-GAS-Example)
+
+干净的 Unreal Gameplay Ability System 模板工程，已配好属性和技能。
+
+**许可:** [MIT](https://github.com/Narxim/Narxim-GAS-Example)
+
+### [OctoD/godot-gameplay-abilities](https://github.com/OctoD/godot-gameplay-abilities)
+
+<img src="images/entry-godot-gameplay-abilities.webp" alt="OctoD/godot-gameplay-abilities (示意图)" width="160">
+
+Godot 的技能系统：技能、属性、效果和冷却。
+
+**许可:** [MIT](https://github.com/OctoD/godot-gameplay-abilities)
+
+<sub>*示意图*</sub>
+
+### [Leafwing-Studios/leafwing_abilities](https://github.com/Leafwing-Studios/leafwing_abilities)
+
+<img src="images/entry-leafwing-abilities.webp" alt="Leafwing-Studios/leafwing_abilities (示意图)" width="160">
+
+Bevy 的技能管理：冷却、充能和资源池，并与输入动作绑定。
+
+**许可:** [MIT OR Apache-2.0](https://github.com/Leafwing-Studios/leafwing_abilities)
+
+<sub>*示意图*</sub>
+
+### [Pyxus/fray](https://github.com/Pyxus/fray)
+
+[查看原始来源](https://github.com/Pyxus/fray)
+
+Godot 战斗框架：分层状态机、输入缓冲和判定框管理。
+
+**许可:** [MIT](https://github.com/Pyxus/fray)
+
+### [panthavma/castagne](https://github.com/panthavma/castagne)
+
+<img src="images/entry-castagne.webp" alt="panthavma/castagne (示意图)" width="160">
+
+基于 Godot 的格斗游戏引擎和工具包，带角色脚本和帧数据工具。
+
+**许可:** [MPL-2.0](https://github.com/panthavma/castagne)
+
+<sub>*示意图*</sub>
+
+### [gdquest-demos/godot-2d-jrpg-combat](https://github.com/gdquest-demos/godot-2d-jrpg-combat)
+
+[查看原始来源](https://github.com/gdquest-demos/godot-2d-jrpg-combat)
+
+Godot 的 2D JRPG 即时回合（ATB）战斗示例，演示出手顺序、技能和 UI。
+
+**许可:** [MIT（代码）/ CC-BY-4.0（美术）](https://github.com/gdquest-demos/godot-2d-jrpg-combat)
+
+### [gdquest-demos/godot-open-rpg](https://github.com/gdquest-demos/godot-open-rpg)
+
+[查看原始来源](https://github.com/gdquest-demos/godot-open-rpg)
+
+开源 Godot RPG 示例，学回合制战斗、背包和对话。
+
+**许可:** [MIT](https://github.com/gdquest-demos/godot-open-rpg)
+
+### [PhysaliaStudio/Flexi](https://github.com/PhysaliaStudio/Flexi)
+
+[查看原始来源](https://github.com/PhysaliaStudio/Flexi)
+
+Unity 技能框架，用节点图编辑器做技能和效果。
+
+**许可:** [MIT](https://github.com/PhysaliaStudio/Flexi)
+
+### [Relintai/entity_spell_system](https://github.com/Relintai/entity_spell_system)
+
+<img src="images/entry-entity-spell-system.webp" alt="Relintai/entity_spell_system (示意图)" width="160">
+
+Godot 的 C++ 模块，为复杂 RPG（可联机）提供实体、法术、光环和属性。
+
+**许可:** [MIT](https://github.com/Relintai/entity_spell_system)
+
+<sub>*示意图*</sub><br><sub>参考清单 [Calinou/awesome-godot](https://github.com/Calinou/awesome-godot)</sub>
+
+### [homemech/unity-pattern-combo](https://github.com/homemech/unity-pattern-combo)
+
+<img src="images/entry-pattern-combo.webp" alt="homemech/unity-pattern-combo (示意图)" width="160">
+
+用命令模式实现的动作 / 格斗游戏连招系统 Unity 示例。
+
+**许可:** [MIT](https://github.com/homemech/unity-pattern-combo)
+
+<sub>*示意图*</sub>
+
+## 动画与动捕
+
+<img src="images/cover-animation.webp" alt="分类封面（原创示意图）: 动画与动捕" width="640">
+
+### [Quaternius Universal Animation Library](https://quaternius.com/packs/universalanimationlibrary.html)
+
+[查看原始来源](https://quaternius.com/packs/universalanimationlibrary.html)
+
+120+ 人形动画（移动、战斗、表情动作），通用骨骼，可在 Unity、Unreal、Godot 里重定向。
+
+**许可:** [CC0-1.0](https://quaternius.com/packs/universalanimationlibrary.html)
+
+### [Kenney Animated Characters](https://kenney.nl/assets/animated-characters-1)
+
+[查看原始来源](https://kenney.nl/assets/animated-characters-1)
+
+带骨骼和动画的低多边形角色，适合快速做 3D 原型。
+
+**许可:** [CC0-1.0](https://kenney.nl/assets/animated-characters-1)
+
+### [synfig/synfig](https://github.com/synfig/synfig)
+
+[查看原始来源](https://www.synfig.org/)
+
+2D 矢量和骨骼动画软件，做过场和角色动画。
+
+**许可:** [GPL-3.0](https://github.com/synfig/synfig)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [piskelapp/piskel](https://github.com/piskelapp/piskel)
+
+[查看原始来源](https://www.piskelapp.com/)
+
+网页版精灵编辑器，逐帧做像素动画，可导出 GIF 和精灵表。
+
+**许可:** [Apache-2.0](https://github.com/piskelapp/piskel)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset](https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset)
+
+[查看原始来源](https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset)
+
+动捕数据集，含多种风格的走路、格斗和手势动作；仅限非商业使用。
+
+**许可:** [CC-BY-NC-4.0（数据集）/ MIT（脚本）](https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset#license)
+
+### [DragonBones/DragonBonesJS](https://github.com/DragonBones/DragonBonesJS)
+
+[查看原始来源](https://github.com/DragonBones/DragonBonesJS)
+
+DragonBones 2D 骨骼动画的 JavaScript 运行时（支持 Pixi、Phaser、Egret 等）。
+
+**许可:** [MIT](https://github.com/DragonBones/DragonBonesJS)
+
+### [guillaumeblanc/ozz-animation](https://github.com/guillaumeblanc/ozz-animation)
+
+[查看原始来源](https://github.com/guillaumeblanc/ozz-animation)
+
+C++ 骨骼动画库和工具集：采样、混合、IK，以及 FBX/glTF 导入管线。
+
+**许可:** [MIT](https://github.com/guillaumeblanc/ozz-animation)
+
+### [nfrechette/acl](https://github.com/nfrechette/acl)
+
+<img src="images/entry-acl.webp" alt="nfrechette/acl (示意图)" width="160">
+
+动画压缩库：骨骼动画片段的快速、高精度压缩与解压。
+
+**许可:** [MIT](https://github.com/nfrechette/acl)
+
+<sub>*示意图*</sub>
+
+### [Rokoko/rokoko-studio-live-blender](https://github.com/Rokoko/rokoko-studio-live-blender)
+
+[查看原始来源](https://github.com/Rokoko/rokoko-studio-live-blender)
+
+Blender 插件：从 Rokoko Studio 实时接收动捕并重定向到你的骨架上。
+
+**许可:** [LGPL-3.0](https://github.com/Rokoko/rokoko-studio-live-blender)
+
+### [enziop/mixamo_converter](https://github.com/enziop/mixamo_converter)
+
+<img src="images/entry-mixamo-converter.webp" alt="enziop/mixamo_converter (示意图)" width="160">
+
+Blender 插件，把 Mixamo 动画转成根运动，方便接 Unreal 类管线。
+
+**许可:** [GPL-3.0](https://github.com/enziop/mixamo_converter)
+
+<sub>*示意图*</sub>
+
+### [freemocap/freemocap](https://github.com/freemocap/freemocap)
+
+[查看原始来源](https://github.com/freemocap/freemocap)
+
+用普通摄像头做无标记动捕，可导出到 Blender 等格式。
+
+**许可:** [AGPL-3.0](https://github.com/freemocap/freemocap)
+
+### [emilianavt/OpenSeeFace](https://github.com/emilianavt/OpenSeeFace)
+
+[查看原始来源](https://github.com/emilianavt/OpenSeeFace)
+
+CPU 实时人脸与面部关键点追踪，带 Unity 集成，可驱动虚拟形象。
+
+**许可:** [BSD-2-Clause](https://github.com/emilianavt/OpenSeeFace)
+
+### [google-ai-edge/mediapipe](https://github.com/google-ai-edge/mediapipe)
+
+[查看原始来源](https://github.com/google-ai-edge/mediapipe)
+
+跨平台机器学习方案，做姿态、手部和人脸追踪，可驱动角色或做动捕原型。
+
+**许可:** [Apache-2.0](https://github.com/google-ai-edge/mediapipe)
+
+### [ubisoft/ubisoft-laforge-animation-dataset](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)
+
+[查看原始来源](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)
+
+育碧 La Forge 的 LAFAN1 动捕数据集（BVH），用于动画研究；非商业、禁止演绎。
+
+**许可:** [CC-BY-NC-ND-4.0](https://github.com/ubisoft/ubisoft-laforge-animation-dataset)
+
+### [Inochi2D/inochi2d](https://github.com/Inochi2D/inochi2d)
+
+[查看原始来源](https://github.com/Inochi2D/inochi2d)
+
+开源 2D 木偶动画 SDK，做实时绑定角色（VTuber 风格），有配套编辑器。
+
+**许可:** [BSD-2-Clause](https://github.com/Inochi2D/inochi2d)
+
+### [Samsung/rlottie](https://github.com/Samsung/rlottie)
+
+[查看原始来源](https://github.com/Samsung/rlottie)
+
+独立的 C++ Lottie 矢量动画播放库，适合游戏 UI 动效。
+
+**许可:** [MIT（部分附带代码另有许可）](https://github.com/Samsung/rlottie)
+
+### [rive-app/rive-runtime](https://github.com/rive-app/rive-runtime)
+
+[查看原始来源](https://github.com/rive-app/rive-runtime)
+
+Rive 交互动画和状态机的底层 C++ 运行时与渲染器。
+
+**许可:** [MIT](https://github.com/rive-app/rive-runtime)
+
+### [mobius3/tweeny](https://github.com/mobius3/tweeny)
+
+<img src="images/entry-tweeny.webp" alt="mobius3/tweeny (示意图)" width="160">
+
+现代 C++ 补间库，仅头文件，带缓动函数和多点补间。
+
+**许可:** [MIT](https://github.com/mobius3/tweeny)
+
+<sub>*示意图*</sub>
+
+### [Wasserwecken/bvhio](https://github.com/Wasserwecken/bvhio)
+
+<img src="images/entry-bvhio.webp" alt="Wasserwecken/bvhio (示意图)" width="160">
+
+Python 库，读写、编辑和创建 BVH 动作文件，支持层级变换。
+
+**许可:** [MIT](https://github.com/Wasserwecken/bvhio)
+
+<sub>*示意图*</sub>
+
+### [eth-ait/aitviewer](https://github.com/eth-ait/aitviewer)
+
+[查看原始来源](https://github.com/eth-ait/aitviewer)
+
+Python 查看器，可视化并交互 3D 序列数据，如 SMPL 人体和动捕。
+
+**许可:** [MIT](https://github.com/eth-ait/aitviewer)
+
+### [xbpeng/DeepMimic](https://github.com/xbpeng/DeepMimic)
+
+[查看原始来源](https://github.com/xbpeng/DeepMimic)
+
+研究代码：物理角色用深度强化学习模仿动捕片段学技能。
+
+**许可:** [MIT](https://github.com/xbpeng/DeepMimic)
+
+### [orangeduck/Motion-Matching](https://github.com/orangeduck/Motion-Matching)
+
+<img src="images/entry-motion-matching.webp" alt="orangeduck/Motion-Matching (示意图)" width="160">
+
+Motion Matching 及 Learned Motion Matching 示例实现，做响应灵敏的角色移动。
+
+**许可:** [MIT](https://github.com/orangeduck/Motion-Matching)
+
+<sub>*示意图*</sub>
+
+### [KayKit Character Animations (legacy)](https://kaylousberg.itch.io/kaykit-animations)
+
+[查看原始来源](https://kaylousberg.itch.io/kaykit-animations)
+
+旧版 KayKit 低多边形角色的动画集：待机、走、跑、跳、攀爬、攻击等；已不再更新。
+
+**许可:** [CC0-1.0](https://kaylousberg.itch.io/kaykit-animations)
+
+### [Blender Studio — Rain rig](https://studio.blender.org/characters/rain/v3/)
+
+[查看原始来源](https://studio.blender.org/characters/rain/v3/)
+
+Rain：Blender Studio 免费角色绑定，用来学习和练习动画。
+
+**许可:** [CC-BY（需署名）](https://studio.blender.org/characters/rain/v3/)
+
+### [Blender Studio — Snow rig](https://studio.blender.org/characters/snow/v4/)
+
+[查看原始来源](https://studio.blender.org/characters/snow/v4/)
+
+Snow：Blender Studio 免费角色绑定，用来学习和练习动画。
+
+**许可:** [CC-BY（需署名）](https://studio.blender.org/characters/snow/v4/)
+
+### [Blender Studio — Vincent rig](https://studio.blender.org/characters/vincent/v2/)
+
+[查看原始来源](https://studio.blender.org/characters/vincent/v2/)
+
+Vincent：Blender Studio 卡通角色绑定，用来练动画。
+
+**许可:** [CC-BY（需署名）](https://studio.blender.org/characters/vincent/v2/)
+
+## 物理
+
+<img src="images/cover-physics.webp" alt="分类封面（原创示意图）: 物理" width="640">
+
+### [erincatto/box2d](https://github.com/erincatto/box2d)
+
+<img src="images/entry-box2d.webp" alt="erincatto/box2d (示意图)" width="160">
+
+C 写的 2D 刚体物理引擎，应用很广。
+
+**许可:** [MIT](https://github.com/erincatto/box2d)
+
+<sub>*示意图*</sub>
+
+### [jrouwe/JoltPhysics](https://github.com/jrouwe/JoltPhysics)
+
+[查看原始来源](https://github.com/jrouwe/JoltPhysics)
+
+高性能多线程 3D 刚体物理引擎，适合游戏和 VR。
+
+**许可:** [MIT](https://github.com/jrouwe/JoltPhysics)
+
+### [bulletphysics/bullet3](https://github.com/bulletphysics/bullet3)
+
+[查看原始来源](https://github.com/bulletphysics/bullet3)
+
+成熟的 3D 物理 SDK：碰撞检测、刚体和软体。
+
+**许可:** [Zlib（Extras 和第三方库除外）](https://github.com/bulletphysics/bullet3)
+
+### [dimforge/rapier](https://github.com/dimforge/rapier)
+
+[查看原始来源](https://github.com/dimforge/rapier)
+
+Rust 写的 2D/3D 物理引擎，也能通过 WASM 在 JavaScript 里用。
+
+**许可:** [Apache-2.0](https://github.com/dimforge/rapier)
+
+### [pmndrs/cannon-es](https://github.com/pmndrs/cannon-es)
+
+[查看原始来源](https://github.com/pmndrs/cannon-es)
+
+轻量网页 3D 物理引擎，常和 three.js 搭配。
+
+**许可:** [MIT](https://github.com/pmndrs/cannon-es)
+
+### [liabru/matter-js](https://github.com/liabru/matter-js)
+
+<img src="images/entry-matter-js.webp" alt="liabru/matter-js (示意图)" width="160">
+
+网页 2D 刚体物理引擎，接口简单。
+
+**许可:** [MIT](https://github.com/liabru/matter-js)
+
+<sub>*示意图*</sub>
+
+### [NVIDIA-Omniverse/PhysX](https://github.com/NVIDIA-Omniverse/PhysX)
+
+<img src="images/entry-physx.webp" alt="NVIDIA-Omniverse/PhysX (示意图)" width="160">
+
+NVIDIA PhysX SDK，许多商业引擎背后的 3D 物理引擎。
+
+**许可:** [BSD-3-Clause](https://github.com/NVIDIA-Omniverse/PhysX)
+
+<sub>*示意图*</sub>
+
+### [slembcke/Chipmunk2D](https://github.com/slembcke/Chipmunk2D)
+
+<img src="images/entry-chipmunk2d.webp" alt="slembcke/Chipmunk2D (示意图)" width="160">
+
+快速轻量的 2D 刚体物理库，C 语言编写。
+
+**许可:** [MIT](https://github.com/slembcke/Chipmunk2D)
+
+<sub>*示意图*</sub><br><sub>参考清单 [ellisonleao/magictools](https://github.com/ellisonleao/magictools)</sub>
+
+### [piqnt/planck.js](https://github.com/piqnt/planck.js)
+
+<img src="images/entry-planck-js.webp" alt="piqnt/planck.js (示意图)" width="160">
+
+Box2D 的 JavaScript/TypeScript 重写版，做网页游戏 2D 物理。
+
+**许可:** [MIT](https://github.com/piqnt/planck.js)
+
+<sub>*示意图*</sub>
+
+### [bepu/bepuphysics2](https://github.com/bepu/bepuphysics2)
+
+[查看原始来源](https://github.com/bepu/bepuphysics2)
+
+纯 C# 实时 3D 物理库，主打速度。
+
+**许可:** [Apache-2.0](https://github.com/bepu/bepuphysics2)
+
+### [DanielChappuis/reactphysics3d](https://github.com/DanielChappuis/reactphysics3d)
+
+[查看原始来源](https://github.com/DanielChappuis/reactphysics3d)
+
+面向游戏的 C++ 3D 物理引擎：刚体、关节和碰撞检测。
+
+**许可:** [Zlib](https://github.com/DanielChappuis/reactphysics3d)
+
+### [InteractiveComputerGraphics/PositionBasedDynamics](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
+
+[查看原始来源](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
+
+C++ 位置动力学库，模拟刚体、布料、软体和流体。
+
+**许可:** [MIT](https://github.com/InteractiveComputerGraphics/PositionBasedDynamics)
+
+### [notgiven688/jitterphysics2](https://github.com/notgiven688/jitterphysics2)
+
+[查看原始来源](https://github.com/notgiven688/jitterphysics2)
+
+快速、零依赖的 C# 3D 物理引擎。
+
+**许可:** [MIT](https://github.com/notgiven688/jitterphysics2)
+
+### [dyn4j/dyn4j](https://github.com/dyn4j/dyn4j)
+
+[查看原始来源](https://github.com/dyn4j/dyn4j)
+
+Java 2D 碰撞检测和物理引擎。
+
+**许可:** [BSD-3-Clause](https://github.com/dyn4j/dyn4j)
+
+### [schteppe/p2.js](https://github.com/schteppe/p2.js)
+
+<img src="images/entry-p2-js.webp" alt="schteppe/p2.js (示意图)" width="160">
+
+JavaScript 2D 物理库，有弹簧、约束和演示场景。
+
+**许可:** [MIT](https://github.com/schteppe/p2.js)
+
+<sub>*示意图*</sub>
+
+### [saharan/OimoPhysics](https://github.com/saharan/OimoPhysics)
+
+[查看原始来源](https://github.com/saharan/OimoPhysics)
+
+轻量跨平台 3D 物理引擎，用 Haxe 编写，有 JavaScript 版。
+
+**许可:** [MIT](https://github.com/saharan/OimoPhysics)
+
+### [InteractiveComputerGraphics/SPlisHSPlasH](https://github.com/InteractiveComputerGraphics/SPlisHSPlasH)
+
+[查看原始来源](https://github.com/InteractiveComputerGraphics/SPlisHSPlasH)
+
+开源 SPH 流体模拟库，适合烘焙水和液体效果。
+
+**许可:** [MIT](https://github.com/InteractiveComputerGraphics/SPlisHSPlasH)
+
+### [lo-th/phy](https://github.com/lo-th/phy)
+
+[查看原始来源](https://github.com/lo-th/phy)
+
+three.js 物理层，用一套 API 封装多种引擎（Oimo、Ammo、Rapier、Jolt、Havok、PhysX）。
+
+**许可:** [MIT](https://github.com/lo-th/phy)
+
+### [anuraghazra/Verly.js](https://github.com/anuraghazra/Verly.js)
+
+<img src="images/entry-verly-js.webp" alt="anuraghazra/Verly.js (示意图)" width="160">
+
+容易接入的 JavaScript Verlet 物理，做绳子、布料和布娃娃。
+
+**许可:** [MIT](https://github.com/anuraghazra/Verly.js)
+
+<sub>*示意图*</sub>
+
+### [projectchrono/chrono](https://github.com/projectchrono/chrono)
+
+<img src="images/entry-chrono.webp" alt="projectchrono/chrono (示意图)" width="160">
+
+C++ 多物理场与多体动力学库，做载具、颗粒地形和机器人仿真。
+
+**许可:** [BSD-3-Clause](https://github.com/projectchrono/chrono)
+
+<sub>*示意图*</sub>
+
+### [google-deepmind/mujoco](https://github.com/google-deepmind/mujoco)
+
+[查看原始来源](https://github.com/google-deepmind/mujoco)
+
+通用物理模拟器，擅长带接触的关节体，常用于机器人和角色控制。
+
+**许可:** [Apache-2.0](https://github.com/google-deepmind/mujoco)
+
+## 游戏 AI 与寻路
+
+<img src="images/cover-ai.webp" alt="分类封面（原创示意图）: 游戏 AI 与寻路" width="640">
+
+### [recastnavigation/recastnavigation](https://github.com/recastnavigation/recastnavigation)
+
+[查看原始来源](https://github.com/recastnavigation/recastnavigation)
+
+3D 游戏导航网格生成（Recast）和寻路 / 群体模拟（Detour）。
+
+**许可:** [Zlib](https://github.com/recastnavigation/recastnavigation)
+
+### [qiao/PathFinding.js](https://github.com/qiao/PathFinding.js)
+
+<img src="images/entry-pathfinding-js.webp" alt="qiao/PathFinding.js (示意图)" width="160">
+
+JavaScript 网格寻路库（A*、Dijkstra、JPS），附在线可视化。
+
+**许可:** [MIT（README 中声明）](https://github.com/qiao/PathFinding.js#license)
+
+<sub>*示意图*</sub>
+
+### [BehaviorTree/BehaviorTree.CPP](https://github.com/BehaviorTree/BehaviorTree.CPP)
+
+[查看原始来源](https://github.com/BehaviorTree/BehaviorTree.CPP)
+
+C++ 行为树库，XML 定义行为树，配 Groot 可视化编辑器。
+
+**许可:** [MIT](https://github.com/BehaviorTree/BehaviorTree.CPP)
+
+### [Mugen87/yuka](https://github.com/Mugen87/yuka)
+
+<img src="images/entry-yuka.webp" alt="Mugen87/yuka (示意图)" width="160">
+
+JavaScript 游戏 AI 库：转向行为、状态机、目标驱动、导航网格和感知。
+
+**许可:** [MIT](https://github.com/Mugen87/yuka)
+
+<sub>*示意图*</sub>
+
+### [limbonaut/limboai](https://github.com/limbonaut/limboai)
+
+[查看原始来源](https://github.com/limbonaut/limboai)
+
+Godot 4 的行为树和状态机，带可视化编辑器和调试器。
+
+**许可:** [MIT](https://github.com/limbonaut/limboai)
+
+### [bitbrain/beehave](https://github.com/bitbrain/beehave)
+
+[查看原始来源](https://github.com/bitbrain/beehave)
+
+Godot 行为树插件，带 NPC 逻辑调试视图。
+
+**许可:** [MIT](https://github.com/bitbrain/beehave)
+
+### [donmccurdy/three-pathfinding](https://github.com/donmccurdy/three-pathfinding)
+
+[查看原始来源](https://github.com/donmccurdy/three-pathfinding)
+
+three.js 场景的导航网格寻路。
+
+**许可:** [MIT](https://github.com/donmccurdy/three-pathfinding)
+
+### [Unity-Technologies/ml-agents](https://github.com/Unity-Technologies/ml-agents)
+
+[查看原始来源](https://unity.com/products/machine-learning-agents)
+
+把 Unity 游戏和仿真当环境，用强化学习和模仿学习训练智能体。
+
+**许可:** [Apache-2.0](https://github.com/Unity-Technologies/ml-agents)
+
+### [MineDojo/Voyager](https://github.com/MineDojo/Voyager)
+
+[查看原始来源](https://github.com/MineDojo/Voyager)
+
+研究型智能体：用大模型在开放世界沙盒游戏里探索、写技能并持续学习。
+
+**许可:** [MIT](https://github.com/MineDojo/Voyager)
+
+### [libgdx/gdx-ai](https://github.com/libgdx/gdx-ai)
+
+[查看原始来源](https://github.com/libgdx/gdx-ai)
+
+libGDX 的游戏 AI 框架：转向行为、状态机、行为树、寻路和消息系统。
+
+**许可:** [Apache-2.0](https://github.com/libgdx/gdx-ai)
+
+### [Yonaba/Jumper](https://github.com/Yonaba/Jumper)
+
+<img src="images/entry-jumper.webp" alt="Yonaba/Jumper (示意图)" width="160">
+
+Lua 网格寻路库（可用于 LÖVE 等），含 A*、跳点搜索（JPS）等算法。
+
+**许可:** [MIT](https://github.com/Yonaba/Jumper)
+
+<sub>*示意图*</sub>
+
+### [igiagkiozis/CrystalAI](https://github.com/igiagkiozis/CrystalAI)
+
+<img src="images/entry-crystalai.webp" alt="igiagkiozis/CrystalAI (示意图)" width="160">
+
+C# 效用 AI 框架，给候选行为打分来决定智能体动作。
+
+**许可:** [MIT](https://github.com/igiagkiozis/CrystalAI)
+
+<sub>*示意图*</sub>
+
+### [Sollimann/bonsai](https://github.com/Sollimann/bonsai)
+
+[查看原始来源](https://github.com/Sollimann/bonsai)
+
+Rust 行为树库，带可视化工具，可用于游戏和机器人。
+
+**许可:** [MIT](https://github.com/Sollimann/bonsai)
+
+## 程序化生成
+
+<img src="images/cover-procgen.webp" alt="分类封面（原创示意图）: 程序化生成" width="640">
+
+### [mxgmn/WaveFunctionCollapse](https://github.com/mxgmn/WaveFunctionCollapse)
+
+[查看原始来源](https://github.com/mxgmn/WaveFunctionCollapse)
+
+原版波函数坍缩算法，从样例生成瓦片地图和纹理。
+
+**许可:** [MIT](https://github.com/mxgmn/WaveFunctionCollapse)
+
+### [BorisTheBrave/DeBroglie](https://github.com/BorisTheBrave/DeBroglie)
+
+<img src="images/entry-debroglie.webp" alt="BorisTheBrave/DeBroglie (示意图)" width="160">
+
+C# 约束式程序化生成库（WFC 等），支持多种图块约束。
+
+**许可:** [MIT](https://github.com/BorisTheBrave/DeBroglie)
+
+<sub>*示意图*</sub>
+
+### [Auburn/FastNoiseLite](https://github.com/Auburn/FastNoiseLite)
+
+[查看原始来源](https://github.com/Auburn/FastNoiseLite)
+
+多语言可移植噪声库（Perlin、Simplex、Cellular），做地形和纹理。
+
+**许可:** [MIT](https://github.com/Auburn/FastNoiseLite)
+
+### [AlexeyBond/godot-constraint-solving](https://github.com/AlexeyBond/godot-constraint-solving)
+
+[查看原始来源](https://github.com/AlexeyBond/godot-constraint-solving)
+
+Godot 4 的波函数坍缩插件，用于 TileMap 和 GridMap。
+
+**许可:** [MIT](https://github.com/AlexeyBond/godot-constraint-solving)
+
+### [a1studmuffin/SpaceshipGenerator](https://github.com/a1studmuffin/SpaceshipGenerator)
+
+[查看原始来源](https://github.com/a1studmuffin/SpaceshipGenerator)
+
+Blender 脚本，用随机种子生成带贴图的 3D 飞船（较老，最后更新 2024 年）。
+
+**许可:** [MIT](https://github.com/a1studmuffin/SpaceshipGenerator)
+
+### [Auburn/FastNoise2](https://github.com/Auburn/FastNoise2)
+
+[查看原始来源](https://github.com/Auburn/FastNoise2)
+
+SIMD 噪声生成库，带节点图编辑器，搭复杂噪声。
+
+**许可:** [MIT](https://github.com/Auburn/FastNoise2)
+
+### [marian42/wavefunctioncollapse](https://github.com/marian42/wavefunctioncollapse)
+
+[查看原始来源](https://github.com/marian42/wavefunctioncollapse)
+
+用波函数坍缩生成可无限漫游城市的 Unity 项目。
+
+**许可:** [MIT](https://github.com/marian42/wavefunctioncollapse)
+
+### [mxgmn/MarkovJunior](https://github.com/mxgmn/MarkovJunior)
+
+[查看原始来源](https://github.com/mxgmn/MarkovJunior)
+
+概率重写规则语言，生成关卡、迷宫和 3D 结构，附 150 多个示例。
+
+**许可:** [MIT](https://github.com/mxgmn/MarkovJunior)
+
+### [OndrejNepozitek/Edgar-DotNet](https://github.com/OndrejNepozitek/Edgar-DotNet)
+
+[查看原始来源](https://github.com/OndrejNepozitek/Edgar-DotNet)
+
+基于图的程序化布局生成器，用手工房间模板生成地牢。
+
+**许可:** [MIT](https://github.com/OndrejNepozitek/Edgar-DotNet)
+
+### [ondras/rot.js](https://github.com/ondras/rot.js)
+
+[查看原始来源](https://github.com/ondras/rot.js)
+
+JavaScript 的 Roguelike 工具包：地图生成、视野、寻路和终端显示。
+
+**许可:** [BSD-3-Clause](https://github.com/ondras/rot.js)
+
+### [libtcod/libtcod](https://github.com/libtcod/libtcod)
+
+<img src="images/entry-libtcod.webp" alt="libtcod/libtcod (示意图)" width="160">
+
+C/C++ Roguelike 工具包：视野、寻路、地图生成和图块终端。
+
+**许可:** [BSD-3-Clause](https://github.com/libtcod/libtcod)
+
+<sub>*示意图*</sub>
+
+### [Syomus/ProceduralToolkit](https://github.com/Syomus/ProceduralToolkit)
+
+<img src="images/entry-proceduraltoolkit.webp" alt="Syomus/ProceduralToolkit (示意图)" width="160">
+
+Unity 程序化生成库，含网格构建、噪声和示例生成器。
+
+**许可:** [MIT](https://github.com/Syomus/ProceduralToolkit)
+
+<sub>*示意图*</sub>
+
+### [Azgaar/Fantasy-Map-Generator](https://github.com/Azgaar/Fantasy-Map-Generator)
+
+[查看原始来源](https://github.com/Azgaar/Fantasy-Map-Generator)
+
+网页应用，生成可编辑的奇幻世界地图，含国家、河流和文化。
+
+**许可:** [MIT](https://github.com/Azgaar/Fantasy-Map-Generator)
+
+### [Zylann/godot_voxel](https://github.com/Zylann/godot_voxel)
+
+[查看原始来源](https://github.com/Zylann/godot_voxel)
+
+Godot 体素地形模块，支持方块和平滑地形、LOD 和程序化生成。
+
+**许可:** [MIT](https://github.com/Zylann/godot_voxel)
+
+### [Zylann/godot_heightmap_plugin](https://github.com/Zylann/godot_heightmap_plugin)
+
+[查看原始来源](https://github.com/Zylann/godot_heightmap_plugin)
+
+Godot 高度图地形插件，可雕刻、画贴图，还带生成器。
+
+**许可:** [MIT](https://github.com/Zylann/godot_heightmap_plugin)
+
+### [Mindwerks/worldengine](https://github.com/Mindwerks/worldengine)
+
+[查看原始来源](https://github.com/Mindwerks/worldengine)
+
+世界生成器，模拟板块构造、雨影和侵蚀。
+
+**许可:** [MIT](https://github.com/Mindwerks/worldengine)
+
+### [redblobgames/mapgen4](https://github.com/redblobgames/mapgen4)
+
+[查看原始来源](https://www.redblobgames.com/maps/mapgen4/)
+
+Red Blob Games 的交互式程序化荒野地图生成器。
+
+**许可:** [Apache-2.0](https://github.com/redblobgames/mapgen4)
+
+### [SebLague/Hydraulic-Erosion](https://github.com/SebLague/Hydraulic-Erosion)
+
+[查看原始来源](https://github.com/SebLague/Hydraulic-Erosion)
+
+在程序化地形上模拟水力侵蚀的 Unity 示例。
+
+**许可:** [MIT](https://github.com/SebLague/Hydraulic-Erosion)
+
+### [SebLague/Procedural-Landmass-Generation](https://github.com/SebLague/Procedural-Landmass-Generation)
+
+<img src="images/entry-procedural-landmass.webp" alt="SebLague/Procedural-Landmass-Generation (示意图)" width="160">
+
+基于噪声的无限地形 Unity 项目，带 LOD，配套知名教程系列。
+
+**许可:** [MIT](https://github.com/SebLague/Procedural-Landmass-Generation)
+
+<sub>*示意图*</sub>
+
+### [vazgriz/DungeonGenerator](https://github.com/vazgriz/DungeonGenerator)
+
+[查看原始来源](https://github.com/vazgriz/DungeonGenerator)
+
+Unity 地牢生成器，用 Delaunay 三角剖分和 A* 走廊，支持 2D 和 3D。
+
+**许可:** [MIT](https://github.com/vazgriz/DungeonGenerator)
+
+### [math-fehr/fast-wfc](https://github.com/math-fehr/fast-wfc)
+
+<img src="images/entry-fast-wfc.webp" alt="math-fehr/fast-wfc (示意图)" width="160">
+
+注重性能的 C++ 波函数坍缩实现。
+
+**许可:** [MIT](https://github.com/math-fehr/fast-wfc)
+
+<sub>*示意图*</sub>
+
+## 引擎与框架
+
+<img src="images/cover-engines.webp" alt="分类封面（原创示意图）: 引擎与框架" width="640">
+
+### [godotengine/godot](https://github.com/godotengine/godot)
+
+[查看原始来源](https://github.com/godotengine/godot)
+
+免费开源 2D/3D 游戏引擎，自带编辑器，支持 GDScript/C#。
+
+**许可:** [MIT](https://github.com/godotengine/godot)
+
+### [bevyengine/bevy](https://github.com/bevyengine/bevy)
+
+<img src="images/entry-bevy.webp" alt="bevyengine/bevy (示意图)" width="160">
+
+Rust 写的数据驱动游戏引擎，基于 ECS。
+
+**许可:** [Apache-2.0 或 MIT](https://github.com/bevyengine/bevy)
+
+<sub>*示意图*</sub>
+
+### [defold/defold](https://github.com/defold/defold)
+
+[查看原始来源](https://github.com/defold/defold)
+
+轻量 2D/3D 引擎，Lua 脚本，一键多平台打包。
+
+**许可:** [Defold 许可 1.0（基于 Apache-2.0）](https://github.com/defold/defold)
+
+### [raysan5/raylib](https://github.com/raysan5/raylib)
+
+[查看原始来源](https://github.com/raysan5/raylib)
+
+简单的 C 游戏库，适合入门，有 60 多种语言绑定。
+
+**许可:** [Zlib](https://github.com/raysan5/raylib)
+
+### [love2d/love](https://github.com/love2d/love)
+
+<img src="images/entry-love2d.webp" alt="love2d/love (示意图)" width="160">
+
+LÖVE，Lua 写游戏的 2D 框架。
+
+**许可:** [Zlib](https://github.com/love2d/love)
+
+<sub>*示意图*</sub>
+
+### [phaserjs/phaser](https://github.com/phaserjs/phaser)
+
+[查看原始来源](https://github.com/phaserjs/phaser)
+
+HTML5 2D 游戏框架，桌面和手机浏览器都能跑。
+
+**许可:** [MIT](https://github.com/phaserjs/phaser)
+
+### [mrdoob/three.js](https://github.com/mrdoob/three.js)
+
+[查看原始来源](https://threejs.org/)
+
+JavaScript 3D 库（WebGL/WebGPU），多数网页 3D 游戏和演示都基于它。
+
+**许可:** [MIT](https://github.com/mrdoob/three.js)
+
+### [BabylonJS/Babylon.js](https://github.com/BabylonJS/Babylon.js)
+
+[查看原始来源](https://github.com/BabylonJS/Babylon.js)
+
+功能完整的网页 3D 游戏 / 渲染引擎，带在线 Playground 和编辑器。
+
+**许可:** [Apache-2.0](https://github.com/BabylonJS/Babylon.js)
+
+### [o3de/o3de](https://github.com/o3de/o3de)
+
+[查看原始来源](https://o3de.org)
+
+Open 3D Engine，Linux 基金会旗下的模块化 3A 级 3D 引擎。
+
+**许可:** [Apache-2.0 或 MIT](https://github.com/o3de/o3de)
+
+### [stride3d/stride](https://github.com/stride3d/stride)
+
+[查看原始来源](https://github.com/stride3d/stride)
+
+C# 3D 游戏引擎，带编辑器，前身是 Xenko。
+
+**许可:** [MIT](https://github.com/stride3d/stride)
+
+### [MonoGame/MonoGame](https://github.com/MonoGame/MonoGame)
+
+[查看原始来源](https://github.com/MonoGame/MonoGame)
+
+C# 跨平台 2D/3D 游戏框架（XNA 继任者）。
+
+**许可:** [Ms-PL](https://github.com/MonoGame/MonoGame)
+
+### [libgdx/libgdx](https://github.com/libgdx/libgdx)
+
+[查看原始来源](https://github.com/libgdx/libgdx)
+
+Java 游戏框架，支持桌面、安卓、iOS 和网页。
+
+**许可:** [Apache-2.0](https://github.com/libgdx/libgdx)
+
+### [excaliburjs/Excalibur](https://github.com/excaliburjs/Excalibur)
+
+[查看原始来源](https://github.com/excaliburjs/Excalibur)
+
+TypeScript 写的网页 2D 游戏引擎。
+
+**许可:** [BSD-2-Clause](https://github.com/excaliburjs/Excalibur)
+
+### [pixijs/pixijs](https://github.com/pixijs/pixijs)
+
+[查看原始来源](https://github.com/pixijs/pixijs)
+
+高速 2D WebGL/WebGPU 渲染器，做网页游戏和交互图形。
+
+**许可:** [MIT](https://github.com/pixijs/pixijs)
+
+### [playcanvas/engine](https://github.com/playcanvas/engine)
+
+[查看原始来源](https://github.com/playcanvas/engine)
+
+网页 WebGL/WebGPU 3D 游戏引擎（运行时）。
+
+**许可:** [MIT](https://github.com/playcanvas/engine)
+
+### [kaplayjs/kaplay](https://github.com/kaplayjs/kaplay)
+
+[查看原始来源](https://github.com/kaplayjs/kaplay)
+
+新手友好的 JavaScript 游戏库（Kaboom.js 的继任者）。
+
+**许可:** [MIT](https://github.com/kaplayjs/kaplay)
+
+### [hajimehoshi/ebiten](https://github.com/hajimehoshi/ebiten)
+
+[查看原始来源](https://github.com/hajimehoshi/ebiten)
+
+Ebitengine，Go 语言的简单 2D 游戏引擎。
+
+**许可:** [Apache-2.0](https://github.com/hajimehoshi/ebiten)
+
+### [FyroxEngine/Fyrox](https://github.com/FyroxEngine/Fyrox)
+
+[查看原始来源](https://github.com/FyroxEngine/Fyrox)
+
+Rust 写的 3D/2D 游戏引擎，带场景编辑器。
+
+**许可:** [MIT](https://github.com/FyroxEngine/Fyrox)
+
+### [HeapsIO/heaps](https://github.com/HeapsIO/heaps)
+
+[查看原始来源](https://github.com/HeapsIO/heaps)
+
+Haxe 语言的跨平台 2D/3D 游戏引擎。
+
+**许可:** [MIT](https://github.com/HeapsIO/heaps)
+
+### [panda3d/panda3d](https://github.com/panda3d/panda3d)
+
+[查看原始来源](https://github.com/panda3d/panda3d)
+
+成熟的开源 3D 引擎，支持 Python 和 C++，最初由迪士尼和卡内基梅隆大学开发。
+
+**许可:** [BSD-3-Clause](https://github.com/panda3d/panda3d)
+
+### [jMonkeyEngine/jmonkeyengine](https://github.com/jMonkeyEngine/jmonkeyengine)
+
+[查看原始来源](https://github.com/jMonkeyEngine/jmonkeyengine)
+
+用 Java 写的完整 3D 游戏开发套件。
+
+**许可:** [BSD-3-Clause](https://github.com/jMonkeyEngine/jmonkeyengine)
+
+### [pygame-community/pygame-ce](https://github.com/pygame-community/pygame-ce)
+
+<img src="images/entry-pygame-ce.webp" alt="pygame-community/pygame-ce (示意图)" width="160">
+
+pygame 社区版，基于 SDL 的 Python 2D 游戏和多媒体库。
+
+**许可:** [LGPL-2.1-or-later](https://github.com/pygame-community/pygame-ce#license)
+
+<sub>*示意图*</sub>
+
+### [flame-engine/flame](https://github.com/flame-engine/flame)
+
+<img src="images/entry-flame.webp" alt="flame-engine/flame (示意图)" width="160">
+
+基于 Flutter 的 2D 游戏引擎，用 Dart 做移动端、桌面和网页游戏。
+
+**许可:** [MIT](https://github.com/flame-engine/flame)
+
+<sub>*示意图*</sub>
+
+### [kitao/pyxel](https://github.com/kitao/pyxel)
+
+[查看原始来源](https://github.com/kitao/pyxel)
+
+Python 复古游戏引擎，固定调色板，内置精灵、地图和音效编辑器。
+
+**许可:** [MIT](https://github.com/kitao/pyxel)
+
+<sub>参考清单 [ellisonleao/magictools](https://github.com/ellisonleao/magictools)</sub>
+
+### [HaxeFlixel/flixel](https://github.com/HaxeFlixel/flixel)
+
+[查看原始来源](https://github.com/HaxeFlixel/flixel)
+
+基于 Haxe 和 OpenFL 的跨平台 2D 游戏引擎。
+
+**许可:** [MIT](https://github.com/HaxeFlixel/flixel)
+
+### [coronalabs/corona](https://github.com/coronalabs/corona)
+
+[查看原始来源](https://github.com/coronalabs/corona)
+
+Solar2D（原 Corona SDK）：基于 Lua 的 2D 引擎，做移动端和桌面游戏。
+
+**许可:** [MIT](https://github.com/coronalabs/corona)
+
+### [not-fl3/macroquad](https://github.com/not-fl3/macroquad)
+
+<img src="images/entry-macroquad.webp" alt="not-fl3/macroquad (示意图)" width="160">
+
+简单的跨平台 Rust 游戏库，桌面、移动端和网页都能跑。
+
+**许可:** [MIT OR Apache-2.0](https://github.com/not-fl3/macroquad)
+
+<sub>*示意图*</sub>
+
+### [turanszkij/WickedEngine](https://github.com/turanszkij/WickedEngine)
+
+[查看原始来源](https://github.com/turanszkij/WickedEngine)
+
+C++ 3D 引擎，带现代图形特性和编辑器。
+
+**许可:** [MIT](https://github.com/turanszkij/WickedEngine)
+
+### [liballeg/allegro5](https://github.com/liballeg/allegro5)
+
+<img src="images/entry-allegro5.webp" alt="liballeg/allegro5 (示意图)" width="160">
+
+老牌跨平台 C 语言库，做 2D 游戏和多媒体。
+
+**许可:** [Zlib](https://github.com/liballeg/allegro5)
+
+<sub>*示意图*</sub>
+
+## 工具与管线
+
+<img src="images/cover-tools.webp" alt="分类封面（原创示意图）: 工具与管线" width="640">
+
+### [Blender](https://www.blender.org/)
+
+[查看原始来源](https://github.com/blender/blender)
+
+免费 3D 全家桶：建模、绑骨、动画、烘焙；做出来的作品归你。
+
+**许可:** [GPL-3.0-or-later（发行版）](https://www.blender.org/about/license/)
+
+<sub>⚠ 官网对自动检查返回 403，许可证已人工核实</sub>
+
+### [RodZill4/material-maker](https://github.com/RodZill4/material-maker)
+
+[查看原始来源](https://github.com/RodZill4/material-maker)
+
+基于 Godot 的节点式程序化贴图 / 材质制作工具。
+
+**许可:** [MIT](https://github.com/RodZill4/material-maker)
+
+### [Orama-Interactive/Pixelorama](https://github.com/Orama-Interactive/Pixelorama)
+
+[查看原始来源](https://github.com/Orama-Interactive/Pixelorama)
+
+像素画编辑器，画精灵、图块和逐帧动画；桌面和网页都能用。
+
+**许可:** [MIT](https://github.com/Orama-Interactive/Pixelorama)
+
+### [mapeditor/tiled](https://github.com/mapeditor/tiled)
+
+<img src="images/entry-tiled.webp" alt="mapeditor/tiled (示意图)" width="160">
+
+灵活的瓦片地图 / 关卡编辑器，导出的 TMX/JSON 被大多数 2D 引擎支持。
+
+**许可:** [GPL-2.0（编辑器）/ BSD-2-Clause（libtiled）](https://github.com/mapeditor/tiled/blob/master/COPYING)
+
+<sub>*示意图*</sub>
+
+### [deepnight/ldtk](https://github.com/deepnight/ldtk)
+
+[查看原始来源](https://ldtk.io/)
+
+现代轻量 2D 关卡编辑器，支持自动图层铺块和带类型的实体字段。
+
+**许可:** [MIT](https://github.com/deepnight/ldtk)
+
+### [audacity/audacity](https://github.com/audacity/audacity)
+
+[查看原始来源](https://www.audacityteam.org/)
+
+音频编辑器，剪切、叠加、降噪游戏音效。
+
+**许可:** [GPL-3.0](https://github.com/audacity/audacity/blob/master/LICENSE.txt)
+
+### [LMMS/lmms](https://github.com/LMMS/lmms)
+
+<img src="images/entry-lmms.webp" alt="LMMS/lmms (示意图)" width="160">
+
+免费编曲软件（音序器、合成器、采样器），做游戏配乐和短提示音。
+
+**许可:** [GPL-2.0](https://github.com/LMMS/lmms)
+
+<sub>*示意图*</sub>
+
+### [godotengine/godot-demo-projects](https://github.com/godotengine/godot-demo-projects)
+
+<img src="images/entry-godot-demos.webp" alt="godotengine/godot-demo-projects (示意图)" width="160">
+
+Godot 官方示例和模板项目（2D、3D、物理、UI），可以照着学或直接起步。
+
+**许可:** [MIT](https://github.com/godotengine/godot-demo-projects)
+
+<sub>*示意图*</sub>
+
+### [KDE/krita](https://github.com/KDE/krita)
+
+[查看原始来源](https://krita.org/en/)
+
+数字绘画软件，画概念图、贴图和手绘动画。
+
+**许可:** [GPL-3.0](https://github.com/KDE/krita)
+
+<sub>参考清单 [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)</sub>
+
+### [LibreSprite/LibreSprite](https://github.com/LibreSprite/LibreSprite)
+
+[查看原始来源](https://github.com/LibreSprite/LibreSprite)
+
+免费像素画和精灵动画编辑器（从最后一个 GPL 版 Aseprite 分叉）。
+
+**许可:** [GPL-2.0](https://github.com/LibreSprite/LibreSprite)
+
+### [odrick/free-tex-packer](https://github.com/odrick/free-tex-packer)
+
+[查看原始来源](https://github.com/odrick/free-tex-packer)
+
+免费图集打包工具，可导出 Phaser、Pixi、Unity、Godot 等格式。
+
+**许可:** [MIT](https://github.com/odrick/free-tex-packer)
+
+### [Ogmo-Editor-3/OgmoEditor3-CE](https://github.com/Ogmo-Editor-3/OgmoEditor3-CE)
+
+[查看原始来源](https://github.com/Ogmo-Editor-3/OgmoEditor3-CE)
+
+免费、不绑引擎的 2D 关卡编辑器，支持图块、实体和贴花（最后更新 2024 年）。
+
+**许可:** [MIT](https://github.com/Ogmo-Editor-3/OgmoEditor3-CE)
+
+### [TrenchBroom/TrenchBroom](https://github.com/TrenchBroom/TrenchBroom)
+
+[查看原始来源](https://github.com/TrenchBroom/TrenchBroom)
+
+Quake 风格的笔刷式 3D 关卡编辑器，可借插件用于 Godot。
+
+**许可:** [GPL-3.0](https://github.com/TrenchBroom/TrenchBroom)
+
+### [JannisX11/blockbench](https://github.com/JannisX11/blockbench)
+
+[查看原始来源](https://github.com/JannisX11/blockbench)
+
+低多边形 / 方块风 3D 模型编辑器，可画贴图、做动画。
+
+**许可:** [GPL-3.0](https://github.com/JannisX11/blockbench)
+
+### [guillaumechereau/goxel](https://github.com/guillaumechereau/goxel)
+
+[查看原始来源](https://github.com/guillaumechereau/goxel)
+
+开源体素编辑器，做 3D 模型和场景。
+
+**许可:** [GPL-3.0](https://github.com/guillaumechereau/goxel)
+
+### [donmccurdy/glTF-Transform](https://github.com/donmccurdy/glTF-Transform)
+
+[查看原始来源](https://github.com/donmccurdy/glTF-Transform)
+
+优化 glTF/GLB 的命令行和 SDK：压缩、缩贴图、去重。
+
+**许可:** [MIT](https://github.com/donmccurdy/glTF-Transform)
+
+### [zeux/meshoptimizer](https://github.com/zeux/meshoptimizer)
+
+<img src="images/entry-meshoptimizer.webp" alt="zeux/meshoptimizer (示意图)" width="160">
+
+网格优化库和 gltfpack 工具，让 3D 资产更小更快。
+
+**许可:** [MIT](https://github.com/zeux/meshoptimizer)
+
+<sub>*示意图*</sub>
+
+### [assimp/assimp](https://github.com/assimp/assimp)
+
+[查看原始来源](https://www.assimp.org)
+
+开放资产导入库：把 40 多种 3D 格式读成统一数据结构。
+
+**许可:** [BSD-3-Clause（修改版）](https://github.com/assimp/assimp)
+
+### [inkle/ink](https://github.com/inkle/ink)
+
+<img src="images/entry-ink.webp" alt="inkle/ink (示意图)" width="160">
+
+写分支互动叙事的脚本语言和引擎，有 Unity 集成。
+
+**许可:** [MIT](https://github.com/inkle/ink)
+
+<sub>*示意图*</sub>
+
+### [YarnSpinnerTool/YarnSpinner](https://github.com/YarnSpinnerTool/YarnSpinner)
+
+[查看原始来源](https://github.com/YarnSpinnerTool/YarnSpinner)
+
+写分支游戏对话的语言和与引擎无关的运行时。
+
+**许可:** [MIT](https://github.com/YarnSpinnerTool/YarnSpinner)
+
+### [UltimateDoomBuilder/UltimateDoomBuilder](https://github.com/UltimateDoomBuilder/UltimateDoomBuilder)
+
+<img src="images/entry-ultimatedoombuilder.webp" alt="UltimateDoomBuilder/UltimateDoomBuilder (示意图)" width="160">
+
+Doom 引擎类游戏的地图编辑器，有 2D 和 3D 编辑模式。
+
+**许可:** [GPL-3.0](https://github.com/UltimateDoomBuilder/UltimateDoomBuilder)
+
+<sub>*示意图*</sub>
+
+### [crashinvaders/gdx-texture-packer-gui](https://github.com/crashinvaders/gdx-texture-packer-gui)
+
+[查看原始来源](https://github.com/crashinvaders/gdx-texture-packer-gui)
+
+打包和管理纹理图集的图形界面工具（libGDX 格式）。
+
+**许可:** [Apache-2.0](https://github.com/crashinvaders/gdx-texture-packer-gui)
+
+### [CesiumGS/gltf-pipeline](https://github.com/CesiumGS/gltf-pipeline)
+
+<img src="images/entry-gltf-pipeline.webp" alt="CesiumGS/gltf-pipeline (示意图)" width="160">
+
+优化 glTF 素材的命令行工具：Draco 压缩、嵌入资源和格式转换。
+
+**许可:** [Apache-2.0](https://github.com/CesiumGS/gltf-pipeline)
+
+<sub>*示意图*</sub>
+
+### [google/draco](https://github.com/google/draco)
+
+<img src="images/entry-draco.webp" alt="google/draco (示意图)" width="160">
+
+压缩和解压 3D 网格与点云的库，减小下载体积。
+
+**许可:** [Apache-2.0](https://github.com/google/draco)
+
+<sub>*示意图*</sub>
+
+### [microsoft/DirectXTex](https://github.com/microsoft/DirectXTex)
+
+[查看原始来源](https://github.com/microsoft/DirectXTex)
+
+纹理处理库和 texconv 工具，处理 DDS、mipmap 和块压缩。
+
+**许可:** [MIT](https://github.com/microsoft/DirectXTex)
+
+### [BinomialLLC/basis_universal](https://github.com/BinomialLLC/basis_universal)
+
+[查看原始来源](https://github.com/BinomialLLC/basis_universal)
+
+GPU 纹理编解码器，一个文件可转成多种 GPU 格式（BC、ASTC、ETC）。
+
+**许可:** [Apache-2.0](https://github.com/BinomialLLC/basis_universal)
+
+### [KhronosGroup/KTX-Software](https://github.com/KhronosGroup/KTX-Software)
+
+<img src="images/entry-ktx-software.webp" alt="KhronosGroup/KTX-Software (示意图)" width="160">
+
+Khronos 的 KTX 纹理库和工具，创建和校验 KTX2 文件。
+
+**许可:** [Apache-2.0（附带部分另有开源许可）](https://github.com/KhronosGroup/KTX-Software)
+
+<sub>*示意图*</sub>
+
+### [ufbx/ufbx](https://github.com/ufbx/ufbx)
+
+<img src="images/entry-ufbx.webp" alt="ufbx/ufbx (示意图)" width="160">
+
+单文件 C 语言 FBX 加载器，支持网格、蒙皮、动画和材质。
+
+**许可:** [MIT or Unlicense](https://github.com/ufbx/ufbx)
+
+<sub>*示意图*</sub>
+
+### [glslify/glslify](https://github.com/glslify/glslify)
+
+<img src="images/entry-glslify.webp" alt="glslify/glslify (示意图)" width="160">
+
+GLSL 的 Node.js 式模块系统，可从 npm 引入着色器函数。
+
+**许可:** [MIT](https://github.com/glslify/glslify)
+
+<sub>*示意图*</sub>
+
+## AI 素材生成与 Agent Skill
+
+<img src="images/cover-aigen.webp" alt="分类封面（原创示意图）: AI 素材生成与 Agent Skill" width="640">
+
+### [microsoft/TRELLIS](https://github.com/microsoft/TRELLIS)
+
+[查看原始来源](https://github.com/microsoft/TRELLIS)
+
+微软的图像 / 文本生成 3D 模型（网格、辐射场、高斯）。
+
+**许可:** [MIT](https://github.com/microsoft/TRELLIS)
+
+### [VAST-AI-Research/TripoSR](https://github.com/VAST-AI-Research/TripoSR)
+
+[查看原始来源](https://github.com/VAST-AI-Research/TripoSR)
+
+单张图快速重建 3D 网格的模型。
+
+**许可:** [MIT](https://github.com/VAST-AI-Research/TripoSR)
+
+### [TencentARC/InstantMesh](https://github.com/TencentARC/InstantMesh)
+
+<img src="images/entry-instantmesh.webp" alt="TencentARC/InstantMesh (示意图)" width="160">
+
+单张图生成 3D 网格，基于多视角扩散。
+
+**许可:** [Apache-2.0](https://github.com/TencentARC/InstantMesh)
+
+<sub>*示意图*</sub>
+
+### [Comfy-Org/ComfyUI](https://github.com/Comfy-Org/ComfyUI)
+
+[查看原始来源](https://github.com/Comfy-Org/ComfyUI)
+
+扩散模型的节点式界面，生成贴图、精灵和概念图。
+
+**许可:** [GPL-3.0](https://github.com/Comfy-Org/ComfyUI)
+
+### [facebookresearch/audiocraft](https://github.com/facebookresearch/audiocraft)
+
+<img src="images/entry-audiocraft.webp" alt="facebookresearch/audiocraft (示意图)" width="160">
+
+Meta 的音频生成库（MusicGen、AudioGen），生成音乐和音效；权重仅限非商业。
+
+**许可:** [MIT（代码）；模型权重 CC-BY-NC-4.0](https://github.com/facebookresearch/audiocraft)
+
+<sub>*示意图*</sub>
+
+### [Tencent-Hunyuan/Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+
+[查看原始来源](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+
+文本 / 图像生成带贴图的 3D 网格；使用前看清许可里的地区和用途限制。
+
+**许可:** [腾讯混元 3D 2.0 社区许可（不适用于欧盟、英国、韩国）](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)
+
+### [gamedev-skills/awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills)
+
+[查看原始来源](https://github.com/gamedev-skills/awesome-gamedev-agent-skills)
+
+给 AI 编程 Agent 用的游戏开发 skill 合集和路由。
+
+**许可:** [Apache-2.0](https://github.com/gamedev-skills/awesome-gamedev-agent-skills)
+
+### [3DTopia/LGM](https://github.com/3DTopia/LGM)
+
+<img src="images/entry-lgm.webp" alt="3DTopia/LGM (示意图)" width="160">
+
+多视角高斯大模型：一句提示词或一张图，几秒生成高分辨率 3D 高斯素材。
+
+**许可:** [MIT](https://github.com/3DTopia/LGM)
+
+<sub>*示意图*</sub>
+
+### [dreamgaussian/dreamgaussian](https://github.com/dreamgaussian/dreamgaussian)
+
+<img src="images/entry-dreamgaussian.webp" alt="dreamgaussian/dreamgaussian (示意图)" width="160">
+
+生成式高斯泼溅：从图片或文字几分钟做出带贴图的 3D 网格。
+
+**许可:** [MIT](https://github.com/dreamgaussian/dreamgaussian)
+
+<sub>*示意图*</sub>
+
+### [openai/shap-e](https://github.com/openai/shap-e)
+
+[查看原始来源](https://github.com/openai/shap-e)
+
+按文字或图片生成 3D 物体，可导出网格和隐式场。
+
+**许可:** [MIT](https://github.com/openai/shap-e)
+
+### [openai/point-e](https://github.com/openai/point-e)
+
+[查看原始来源](https://github.com/openai/point-e)
+
+点云扩散模型，快速出文字转 3D 草模，并可把点云转成网格。
+
+**许可:** [MIT](https://github.com/openai/point-e)
+
+### [thu-ml/CRM](https://github.com/thu-ml/CRM)
+
+[查看原始来源](https://github.com/thu-ml/CRM)
+
+卷积重建模型，单张图约十秒出带贴图的 3D 网格。
+
+**许可:** [MIT](https://github.com/thu-ml/CRM)
+
+### [xxlong0/Wonder3D](https://github.com/xxlong0/Wonder3D)
+
+[查看原始来源](https://github.com/xxlong0/Wonder3D)
+
+跨域扩散做单图转 3D，同时预测多视角法线和颜色。
+
+**许可:** [MIT](https://github.com/xxlong0/Wonder3D)
+
+### [AiuniAI/Unique3D](https://github.com/AiuniAI/Unique3D)
+
+[查看原始来源](https://github.com/AiuniAI/Unique3D)
+
+单图生成高质量 3D 网格，贴图细节较好。
+
+**许可:** [MIT](https://github.com/AiuniAI/Unique3D)
+
+### [carson-katri/dream-textures](https://github.com/carson-katri/dream-textures)
+
+[查看原始来源](https://github.com/carson-katri/dream-textures)
+
+Blender 插件，在 Blender 里跑 Stable Diffusion 生成无缝贴图并投射到模型上。
+
+**许可:** [GPL-3.0](https://github.com/carson-katri/dream-textures)
+
+<sub>参考清单 [simoninithomas/awesome-ai-tools-for-game-dev](https://github.com/simoninithomas/awesome-ai-tools-for-game-dev)</sub>
+
+### [OpenTexture/Paint3D](https://github.com/OpenTexture/Paint3D)
+
+[查看原始来源](https://github.com/OpenTexture/Paint3D)
+
+给没贴图的 3D 网格按文字或图片生成不带烘焙光照的 UV 贴图。
+
+**许可:** [Apache-2.0](https://github.com/OpenTexture/Paint3D)
+
+### [Stable-X/StableNormal](https://github.com/Stable-X/StableNormal)
+
+<img src="images/entry-stablenormal.webp" alt="Stable-X/StableNormal (示意图)" width="160">
+
+从单张图估计清晰稳定的法线图，可以把照片或原画转成法线贴图。
+
+**许可:** [Apache-2.0](https://github.com/Stable-X/StableNormal)
+
+<sub>*示意图*</sub>
+
+### [KohakuBlueleaf/PixelOE](https://github.com/KohakuBlueleaf/PixelOE)
+
+[查看原始来源](https://github.com/KohakuBlueleaf/PixelOE)
+
+用对比度感知的描边扩展把高清图转成干净的像素画，不需要 AI 模型。
+
+**许可:** [Apache-2.0](https://github.com/KohakuBlueleaf/PixelOE)
+
+### [aldegad/sprite-gen](https://github.com/aldegad/sprite-gen)
+
+[查看原始来源](https://github.com/aldegad/sprite-gen)
+
+Agent Skill 加 Python 命令行：一张底图做出游戏精灵图集或透明动画循环。
+
+**许可:** [Apache-2.0](https://github.com/aldegad/sprite-gen)
+
+### [Retro-Diffusion/pixel-art-fixer](https://github.com/Retro-Diffusion/pixel-art-fixer)
+
+[查看原始来源](https://github.com/Retro-Diffusion/pixel-art-fixer)
+
+把图像生成器出的“假像素画”（不对齐网格）还原成真正对齐网格的像素画。
+
+**许可:** [MIT](https://github.com/Retro-Diffusion/pixel-art-fixer)
+
+### [suno-ai/bark](https://github.com/suno-ai/bark)
+
+[查看原始来源](https://github.com/suno-ai/bark)
+
+文字提示生成音频的模型，能出语音、非语言声音和简单音乐。
+
+**许可:** [MIT](https://github.com/suno-ai/bark)
+
+<sub>参考清单 [simoninithomas/awesome-ai-tools-for-game-dev](https://github.com/simoninithomas/awesome-ai-tools-for-game-dev)</sub>
+
+### [Stability-AI/stable-audio-tools](https://github.com/Stability-AI/stable-audio-tools)
+
+<img src="images/entry-stable-audio-tools.webp" alt="Stability-AI/stable-audio-tools (示意图)" width="160">
+
+条件音频生成模型的训练与推理代码，含 Stable Audio Open。
+
+**许可:** [MIT](https://github.com/Stability-AI/stable-audio-tools)
+
+<sub>*示意图*</sub>
+
+### [open-mmlab/Amphion](https://github.com/open-mmlab/Amphion)
+
+<img src="images/entry-amphion.webp" alt="open-mmlab/Amphion (示意图)" width="160">
+
+音频、音乐和语音生成工具包（TTS、变声、歌声合成等）。
+
+**许可:** [MIT](https://github.com/open-mmlab/Amphion)
+
+<sub>*示意图*</sub>
+
+## 其他清单与设计参考
+
+<img src="images/cover-lists.webp" alt="分类封面（原创示意图）: 其他清单与设计参考" width="640">
+
+### [ellisonleao/magictools](https://github.com/ellisonleao/magictools)
+
+[查看原始来源](https://github.com/ellisonleao/magictools)
+
+老牌游戏开发资源清单：引擎、美术、音频、工具。
+
+**许可:** [MIT](https://github.com/ellisonleao/magictools)
+
+### [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev)
+
+<img src="images/entry-awesome-gamedev.webp" alt="Calinou/awesome-gamedev (示意图)" width="160">
+
+制作游戏用的自由软件和自由文化资源清单。
+
+**许可:** [CC-BY-SA-4.0](https://github.com/Calinou/awesome-gamedev)
+
+<sub>*示意图*</sub>
+
+### [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)
+
+<img src="images/entry-awesome-cc0.webp" alt="madjin/awesome-cc0 (示意图)" width="160">
+
+全网 CC0 素材清单：模型、贴图、声音。
+
+**许可:** [CC0-1.0](https://github.com/madjin/awesome-cc0)
+
+<sub>*示意图*</sub>
+
+### [FronkonGames/Awesome-Gamedev](https://github.com/FronkonGames/Awesome-Gamedev)
+
+[查看原始来源](https://github.com/FronkonGames/Awesome-Gamedev)
+
+精选游戏开发资源：工具、教程、库。
+
+**许可:** [MIT](https://github.com/FronkonGames/Awesome-Gamedev)
+
+### [dawdle-deer/awesome-learn-gamedev](https://github.com/dawdle-deer/awesome-learn-gamedev)
+
+[查看原始来源](https://github.com/dawdle-deer/awesome-learn-gamedev)
+
+游戏开发学习资源精选。
+
+**许可:** [CC0-1.0](https://github.com/dawdle-deer/awesome-learn-gamedev)
+
+### [Calinou/awesome-godot](https://github.com/Calinou/awesome-godot)
+
+<img src="images/entry-awesome-godot.webp" alt="Calinou/awesome-godot (示意图)" width="160">
+
+Godot 插件、脚本、模板和项目精选清单。
+
+**许可:** [CC-BY-4.0](https://github.com/Calinou/awesome-godot)
+
+<sub>*示意图*</sub>
+
+### [munificent/game-programming-patterns](https://github.com/munificent/game-programming-patterns)
+
+<img src="images/entry-gpp.webp" alt="munificent/game-programming-patterns (示意图)" width="160">
+
+免费在线书《游戏编程模式》的源码（游戏代码设计模式）。
+
+**许可:** [MIT（代码）/ CC-BY-NC-ND-4.0（书的正文）](https://github.com/munificent/game-programming-patterns)
+
+<sub>*示意图*</sub>
+
+### [love2d-community/awesome-love2d](https://github.com/love2d-community/awesome-love2d)
+
+[查看原始来源](https://github.com/love2d-community/awesome-love2d)
+
+LÖVE 引擎的库、工具和资源精选清单。
+
+**许可:** [CC0-1.0](https://github.com/love2d-community/awesome-love2d)
+
+### [rafaskb/awesome-libgdx](https://github.com/rafaskb/awesome-libgdx)
+
+[查看原始来源](https://github.com/rafaskb/awesome-libgdx)
+
+libGDX 的库、工具和教程精选清单。
+
+**许可:** [CC0-1.0](https://github.com/rafaskb/awesome-libgdx)
+
+### [pico-8/awesome-PICO-8](https://github.com/pico-8/awesome-PICO-8)
+
+[查看原始来源](https://github.com/pico-8/awesome-PICO-8)
+
+PICO-8 的资源、工具、卡带和教程精选清单。
+
+**许可:** [CC0-1.0](https://github.com/pico-8/awesome-PICO-8)
+
+### [bobeff/open-source-games](https://github.com/bobeff/open-source-games)
+
+<img src="images/entry-open-source-games.webp" alt="bobeff/open-source-games (示意图)" width="160">
+
+开源游戏和重制版大清单，适合读真实游戏代码。
+
+**许可:** [CC0-1.0](https://github.com/bobeff/open-source-games)
+
+<sub>*示意图*</sub>
+
+### [hzoo/awesome-gametalks](https://github.com/hzoo/awesome-gametalks)
+
+<img src="images/entry-awesome-gametalks.webp" alt="hzoo/awesome-gametalks (示意图)" width="160">
+
+游戏开发、设计和复盘演讲精选清单。
+
+**许可:** [MIT](https://github.com/hzoo/awesome-gametalks)
+
+<sub>*示意图*</sub>
+
+### [flame-engine/awesome-flame](https://github.com/flame-engine/awesome-flame)
+
+[查看原始来源](https://github.com/flame-engine/awesome-flame)
+
+Flame 引擎的游戏、库、工具和教程精选清单。
+
+**许可:** [CC0-1.0](https://github.com/flame-engine/awesome-flame)
+
+### [Siilwyn/awesome-pixel-art](https://github.com/Siilwyn/awesome-pixel-art)
+
+[查看原始来源](https://github.com/Siilwyn/awesome-pixel-art)
+
+像素画工具、教程、调色板和社区精选清单。
+
+**许可:** [CC0-1.0](https://github.com/Siilwyn/awesome-pixel-art)
+
+### [radek-sprta/awesome-game-remakes](https://github.com/radek-sprta/awesome-game-remakes)
+
+<img src="images/entry-awesome-game-remakes.webp" alt="radek-sprta/awesome-game-remakes (示意图)" width="160">
+
+活跃维护的开源游戏重制和引擎重实现清单。
+
+**许可:** [CC-BY-SA-4.0](https://github.com/radek-sprta/awesome-game-remakes)
+
+<sub>*示意图*</sub>
+
+### [Roobyx/awesome-game-design](https://github.com/Roobyx/awesome-game-design)
+
+<img src="images/entry-awesome-game-design.webp" alt="Roobyx/awesome-game-design (示意图)" width="160">
+
+游戏设计学习资料、案例和工具清单。
+
+**许可:** [CC-BY-4.0](https://github.com/Roobyx/awesome-game-design)
+
+<sub>*示意图*</sub>
+
+### [ncase/loopy](https://github.com/ncase/loopy)
+
+[查看原始来源](https://github.com/ncase/loopy)
+
+浏览器里画交互式系统和反馈回路的工具，适合推演游戏经济。
+
+**许可:** [CC0-1.0](https://github.com/ncase/loopy)
+
+## 致谢 / 参考清单
+
+部分条目是从下面这些清单里发现的。我们只借了线索：每个来源都重新核实了许可证和可达性，描述全部为本清单重写，没有整份照搬。通过它们找到的条目会写「参考清单」并链接原清单。
+
+- [Calinou/awesome-gamedev](https://github.com/Calinou/awesome-gamedev) · CC-BY-SA-4.0
+- [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0) · CC0-1.0
+- [ellisonleao/magictools](https://github.com/ellisonleao/magictools) · MIT
+- [simoninithomas/awesome-ai-tools-for-game-dev](https://github.com/simoninithomas/awesome-ai-tools-for-game-dev) · CC0-1.0
+- [Calinou/awesome-godot](https://github.com/Calinou/awesome-godot) · CC-BY-4.0
+
+## 参与贡献
+
+见 [../CONTRIBUTING.md](../CONTRIBUTING.md)。改 `data/entries.json`，再跑 `python3 tools/render_readme.py` 和 `python3 tools/verify.py`。
+
+## 许可证
+
+清单文字采用 [CC0 1.0](../LICENSE)。链接的素材和工具各自沿用原许可证。预览图归原项目所有，只引用不复制。

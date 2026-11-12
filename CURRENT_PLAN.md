@@ -2,38 +2,28 @@
 
 ## Plan ID
 
-PLAN-001
+PLAN-003
 
 ## Goal
 
-扩充 PR：15 个分类、297 条，加警示清单，CI 绿后交用户审阅（不合 main）。
+基于上一轮结果推进下一个最小稳定闭环（见 TODO_BACKLOG.md 的 Next）。
 
 ## Current Focus
 
-Initial list
+Next iteration
 
 ## In Scope
 
-- `data/entries.json` 首批条目（许可证逐条核实）
-- 中英 README、`docs/image-prompts.md` 由脚本生成
-- 分类封面与无原图条目的原创配图
-- 离线 / 联网校验与 GitHub Actions
+- 收敛新的最小闭环
 
 ## Out of Scope
 
-- 托管第三方素材或图片
-- 网站、统计、遥测
+- 不并行扩张多个大方向
 
 ## Tasks
 
-- [x] 按 multi-project-program-management 搭标准骨架
-- [x] 收录首批 39 条并核实许可证
-- [x] 生成中英 README 与配图提示词文档
-- [x] 校验脚本与 CI
-- [x] PR #1 已合入 main（52e1ac3）
-- [x] 第三轮扩充：agy 并行搜索 + 逐条核实 + 配图
-- [x] 警示清单 WARNING.md / WARNING.zh-CN.md
-- [ ] 用户审阅扩充 PR 后合入 main
+- [ ] Review homepage discovery PR; do not merge without owner approval
+- [ ] Resolve remaining network-check failures and collect comparable recent popularity data if available
 
 ## Verification
 
@@ -42,5 +32,4 @@ Initial list
 
 ## Next Candidates
 
-- 扩充动画、技能 / 施法演示分类
-- 给条目加引擎 / 格式标签
+- 根据 backlog 与验证结果继续细化
