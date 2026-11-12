@@ -85,7 +85,7 @@ def check_credits(data: dict, errors: list[str]) -> None:
 
 def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
     prompt_files = set(prompts["images"])
-    used = set()
+    used = {data["discovery"]["hero"]} if data.get("discovery", {}).get("hero") else set()
     for c in data["categories"]:
         used.add(c["cover"])
     for e in data["entries"]:
@@ -116,8 +116,8 @@ def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
 
 
 def readme_urls(text: str) -> list[str]:
-    """Canonical catalog entries are level-three linked headings, not credits."""
-    return re.findall(r"^### \[[^\]]+\]\((https://[^)]+)\)$", text, re.M)
+    """Canonical entries are the first linked cell of the three-column table."""
+    return re.findall(r"^\| \[[^\]]+\]\((https://[^)]+)\)<br>", text, re.M)
 
 
 def check_readmes(data: dict, errors: list[str]) -> None:

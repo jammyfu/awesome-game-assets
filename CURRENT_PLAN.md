@@ -6,15 +6,16 @@ PLAN-003
 
 ## Goal
 
-基于上一轮结果推进下一个最小稳定闭环（见 TODO_BACKLOG.md 的 Next）。
+恢复用户要求的完整素材对照表格，并加入原创游戏梗头图。
 
 ## Current Focus
 
-Next iteration
+Restore comparison tables and original hero
 
 ## In Scope
 
-- 收敛新的最小闭环
+- 中英 README 与目录中的 297 条真实表格
+- 原创头图、来源记录与实际 GitHub 展示验证
 
 ## Out of Scope
 
@@ -22,8 +23,9 @@ Next iteration
 
 ## Tasks
 
-- [ ] Review homepage discovery PR; do not merge without owner approval
-- [ ] Resolve remaining network-check failures and collect comparable recent popularity data if available
+- [x] Restore all resources as category tables with full metadata
+- [ ] Generate and verify an original game-themed hero
+- [ ] Verify GitHub rendering and CI, then open a PR for owner review
 
 ## Verification
 

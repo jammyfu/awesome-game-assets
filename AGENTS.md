@@ -10,3 +10,9 @@
 - Zero telemetry: no analytics, trackers, counters or visitor badges.
 - Always run `python3 tools/verify.py` (offline) and `python3 tools/check_links.py` (network) before claiming completion.
 - Changes go through a PR; do not push content to `main` directly. When the current plan is done, run `python3 tools/next_plan.py`.
+
+## Owner-required presentation
+
+- Keep all 297 resources in genuine category-grouped comparison tables in both READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
+- For narrow screens, reduce column count and use GitHub's native table scrolling. Keep project/source, preview attribution, license evidence and description. Test actual GitHub rendering and disclose horizontal table scrolling.
+- Keep an original, project-specific game-themed hero in both README languages. Record the real generation prompt/tool; do not relabel third-party art as original.
