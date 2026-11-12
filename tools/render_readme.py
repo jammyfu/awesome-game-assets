@@ -87,7 +87,7 @@ def render_catalog(lang: str) -> str:
     lines += ["", t["rules_h"], ""]
     lines += [f"- {r.format(date=data['verified_on'])}" for r in t["rules"]]
     for c in data["categories"]:
-        lines += ["", f"## {c[lang]}", "", f'<img src="{c["cover"]}" alt="{t["cover_alt"]}: {c[lang]}" width="640">', "", t["cols"], "| --- | --- | --- | --- |"]
+        lines += ["", f"## {c[lang]}", "", f'<img src="{c["cover"]}" alt="{t["cover_alt"]}: {c[lang]}" width="640">']
         for e in [e for e in data["entries"] if e["category"] == c["id"]]:
             img = e["image"]
             if img["type"] == "original" and img.get("reuse_license") and img.get("license_source"):
@@ -105,11 +105,15 @@ def render_catalog(lang: str) -> str:
                 credit += f'<br><sub>⚠ {e["link_note"][lang]}</sub>'
             lic_text = e["license_zh"] if lang == "zh" else e["license"]
             lic = f"[{lic_text}]({e['license_source']})"
-            desc = e[lang].replace("|", "\\|")
-            lines.append(f'| {pic} | [{e["name"]}]({e["url"]}){credit} | {lic} | {desc} |')
-    lines += ["", t["credits_h"], "", t["credits"], "", t["credits_cols"], "| --- | --- |"]
+            desc = e[lang]
+            label = "许可" if lang == "zh" else "License"
+            lines += ["", f'### [{e["name"]}]({e["url"]})', "", pic, "", desc, "", f"**{label}:** {lic}"]
+            if credit:
+                lines += ["", credit.removeprefix("<br>")]
+
+    lines += ["", t["credits_h"], "", t["credits"], ""]
     for c in data.get("credits", []):
-        lines.append(f'| [{c["repo"]}]({c["url"]}) | {c["license"]} |')
+        lines.append(f'- [{c["repo"]}]({c["url"]}) · {c["license"]}')
     lines += ["", t["contrib"], "", t["license"], ""]
     return "\n".join(lines).replace("首页", "Home" if lang == "en" else "首页").replace("README.zh-CN.md", "../README.zh-CN.md").replace("README.md", "../README.md").replace("WARNING", "../WARNING").replace("docs/images/", "images/").replace("docs/image-prompts.md", "image-prompts.md").replace("CONTRIBUTING.md", "../CONTRIBUTING.md").replace("](LICENSE)", "](../LICENSE)")
 

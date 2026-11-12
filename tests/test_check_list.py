@@ -104,6 +104,17 @@ class ListTests(unittest.TestCase):
         self.assertEqual(len(check_list.readme_urls(en)), len(self.data["entries"]))
         self.assertEqual(check_list.readme_urls(en), check_list.readme_urls(zh))
 
+    def test_catalog_is_single_column_without_horizontal_tables(self):
+        for lang in ("en", "zh"):
+            text = render_readme.render_catalog(lang)
+            self.assertFalse(any(line.startswith("| ") for line in text.splitlines()))
+            self.assertEqual(len(check_list.readme_urls(text)), len(self.data["entries"]))
+            for entry in self.data["entries"]:
+                self.assertIn(entry[lang], text)
+                self.assertIn(entry["license_source"], text)
+            self.assertNotIn("<table", text)
+            self.assertNotIn("white-space", text)
+
     def test_homepage_featured_parity_and_budget(self):
         for lang in ("en", "zh"):
             text = render_readme.render(lang)

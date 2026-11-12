@@ -116,14 +116,8 @@ def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
 
 
 def readme_urls(text: str) -> list[str]:
-    rows = [l for l in text.splitlines() if l.startswith("| ") and not l.startswith("| ---") and l.count("|") >= 5]
-    out = []
-    for r in rows:
-        r = "| " + r.split("|", 3)[2].strip()
-        m = re.search(r"\| \[[^\]]+\]\((https://[^)]+)\)", r)
-        if m:
-            out.append(m.group(1))
-    return out
+    """Canonical catalog entries are level-three linked headings, not credits."""
+    return re.findall(r"^### \[[^\]]+\]\((https://[^)]+)\)$", text, re.M)
 
 
 def check_readmes(data: dict, errors: list[str]) -> None:
