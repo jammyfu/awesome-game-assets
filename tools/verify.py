@@ -25,6 +25,7 @@ def main() -> int:
         return 1
     print("Scaffold files present.")
     steps = [
+        [sys.executable, str(ROOT / "tools" / "check_locales.py")],
         [sys.executable, str(ROOT / "tools" / "check_list.py")],
         [sys.executable, str(ROOT / "tools" / "render_readme.py"), "--check"],
         [sys.executable, str(ROOT / "tools" / "next_plan.py"), "--check"],

@@ -2,7 +2,7 @@
 """Offline checks for the list. Standard library only, no network, no telemetry.
 
 Checks: entry format (URL / license / use in EN+ZH), unique ids and links,
-EN/ZH README parity, language (English + Chinese only), image provenance
+EN/ZH source parity, localized navigation (full locale checks in check_locales.py), image provenance
 (original images credited, generated images have prompts and stay under the
 size limit), banned keywords, and a zero-telemetry scan.
 """
@@ -139,12 +139,14 @@ def check_readmes(data: dict, errors: list[str]) -> None:
         errors.append(f"EN/ZH entry count differs: {len(en_urls)} vs {len(zh_urls)}")
     if sorted(en_urls) != sorted(want) or sorted(zh_urls) != sorted(want):
         errors.append("README rows do not match data/entries.json (run tools/render_readme.py)")
-    en_body = en.replace("简体中文", "")
+    en_body = en
+    for label in ("简体中文", "繁體中文", "日本語", "한국어"):
+        en_body = en_body.replace(label, "")
     if CJK.search(en_body):
         errors.append("README.md contains Chinese outside the language switch")
     for name, text in (("README.md", en), ("README.zh-CN.md", zh)):
-        if OTHER_SCRIPTS.search(text):
-            errors.append(f"{name}: only English and Chinese allowed")
+        if OTHER_SCRIPTS.search(text.replace("日本語", "").replace("한국어", "")):
+            errors.append(f"{name}: unexpected script outside language navigation")
 
 
 def check_telemetry(errors: list[str]) -> None:

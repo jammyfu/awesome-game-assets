@@ -1,8 +1,8 @@
 # Awesome Game Assets（游戏素材导航）
 
-[English](README.md) · **简体中文**
+[English](README.md) · **简体中文** · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
-<img src="docs/images/hero-loot.webp" alt="Original game-dev loot drop: a starter hero unlocks an overflowing chest of game assets" width="1200">
+<img src="docs/images/hero-loot.webp" alt="原创游戏开发素材宝箱：拿着木剑的主角解锁满箱素材" width="1200">
 
 原创头图：开局一把木剑，素材全靠捡。
 

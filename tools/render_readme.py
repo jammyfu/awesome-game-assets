@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render README.md, README.zh-CN.md and docs/image-prompts.md from data/*.json.
+"""Render five-language README/catalog files and project documentation from data/*.json.
 
 Usage:
   python3 tools/render_readme.py          # write files
@@ -8,63 +8,23 @@ Usage:
 from __future__ import annotations
 
 import sys
+import json
+from functools import lru_cache
 
 from common import ROOT, load_entries, load_prompts, load_warnings
 
-TEXT = {
-    "en": {
-        "title": "# Awesome Game Assets",
-        "switch": "**English** · [简体中文](README.zh-CN.md)",
-        "intro": "A curated directory of game assets and tools with license notes, including restricted licenses: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.",
-        "contents": "## Contents",
-        "warn_line": "> ⚠️ Repositories we found that look like piracy, cracks, paid-asset redistribution, star farming or malware are listed separately in [WARNING.md](WARNING.md) so you can avoid them. Do not use them.",
-        "rules_h": "## Inclusion rules",
-        "rules": [
-            "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
-            "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
-            "Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.",
-            "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
-            "Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results.",
-        ],
-        "cols": "| Project / Preview | License | Good for |",
-        "cover_alt": "Category cover (original illustration)",
-        "illustration": "illustration",
-        "img_from": "image: project",
-        "via": "listed in",
-        "credits_h": "## Credits",
-        "credits": "Some entries were found through these lists. We only took the pointers: every source was re-checked (license, reachability) and every description was rewritten for this list, nothing was copied wholesale. Entries found this way say *listed in* with a link to the list.",
-        "credits_cols": "| List | License |",
-        "contrib": "## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md). Edit `data/entries.json`, then run `python3 tools/render_readme.py` and `python3 tools/verify.py`.",
-        "license": "## License\n\nThe list text is [CC0 1.0](LICENSE). Linked assets and tools keep their own licenses. Preview images belong to their projects and are linked, not copied.",
-        "lang": "en",
-    },
-    "zh": {
-        "title": "# Awesome Game Assets（游戏素材导航）",
-        "switch": "[English](README.md) · **简体中文**",
-        "intro": "精选许可证清楚的游戏素材和工具：3D 模型、2D 精灵、贴图材质、音效、特效、技能 / 施法演示、动画和编辑器。每条写明地址、在来源页核实过的许可证，以及适合做什么。",
-        "contents": "## 目录",
-        "warn_line": "> ⚠️ 搜到的疑似盗版、破解、付费素材二次分发、刷星或恶意软件仓库单独列在 [WARNING.zh-CN.md](WARNING.zh-CN.md)，用于避坑，请勿使用。",
-        "rules_h": "## 收录规则",
-        "rules": [
-            "只收在项目或官网上写清许可证的来源。按素材单独授权的会标明，使用前请逐个确认。",
-            "不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。",
-            "自动检查报告失效、被拦截或超时的来源；警告不等于已验证可达。",
-            "许可证于 {date} 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。",
-            "预览优先引用原项目图片并署名。这里展示不等于授予再使用权，请按原始素材条款使用。头图和分类插画为生成图；缺少真实预览会明确说明，不用虚构效果替代。",
-        ],
-        "cols": "| 项目 / 预览 | 许可证 | 适合做什么 |",
-        "cover_alt": "分类封面（原创示意图）",
-        "illustration": "示意图",
-        "img_from": "图片来源：项目",
-        "via": "参考清单",
-        "credits_h": "## 致谢 / 参考清单",
-        "credits": "部分条目是从下面这些清单里发现的。我们只借了线索：每个来源都重新核实了许可证和可达性，描述全部为本清单重写，没有整份照搬。通过它们找到的条目会写「参考清单」并链接原清单。",
-        "credits_cols": "| 清单 | 许可证 |",
-        "contrib": "## 参与贡献\n\n见 [CONTRIBUTING.md](CONTRIBUTING.md)。改 `data/entries.json`，再跑 `python3 tools/render_readme.py` 和 `python3 tools/verify.py`。",
-        "license": "## 许可证\n\n清单文字采用 [CC0 1.0](LICENSE)。链接的素材和工具各自沿用原许可证。预览图归原项目所有，只引用不复制。",
-        "lang": "zh",
-    },
-}
+LOCALES = {"en": ("English", ""), "zh": ("简体中文", ".zh-CN"), "zh-TW": ("繁體中文", ".zh-TW"), "ja": ("日本語", ".ja"), "ko": ("한국어", ".ko")}
+
+@lru_cache(maxsize=None)
+def locale_data(lang):
+    result = json.loads((ROOT / "data" / "locales" / f"{lang}.json").read_text(encoding="utf-8"))
+    if lang in ("en", "zh"):
+        data = load_entries()
+        result.update(categories={c["id"]: c[lang] for c in data["categories"]}, entries={e["id"]: e[lang] for e in data["entries"]}, link_notes={e["id"]: e["link_note"][lang] for e in data["entries"] if e.get("link_note")})
+    return result
+
+def language_nav(lang, stem):
+    return " · ".join(f"**{name}**" if code == lang else f"[{name}]({stem}{suffix}.md)" for code, (name, suffix) in LOCALES.items())
 
 
 def anchor(title: str) -> str:
@@ -79,6 +39,8 @@ def anchor(title: str) -> str:
 
 def license_summary(license_name: str, lang: str) -> str:
     """Plain-language guidance, not a replacement for the linked terms."""
+    if lang not in ("en", "zh"):
+        return locale_data(lang)["license_summaries"][license_name]
     zh = lang == "zh"
     def pick(en, cn): return cn if zh else en
     l = license_name.lower()
@@ -130,14 +92,21 @@ def license_summary(license_name: str, lang: str) -> str:
 
 
 def render_catalog(lang: str, homepage: bool = False) -> str:
-    t = TEXT[lang]
     data = load_entries()
-    switch = "**English** · [简体中文](catalog.zh-CN.md)" if lang == "en" else "[English](catalog.md) · **简体中文**"
-    lines = [t["title"], "", switch, "", "[Back to overview](README.md)" if lang == "en" else "[返回首页](README.zh-CN.md)", "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
+    loc = locale_data(lang)
+    t = loc["ui"]
+    for c in data["categories"]:
+        c[lang] = loc["categories"][c["id"]]
+    for e in data["entries"]:
+        e[lang] = loc["entries"][e["id"]]
+        if e.get("link_note"):
+            e["link_note"][lang] = loc["link_notes"][e["id"]]
+    suffix = LOCALES[lang][1]
+    switch = language_nav(lang, "catalog")
+    lines = [t["title"], "", switch, "", f'[{t["back"]}](README{suffix}.md)', "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     if homepage:
-        lines = [t["title"], "", t["switch"], "", f'<img src="{data["discovery"]["hero"]}" alt="Original game-dev loot drop: a starter hero unlocks an overflowing chest of game assets" width="1200">', "", "原创头图：开局一把木剑，素材全靠捡。" if lang == "zh" else "Original illustration: starter sword equipped. Asset loot unlocked.", "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
-    lines += ["**[开始浏览素材](#" + anchor(data["categories"][0][lang]) + ")** · [参与贡献](CONTRIBUTING.md)" if lang == "zh" else "**[Browse the asset tables](#" + anchor(data["categories"][0][lang]) + ")** · [Contribute](CONTRIBUTING.md)", "", "每类默认显示前 15 项，其他可展开。GitHub 项目按累计星标排序（2026-11-12 快照）；无可比数据的网站随后展示，不代表近期趋势。[排序说明](docs/discovery.md)。" if lang == "zh" else "First 15 resources per category; expand for the rest. GitHub repos sort by total stars (2026-11-12 snapshot); sites without comparable data follow. This is not recent growth. [Ordering notes](docs/discovery.md).", ""]
-    lines += ["手机浏览：表格可左右滑动，保留项目、许可与用途对照。" if lang == "zh" else "On phones, swipe tables sideways to compare projects, licenses and uses.", ""]
+        lines = [t["title"], "", language_nav(lang, "README"), "", f'<img src="{data["discovery"]["hero"]}" alt="{t["hero_alt"]}" width="1200">', "", t["hero_caption"], "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
+    lines += [f'**[{t["browse"]}](#{anchor(data["categories"][0][lang])})** · [{t["contribute_label"]}](CONTRIBUTING.md)', "", t["sort_note"], "", t["mobile"], ""]
     for c in data["categories"]:
         lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
     lines += ["", t["rules_h"], ""]
@@ -148,31 +117,31 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
         entries = sorted([e for e in data["entries"] if e["category"] == c["id"]], key=lambda e: (e.get("popularity", {}).get("value") is None, -(e.get("popularity", {}).get("value") or 0)))
         for index, e in enumerate(entries):
             if index == 15:
-                summary = f"展开其余 {len(entries) - 15} 项" if lang == "zh" else f"Show remaining {len(entries) - 15} resources"
+                summary = t["expand"].format(count=len(entries) - 15)
                 lines += ["", "<details>", f"<summary>{summary}</summary>", "", t["cols"], "| --- | --- | --- |"]
             img = e["image"]
             if img["type"] == "original" and img.get("display_status") == "verified":
                 pic = f'<img src="{img["src"]}" alt="{e["name"]}" width="160">'
                 credit = f'<br><sub>{t["img_from"]} [{e["name"]}]({img["source"]})</sub>'
                 if img.get("kind") == "identity":
-                    credit += "<br><sub>项目标识，非素材效果</sub>" if lang == "zh" else "<br><sub>Project identity, not an asset preview</sub>"
+                    credit += f'<br><sub>{t["identity"]}</sub>'
             elif img["type"] == "original":
-                pic = f'[View at source]({img["source"]})' if lang == "en" else f'[查看原始来源]({img["source"]})'
+                pic = f'[{t["source"]}]({img["source"]})'
                 credit = ""
             else:
-                pic = f'[未找到可用原图 · 查看项目]({e["url"]})' if lang == "zh" else f'[No usable original preview found · open project]({e["url"]})'
+                pic = f'[{t["missing"]}]({e["url"]})'
                 credit = ""
             for v in e.get("via", []):
                 credit += f'<br><sub>{t["via"]} [{v}](https://github.com/{v})</sub>'
             if e.get("link_note"):
                 credit += f'<br><sub>⚠ {e["link_note"][lang]}</sub>'
             lic_text = e["license_zh"] if lang == "zh" else e["license"]
-            scope = ("清单文字：" if lang == "zh" else "List text: ") if e["category"] == "lists" else ""
+            scope = t["list_scope"] if e["category"] == "lists" else ""
             lic = f"{scope}{license_summary(e['license'], lang)}<br><sub>([{lic_text}]({e['license_source']}))</sub>"
             desc = e[lang]
             name = e["name"].replace("|", "\\|")
             heat = e.get("popularity", {}).get("value")
-            credit += f"<br><sub>GitHub ★ {heat:,}</sub>" if heat is not None else ("<br><sub>热度暂无可比数据</sub>" if lang == "zh" else "<br><sub>No comparable popularity data</sub>")
+            credit += f"<br><sub>GitHub ★ {heat:,}</sub>" if heat is not None else f'<br><sub>{t["unknown_heat"]}</sub>'
             lines.append(f'| [{name}]({e["url"]})<br>{pic}{credit} | {lic} | {desc} |')
 
         if len(entries) > 15:
@@ -185,7 +154,7 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
     if homepage:
         return "\n".join(lines)
     text = "\n".join(lines)
-    for name in ("README.md", "README.zh-CN.md", "WARNING.md", "WARNING.zh-CN.md", "CONTRIBUTING.md", "LICENSE"):
+    for name in tuple("README" + suffix + ".md" for _, suffix in LOCALES.values()) + ("WARNING.md", "WARNING.zh-CN.md", "CONTRIBUTING.md", "LICENSE"):
         text = text.replace("](" + name + ")", "](../" + name + ")")
     text = text.replace('src="docs/images/', 'src="images/')
     for name in ("image-prompts.md", "discovery.md"):
@@ -288,6 +257,10 @@ OUTPUTS = {
     "docs/catalog.md": lambda: render_catalog("en"),
     "docs/catalog.zh-CN.md": lambda: render_catalog("zh"),
 }
+
+for code, (_, suffix) in LOCALES.items():
+    OUTPUTS["README" + suffix + ".md"] = lambda code=code: render(code)
+    OUTPUTS["docs/catalog" + suffix + ".md"] = lambda code=code: render_catalog(code)
 
 
 def main() -> int:

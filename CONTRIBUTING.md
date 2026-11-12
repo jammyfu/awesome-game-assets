@@ -31,3 +31,21 @@ Open a pull request; CI runs the same checks.
 Both READMEs and `docs/catalog*.md` are generated. Featured IDs live in `data/entries.json` under `discovery`; keep ordering evidence current. Third-party previews require an explicit `image.reuse_license` and `image.license_source`, not merely a repository code license. Without media rights, use a source-page link.
 
 中英首页与完整目录均自动生成。精选 ID 与排序依据放在 `data/entries.json` 的 `discovery` 中。第三方媒体须记录 `image.reuse_license` 和 `image.license_source`；没有明确媒体授权时只链接来源，代码许可不能替代图片授权。
+
+## Five-language catalogs
+
+The English/Simplified Chinese entry descriptions remain in `data/entries.json`.
+Traditional Chinese (Taiwan), Japanese and Korean translations are in
+`data/locales/zh-TW.json`, `ja.json` and `ko.json`; shared interface copy also
+lives in `data/locales/`. Keep every entry ID, category and practical license
+summary covered. Do not translate project names, URLs or canonical license IDs.
+Traditional Chinese uses natural Taiwan terminology rather than mechanical
+character conversion.
+
+After an English source change, review all three translations before updating
+each locale's `source_sha256` to `tools.check_locales.source_digest()`. Never
+refresh hashes to bypass incomplete translations. Run `python3 tools/render_readme.py`
+and `python3 tools/verify.py`; generated READMEs and catalogs must not be edited
+by hand. Contributor, warning and research documents currently remain in their
+existing English/Simplified Chinese editions; the five-language scope is the
+complete asset directory and its browsing interface.

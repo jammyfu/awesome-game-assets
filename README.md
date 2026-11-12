@@ -1,6 +1,6 @@
 # Awesome Game Assets
 
-**English** · [简体中文](README.zh-CN.md)
+**English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
 <img src="docs/images/hero-loot.webp" alt="Original game-dev loot drop: a starter hero unlocks an overflowing chest of game assets" width="1200">
 

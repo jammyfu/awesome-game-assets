@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Offline checks (format, EN/ZH parity, duplicates, telemetry, images, tests)
+      - name: Offline checks (format, five-language parity and source drift, duplicates, telemetry, images, tests)
         run: python3 tools/verify.py
       - name: Link and license checks
         env:

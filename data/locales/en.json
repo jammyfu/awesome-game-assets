@@ -1,0 +1,41 @@
+{
+  "ui": {
+    "title": "# Awesome Game Assets",
+    "switch": "**English** · [简体中文](README.zh-CN.md)",
+    "intro": "A curated directory of game assets and tools with license notes, including restricted licenses: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.",
+    "contents": "## Contents",
+    "warn_line": "> ⚠️ Repositories we found that look like piracy, cracks, paid-asset redistribution, star farming or malware are listed separately in [WARNING.md](WARNING.md) so you can avoid them. Do not use them.",
+    "rules_h": "## Inclusion rules",
+    "rules": [
+      "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
+      "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
+      "Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.",
+      "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
+      "Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results."
+    ],
+    "cols": "| Project / Preview | License | Good for |",
+    "cover_alt": "Category cover (original illustration)",
+    "illustration": "illustration",
+    "img_from": "image: project",
+    "via": "listed in",
+    "credits_h": "## Credits",
+    "credits": "Some entries were found through these lists. We only took the pointers: every source was re-checked (license, reachability) and every description was rewritten for this list, nothing was copied wholesale. Entries found this way say *listed in* with a link to the list.",
+    "credits_cols": "| List | License |",
+    "contrib": "## Contributing\n\nSee [CONTRIBUTING.md](CONTRIBUTING.md). Edit `data/entries.json`, then run `python3 tools/render_readme.py` and `python3 tools/verify.py`.",
+    "license": "## License\n\nThe list text is [CC0 1.0](LICENSE). Linked assets and tools keep their own licenses. Preview images belong to their projects and are linked, not copied.",
+    "lang": "en",
+    "back": "Back to overview",
+    "hero_alt": "Original game-dev loot drop: a starter hero unlocks an overflowing chest of game assets",
+    "hero_caption": "Original illustration: starter sword equipped. Asset loot unlocked.",
+    "browse": "Browse the asset tables",
+    "contribute_label": "Contribute",
+    "sort_note": "First 15 resources per category; expand for the rest. GitHub repos sort by total stars (2026-11-12 snapshot); sites without comparable data follow. This is not recent growth. [Ordering notes](docs/discovery.md).",
+    "mobile": "On phones, swipe tables sideways to compare projects, licenses and uses.",
+    "expand": "Show remaining {count} resources",
+    "identity": "Project identity, not an asset preview",
+    "source": "View at source",
+    "missing": "No usable original preview found · open project",
+    "list_scope": "List text: ",
+    "unknown_heat": "No comparable popularity data"
+  }
+}
