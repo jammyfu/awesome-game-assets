@@ -104,10 +104,10 @@ class ListTests(unittest.TestCase):
         self.assertEqual(len(check_list.readme_urls(en)), len(self.data["entries"]))
         self.assertEqual(check_list.readme_urls(en), check_list.readme_urls(zh))
 
-    def test_catalog_is_single_column_without_horizontal_tables(self):
+    def test_catalog_preserves_real_comparison_tables(self):
         for lang in ("en", "zh"):
             text = render_readme.render_catalog(lang)
-            self.assertFalse(any(line.startswith("| ") for line in text.splitlines()))
+            self.assertEqual(text.count("| --- | --- | --- |"), 15)
             self.assertEqual(len(check_list.readme_urls(text)), len(self.data["entries"]))
             for entry in self.data["entries"]:
                 self.assertIn(entry[lang], text)
@@ -115,10 +115,15 @@ class ListTests(unittest.TestCase):
             self.assertNotIn("<table", text)
             self.assertNotIn("white-space", text)
 
-    def test_homepage_featured_parity_and_budget(self):
+    def test_homepage_preserves_all_entries_and_original_hero(self):
         for lang in ("en", "zh"):
             text = render_readme.render(lang)
-            self.assertLess(len(text.encode()), 12000)
+            self.assertEqual(len(check_list.readme_urls(text)), 297)
+            self.assertIn("docs/images/hero-loot.webp", text)
+            hero = ROOT / "docs/images/hero-loot.webp"
+            self.assertTrue(hero.is_file())
+            self.assertLess(hero.stat().st_size, 300000)
+            self.assertIn("docs/images/hero-loot.webp", load_prompts()["images"])
             for eid in self.data["discovery"]["featured_ids"]:
                 entry = next(e for e in self.data["entries"] if e["id"] == eid)
                 self.assertIn(entry["url"], text)
