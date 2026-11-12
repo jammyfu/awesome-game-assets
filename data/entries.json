@@ -325,7 +325,9 @@
       "image": {
         "type": "original",
         "src": "https://kenney.nl/media/pages/assets/ui-pack/ab9e396e4d-1718203978/preview.png",
-        "source": "https://kenney.nl/assets/ui-pack"
+        "source": "https://kenney.nl/assets/ui-pack",
+        "reuse_license": "CC0-1.0",
+        "license_source": "https://kenney.nl/assets/ui-pack"
       }
     },
     {
@@ -4326,7 +4328,9 @@
       "image": {
         "type": "original",
         "src": "https://quaternius.com/assets/images/fullres/universalbasecharacters.jpg",
-        "source": "https://quaternius.com/packs/universalbasecharacters.html"
+        "source": "https://quaternius.com/packs/universalbasecharacters.html",
+        "reuse_license": "CC0-1.0",
+        "license_source": "https://quaternius.com/packs/universalbasecharacters.html"
       }
     },
     {
@@ -4676,7 +4680,9 @@
       "image": {
         "type": "original",
         "src": "https://kenney.nl/media/pages/assets/pixel-platformer/bf585643f0-1696667860/samplea.png",
-        "source": "https://kenney.nl/assets/pixel-platformer"
+        "source": "https://kenney.nl/assets/pixel-platformer",
+        "reuse_license": "CC0-1.0",
+        "license_source": "https://kenney.nl/assets/pixel-platformer"
       }
     },
     {
@@ -4864,5 +4870,22 @@
       "url": "https://github.com/Calinou/awesome-godot",
       "license": "CC-BY-4.0"
     }
-  ]
+  ],
+  "discovery": {
+    "featured_ids": [
+      "kenney-pixel-platformer",
+      "quaternius-base-characters",
+      "kenney-ui-pack"
+    ],
+    "priority_basis": "editorial_priority",
+    "heat_status": "unknown",
+    "source": "docs/discovery.md",
+    "observed_at": "2026-11-12T00:24:48.400651+00:00",
+    "window": null,
+    "metric": null,
+    "value": null,
+    "group_order": "Reusable asset packs first; tools follow in category navigation. All categories retain their existing topical order.",
+    "tie_break": "Existing dataset order within each category",
+    "reason": "A complete 2D scene, rigged 3D characters and UI cover three distinct prototyping needs."
+  }
 }

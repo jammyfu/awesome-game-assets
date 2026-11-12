@@ -15,7 +15,7 @@ TEXT = {
     "en": {
         "title": "# Awesome Game Assets",
         "switch": "**English** · [简体中文](README.zh-CN.md)",
-        "intro": "A curated list of openly licensed game assets and tools: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.",
+        "intro": "A curated directory of game assets and tools with license notes, including restricted licenses: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.",
         "contents": "## Contents",
         "warn_line": "> ⚠️ Repositories we found that look like piracy, cracks, paid-asset redistribution, star farming or malware are listed separately in [WARNING.md](WARNING.md) so you can avoid them. Do not use them.",
         "rules_h": "## Inclusion rules",
@@ -24,7 +24,7 @@ TEXT = {
             "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
             "Every link is checked: 404s are removed; sites that answer automated checks with 403 or time out are kept and marked ⚠.",
             "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
-            "Preview images are the project's own images, linked from the original address (credited in each row). Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).",
+            "Embedded third-party previews require an explicit reuse-license record; other media are linked at the source. Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).",
         ],
         "cols": "| Preview | Project | License | Good for |",
         "cover_alt": "Category cover (original illustration)",
@@ -50,7 +50,7 @@ TEXT = {
             "不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。",
             "每条链接都检查过：404 剔除；对自动检查返回 403 或超时的保留并标 ⚠。",
             "许可证于 {date} 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。",
-            "预览图用项目自己的图，直接引用原地址（每行注明出处）。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [docs/image-prompts.md](docs/image-prompts.md)。",
+            "第三方预览仅在记录明确再使用许可时嵌入；其他媒体只链接原始来源。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [docs/image-prompts.md](docs/image-prompts.md)。",
         ],
         "cols": "| 预览 | 项目 | 许可证 | 适合做什么 |",
         "cover_alt": "分类封面（原创示意图）",
@@ -77,10 +77,11 @@ def anchor(title: str) -> str:
     return "".join(out)
 
 
-def render(lang: str) -> str:
+def render_catalog(lang: str) -> str:
     t = TEXT[lang]
     data = load_entries()
-    lines = [t["title"], "", t["switch"], "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
+    switch = "**English** · [简体中文](catalog.zh-CN.md)" if lang == "en" else "[English](catalog.md) · **简体中文**"
+    lines = [t["title"], "", switch, "", "[Back to overview](README.md)" if lang == "en" else "[返回首页](README.zh-CN.md)", "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     for c in data["categories"]:
         lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
     lines += ["", t["rules_h"], ""]
@@ -89,9 +90,12 @@ def render(lang: str) -> str:
         lines += ["", f"## {c[lang]}", "", f'<img src="{c["cover"]}" alt="{t["cover_alt"]}: {c[lang]}" width="640">', "", t["cols"], "| --- | --- | --- | --- |"]
         for e in [e for e in data["entries"] if e["category"] == c["id"]]:
             img = e["image"]
-            if img["type"] == "original":
+            if img["type"] == "original" and img.get("reuse_license") and img.get("license_source"):
                 pic = f'<img src="{img["src"]}" alt="{e["name"]}" width="160">'
                 credit = f'<br><sub>{t["img_from"]} [{e["name"]}]({img["source"]})</sub>'
+            elif img["type"] == "original":
+                pic = f'[View at source]({img["source"]})' if lang == "en" else f'[查看原始来源]({img["source"]})'
+                credit = ""
             else:
                 pic = f'<img src="{img["file"]}" alt="{e["name"]} ({t["illustration"]})" width="160">'
                 credit = f'<br><sub>*{t["illustration"]}*</sub>'
@@ -107,8 +111,38 @@ def render(lang: str) -> str:
     for c in data.get("credits", []):
         lines.append(f'| [{c["repo"]}]({c["url"]}) | {c["license"]} |')
     lines += ["", t["contrib"], "", t["license"], ""]
-    return "\n".join(lines)
+    return "\n".join(lines).replace("首页", "Home" if lang == "en" else "首页").replace("README.zh-CN.md", "../README.zh-CN.md").replace("README.md", "../README.md").replace("WARNING", "../WARNING").replace("docs/images/", "images/").replace("docs/image-prompts.md", "image-prompts.md").replace("CONTRIBUTING.md", "../CONTRIBUTING.md").replace("](LICENSE)", "](../LICENSE)")
 
+
+
+def render(lang: str) -> str:
+    data = load_entries()
+    zh = lang == "zh"
+    catalog = "docs/catalog.zh-CN.md" if zh else "docs/catalog.md"
+    t = TEXT[lang]
+    lines = [t["title"], "", t["switch"], "",
+        "为独立开发者挑选游戏素材：2D 精灵、3D 模型、音效、UI 和制作工具，每条附原始来源与许可说明。" if zh else "Find game assets for your next build: 2D sprites, 3D models, audio, UI and production tools, with original sources and license notes.", "",
+        f"**[浏览全部 {len(data['entries'])} 条资源]({catalog})** · [参与贡献](CONTRIBUTING.md)" if zh else f"**[Browse all {len(data['entries'])} resources]({catalog})** · [Contribute](CONTRIBUTING.md)", "",
+        f"{len(data['categories'])} 个分类 · 中英双语 · 不托管第三方素材 · 无遥测" if zh else f"{len(data['categories'])} categories · English + Chinese · No third-party asset hosting · No telemetry", "",
+        "## 从这些素材开始" if zh else "## Start with these assets", ""]
+    entries = {e['id']: e for e in data['entries']}
+    for eid in data['discovery']['featured_ids']:
+        e = entries[eid]; img = e['image']
+        lines += [f"### {e['name']}", "", f'<a href="{e["url"]}"><img src="{img["src"]}" alt="{e["name"]}" width="520"></a>', "", e[lang], "",
+            f"[原始素材]({e['url']}) · [许可：{e['license_zh']}]({e['license_source']}) · [预览来源]({img['source']})" if zh else f"[Get the assets]({e['url']}) · [License: {e['license']}]({e['license_source']}) · [Preview source]({img['source']})", ""]
+    lines += ["精选采用编辑排序，近期热度暂无可比数据；[排序依据](docs/discovery.md)。" if zh else "Editorial picks; comparable recent popularity data is unavailable. [Selection notes](docs/discovery.md).", "",
+        "## 按用途查找" if zh else "## Explore by task", ""]
+    for c in data['categories']:
+        count = sum(e['category'] == c['id'] for e in data['entries'])
+        lines.append(f"- [{c[lang]}]({catalog}#{anchor(c[lang])}) · {count}")
+    lines += ["", "## 使用前确认许可" if zh else "## Check before shipping", "",
+        "清单不是统一许可的素材包。CC0、署名、相同方式共享、非商业与自定义条款不能混用；代码许可也不自动覆盖模型权重、输出或示例素材。以每条原始许可和素材文件为准。" if zh else "This is a directory, not a uniformly licensed asset pack. CC0, attribution, share-alike, non-commercial and custom terms differ. A code license does not automatically cover model weights, outputs or example assets. Check the original terms and included license files.", "",
+        "[许可与预览说明](docs/discovery.md) · [风险警示](WARNING.zh-CN.md)" if zh else "[License and preview notes](docs/discovery.md) · [Risk warnings](WARNING.md)", "",
+        "## 参与贡献" if zh else "## Contribute", "",
+        "[推荐素材或修复链接](CONTRIBUTING.md)：请提供原始来源、许可依据、用途与预览授权。清单由同一份数据生成两种语言；欢迎修正翻译。" if zh else "[Suggest an asset or fix a link](CONTRIBUTING.md): include the canonical source, license evidence, use case and preview rights. Both languages are generated from one dataset; translation corrections are welcome.", "",
+        "如果这份清单帮你找到合适的素材，欢迎加星以便下次查找。" if zh else "If this list helps you find your next asset, a star makes it easy to find again.", "",
+        t['license'], ""]
+    return "\n".join(lines)
 
 def render_prompts() -> str:
     p = load_prompts()
@@ -191,6 +225,8 @@ OUTPUTS = {
     "README.md": lambda: render("en"),
     "README.zh-CN.md": lambda: render("zh"),
     "docs/image-prompts.md": render_prompts,
+    "docs/catalog.md": lambda: render_catalog("en"),
+    "docs/catalog.zh-CN.md": lambda: render_catalog("zh"),
 }
 
 

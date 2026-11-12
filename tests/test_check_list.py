@@ -59,7 +59,7 @@ class ListTests(unittest.TestCase):
 
     def test_credits_section_rendered(self):
         for lang in ("en", "zh"):
-            text = render_readme.render(lang)
+            text = render_readme.render_catalog(lang)
             for c in self.data["credits"]:
                 self.assertIn(c["url"], text)
 
@@ -99,10 +99,28 @@ class ListTests(unittest.TestCase):
         self.assertIsNotNone(check_list.TELEMETRY.search("https://plausible.io/js/script.js"))
 
     def test_readmes_parity(self):
-        en = render_readme.render("en")
-        zh = render_readme.render("zh")
+        en = render_readme.render_catalog("en")
+        zh = render_readme.render_catalog("zh")
         self.assertEqual(len(check_list.readme_urls(en)), len(self.data["entries"]))
         self.assertEqual(check_list.readme_urls(en), check_list.readme_urls(zh))
+
+    def test_homepage_featured_parity_and_budget(self):
+        for lang in ("en", "zh"):
+            text = render_readme.render(lang)
+            self.assertLess(len(text.encode()), 12000)
+            for eid in self.data["discovery"]["featured_ids"]:
+                entry = next(e for e in self.data["entries"] if e["id"] == eid)
+                self.assertIn(entry["url"], text)
+                self.assertTrue(entry["image"].get("reuse_license"))
+                self.assertTrue(entry["image"].get("license_source"))
+
+    def test_unverified_media_not_embedded(self):
+        text = render_readme.render_catalog("en")
+        for e in self.data["entries"]:
+            img = e["image"]
+            if img["type"] == "original" and not img.get("reuse_license"):
+                self.assertNotIn('src="' + img["src"] + '"', text)
+                self.assertIn(img["source"], text)
 
     def test_every_category_has_cover_prompt(self):
         prompts = load_prompts()["images"]

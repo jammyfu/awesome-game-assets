@@ -116,11 +116,13 @@ def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
 
 
 def readme_urls(text: str) -> list[str]:
-    rows = [l for l in text.splitlines() if l.startswith("| <img")]
+    rows = [l for l in text.splitlines() if l.startswith("| ") and not l.startswith("| ---") and l.count("|") >= 5]
     out = []
     for r in rows:
+        r = "| " + r.split("|", 3)[2].strip()
         m = re.search(r"\| \[[^\]]+\]\((https://[^)]+)\)", r)
-        out.append(m.group(1) if m else "")
+        if m:
+            out.append(m.group(1))
     return out
 
 
@@ -131,7 +133,8 @@ def check_readmes(data: dict, errors: list[str]) -> None:
         errors.append("READMEs must link to the warning list")
     if "README.zh-CN.md" not in en or "README.md" not in zh:
         errors.append("READMEs must link to each other")
-    en_urls, zh_urls = readme_urls(en), readme_urls(zh)
+    en_urls = readme_urls((ROOT / "docs/catalog.md").read_text(encoding="utf-8"))
+    zh_urls = readme_urls((ROOT / "docs/catalog.zh-CN.md").read_text(encoding="utf-8"))
     want = [e["url"] for e in data["entries"]]
     for name, urls in (("README.md", en_urls), ("README.zh-CN.md", zh_urls)):
         normed = [norm(u) for u in urls]

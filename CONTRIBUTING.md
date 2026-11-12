@@ -25,3 +25,7 @@ Open a pull request; CI runs the same checks.
 4. 配图：优先用项目自己的预览图，直接引用原地址（`"type": "original"`，写 `src` 和 `source`）。不要把第三方图片复制进仓库。原创生成图放 `docs/images/`（< 300 KB），提示词写进 `data/image-prompts.json`。
 5. 只用中文和英文。不加统计、追踪或访客计数。
 6. 运行上面三条命令，全绿后开 PR；CI 会跑同样的检查。
+
+## Homepage and catalog
+
+Both READMEs and `docs/catalog*.md` are generated. Featured IDs live in `data/entries.json` under `discovery`; keep ordering evidence current. Third-party previews require an explicit `image.reuse_license` and `image.license_source`, not merely a repository code license. Without media rights, use a source-page link.

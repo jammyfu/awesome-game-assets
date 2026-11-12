@@ -1,0 +1,15 @@
+# Awesome Game Assets
+
+> A bilingual directory of game assets and production tools with source links and license notes. This repository does not distribute third-party assets or grant a universal commercial-use license.
+
+## Browse
+- [English overview](README.md): representative packs and category navigation.
+- [中文入口](README.zh-CN.md): 精选素材和分类导航。
+- [Complete catalog](docs/catalog.md): all entries, source pages and license notes.
+- [完整中文目录](docs/catalog.zh-CN.md): 全量条目、来源和许可。
+
+## Reuse and maintenance
+- [Selection and preview rights](docs/discovery.md): editorial ordering, unknown popularity and media boundaries.
+- [Contributing](CONTRIBUTING.md): dataset and verification workflow.
+- [List license](LICENSE): CC0 for the list text, not every linked asset.
+- [Risk warnings](WARNING.md): sources to avoid, not recommendations.
