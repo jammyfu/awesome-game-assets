@@ -107,7 +107,7 @@ class ListTests(unittest.TestCase):
     def test_catalog_preserves_real_comparison_tables(self):
         for lang in ("en", "zh"):
             text = render_readme.render_catalog(lang)
-            self.assertEqual(text.count("| --- | --- | --- |"), 15)
+            self.assertEqual(text.count("| --- | --- | --- |"), 15 + text.count("<details>"))
             self.assertEqual(len(check_list.readme_urls(text)), len(self.data["entries"]))
             for entry in self.data["entries"]:
                 self.assertIn(entry[lang], text)
@@ -130,13 +130,54 @@ class ListTests(unittest.TestCase):
                 self.assertTrue(entry["image"].get("reuse_license"))
                 self.assertTrue(entry["image"].get("license_source"))
 
-    def test_unverified_media_not_embedded(self):
+    def test_official_media_embedded_with_credit(self):
         text = render_readme.render_catalog("en")
         for e in self.data["entries"]:
             img = e["image"]
-            if img["type"] == "original" and not img.get("reuse_license"):
-                self.assertNotIn('src="' + img["src"] + '"', text)
+            if img["type"] == "original" and img.get("display_status") == "verified":
+                self.assertIn('src="' + img["src"] + '"', text)
                 self.assertIn(img["source"], text)
+            elif img["type"] == "generated":
+                self.assertNotIn('src="' + img["file"] + '"', text)
+
+    def test_plain_language_license(self):
+        self.assertIn("须署名", render_readme.license_summary("CC-BY-4.0", "zh"))
+        self.assertIn("仅限非商用", render_readme.license_summary("MIT (code) / CC-BY-NC-SA-4.0 (art)", "zh"))
+        self.assertIn("逐项", render_readme.license_summary("Per asset (CC0 / CC-BY)", "zh"))
+        text = render_readme.render("en")
+        self.assertIn("<br><sub>([MIT]", text)
+
+    def test_folds_keep_all_rows(self):
+        text = render_readme.render("en")
+        self.assertEqual(text.count("<details>"), text.count("</details>"))
+        expected = sum(sum(e["category"] == c["id"] for e in self.data["entries"]) > 15 for c in self.data["categories"])
+        self.assertEqual(text.count("<details>"), expected)
+        self.assertEqual(len(check_list.readme_urls(text)), 297)
+        self.assertIn("snapshot", text)
+        for section in text.split("<details>")[1:]:
+            self.assertIn("| --- | --- | --- |", section.split("</details>")[0])
+
+    def test_mixed_license_boundaries(self):
+        summary = render_readme.license_summary
+        self.assertIn("逐项", summary("Per sound (CC0 / CC-BY-4.0 / CC-BY-NC-4.0)", "zh"))
+        self.assertIn("改编沿用", summary("MIT (code) / CC-BY-NC-SA-4.0 (art)", "zh"))
+        self.assertIn("不可改编", summary("MIT (code) / CC-BY-NC-ND-4.0 (book text)", "zh"))
+        self.assertIn("MIT 声明", summary("CC0-1.0 (assets) / MIT (code)", "zh"))
+
+    def test_visible_rows_and_star_order(self):
+        import re
+        text = render_readme.render("en")
+        for c in self.data["categories"]:
+            section = text.split("## " + c["en"] + "\n", 1)[1].split("\n## ", 1)[0]
+            es = [e for e in self.data["entries"] if e["category"] == c["id"]]
+            self.assertEqual(len(check_list.readme_urls(section.split("<details>")[0])), min(15, len(es)))
+            stars = [int(v.replace(",", "")) for v in re.findall(r"GitHub ★ ([\d,]+)", section)]
+            self.assertEqual(stars, sorted(stars, reverse=True))
+        for e in self.data["entries"]:
+            im = e["image"]
+            if im.get("display_status") == "verified":
+                for field in ("checked_on", "provenance", "source"):
+                    self.assertTrue(im.get(field), (e["id"], field))
 
     def test_every_category_has_cover_prompt(self):
         prompts = load_prompts()["images"]

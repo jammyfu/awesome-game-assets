@@ -2,30 +2,31 @@
 
 ## Plan ID
 
-PLAN-003
+PLAN-004
 
 ## Goal
 
-恢复用户要求的完整素材对照表格，并加入原创游戏梗头图。
+恢复原项目预览、人话许可与按分类折叠表格。
 
 ## Current Focus
 
-Restore comparison tables and original hero
+Original previews, practical use conditions and compact browsing
 
 ## In Scope
 
-- 中英 README 与目录中的 297 条真实表格
-- 原创头图、来源记录与实际 GitHub 展示验证
+- 297条、15类、双语表格与现有头图
+- 原图来源、热度快照、每类15条默认展示
 
 ## Out of Scope
 
-- 不并行扩张多个大方向
+- 不生成替代素材效果，不自动合并
 
 ## Tasks
 
-- [x] Restore all resources as category tables with full metadata
-- [ ] Generate and verify an original game-themed hero
-- [ ] Verify GitHub rendering and CI, then open a PR for owner review
+- [x] Restore credited original images and audit replacements
+- [x] Add plain-language license summaries and total-star snapshot
+- [x] Preserve full tables behind per-category disclosures
+- [ ] Verify GitHub expansion, images, narrow-screen scrolling and final CI
 
 ## Verification
 
@@ -34,4 +35,4 @@ Restore comparison tables and original hero
 
 ## Next Candidates
 
-- 根据 backlog 与验证结果继续细化
+- Further original previews for source-only entries

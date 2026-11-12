@@ -111,7 +111,7 @@ def check_images(data: dict, prompts: dict, errors: list[str]) -> None:
             rel = p.relative_to(ROOT).as_posix()
             if p.is_file() and rel not in prompt_files:
                 errors.append(f"{rel}: stored image without prompt/provenance")
-    for f in prompt_files - used:
+    for f in prompt_files - used - set(prompts.get("archived_files", [])):
         errors.append(f"{f}: prompt listed but image not used")
 
 

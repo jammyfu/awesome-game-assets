@@ -106,5 +106,20 @@
       "date": "2026-11-12",
       "post_processing": "ImageMagick: proportionally resized to 1600x640 and encoded as WebP, quality 85; 182392 bytes. Standalone prompt; no legacy shared style suffix appended."
     }
-  }
+  },
+  "archived_files": [
+    "docs/images/entry-bevy.webp",
+    "docs/images/entry-castagne.webp",
+    "docs/images/entry-debroglie.webp",
+    "docs/images/entry-dreamgaussian.webp",
+    "docs/images/entry-godot-demos.webp",
+    "docs/images/entry-kenney.webp",
+    "docs/images/entry-lgm.webp",
+    "docs/images/entry-lmms.webp",
+    "docs/images/entry-nanogui.webp",
+    "docs/images/entry-opengameart.webp",
+    "docs/images/entry-spleen.webp",
+    "docs/images/entry-stablenormal.webp",
+    "docs/images/entry-tiled.webp"
+  ]
 }
