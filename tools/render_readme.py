@@ -24,7 +24,7 @@ TEXT = {
             "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
             "Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.",
             "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
-            "Embedded third-party previews require an explicit reuse-license record; other media are linked at the source. Category covers and rows marked *illustration* are original images generated for this list; prompts are in [docs/image-prompts.md](docs/image-prompts.md).",
+            "Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results.",
         ],
         "cols": "| Project / Preview | License | Good for |",
         "cover_alt": "Category cover (original illustration)",
@@ -50,7 +50,7 @@ TEXT = {
             "不收盗版、破解或刷星的仓库（看过 star、fork 和活跃度），不收已归档且不可用的仓库。",
             "自动检查报告失效、被拦截或超时的来源；警告不等于已验证可达。",
             "许可证于 {date} 核实：GitHub 仓库看 API 的 `license` 字段，网站看每行链接的官方许可页。",
-            "第三方预览仅在记录明确再使用许可时嵌入；其他媒体只链接原始来源。分类封面和标注 *示意图* 的条目是为本清单原创生成的，提示词见 [docs/image-prompts.md](docs/image-prompts.md)。",
+            "预览优先引用原项目图片并署名。这里展示不等于授予再使用权，请按原始素材条款使用。头图和分类插画为生成图；缺少真实预览会明确说明，不用虚构效果替代。",
         ],
         "cols": "| 项目 / 预览 | 许可证 | 适合做什么 |",
         "cover_alt": "分类封面（原创示意图）",
@@ -77,6 +77,58 @@ def anchor(title: str) -> str:
     return "".join(out)
 
 
+def license_summary(license_name: str, lang: str) -> str:
+    """Plain-language guidance, not a replacement for the linked terms."""
+    zh = lang == "zh"
+    def pick(en, cn): return cn if zh else en
+    l = license_name.lower()
+    if "not valid in eu" in l:
+        return pick("Commercial use has regional/scale limits; check terms", "有地区及规模限制，商用前查条款")
+    if "per " in l or "own licenses" in l or "bundled parts" in l or "except extras" in l:
+        return pick("Check the selected asset/component before use", "逐项查素材或组件条件后使用")
+    if "cc-by-nc" in l:
+        subject = "所列内容/权重" if "code" in l or "scripts" in l else ""
+        en_subject = "Listed content/weights: " if subject else ""
+        suffix_en = "; no adaptations" if "-nd" in l else ("; adaptations use same terms" if "-sa" in l else "")
+        suffix_zh = "，不可改编" if "-nd" in l else ("；改编沿用同许可" if "-sa" in l else "")
+        return pick(en_subject + "non-commercial only; credit required" + suffix_en, subject + "仅限非商用，须署名" + suffix_zh)
+    if "polyfork" in l:
+        return pick("Low-poly: credit or choose Polyfork terms; HD/modules have separate terms", "低模署名或选专有条款；高清与模块另查")
+    if "pixabay" in l:
+        return pick("Commercial use; no standalone resale", "可商用，不可原样单独转售")
+    if "sonniss" in l:
+        return pick("Commercial use; no credit required; no standalone redistribution", "可商用免署名，不可单独转分发")
+    if "ofl" in l:
+        return pick("Commercial use/embedding; keep font license, no font-only resale", "可商用嵌入；保留字体许可，不单卖字体")
+    if "cc0" in l:
+        if "mit" in l:
+            return pick("Assets: commercial, no credit; code: keep MIT notices", "素材可商用免署名；代码保留 MIT 声明")
+        if "agpl" in l:
+            return pick("Assets: commercial, no credit; code: AGPL obligations", "素材可商用免署名；代码遵守 AGPL")
+        return pick("Commercial use and modification; no credit required", "可商用、可修改，免署名")
+    if "cc-by-sa" in l:
+        return pick("Commercial use; credit and share adaptations under same terms", "可商用，须署名；改编沿用同许可")
+    if "cc-by" in l:
+        return pick("Commercial use; credit required", "可商用，须署名")
+    if "lgpl" in l:
+        return pick("Commercial use; distribute library changes/source as required", "可商用；分发时履行库源码及替换义务")
+    if "agpl" in l:
+        return pick("Commercial use; source-sharing applies to distribution/network service", "可商用；分发或网络服务须履行源码义务")
+    if "gpl" in l:
+        return pick("Commercial use; distributed covered code must remain open", "可商用；分发受许可代码须按要求开源")
+    if "mpl" in l:
+        return pick("Commercial use; distribute changes to covered files as source", "可商用；分发时公开受许可文件的修改")
+    if "defold" in l:
+        return pick("Commercial games; engine redistribution has additional limits", "可做商业游戏；引擎再分发有额外限制")
+    if "ms-pl" in l:
+        return pick("Commercial use; keep notices and source-license obligations", "可商用；保留声明并遵守源码分发条件")
+    if any(k in l for k in ("mit", "apache", "bsd", "zlib")):
+        return pick("Commercial use and modification; keep required notices", "可商用、可修改；保留必要版权与许可声明")
+    if "unlicense" in l:
+        return pick("Commercial use and modification; no credit required", "可商用、可修改，免署名")
+    return pick("Check linked terms before use", "使用前查看原始条款")
+
+
 def render_catalog(lang: str, homepage: bool = False) -> str:
     t = TEXT[lang]
     data = load_entries()
@@ -84,35 +136,47 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
     lines = [t["title"], "", switch, "", "[Back to overview](README.md)" if lang == "en" else "[返回首页](README.zh-CN.md)", "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     if homepage:
         lines = [t["title"], "", t["switch"], "", f'<img src="{data["discovery"]["hero"]}" alt="Original game-dev loot drop: a starter hero unlocks an overflowing chest of game assets" width="1200">', "", "原创头图：开局一把木剑，素材全靠捡。" if lang == "zh" else "Original illustration: starter sword equipped. Asset loot unlocked.", "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
-    lines += ["**[开始浏览素材](#" + anchor(data["categories"][0][lang]) + ")** · [参与贡献](CONTRIBUTING.md)" if lang == "zh" else "**[Browse the asset tables](#" + anchor(data["categories"][0][lang]) + ")** · [Contribute](CONTRIBUTING.md)", "", "按现有专题顺序展示；近期热度未知。[排序说明](docs/discovery.md)。" if lang == "zh" else "Existing topical order; recent popularity is unknown. [Ordering notes](docs/discovery.md).", ""]
+    lines += ["**[开始浏览素材](#" + anchor(data["categories"][0][lang]) + ")** · [参与贡献](CONTRIBUTING.md)" if lang == "zh" else "**[Browse the asset tables](#" + anchor(data["categories"][0][lang]) + ")** · [Contribute](CONTRIBUTING.md)", "", "每类默认显示前 15 项，其他可展开。GitHub 项目按累计星标排序（2026-11-12 快照）；无可比数据的网站随后展示，不代表近期趋势。[排序说明](docs/discovery.md)。" if lang == "zh" else "First 15 resources per category; expand for the rest. GitHub repos sort by total stars (2026-11-12 snapshot); sites without comparable data follow. This is not recent growth. [Ordering notes](docs/discovery.md).", ""]
     lines += ["手机浏览：表格可左右滑动，保留项目、许可与用途对照。" if lang == "zh" else "On phones, swipe tables sideways to compare projects, licenses and uses.", ""]
     for c in data["categories"]:
         lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
     lines += ["", t["rules_h"], ""]
     lines += [f"- {r.format(date=data['verified_on'])}" for r in t["rules"]]
     for c in data["categories"]:
-        lines += ["", f"## {c[lang]}", "", f'<img src="{c["cover"]}" alt="{t["cover_alt"]}: {c[lang]}" width="640">']
+        lines += ["", f"## {c[lang]}", ""]
         lines += ["", t["cols"], "| --- | --- | --- |"]
-        for e in [e for e in data["entries"] if e["category"] == c["id"]]:
+        entries = sorted([e for e in data["entries"] if e["category"] == c["id"]], key=lambda e: (e.get("popularity", {}).get("value") is None, -(e.get("popularity", {}).get("value") or 0)))
+        for index, e in enumerate(entries):
+            if index == 15:
+                summary = f"展开其余 {len(entries) - 15} 项" if lang == "zh" else f"Show remaining {len(entries) - 15} resources"
+                lines += ["", "<details>", f"<summary>{summary}</summary>", "", t["cols"], "| --- | --- | --- |"]
             img = e["image"]
-            if img["type"] == "original" and img.get("reuse_license") and img.get("license_source"):
+            if img["type"] == "original" and img.get("display_status") == "verified":
                 pic = f'<img src="{img["src"]}" alt="{e["name"]}" width="160">'
                 credit = f'<br><sub>{t["img_from"]} [{e["name"]}]({img["source"]})</sub>'
+                if img.get("kind") == "identity":
+                    credit += "<br><sub>项目标识，非素材效果</sub>" if lang == "zh" else "<br><sub>Project identity, not an asset preview</sub>"
             elif img["type"] == "original":
                 pic = f'[View at source]({img["source"]})' if lang == "en" else f'[查看原始来源]({img["source"]})'
                 credit = ""
             else:
-                pic = f'<img src="{img["file"]}" alt="{e["name"]} ({t["illustration"]})" width="160">'
-                credit = f'<br><sub>*{t["illustration"]}*</sub>'
+                pic = f'[未找到可用原图 · 查看项目]({e["url"]})' if lang == "zh" else f'[No usable original preview found · open project]({e["url"]})'
+                credit = ""
             for v in e.get("via", []):
                 credit += f'<br><sub>{t["via"]} [{v}](https://github.com/{v})</sub>'
             if e.get("link_note"):
                 credit += f'<br><sub>⚠ {e["link_note"][lang]}</sub>'
             lic_text = e["license_zh"] if lang == "zh" else e["license"]
-            lic = f"[{lic_text}]({e['license_source']})"
+            scope = ("清单文字：" if lang == "zh" else "List text: ") if e["category"] == "lists" else ""
+            lic = f"{scope}{license_summary(e['license'], lang)}<br><sub>([{lic_text}]({e['license_source']}))</sub>"
             desc = e[lang]
             name = e["name"].replace("|", "\\|")
+            heat = e.get("popularity", {}).get("value")
+            credit += f"<br><sub>GitHub ★ {heat:,}</sub>" if heat is not None else ("<br><sub>热度暂无可比数据</sub>" if lang == "zh" else "<br><sub>No comparable popularity data</sub>")
             lines.append(f'| [{name}]({e["url"]})<br>{pic}{credit} | {lic} | {desc} |')
+
+        if len(entries) > 15:
+            lines += ["", "</details>", ""]
 
     lines += ["", t["credits_h"], "", t["credits"], ""]
     for c in data.get("credits", []):
@@ -120,7 +184,13 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
     lines += ["", t["contrib"], "", t["license"], ""]
     if homepage:
         return "\n".join(lines)
-    return "\n".join(lines).replace("首页", "Home" if lang == "en" else "首页").replace("README.zh-CN.md", "../README.zh-CN.md").replace("README.md", "../README.md").replace("WARNING", "../WARNING").replace("docs/images/", "images/").replace("docs/image-prompts.md", "image-prompts.md").replace("docs/discovery.md", "discovery.md").replace("CONTRIBUTING.md", "../CONTRIBUTING.md").replace("](LICENSE)", "](../LICENSE)")
+    text = "\n".join(lines)
+    for name in ("README.md", "README.zh-CN.md", "WARNING.md", "WARNING.zh-CN.md", "CONTRIBUTING.md", "LICENSE"):
+        text = text.replace("](" + name + ")", "](../" + name + ")")
+    text = text.replace('src="docs/images/', 'src="images/')
+    for name in ("image-prompts.md", "discovery.md"):
+        text = text.replace("](docs/" + name + ")", "](" + name + ")")
+    return text
 
 
 
@@ -132,9 +202,9 @@ def render_prompts() -> str:
     lines = [
         "# Image prompts / 配图提示词",
         "",
-        "Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; only previews with reuse-license evidence are embedded.",
+        "Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; official project previews are hotlinked with attribution; this is not a redistribution license.",
         "",
-        "`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，仅嵌入有再使用许可依据的预览。",
+        "`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，优先引用并署名官方项目预览，不授予原图再分发许可。",
         "",
         f"- Tool / 工具: {p['tool']}",
         f"- Date / 日期: {p['date']}",

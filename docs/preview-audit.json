@@ -1,0 +1,2976 @@
+{
+  "checked_on": "2026-11-12",
+  "method": "HTTP image-byte fetch; contact sheets visually reviewed for existing originals and separately researched replacements. See per-entry provenance. HTTP status null for replaced candidate refers to separate successful candidate review; final CI checks all current links. Not a reuse-license grant.",
+  "entries": [
+    {
+      "id": "kenney",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "asset-preview",
+      "source": "https://kenney.nl/assets",
+      "src": "https://kenney.nl/media/pages/assets/mini-characters/357d1a9452-1794046878/preview-400x.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "quaternius",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://quaternius.com/",
+      "src": "https://quaternius.com/assets/images/fullres/metadata.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "opengameart",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://opengameart.org/content/tilesets-base-rpg-2d",
+      "src": "https://opengameart.org/sites/default/files/rpg-tilesets-river-village.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gltf-sample-assets",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/KhronosGroup/glTF-Sample-Assets",
+      "src": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/GlassHurricaneCandleHolder/screenshot/screenshot.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "polyfork",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://polyfork.dev/assets",
+      "src": "https://polyfork.dev/img/og.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "the-base-mesh",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.thebasemesh.com/",
+      "src": "https://static.wixstatic.com/media/b36d2d_080f2dd3e7cc497cba4f0152b7fefcf5%7Emv2.png/v1/fit/w_2500,h_1330,al_c/b36d2d_080f2dd3e7cc497cba4f0152b7fefcf5%7Emv2.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "lpc-generator",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator",
+      "src": "https://raw.githubusercontent.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/master/readme-images/example.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "makehuman",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/makehumancommunity/makehuman",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "univrm",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://vrm.dev/en",
+      "src": "https://vrm.dev/en/images/vrm/card.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "polygonalmind-cc0",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-demo",
+      "source": "https://raw.githubusercontent.com/PolygonalMind/initiative-opensource-release/master/README.md",
+      "src": "https://raw.githubusercontent.com/PolygonalMind/initiative-opensource-release/master/images/100AvatarsR1_Cover.jpg",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "game-icons",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://game-icons.net/",
+      "src": "https://game-icons.net/icons/ffffff/000000/1x1/caro-asercion/tarot-21-the-world.svg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "controller-prompts",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://thoseawesomeguys.com/prompts/",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "imgui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/ocornut/imgui",
+      "src": "https://github.com/user-attachments/assets/6c76658c-302f-403b-af26-d517e2bfb0d4",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-ui-pack",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/ui-pack",
+      "src": "https://kenney.nl/media/pages/assets/ui-pack/ab9e396e4d-1718203978/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "polyhaven",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://polyhaven.com/",
+      "src": "https://cdn.polyhaven.com/site_images/home/window_rend.jpg?width=630&quality=95",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ambientcg",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://ambientcg.com/",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesomebump",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/kmkolasinski/AwesomeBump",
+      "src": "https://raw.githubusercontent.com/kmkolasinski/AwesomeBump/Release/Sources/resources/promo/githubimage5.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "armorpaint",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/armory3d/armorpaint",
+      "src": "https://armorpaint.org/img/git.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "laigter",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://raw.githubusercontent.com/azagaya/laigter/master/README.md",
+      "src": "https://user-images.githubusercontent.com/46932830/90258696-4c14b780-de1f-11ea-8e33-33dbfc9fd86c.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "freesound",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://freesound.org/",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "sonniss-gdc",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://sonniss.com/gameaudiogdc",
+      "src": "https://cdn.sonniss.com/storage/2025/03/Sonniss-Metaimage.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "jsfxr",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/chr15m/jsfxr",
+      "src": "https://raw.githubusercontent.com/chr15m/jsfxr/master/screenshot.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rfxgen",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/raysan5/rfxgen",
+      "src": "https://raw.githubusercontent.com/raysan5/rfxgen/master/screenshots/rfxgen_v500_shot01.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "boscaceoil-blue",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://yurisizov.itch.io/boscaceoil-blue",
+      "src": "https://img.itch.zone/aW1hZ2UvMjc1ODM5MC8xOTQ1MTQ3Ni5wbmc=/347x500/IxcIPG.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "miniaudio",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/mackron/miniaudio",
+      "src": "https://miniaud.io/img/miniaudio_wide.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "soloud",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/jarikomppa/soloud",
+      "src": "https://raw.github.com/jarikomppa/soloud/master/soloud.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "tonejs",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Tonejs/Tone.js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "howler",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/goldfire/howler.js",
+      "src": "https://s3.amazonaws.com/howler.js/howler-logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "surge",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://surge-synthesizer.github.io/",
+      "src": "https://surge-synthesizer.github.io/images/hero_dark.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bfxr",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/increpare/bfxr",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "pixabay-sfx",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://pixabay.com/sound-effects/",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "google-fonts",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/google/fonts",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "departure-mono",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/rektdeckard/departure-mono",
+      "src": "https://raw.githubusercontent.com/rektdeckard/departure-mono/main/public/assets/departure-og.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "fusion-pixel-font",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/TakWolf/fusion-pixel-font",
+      "src": "https://raw.githubusercontent.com/TakWolf/fusion-pixel-font/master/docs/logo@2x.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ark-pixel-font",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/TakWolf/ark-pixel-font",
+      "src": "https://raw.githubusercontent.com/TakWolf/ark-pixel-font/master/docs/readme-banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-fonts",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/kenney-fonts",
+      "src": "https://kenney.nl/media/pages/assets/kenney-fonts/703183582c-1677661704/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "three-quarks",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Alchemist0823/three.quarks",
+      "src": "https://raw.githubusercontent.com/Alchemist0823/three.quarks/master/landing.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "three-nebula",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://three-nebula.org/",
+      "src": "https://three-nebula.org/nebula-app.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "effekseer",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/effekseer/Effekseer",
+      "src": "https://img.youtube.com/vi/WwNX9TO7guA/0.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-particle-pack",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/particle-pack",
+      "src": "https://kenney.nl/media/pages/assets/particle-pack/d50c7fc9b6-1677578655/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "jangafx-vdb",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://jangafx.com/",
+      "src": "https://jangafx.com/opengraph-image.png?opengraph-image.2xwmfd9hv7l5u.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "postprocessing",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/pmndrs/postprocessing",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "gdquest-godot-shaders",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/gdquest-demos/godot-shaders",
+      "src": "https://raw.githubusercontent.com/gdquest-demos/godot-shaders/main/img/banner-shader-secrets.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gdquest-godot-vfx",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/gdquest-demos/godot-visual-effects",
+      "src": "https://raw.githubusercontent.com/gdquest-demos/godot-visual-effects/master/img/banner-vfx-secrets.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godotshaders-com",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-demo",
+      "source": "https://godotshaders.com/",
+      "src": "https://godotshaders.com/wp-content/uploads/2026/11/shine_cover-1024x576.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "linear-ability-casting",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/achrefelouafi/LinearAbiltyCastingThreeJS",
+      "src": "https://raw.githubusercontent.com/achrefelouafi/LinearAbiltyCastingThreeJS/main/docs/screenshots/nova-beam.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "open-game-skills",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/jammyfu/open-game-skills",
+      "src": "https://raw.githubusercontent.com/jammyfu/open-game-skills/main/docs/showcase/punchbox-fighter-finisher-flame.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gas-documentation",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/tranek/GASDocumentation",
+      "src": "https://github.com/tranek/GASDocumentation/raw/master/Images/gameplaytageditor.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ex-gas-unity",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/No78Vino/gameplay-ability-system-for-unity",
+      "src": "https://raw.githubusercontent.com/No78Vino/gameplay-ability-system-for-unity/EX-GAS-1.0/Wiki/QQ20240313114652.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gasshooter",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/tranek/GASShooter",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "narxim-gas",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Narxim/Narxim-GAS-Example",
+      "src": "https://github.com/user-attachments/assets/2518ffc8-ef3b-4bbf-bcce-48d00338237a",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "quaternius-ual",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "src": "https://quaternius.com/assets/images/fullres/universalanimationlibrary.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-animated-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/animated-characters-1",
+      "src": "https://kenney.nl/media/pages/assets/animated-characters-protagonists/98921ae406-1674931821/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "synfig",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.synfig.org/",
+      "src": "https://www.synfig.org/wp-content/uploads/2018/02/screenshot-07.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "piskel",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.piskelapp.com/",
+      "src": "https://www.piskelapp.com/assets/home/screenshot.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bandai-namco-motion",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset",
+      "src": "https://raw.githubusercontent.com/BandaiNamcoResearchInc/Bandai-Namco-Research-Motiondataset/master/src/Bandai-Namco-Research-Motiondataset-1/movie_walk.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "dragonbones-js",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/DragonBones/DragonBonesJS",
+      "src": "https://dragonbones.github.io/demo/demos.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "box2d",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/erincatto/box2d",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "jolt",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/jrouwe/JoltPhysics",
+      "src": "https://jrouwe.nl/jolt/Horizon_Forbidden_West.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bullet3",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/bulletphysics/bullet3",
+      "src": "https://pybullet.org/wordpress/wp-content/uploads/2019/03/cropped-pybullet.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rapier",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/dimforge/rapier",
+      "src": "https://raw.githubusercontent.com/dimforge/rapier/master/assets/rapier-logo.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "cannon-es",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/pmndrs/cannon-es",
+      "src": "https://raw.githubusercontent.com/pmndrs/cannon-es/master/screenshots/docs.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "matter-js",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/liabru/matter-js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "physx",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/NVIDIA-Omniverse/PhysX",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "recast",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/recastnavigation/recastnavigation",
+      "src": "https://raw.githubusercontent.com/recastnavigation/recastnavigation/main/Docs/Images/screenshot.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pathfinding-js",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/qiao/PathFinding.js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "behaviortree-cpp",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/BehaviorTree/BehaviorTree.CPP",
+      "src": "https://raw.githubusercontent.com/BehaviorTree/BehaviorTree.CPP/master/docs/groot-screenshot.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "yuka",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Mugen87/yuka",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "limboai",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/limbonaut/limboai",
+      "src": "https://raw.githubusercontent.com/limbonaut/limboai/master/doc/images/behavior-tree-editor-debugger.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "beehave",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/bitbrain/beehave",
+      "src": "https://raw.githubusercontent.com/bitbrain/beehave/godot-4.x/docs/assets/example.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "three-pathfinding",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/donmccurdy/three-pathfinding",
+      "src": "https://user-images.githubusercontent.com/1848368/34424850-d79e5a24-ebf4-11e7-87c4-afc75cdc41bd.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "wfc",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/mxgmn/WaveFunctionCollapse",
+      "src": "https://raw.githubusercontent.com/mxgmn/WaveFunctionCollapse/master/images/wfc.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "debroglie",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://boristhebrave.github.io/DeBroglie/",
+      "src": "https://boristhebrave.github.io/DeBroglie/images/columns_out.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "fastnoiselite",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Auburn/FastNoiseLite",
+      "src": "https://user-images.githubusercontent.com/1349548/275292148-242e95c7-94e7-4801-bc4a-d683a8822382.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-wfc",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/AlexeyBond/godot-constraint-solving",
+      "src": "https://raw.githubusercontent.com/AlexeyBond/godot-constraint-solving/master/screenshots/2d-tilemap-0.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "spaceship-generator",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/a1studmuffin/SpaceshipGenerator",
+      "src": "https://raw.githubusercontent.com/a1studmuffin/SpaceshipGenerator/master/screenshots/spaceships_grid.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/godotengine/godot",
+      "src": "https://raw.githubusercontent.com/godotengine/godot-design/master/screenshots/editor_tps_demo_1920x1080.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bevy",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "engine-render",
+      "source": "https://bevy.org/",
+      "src": "https://bevy.org/assets/boat.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "defold",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://defold.com/",
+      "src": "https://defold.com/images/editor/editor-screenshot-duovikings.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "raylib",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/raysan5/raylib",
+      "src": "https://raw.githubusercontent.com/raysan5/raylib/master/logo/raylib_logo_animation.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "love2d",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/love2d/love",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "phaser",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-demo",
+      "source": "https://raw.githubusercontent.com/phaserjs/phaser/master/README.md",
+      "src": "https://raw.githubusercontent.com/phaserjs/phaser/master/changelog/v4/assets/space-dance.gif",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "threejs",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://threejs.org/",
+      "src": "https://threejs.org/files/share.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "babylonjs",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://www.babylonjs.com/",
+      "src": "https://www.babylonjs.com/assets/img/babylonEditor.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "o3de",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://o3de.org",
+      "src": "https://o3de.org/wp-content/uploads/2023/06/black-bg-logo.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "stride",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/stride3d/stride",
+      "src": "https://stride3d.net/images/external/script-editor.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "monogame",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/MonoGame/MonoGame",
+      "src": "https://raw.githubusercontent.com/MonoGame/MonoGame.Samples/refs/heads/3.8.2/Images/Platformer2D-Sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "libgdx",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://raw.githubusercontent.com/libgdx/libgdx/master/README.md",
+      "src": "https://libgdx.com/assets/images/index_showcase/game0.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "excalibur",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://raw.githubusercontent.com/excaliburjs/Excalibur/master/README.md",
+      "src": "https://raw.githubusercontent.com/excaliburjs/Excalibur/master/assets/homepage-xp.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixijs",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/pixijs/pixijs",
+      "src": "https://pixijs.io/create-pixi/img/demo.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "playcanvas",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/playcanvas/engine",
+      "src": "https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/projects/14705/319531/O4J4VU-image-25.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kaplay",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/kaplayjs/kaplay",
+      "src": "https://raw.githubusercontent.com/kaplayjs/kaplay/master/kaplay.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ebitengine",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/hajimehoshi/ebiten",
+      "src": "https://ebitengine.org/images/overview2.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "fyrox",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/FyroxEngine/Fyrox",
+      "src": "https://raw.githubusercontent.com/FyroxEngine/Fyrox/master/pics/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "heaps",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://heaps.io/",
+      "src": "https://heaps.io/img/northgard/04.jpg",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "blender",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/blender/blender",
+      "src": "https://code.blender.org/wp-content/uploads/2018/12/springrg.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "material-maker",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/RodZill4/material-maker",
+      "src": "https://raw.githubusercontent.com/RodZill4/material-maker/master/material_maker/doc/images/screenshot.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixelorama",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Orama-Interactive/Pixelorama",
+      "src": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2779170/ss_54395040c25b243cb82a3bd68778e19e04b43ade.1920x1080.jpg?t=1719424898",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "tiled",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://www.mapeditor.org/",
+      "src": "https://www.mapeditor.org/img/screenshot-front.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ldtk",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://ldtk.io/",
+      "src": "https://ldtk.io/wp-content/uploads/2021/05/open-graph.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "audacity",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.audacityteam.org/",
+      "src": "https://www.audacityteam.org/og-image.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "lmms",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://lmms.io/",
+      "src": "https://lmms.io/img/screen.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-demo-projects",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "demo-screenshot",
+      "source": "https://github.com/godotengine/godot-demo-projects",
+      "src": "https://raw.githubusercontent.com/godotengine/godot-demo-projects/HEAD/3d/platformer/screenshots/platformer.webp",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "krita",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://krita.org/en/",
+      "src": "https://krita.org/images/hero-image-50.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "libresprite",
+      "type": "original",
+      "display_status": "source_only",
+      "kind": "preview",
+      "source": "https://github.com/LibreSprite/LibreSprite",
+      "src": "https://i.imgur.com/UOLKpPA.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "free-tex-packer",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/odrick/free-tex-packer",
+      "src": "https://raw.githubusercontent.com/odrick/free-tex-packer/master/electron/build/icons/96x96.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ogmo",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-screenshot",
+      "source": "https://ogmo-editor-3.github.io/",
+      "src": "https://ogmo-editor-3.github.io/img/screenshot.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "trenchbroom",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/TrenchBroom/TrenchBroom",
+      "src": "https://raw.githubusercontent.com/TrenchBroom/TrenchBroom/master/app/TrenchBroom/resources/graphics/images/AppIcon.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "blockbench",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/JannisX11/blockbench",
+      "src": "https://web.blockbench.net/content/front_page_app.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "goxel",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/guillaumechereau/goxel",
+      "src": "https://goxel.xyz/gallery/thibault-fisherman-house.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gltf-transform",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/donmccurdy/glTF-Transform",
+      "src": "https://gltf-transform.dev/media/kicker.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "meshoptimizer",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/zeux/meshoptimizer",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "assimp",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.assimp.org",
+      "src": "https://www.assimp.org/dragonsplash.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "trellis",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "official-demo",
+      "source": "https://raw.githubusercontent.com/microsoft/TRELLIS/master/README.md",
+      "src": "https://raw.githubusercontent.com/microsoft/TRELLIS/master/assets/teaser.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "triposr",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/VAST-AI-Research/TripoSR",
+      "src": "https://raw.githubusercontent.com/VAST-AI-Research/TripoSR/main/figures/teaser800.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "instantmesh",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/TencentARC/InstantMesh",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "comfyui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Comfy-Org/ComfyUI",
+      "src": "https://github.com/user-attachments/assets/36e065e0-bfae-4456-8c7f-8369d5ea48a2",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "audiocraft",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/facebookresearch/audiocraft",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "hunyuan3d-2",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+      "src": "https://github.com/user-attachments/assets/efb402a1-0b09-41e0-a6cb-259d442e76aa",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-gamedev-agent-skills",
+      "type": "original",
+      "display_status": "source_only",
+      "kind": "preview",
+      "source": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "src": "https://skills.sh/b/gamedev-skills/awesome-gamedev-agent-skills",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "magictools",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/ellisonleao/magictools",
+      "src": "https://cdn.rawgit.com/ellisonleao/magictools/7d8012bc/magicbg.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "calinou-awesome-gamedev",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Calinou/awesome-gamedev",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesome-cc0",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/madjin/awesome-cc0",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "fronkon-awesome-gamedev",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/FronkonGames/Awesome-Gamedev",
+      "src": "https://raw.githubusercontent.com/FronkonGames/Awesome-Gamedev/main/images/banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-learn-gamedev",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/dawdle-deer/awesome-learn-gamedev",
+      "src": "https://raw.githubusercontent.com/dawdle-deer/awesome-learn-gamedev/main/images/KittyIcon.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-godot",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Calinou/awesome-godot",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "game-programming-patterns",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/munificent/game-programming-patterns",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "lgm",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://me.kiui.moe/lgm/",
+      "src": "https://me.kiui.moe/lgm/images/pipeline.jpg",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "dreamgaussian",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "model-preview",
+      "source": "https://dreamgaussian.github.io/",
+      "src": "https://dreamgaussian.github.io/meshes/toy.jpg",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "shap-e",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/openai/shap-e",
+      "src": "https://raw.githubusercontent.com/openai/shap-e/main/samples/a_chair_that_looks_like_an_avocado/2.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "point-e",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/openai/point-e",
+      "src": "https://raw.githubusercontent.com/openai/point-e/main/point_e/examples/paper_banner.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "crm",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/thu-ml/CRM",
+      "src": "https://github.com/thu-ml/CRM/assets/40787266/4354d22a-a641-4531-8408-c761ead8b1a2",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "wonder3d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/xxlong0/Wonder3D",
+      "src": "https://raw.githubusercontent.com/xxlong0/Wonder3D/main/assets/coordinate.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "unique3d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/AiuniAI/Unique3D",
+      "src": "https://raw.githubusercontent.com/AiuniAI/Unique3D/main/assets/teaser_safe.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "dream-textures",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/carson-katri/dream-textures",
+      "src": "https://raw.githubusercontent.com/carson-katri/dream-textures/main/docs/assets/banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "paint3d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/OpenTexture/Paint3D",
+      "src": "https://raw.githubusercontent.com/OpenTexture/Paint3D/main/assets/images/pipeline.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "stablenormal",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "research-demo",
+      "source": "https://github.com/Stable-X/StableNormal/blob/main/README.md",
+      "src": "https://media.githubusercontent.com/media/Stable-X/StableNormal/main/doc/StableNormal-Teaser.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixeloe",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/KohakuBlueleaf/PixelOE",
+      "src": "https://raw.githubusercontent.com/KohakuBlueleaf/PixelOE/main/img/snow-leopard-pixel-lg-256c-d.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "sprite-gen",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/aldegad/sprite-gen",
+      "src": "https://raw.githubusercontent.com/aldegad/sprite-gen/main/docs/assets/hero-v2-party.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixel-art-fixer",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Retro-Diffusion/pixel-art-fixer",
+      "src": "https://raw.githubusercontent.com/Retro-Diffusion/pixel-art-fixer/main/docs/images/banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bark",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/suno-ai/bark",
+      "src": "https://user-images.githubusercontent.com/5068315/235310676-a4b3b511-90ec-4edf-8153-7ccf14905d73.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "stable-audio-tools",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Stability-AI/stable-audio-tools",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "amphion",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/open-mmlab/Amphion",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "ml-agents",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://unity.com/products/machine-learning-agents",
+      "src": "https://cdn.sanity.io/images/fuvbjjlp/production/dc87c61352e27446273ae6402f5261de736492e9-768x381.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "voyager",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/MineDojo/Voyager",
+      "src": "https://raw.githubusercontent.com/MineDojo/Voyager/main/images/pull.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ozz-animation",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/guillaumeblanc/ozz-animation",
+      "src": "https://raw.githubusercontent.com/guillaumeblanc/ozz-animation/master/media/icon/ozz-grey-256.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "acl",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/nfrechette/acl",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "rokoko-blender",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Rokoko/rokoko-studio-live-blender",
+      "src": "https://i.imgur.com/p4uVZBx.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "mixamo-converter",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/enziop/mixamo_converter",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "freemocap",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/freemocap/freemocap",
+      "src": "https://github.com/freemocap/freemocap/assets/15314521/da1af7fe-f808-43dc-8f59-c579715d6593",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "openseeface",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/emilianavt/OpenSeeFace",
+      "src": "https://raw.githubusercontent.com/emilianavt/OpenSeeFace/master/Images/OSF.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "mediapipe",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/google-ai-edge/mediapipe",
+      "src": "https://developers.google.com/static/mediapipe/images/home/hero_01_1920.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "lafan1",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/ubisoft/ubisoft-laforge-animation-dataset",
+      "src": "https://raw.githubusercontent.com/ubisoft/ubisoft-laforge-animation-dataset/master/images/lafan1_1635_cropped.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "inochi2d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Inochi2D/inochi2d",
+      "src": "https://github.com/user-attachments/assets/6d68d1e7-c681-4dea-9868-ebd69fc871f6",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rlottie",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/Samsung/rlottie",
+      "src": "https://raw.githubusercontent.com/Samsung/rlottie/master/.Gifs/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rive-runtime",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/rive-app/rive-runtime",
+      "src": "https://cdn.rive.app/rive_logo_dark_bg.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "tweeny",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/mobius3/tweeny",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "bvhio",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Wasserwecken/bvhio",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "aitviewer",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/eth-ait/aitviewer",
+      "src": "https://user-images.githubusercontent.com/5639197/188625764-351100e9-992e-430c-b170-69d4f142f5dd.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "deepmimic",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/xbpeng/DeepMimic",
+      "src": "https://raw.githubusercontent.com/xbpeng/DeepMimic/master/images/deepmimic_teaser.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "motion-matching",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/orangeduck/Motion-Matching",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "superpowers-asset-packs",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/sparklinlabs/superpowers-asset-packs",
+      "src": "https://raw.githubusercontent.com/sparklinlabs/superpowers-asset-packs/master/3d-character/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "uma",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/umasteeringgroup/UMA",
+      "src": "https://raw.githubusercontent.com/umasteeringgroup/UMA/master/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "dicebear",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.dicebear.com",
+      "src": "https://www.dicebear.com/og/default.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "steam-audio",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/ValveSoftware/steam-audio",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "openal-soft",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/kcat/openal-soft",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "kira",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/tesselode/kira",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "labsound",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/LabSound/LabSound",
+      "src": "https://raw.githubusercontent.com/LabSound/LabSound/master/assets/images/labsound_4x3.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "furnace",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/tildearrow/furnace",
+      "src": "https://raw.githubusercontent.com/tildearrow/furnace/master/papers/screenshot3.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "milkytracker",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/milkytracker/MilkyTracker",
+      "src": "https://milkytracker.org/img/milkytracker.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "monocraft",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/IdreesInc/Monocraft",
+      "src": "https://raw.githubusercontent.com/IdreesInc/Monocraft/main/images/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "cozette",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/the-moonwitch/Cozette",
+      "src": "https://raw.githubusercontent.com/the-moonwitch/Cozette/main/img/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "spleen",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "font-specimen",
+      "source": "https://github.com/fcambus/spleen",
+      "src": "https://www.cambus.net/content/2018/09/spleen-hello.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "nf-pixels",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/sgigou/NF-Pixels",
+      "src": "https://raw.githubusercontent.com/sgigou/NF-Pixels/master/showcases/illustrations/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "boutiquebitmap7x7",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/scott0107000/BoutiqueBitmap7x7",
+      "src": "https://raw.githubusercontent.com/scott0107000/BoutiqueBitmap7x7/9f0788524045082a216987151c9c6bec8867921f/README_PIC/0080.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "chipmunk2d",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/slembcke/Chipmunk2D",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "planck-js",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/piqnt/planck.js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "bepuphysics2",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/bepu/bepuphysics2",
+      "src": "https://raw.githubusercontent.com/bepu/bepuphysics1/master/Documentation/images/readme/angelduck.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "reactphysics3d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/DanielChappuis/reactphysics3d",
+      "src": "https://raw.githubusercontent.com/DanielChappuis/reactphysics3d/62e17155e3fc187f4a90f7328c1154fc47e41d69/documentation/UserManual/images/ReactPhysics3DLogo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "position-based-dynamics",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/InteractiveComputerGraphics/PositionBasedDynamics",
+      "src": "https://raw.githubusercontent.com/InteractiveComputerGraphics/PositionBasedDynamics/master/doc/images/PBD1.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "jitterphysics2",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/notgiven688/jitterphysics2",
+      "src": "https://raw.githubusercontent.com/notgiven688/jitterphysics2/main/media/logo/jitterstringsmallsmall.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "dyn4j",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/dyn4j/dyn4j",
+      "src": "https://raw.githubusercontent.com/dyn4j/dyn4j/master/dyn4j.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "p2-js",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/schteppe/p2.js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "oimophysics",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/saharan/OimoPhysics",
+      "src": "https://el-ement.com/etc/oimo/demos/thumbnail.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "splishsplash",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/InteractiveComputerGraphics/SPlisHSPlasH",
+      "src": "https://raw.githubusercontent.com/InteractiveComputerGraphics/SPlisHSPlasH/master/doc/images/logo.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "lo-th-phy",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/lo-th/phy",
+      "src": "https://raw.githubusercontent.com/lo-th/phy/main/assets/icons/phy_map.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "verly-js",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/anuraghazra/Verly.js",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "chrono",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/projectchrono/chrono",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "mujoco",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/google-deepmind/mujoco",
+      "src": "https://raw.githubusercontent.com/google-deepmind/mujoco/main/banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rmlui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/mikke89/RmlUi",
+      "src": "https://raw.githubusercontent.com/mikke89/RmlUiDoc/c7253748d1bcf6dd33d97ab4fe8b6731a7ee3dac/assets/rmlui.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "nuklear",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Immediate-Mode-UI/Nuklear",
+      "src": "https://cloud.githubusercontent.com/assets/8057201/11761525/ae06f0ca-a0c6-11e5-819d-5610b25f6ef4.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "egui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/emilk/egui",
+      "src": "https://github.com/user-attachments/assets/cfaf1d43-9338-490f-ae82-99b420baa1b0",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "clay",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/nicbarker/clay",
+      "src": "https://github.com/user-attachments/assets/1928c6d4-ada9-4a4c-a3d1-44fe9b23b3bd",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "nanovg",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/memononen/nanovg",
+      "src": "https://raw.githubusercontent.com/memononen/nanovg/master/example/screenshot-01.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "imguizmo",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/CedricGuillemet/ImGuizmo",
+      "src": "https://raw.githubusercontent.com/CedricGuillemet/ImGuizmo/master/images/ImViewGizmo.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "implot",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/epezent/implot",
+      "src": "https://raw.githubusercontent.com/wiki/epezent/implot/screenshots3/example.PNG",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ebitenui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/ebitenui/ebitenui",
+      "src": "https://raw.githubusercontent.com/ebitenui/ebitenui/master/_media/ebitenui.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "yoga",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://yogalayout.dev/",
+      "src": "https://yogalayout.dev/img/opengraph.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "nanogui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "tool-screenshot",
+      "source": "https://github.com/wjakob/nanogui/blob/master/README.rst",
+      "src": "https://raw.githubusercontent.com/wjakob/nanogui/master/resources/screenshot.png",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "bevy-egui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/vladbat00/bevy_egui",
+      "src": "https://raw.githubusercontent.com/vladbat00/bevy_egui/main/bevy_egui.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "novashader",
+      "type": "original",
+      "display_status": "source_only",
+      "kind": "preview",
+      "source": "https://github.com/CyberAgentGameEntertainment/NovaShader",
+      "src": "https://user-images.githubusercontent.com/47441314/144776407-7ea24e22-2fe0-437e-b7e3-787963fd6f19.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixi-particle-emitter",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/pixijs-userland/particle-emitter",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "bevy-hanabi",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/djeedai/bevy_hanabi",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "godot-vfx-library",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/haowg/GODOT-VFX-LIBRARY",
+      "src": "https://raw.githubusercontent.com/haowg/GODOT-VFX-LIBRARY/main/preview_en.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "boujie-water-shader",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Chrisknyfe/boujie_water_shader",
+      "src": "https://github.com/Chrisknyfe/boujie_water_shader/assets/652027/0be34247-e32e-48a9-972c-65302e06bbe3",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "waterways",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Arnklit/Waterways",
+      "src": "https://raw.githubusercontent.com/Arnklit/media/main/WaterWaysAdd-on/screenshot01.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-stylized-sky",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/gdquest-demos/godot-4-stylized-sky",
+      "src": "https://raw.githubusercontent.com/gdquest-demos/godot-4-stylized-sky/main/icon.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "webgl-noise",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/stegu/webgl-noise",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "glsl-atmosphere",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/wwwtyro/glsl-atmosphere",
+      "src": "https://raw.githubusercontent.com/wwwtyro/glsl-atmosphere/master/images/atmosphere.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "urp-custom-lighting",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Cyanilux/URP_ShaderGraphCustomLighting",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "panda3d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/panda3d/panda3d",
+      "src": "https://avatars2.githubusercontent.com/u/590956?v=3&s=500",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "jmonkeyengine",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/jMonkeyEngine/jmonkeyengine",
+      "src": "https://i.imgur.com/nF8WOW6.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pygame-ce",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/pygame-community/pygame-ce",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "flame",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/flame-engine/flame",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "pyxel",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/kitao/pyxel",
+      "src": "https://kitao.dev/pyxel/assets/images/pyxel_logo_152x64.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "haxeflixel",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/HaxeFlixel/flixel",
+      "src": "https://raw.githubusercontent.com/HaxeFlixel/haxeflixel.com/master/content/_static/images/flixel-logos/HaxeFlixel.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "solar2d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/coronalabs/corona",
+      "src": "https://raw.githubusercontent.com/coronalabs/corona/master/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "macroquad",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/not-fl3/macroquad",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "wicked-engine",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/turanszkij/WickedEngine",
+      "src": "https://raw.githubusercontent.com/turanszkij/WickedEngine/master/Content/logo_small.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "allegro5",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/liballeg/allegro5",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesome-love2d",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/love2d-community/awesome-love2d",
+      "src": "https://raw.githubusercontent.com/love2d-community/awesome-love2d/master/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-libgdx",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/rafaskb/awesome-libgdx",
+      "src": "https://raw.githubusercontent.com/rafaskb/awesome-libgdx/master/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-pico-8",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/pico-8/awesome-PICO-8",
+      "src": "https://www.lexaloffle.com/gfx/p8_jelpi.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "open-source-games",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/bobeff/open-source-games",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesome-gametalks",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/hzoo/awesome-gametalks",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesome-flame",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/flame-engine/awesome-flame",
+      "src": "https://raw.githubusercontent.com/flame-engine/awesome-flame/main/media/logo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-pixel-art",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Siilwyn/awesome-pixel-art",
+      "src": "https://cdn.rawgit.com/Siilwyn/awesome-pixel-art/1d81c507/sheep-timelapse.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "awesome-game-remakes",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/radek-sprta/awesome-game-remakes",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "awesome-game-design",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Roobyx/awesome-game-design",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "loopy",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/ncase/loopy",
+      "src": "https://i.imgur.com/S8c7E8o.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ink",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/inkle/ink",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "yarn-spinner",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/YarnSpinnerTool/YarnSpinner",
+      "src": "https://downloads.yarnspinner.dev/get/YarnSpinnerLogo.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ultimate-doom-builder",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/UltimateDoomBuilder/UltimateDoomBuilder",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "gdx-texture-packer-gui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/crashinvaders/gdx-texture-packer-gui",
+      "src": "https://i.imgur.com/7aOmSQb.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gltf-pipeline",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/CesiumGS/gltf-pipeline",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "draco",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/google/draco",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "directxtex",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/microsoft/DirectXTex",
+      "src": "https://raw.githubusercontent.com/wiki/Microsoft/DirectXTex/X_jpg.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "basis-universal",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/BinomialLLC/basis_universal",
+      "src": "https://raw.githubusercontent.com/BinomialLLC/basis_universal/master/webgl/texture_test/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "ktx-software",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/KhronosGroup/KTX-Software",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "ufbx",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/ufbx/ufbx",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "glslify",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/glslify/glslify",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "fastnoise2",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Auburn/FastNoise2",
+      "src": "https://github.com/user-attachments/assets/acda59bd-1245-40dd-8f0e-06fa8a17c60d",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "marian42-wfc",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/marian42/wavefunctioncollapse",
+      "src": "https://i.imgur.com/vL80izv.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "markovjunior",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/mxgmn/MarkovJunior",
+      "src": "https://raw.githubusercontent.com/mxgmn/MarkovJunior/main/images/top-iso.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "edgar-dotnet",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/OndrejNepozitek/Edgar-DotNet",
+      "src": "https://ondrejnepozitek.github.io/Edgar-DotNet/readme/example_1.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "rot-js",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/ondras/rot.js",
+      "src": "https://raw.githubusercontent.com/ondras/rot.js/master/build.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "libtcod",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/libtcod/libtcod",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "proceduraltoolkit",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Syomus/ProceduralToolkit",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "fantasy-map-generator",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Azgaar/Fantasy-Map-Generator",
+      "src": "https://github.com/Azgaar/Fantasy-Map-Generator/assets/26469650/9502eae9-92e0-4d0d-9f17-a2ba4a565c01",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-voxel",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Zylann/godot_voxel",
+      "src": "https://raw.githubusercontent.com/Zylann/godot_voxel/master/doc/source/images/blocky_screenshot.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-heightmap",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Zylann/godot_heightmap_plugin",
+      "src": "https://user-images.githubusercontent.com/1311555/49705861-a5275380-fc19-11e8-8338-9ad364d2db8d.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "worldengine",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Mindwerks/worldengine",
+      "src": "https://raw.githubusercontent.com/Mindwerks/worldengine-data/master/images/examples/ancient_map_seed1.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "mapgen4",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.redblobgames.com/maps/mapgen4/",
+      "src": "https://www.redblobgames.com/thumbnail/mapgen4.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "hydraulic-erosion",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/SebLague/Hydraulic-Erosion",
+      "src": "https://i.imgur.com/c8BvDOj.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "procedural-landmass",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/SebLague/Procedural-Landmass-Generation",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "dungeon-generator",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/vazgriz/DungeonGenerator",
+      "src": "https://vazgriz.com/wp-content/uploads/2019/11/dungeon5.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "fast-wfc",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/math-fehr/fast-wfc",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "kenney-crosshair-pack",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/crosshair-pack",
+      "src": "https://kenney.nl/media/pages/assets/crosshair-pack/6aac591d3a-1677697135/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-cursor-pack",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/cursor-pack",
+      "src": "https://kenney.nl/media/pages/assets/cursor-pack/20a4fec3b6-1717599288/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-ui-rpg",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/ui-pack-rpg-expansion",
+      "src": "https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/3cbd16d800-1677661820/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-modular-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/modular-characters",
+      "src": "https://kenney.nl/media/pages/assets/modular-characters/38079a52c2-1677670334/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-roguelike-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/roguelike-characters",
+      "src": "https://kenney.nl/media/pages/assets/roguelike-characters/da661e4fb3-1677694932/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-platformer-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/platformer-characters",
+      "src": "https://kenney.nl/media/pages/assets/platformer-characters/753f647f75-1677693764/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-toon-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/toon-characters",
+      "src": "https://kenney.nl/media/pages/assets/toon-characters/90a61601f7-1677693113/preview.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "quaternius-base-characters",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://quaternius.com/packs/universalbasecharacters.html",
+      "src": "https://quaternius.com/assets/images/fullres/universalbasecharacters.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "quaternius-fantasy-outfits",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://quaternius.com/packs/modularcharacteroutfitsfantasy.html",
+      "src": "https://quaternius.com/assets/images/fullres/modularcharacteroutfitsfantasy.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kaykit-animations",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kaylousberg.itch.io/kaykit-animations",
+      "src": "https://img.itch.zone/aW1nLzUwNjY5NTMuZ2lm/original/Ce42Z1.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "blender-studio-rain",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://studio.blender.org/characters/rain/v3/",
+      "src": "https://studio.blender.org/files/public/thumbnail/ee/a7/eea73e55dba1cea31c09848df6a794b2-4_m.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "blender-studio-snow",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://studio.blender.org/characters/snow/v4/",
+      "src": "https://studio.blender.org/files/public/thumbnail/ba/0f/ba0fe6d810333b1d73c1c359e4dc03cb-6_m.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "blender-studio-vincent",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://studio.blender.org/characters/vincent/v2/",
+      "src": "https://studio.blender.org/files/public/thumbnail/de/dc/dedc9ffd643bbcbf15b6b540c44e1895_m.webp",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "lpc-base-assets",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+      "src": "https://opengameart.org/sites/default/files/house7_0.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "oga-rpg-gui-kit",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://opengameart.org/content/rpg-gui-construction-kit-v10",
+      "src": "https://opengameart.org/sites/default/files/preview_6.jpg",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "oga-scifi-ui",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://opengameart.org/content/sci-fi-user-interface",
+      "src": "https://opengameart.org/sites/default/files/ui_preview_1.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "monogram-font",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://datagoblin.itch.io/monogram",
+      "src": "https://img.itch.zone/aW1nLzE3MjQyNDY3LnBuZw==/original/j47gjt.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "m5x7-font",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://managore.itch.io/m5x7",
+      "src": "https://img.itch.zone/aW1hZ2UvNTcwNzgvMjU2MzI2LnBuZw==/original/Lhy9L2.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "pixeloid-font",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://ggbot.itch.io/pixeloid-font",
+      "src": "https://img.itch.zone/aW1nLzIzNTc4MjM5LnBuZw==/original/CWrjzy.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "league-of-moveable-type",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://www.theleagueofmoveabletype.com/",
+      "src": "https://www.theleagueofmoveabletype.com/opengraph-image?352406f8afac03ca",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-gameplay-abilities",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/OctoD/godot-gameplay-abilities",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "leafwing-abilities",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Leafwing-Studios/leafwing_abilities",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "fray",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Pyxus/fray",
+      "src": "https://raw.githubusercontent.com/Pyxus/fray/main/assets/images/fray_banner.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "castagne",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "product-preview",
+      "source": "https://castagneengine.com/",
+      "src": "https://castagneengine.com/games/kronian-titans/clip.gif",
+      "http_status": null,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-jrpg-combat",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/gdquest-demos/godot-2d-jrpg-combat",
+      "src": "https://raw.githubusercontent.com/gdquest-demos/godot-2d-jrpg-combat/master/images/2d-jrpg-banner.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "godot-open-rpg",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/gdquest-demos/godot-open-rpg",
+      "src": "https://raw.githubusercontent.com/gdquest-demos/godot-open-rpg/main/media/Open-RPG.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "flexi",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/PhysaliaStudio/Flexi",
+      "src": "https://raw.githubusercontent.com/wiki/PhysaliaStudio/Flexi/images/flexi-scope.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "entity-spell-system",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Relintai/entity_spell_system",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "pattern-combo",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/homemech/unity-pattern-combo",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "kenney-pixel-platformer",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/pixel-platformer",
+      "src": "https://kenney.nl/media/pages/assets/pixel-platformer/bf585643f0-1696667860/samplea.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-1-bit-pack",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/1-bit-pack",
+      "src": "https://kenney.nl/media/pages/assets/1-bit-pack/263abe0f15-1677578508/sample_fantasy.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-tiny-dungeon",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/tiny-dungeon",
+      "src": "https://kenney.nl/media/pages/assets/tiny-dungeon/8c4f705db0-1674742412/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "kenney-tiny-town",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://kenney.nl/assets/tiny-town",
+      "src": "https://kenney.nl/media/pages/assets/tiny-town/e241a9f6c0-1674742338/sample.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "0x72-dungeontileset-ii",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://0x72.itch.io/dungeontileset-ii",
+      "src": "https://img.itch.zone/aW1hZ2UvMzA5MDI4LzE1MTk3MjcucG5n/original/VCoz5j.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "oga-16x16-fantasy",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://opengameart.org/content/16x16-fantasy-tileset",
+      "src": "https://opengameart.org/sites/default/files/fantasy_16x_example2.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "oga-blocky-dungeon",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://opengameart.org/content/a-blocky-dungeon",
+      "src": "https://opengameart.org/sites/default/files/dungeon_pre_small.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "gdx-ai",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "identity",
+      "source": "https://github.com/libgdx/gdx-ai",
+      "src": "https://cloud.githubusercontent.com/assets/2366334/4677025/64ae592a-55e2-11e4-8a31-31c2941ff995.png",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    },
+    {
+      "id": "jumper",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/Yonaba/Jumper",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "crystalai",
+      "type": "generated",
+      "display_status": "source_only",
+      "kind": null,
+      "source": "https://github.com/igiagkiozis/CrystalAI",
+      "src": null,
+      "http_status": null,
+      "checked_on": null
+    },
+    {
+      "id": "bonsai-bt",
+      "type": "original",
+      "display_status": "verified",
+      "kind": "preview",
+      "source": "https://github.com/Sollimann/bonsai",
+      "src": "https://raw.githubusercontent.com/Sollimann/bonsai/main/docs/resources/gifs/bonsai.gif",
+      "http_status": 200,
+      "checked_on": "2026-11-12"
+    }
+  ]
+}

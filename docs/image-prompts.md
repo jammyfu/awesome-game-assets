@@ -1,8 +1,8 @@
 # Image prompts / 配图提示词
 
-Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; only previews with reuse-license evidence are embedded.
+Original images in `docs/images/` were generated for this list. No third-party images are stored in this repo; official project previews are hotlinked with attribution; this is not a redistribution license.
 
-`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，仅嵌入有再使用许可依据的预览。
+`docs/images/` 里的图都是为本清单原创生成的。仓库里不存第三方图片，优先引用并署名官方项目预览，不授予原图再分发许可。
 
 - Tool / 工具: Codex CLI 0.162.1 (codex exec, built-in image_generation tool) on the maintainer's Mac mini
 - Date / 日期: 2026-11-12

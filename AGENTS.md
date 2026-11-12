@@ -16,3 +16,11 @@
 - Keep all 297 resources in genuine category-grouped comparison tables in both READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
 - For narrow screens, reduce column count and use GitHub's native table scrolling. Keep project/source, preview attribution, license evidence and description. Test actual GitHub rendering and disclose horizontal table scrolling.
 - Keep an original, project-specific game-themed hero in both README languages. Record the real generation prompt/tool; do not relabel third-party art as original.
+
+## Original previews and compact tables
+
+- Asset rows prefer hotlinked original project screenshots/samples with source credit. A code license is not a media reuse grant; do not describe hotlinking as permission to redistribute. Verify real image bytes, visual content and the source reference.
+- No synthetic stand-ins in asset rows when an original can be found. Missing/blocked sources are labelled, not faked; the generated project hero remains separate.
+- Default to 15 visible entries per category, the rest in native details/summary containing real tables. Keep all entries and test expansion on GitHub.
+- State practical use conditions first, followed by the linked license in parentheses on a new line. Preserve noncommercial, attribution, share-alike and per-asset boundaries.
+- Sort comparable GitHub entries using dated total-star evidence; never invent missing website popularity or call total stars recent growth.
