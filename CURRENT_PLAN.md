@@ -2,15 +2,15 @@
 
 ## Plan ID
 
-PLAN-005
+PLAN-006
 
 ## Goal
 
-完整支持英、简中、台湾繁中、日文、韩文五语素材目录。
+优化 GitHub About、Topics 与五语 SEO/GEO 阅读入口，保持完整素材表格和使用边界。
 
 ## Current Focus
 
-Complete localized catalogs with source-drift validation
+About/Topics and evidence-backed discoverability
 
 ## In Scope
 
@@ -23,10 +23,11 @@ Complete localized catalogs with source-drift validation
 
 ## Tasks
 
-- [x] Translate all 297 descriptions, categories, practical license notes and interface strings
-- [x] Add five-language generator and source-drift validation
-- [ ] Verify complete navigation, images, expansion and narrow-screen rendering
-- [ ] Open PR and verify CI; do not merge without approval
+- [x] Inspect screenshot and actual repository metadata
+- [x] Apply accurate About description and relevant Topics; read back
+- [x] Add five-language reader routes, practical FAQ and generated llms.txt
+- [ ] Verify source parity, navigation, actual GitHub rendering and exact-head CI
+- [ ] Open PR; no merge without owner approval
 
 ## Verification
 
