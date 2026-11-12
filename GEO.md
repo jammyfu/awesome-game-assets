@@ -5,10 +5,10 @@ Updated: 2026-11-12. This is the repository's editorial metadata record, **not**
 ## Applied GitHub settings
 
 - Repository: jammyfu/awesome-game-assets
-- Description: Game assets for indie developers: 2D sprites, 3D models, PBR textures, UI, sound effects and VFX. Compare original previews and practical license notes in English, 简中, 繁中, 日本語 and 한국어.
+- Description: Game assets and tools for indie developers: 2D sprites, 3D models, PBR textures, UI, audio, VFX and animation. Find original previews, practical license notes and source links in category tables.
 - Topics: awesome, awesome-list, game-assets, game-development, gamedev, sprites, pixel-art, 3d-models, textures, pbr, sound-effects, game-audio, game-ui, vfx, shaders, animation, cc0, threejs
 - Homepage: unset. No separate live website is claimed.
-- Status: About and the 18-topic set were applied and read back on 2026-11-12. Only description and topics changed. Content changes in this PR are separate from those already-live settings.
+- Status: About and the 18-topic set were applied and read back on 2026-11-12. The owner then requested more practical information in place of the About language list; the description above is the revised version. Five-language navigation remains in README. Only description and topics changed. Content changes in this PR are separate from those already-live settings.
 - Source of intended values: `data/discovery.json`. The manifest is validated offline; it does not automatically change GitHub settings.
 
 ## Search intent and evidence
