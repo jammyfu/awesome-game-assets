@@ -526,6 +526,25 @@ On phones, swipe tables sideways to compare projects, licenses and uses.
 </details>
 
 
+## Before you use an asset
+
+### Can I use these assets in a commercial game?
+
+It depends on the specific asset. CC0 generally permits commercial use without attribution; CC BY requires credit. Some entries have non-commercial, share-alike or per-asset terms. Read the practical note and the original license for the exact file you download.
+
+### Does a code license also cover its models, textures and music?
+
+Not necessarily. A repository may license code, art, audio, model weights and outputs separately. The list’s CC0 license does not relicense linked assets or grant rights to preview images.
+
+### Will these assets work in Unity, Godot, Unreal Engine or Three.js?
+
+Check the source’s file formats, engine version and dependencies. A compatible asset format does not guarantee a ready-to-import package. The catalog includes engine-specific examples and general-purpose resources; it does not certify universal compatibility.
+
+### How are the resources ranked and kept traceable?
+
+Within a category, comparable GitHub projects use a dated total-star snapshot, not recent growth. Non-GitHub sites have no comparable score. Each row links to its original source and license; preview identities and missing images are labelled. Expand the table to see every entry.
+
+
 ## Credits
 
 Some entries were found through these lists. We only took the pointers: every source was re-checked (license, reachability) and every description was rewritten for this list, nothing was copied wholesale. Entries found this way say *listed in* with a link to the list.

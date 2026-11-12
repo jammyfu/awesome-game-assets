@@ -1,0 +1,197 @@
+{
+  "repository": "jammyfu/awesome-game-assets",
+  "description": "Game assets for indie developers: 2D sprites, 3D models, PBR textures, UI, sound effects and VFX. Compare original previews and practical license notes in English, 简中, 繁中, 日本語 and 한국어.",
+  "homepage": null,
+  "observed_on": "2026-11-12",
+  "topics": [
+    "awesome",
+    "awesome-list",
+    "game-assets",
+    "game-development",
+    "gamedev",
+    "sprites",
+    "pixel-art",
+    "3d-models",
+    "textures",
+    "pbr",
+    "sound-effects",
+    "game-audio",
+    "game-ui",
+    "vfx",
+    "shaders",
+    "animation",
+    "cc0",
+    "threejs"
+  ],
+  "locales": {
+    "en": {
+      "summary": "**{entries} resources · {categories} categories · 5 languages.** Compare original project previews, practical use conditions and source links for indie game development. Includes asset packs, tools and code examples; not every entry is a downloadable asset or free for commercial use.",
+      "heading": "## Find assets for your next game",
+      "route_labels": [
+        "2D sprites, pixel art & 3D models",
+        "Game UI, icons & HUD",
+        "PBR textures & materials",
+        "Sound effects & game audio",
+        "VFX, particles & shaders",
+        "Rigging, animation & motion capture"
+      ],
+      "faq_heading": "## Before you use an asset",
+      "faq": [
+        [
+          "Can I use these assets in a commercial game?",
+          "It depends on the specific asset. CC0 generally permits commercial use without attribution; CC BY requires credit. Some entries have non-commercial, share-alike or per-asset terms. Read the practical note and the original license for the exact file you download."
+        ],
+        [
+          "Does a code license also cover its models, textures and music?",
+          "Not necessarily. A repository may license code, art, audio, model weights and outputs separately. The list’s CC0 license does not relicense linked assets or grant rights to preview images."
+        ],
+        [
+          "Will these assets work in Unity, Godot, Unreal Engine or Three.js?",
+          "Check the source’s file formats, engine version and dependencies. A compatible asset format does not guarantee a ready-to-import package. The catalog includes engine-specific examples and general-purpose resources; it does not certify universal compatibility."
+        ],
+        [
+          "How are the resources ranked and kept traceable?",
+          "Within a category, comparable GitHub projects use a dated total-star snapshot, not recent growth. Non-GitHub sites have no comparable score. Each row links to its original source and license; preview identities and missing images are labelled. Expand the table to see every entry."
+        ]
+      ]
+    },
+    "zh": {
+      "summary": "**{entries} 项资源 · {categories} 个分类 · 5 种语言。** 面向独立游戏开发，对比原项目预览、实际使用条件和来源。收录素材包、工具及代码示例，并非每项都可直接下载或免费商用。",
+      "heading": "## 按开发需求找素材",
+      "route_labels": [
+        "2D 精灵、像素画与 3D 模型",
+        "游戏 UI、图标与 HUD",
+        "PBR 纹理与材质",
+        "音效与游戏音频",
+        "VFX、粒子与着色器",
+        "绑定、动画与动作捕捉"
+      ],
+      "faq_heading": "## 使用素材前先看",
+      "faq": [
+        [
+          "能用于商业游戏吗？",
+          "取决于具体素材。CC0 通常允许免署名商用，CC BY 要求署名；部分条目仅限非商业使用、要求相同方式共享，或按素材分别授权。下载前查看表格中的使用说明及对应文件的原始许可。"
+        ],
+        [
+          "代码的许可证也覆盖模型、纹理和音乐吗？",
+          "不一定。同一项目的代码、美术、音频、模型权重和输出可能分别授权。本清单采用 CC0，不代表所链接的素材或预览图也变成 CC0。"
+        ],
+        [
+          "能直接用于 Unity、Godot、Unreal Engine 或 Three.js 吗？",
+          "先核对原项目的文件格式、引擎版本和依赖。格式可兼容不等于可直接导入；本目录既有特定引擎示例，也有通用资源，不保证所有引擎通用。"
+        ],
+        [
+          "资源如何排序、如何追溯？",
+          "同类 GitHub 项目按标明日期的累计星标快照比较，不代表近期增长。其他网站没有可比评分。每行保留原始来源和许可，项目标识及缺图情况会明确标注，展开表格可查看全部条目。"
+        ]
+      ]
+    },
+    "zh-TW": {
+      "summary": "**{entries} 項資源 · {categories} 個分類 · 5 種語言。** 為獨立遊戲開發者整理原專案預覽、實際使用條件與來源。內容包含素材包、工具及程式碼範例，並非每項都可直接下載或免費商用。",
+      "heading": "## 依開發需求找素材",
+      "route_labels": [
+        "2D 精靈圖、像素美術與 3D 模型",
+        "遊戲 UI、圖示與 HUD",
+        "PBR 紋理與材質",
+        "音效與遊戲音訊",
+        "VFX、粒子與著色器",
+        "骨架綁定、動畫與動作捕捉"
+      ],
+      "faq_heading": "## 使用素材前先確認",
+      "faq": [
+        [
+          "可以用在商業遊戲中嗎？",
+          "須視個別素材而定。CC0 通常允許商用且不必標示姓名，CC BY 則要求姓名標示；部分項目限非商業使用、要求以相同方式分享，或採個別素材授權。下載前請查看表格的使用說明與該檔案的原始授權條款。"
+        ],
+        [
+          "程式碼授權也涵蓋模型、紋理與音樂嗎？",
+          "不一定。同一專案的程式碼、美術、音訊、模型權重與輸出可能採不同授權。本清單採用 CC0，不代表連結的素材或預覽圖也適用 CC0。"
+        ],
+        [
+          "可以直接用於 Unity、Godot、Unreal Engine 或 Three.js 嗎？",
+          "請先確認原專案的檔案格式、引擎版本與相依套件。格式相容不等於可直接匯入；本目錄同時收錄特定引擎範例與通用資源，不保證適用所有引擎。"
+        ],
+        [
+          "資源如何排序與追溯？",
+          "同類 GitHub 專案依標明日期的累計星號快照比較，並非近期成長排名。其他網站沒有可比較的評分。每列保留原始來源與授權連結，專案識別圖及缺圖情況均有標註，展開表格即可查看全部項目。"
+        ]
+      ]
+    },
+    "ja": {
+      "summary": "**{entries} 件のリソース · {categories} カテゴリ · 5 言語。** インディーゲーム開発向けに、元プロジェクトのプレビュー、利用条件、出典を比較できます。素材パック、ツール、コード例を含み、すべてが直接ダウンロード可能または無料で商用利用可能とは限りません。",
+      "heading": "## 作りたいものから素材を探す",
+      "route_labels": [
+        "2Dスプライト・ピクセルアート・3Dモデル",
+        "ゲームUI・アイコン・HUD",
+        "PBRテクスチャ・マテリアル",
+        "効果音・ゲームオーディオ",
+        "VFX・パーティクル・シェーダー",
+        "リギング・アニメーション・モーションキャプチャ"
+      ],
+      "faq_heading": "## 素材を使う前に",
+      "faq": [
+        [
+          "商用ゲームに使えますか？",
+          "個々の素材によって異なります。CC0は通常、クレジットなしで商用利用でき、CC BYはクレジット表記が必要です。非商用限定、継承条件、素材ごとのライセンスを持つ項目もあります。利用条件の要約と、ダウンロードするファイルの原文ライセンスを確認してください。"
+        ],
+        [
+          "コードのライセンスはモデル、テクスチャ、音楽にも適用されますか？",
+          "必ずしも適用されません。同じプロジェクトでも、コード、美術、音声、モデルの重み、出力が別々のライセンスの場合があります。このリストのCC0は、リンク先の素材やプレビュー画像を再許諾するものではありません。"
+        ],
+        [
+          "Unity、Godot、Unreal Engine、Three.jsにそのまま使えますか？",
+          "元プロジェクトのファイル形式、エンジンのバージョン、依存関係を確認してください。形式が対応していても、そのままインポートできるパッケージとは限りません。特定エンジン向けの例と汎用リソースを含み、すべてのエンジンとの互換性は保証しません。"
+        ],
+        [
+          "どのように並べ替え、出典を確認していますか？",
+          "同じカテゴリ内のGitHubプロジェクトは、日付を明記した累計スター数のスナップショットで比較します。最近の伸び率ではありません。その他のサイトには比較可能なスコアがありません。各行に元の出典とライセンスを示し、ロゴや画像なしの状態を明記しています。表を展開すると全項目を確認できます。"
+        ]
+      ]
+    },
+    "ko": {
+      "summary": "**리소스 {entries}개 · 분류 {categories}개 · 5개 언어.** 인디 게임 개발에 필요한 원본 프로젝트 미리보기, 실제 이용 조건, 출처를 비교하세요. 에셋 팩, 도구, 코드 예제가 포함되며 모든 항목이 바로 다운로드 가능하거나 무료 상업 이용 가능한 것은 아닙니다.",
+      "heading": "## 개발 목적에 맞는 에셋 찾기",
+      "route_labels": [
+        "2D 스프라이트·픽셀 아트·3D 모델",
+        "게임 UI·아이콘·HUD",
+        "PBR 텍스처·머티리얼",
+        "효과음·게임 오디오",
+        "VFX·파티클·셰이더",
+        "리깅·애니메이션·모션 캡처"
+      ],
+      "faq_heading": "## 에셋 사용 전 확인 사항",
+      "faq": [
+        [
+          "상업용 게임에 사용할 수 있나요?",
+          "개별 에셋에 따라 다릅니다. CC0는 일반적으로 출처 표기 없이 상업 이용이 가능하며 CC BY는 저작자 표시가 필요합니다. 비상업적 이용 제한, 동일조건변경허락, 에셋별 라이선스가 적용되는 항목도 있습니다. 표의 이용 조건과 실제로 다운로드할 파일의 원문 라이선스를 확인하세요."
+        ],
+        [
+          "코드 라이선스가 모델, 텍스처, 음악에도 적용되나요?",
+          "반드시 그렇지는 않습니다. 같은 프로젝트의 코드, 아트, 오디오, 모델 가중치, 출력물에 서로 다른 라이선스가 적용될 수 있습니다. 이 목록의 CC0 라이선스는 링크된 에셋이나 미리보기 이미지의 사용 권한을 새로 부여하지 않습니다."
+        ],
+        [
+          "Unity, Godot, Unreal Engine, Three.js에 바로 사용할 수 있나요?",
+          "원본 프로젝트의 파일 형식, 엔진 버전, 의존성을 먼저 확인하세요. 호환되는 파일 형식이라고 해서 바로 가져올 수 있는 패키지인 것은 아닙니다. 특정 엔진용 예제와 범용 리소스가 함께 있으며 모든 엔진과의 호환성을 보장하지 않습니다."
+        ],
+        [
+          "리소스는 어떻게 정렬하고 출처를 확인하나요?",
+          "같은 분류의 GitHub 프로젝트는 확인 날짜가 표시된 누적 스타 수로 비교합니다. 최근 증가율 순위가 아닙니다. 다른 웹사이트에는 비교 가능한 점수가 없습니다. 각 행에 원본 출처와 라이선스를 연결하고, 프로젝트 로고나 이미지가 없는 항목을 명확히 표시합니다. 표를 펼치면 모든 항목을 볼 수 있습니다."
+        ]
+      ]
+    }
+  },
+  "routes": [
+    "models",
+    "ui",
+    "textures",
+    "audio",
+    "vfx",
+    "animation"
+  ],
+  "reviewed_source_sha256": {
+    "zh": "f96d58a9cda0d555c3688445c532b99a40df113303892896acd0bf8dab1e09f4",
+    "zh-TW": "f96d58a9cda0d555c3688445c532b99a40df113303892896acd0bf8dab1e09f4",
+    "ja": "f96d58a9cda0d555c3688445c532b99a40df113303892896acd0bf8dab1e09f4",
+    "ko": "f96d58a9cda0d555c3688445c532b99a40df113303892896acd0bf8dab1e09f4"
+  }
+}

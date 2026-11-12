@@ -6,7 +6,11 @@
 
 Original illustration: starter sword equipped. Asset loot unlocked.
 
-A curated directory of game assets and tools with license notes, including restricted licenses: 3D models, sprites, textures, sound effects, VFX, ability / casting demos, animation and editors. Every entry lists its URL, a license we checked on the source page, and what it is good for.
+**297 resources · 15 categories · 5 languages.** Compare original project previews, practical use conditions and source links for indie game development. Includes asset packs, tools and code examples; not every entry is a downloadable asset or free for commercial use.
+
+## Find assets for your next game
+
+[2D sprites, pixel art & 3D models](#3d-models--2d-sprites) · [Game UI, icons & HUD](#ui-icons--hud) · [PBR textures & materials](#textures--materials) · [Sound effects & game audio](#sound-effects--audio) · [VFX, particles & shaders](#vfx-particles--shaders) · [Rigging, animation & motion capture](#animation--motion-capture)
 
 > ⚠️ Repositories we found that look like piracy, cracks, paid-asset redistribution, star farming or malware are listed separately in [WARNING.md](WARNING.md) so you can avoid them. Do not use them.
 
@@ -526,6 +530,25 @@ On phones, swipe tables sideways to compare projects, licenses and uses.
 | [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)<br>[No usable original preview found · open project](https://github.com/madjin/awesome-cc0)<br><sub>GitHub ★ 555</sub> | List text: Commercial use and modification; no credit required<br><sub>([CC0-1.0](https://github.com/madjin/awesome-cc0))</sub> | List of CC0 assets from across the web: models, textures, sound. |
 
 </details>
+
+
+## Before you use an asset
+
+### Can I use these assets in a commercial game?
+
+It depends on the specific asset. CC0 generally permits commercial use without attribution; CC BY requires credit. Some entries have non-commercial, share-alike or per-asset terms. Read the practical note and the original license for the exact file you download.
+
+### Does a code license also cover its models, textures and music?
+
+Not necessarily. A repository may license code, art, audio, model weights and outputs separately. The list’s CC0 license does not relicense linked assets or grant rights to preview images.
+
+### Will these assets work in Unity, Godot, Unreal Engine or Three.js?
+
+Check the source’s file formats, engine version and dependencies. A compatible asset format does not guarantee a ready-to-import package. The catalog includes engine-specific examples and general-purpose resources; it does not certify universal compatibility.
+
+### How are the resources ranked and kept traceable?
+
+Within a category, comparable GitHub projects use a dated total-star snapshot, not recent growth. Non-GitHub sites have no comparable score. Each row links to its original source and license; preview identities and missing images are labelled. Expand the table to see every entry.
 
 
 ## Credits

@@ -1,15 +1,35 @@
 # Awesome Game Assets
 
-> A bilingual directory of game assets and production tools with source links and license notes. This repository does not distribute third-party assets or grant a universal commercial-use license.
+> A curated directory of 297 game-development resources in 15 categories, with complete English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean catalogs. Includes asset packs, tools and code examples, not 297 interchangeable downloads.
 
-## Browse
-- [English overview](README.md): representative packs and category navigation.
-- [中文入口](README.zh-CN.md): 精选素材和分类导航。
-- [Complete catalog](docs/catalog.md): all entries, source pages and license notes.
-- [完整中文目录](docs/catalog.zh-CN.md): 全量条目、来源和许可。
+## Scope and use rights
 
-## Reuse and maintenance
-- [Selection and preview rights](docs/discovery.md): editorial ordering, unknown popularity and media boundaries.
-- [Contributing](CONTRIBUTING.md): dataset and verification workflow.
-- [List license](LICENSE): CC0 for the list text, not every linked asset.
-- [Risk warnings](WARNING.md): sources to avoid, not recommendations.
+Resources include 2D sprites, pixel art, 3D models, PBR textures, UI, audio, VFX, animation and production tools. Linked assets have different licenses; some are non-commercial or have component-specific terms. The list's CC0 license does not relicense assets, code or preview images. Always follow the original source and license for the selected download.
+
+## Language entry points
+
+- [English overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.md): full catalog with original-source previews, practical license summaries and expandable category tables.
+- [English catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.md): the same complete entries in a separate document.
+- [简体中文 overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.zh-CN.md): full catalog with original-source previews, practical license summaries and expandable category tables.
+- [简体中文 catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.zh-CN.md): the same complete entries in a separate document.
+- [繁體中文 overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.zh-TW.md): full catalog with original-source previews, practical license summaries and expandable category tables.
+- [繁體中文 catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.zh-TW.md): the same complete entries in a separate document.
+- [日本語 overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.ja.md): full catalog with original-source previews, practical license summaries and expandable category tables.
+- [日本語 catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.ja.md): the same complete entries in a separate document.
+- [한국어 overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.ko.md): full catalog with original-source previews, practical license summaries and expandable category tables.
+- [한국어 catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.ko.md): the same complete entries in a separate document.
+
+## Data and provenance
+
+- [Source dataset](https://github.com/jammyfu/awesome-game-assets/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged.
+- [Localization files](https://github.com/jammyfu/awesome-game-assets/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.
+- [Discovery and use-rights methodology](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.
+- [Contributing](https://github.com/jammyfu/awesome-game-assets/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).
+- [List license](https://github.com/jammyfu/awesome-game-assets/blob/main/LICENSE): CC0 applies to the list text only.
+- [Risk warnings](https://github.com/jammyfu/awesome-game-assets/blob/main/WARNING.md): excluded sources to avoid, not recommended resources (English/Chinese).
+
+## Interpretation limits
+
+Categories show at most 15 entries initially; remaining rows are inside expandable tables. GitHub stars are a dated cumulative snapshot, not recent growth, quality or cross-platform popularity. Non-GitHub sources have no comparable star metric. A project logo is not an asset screenshot; missing previews are labelled. No universal engine compatibility or commercial-use clearance is claimed.
+
+This file is optional navigation for tools that choose to read it. It does not guarantee indexing, search ranking or AI citations.

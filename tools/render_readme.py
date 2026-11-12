@@ -23,6 +23,34 @@ def locale_data(lang):
         result.update(categories={c["id"]: c[lang] for c in data["categories"]}, entries={e["id"]: e[lang] for e in data["entries"]}, link_notes={e["id"]: e["link_note"][lang] for e in data["entries"] if e.get("link_note")})
     return result
 
+@lru_cache(maxsize=None)
+def discovery_data():
+    return json.loads((ROOT / "data/discovery.json").read_text(encoding="utf-8"))
+
+def render_reader_routes(lang):
+    data, spec = load_entries(), discovery_data()
+    loc = spec["locales"][lang]
+    cats = locale_data(lang)["categories"]
+    links = [f"[{label}](#{anchor(cats[key])})" for key, label in zip(spec["routes"], loc["route_labels"])]
+    return [loc["summary"].format(entries=len(data["entries"]), categories=len(data["categories"])), "", loc["heading"], "", " · ".join(links), ""]
+
+def render_reader_faq(lang):
+    loc = discovery_data()["locales"][lang]
+    lines = ["", loc["faq_heading"], ""]
+    for question, answer in loc["faq"]:
+        lines.extend([f"### {question}", "", answer, ""])
+    return lines
+
+def render_llms():
+    data = load_entries()
+    repo = "https://github.com/" + discovery_data()["repository"]
+    lines = ["# Awesome Game Assets", "", f"> A curated directory of {len(data['entries'])} game-development resources in {len(data['categories'])} categories, with complete English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean catalogs. Includes asset packs, tools and code examples, not {len(data['entries'])} interchangeable downloads.", "", "## Scope and use rights", "", "Resources include 2D sprites, pixel art, 3D models, PBR textures, UI, audio, VFX, animation and production tools. Linked assets have different licenses; some are non-commercial or have component-specific terms. The list's CC0 license does not relicense assets, code or preview images. Always follow the original source and license for the selected download.", "", "## Language entry points", ""]
+    for lang, (label, suffix) in LOCALES.items():
+        lines.append(f"- [{label} overview]({repo}/blob/main/README{suffix}.md): full catalog with original-source previews, practical license summaries and expandable category tables.")
+        lines.append(f"- [{label} catalog]({repo}/blob/main/docs/catalog{suffix}.md): the same complete entries in a separate document.")
+    lines += ["", "## Data and provenance", "", f"- [Source dataset]({repo}/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged.", f"- [Localization files]({repo}/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.", f"- [Discovery and use-rights methodology]({repo}/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.", f"- [Contributing]({repo}/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).", f"- [List license]({repo}/blob/main/LICENSE): CC0 applies to the list text only.", f"- [Risk warnings]({repo}/blob/main/WARNING.md): excluded sources to avoid, not recommended resources (English/Chinese).", "", "## Interpretation limits", "", "Categories show at most 15 entries initially; remaining rows are inside expandable tables. GitHub stars are a dated cumulative snapshot, not recent growth, quality or cross-platform popularity. Non-GitHub sources have no comparable star metric. A project logo is not an asset screenshot; missing previews are labelled. No universal engine compatibility or commercial-use clearance is claimed.", "", "This file is optional navigation for tools that choose to read it. It does not guarantee indexing, search ranking or AI citations.", ""]
+    return "\n".join(lines)
+
 def language_nav(lang, stem):
     return " · ".join(f"**{name}**" if code == lang else f"[{name}]({stem}{suffix}.md)" for code, (name, suffix) in LOCALES.items())
 
@@ -105,7 +133,7 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
     switch = language_nav(lang, "catalog")
     lines = [t["title"], "", switch, "", f'[{t["back"]}](README{suffix}.md)', "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     if homepage:
-        lines = [t["title"], "", language_nav(lang, "README"), "", f'<img src="{data["discovery"]["hero"]}" alt="{t["hero_alt"]}" width="1200">', "", t["hero_caption"], "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
+        lines = [t["title"], "", language_nav(lang, "README"), "", f'<img src="{data["discovery"]["hero"]}" alt="{t["hero_alt"]}" width="1200">', "", t["hero_caption"], ""] + render_reader_routes(lang) + [t["warn_line"], "", t["contents"], ""]
     lines += [f'**[{t["browse"]}](#{anchor(data["categories"][0][lang])})** · [{t["contribute_label"]}](CONTRIBUTING.md)', "", t["sort_note"], "", t["mobile"], ""]
     for c in data["categories"]:
         lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
@@ -147,6 +175,7 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
         if len(entries) > 15:
             lines += ["", "</details>", ""]
 
+    lines += render_reader_faq(lang)
     lines += ["", t["credits_h"], "", t["credits"], ""]
     for c in data.get("credits", []):
         lines.append(f'- [{c["repo"]}]({c["url"]}) · {c["license"]}')
@@ -257,6 +286,8 @@ OUTPUTS = {
     "docs/catalog.md": lambda: render_catalog("en"),
     "docs/catalog.zh-CN.md": lambda: render_catalog("zh"),
 }
+
+OUTPUTS["llms.txt"] = render_llms
 
 for code, (_, suffix) in LOCALES.items():
     OUTPUTS["README" + suffix + ".md"] = lambda code=code: render(code)

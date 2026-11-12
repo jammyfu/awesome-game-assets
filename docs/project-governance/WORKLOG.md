@@ -35,3 +35,7 @@ GitHub review of commit 083d810: English and Chinese README renders inspected at
 ## Restore the requested table format
 
 The prior responsive revision incorrectly replaced the owner's comparison tables with vertical lists. The owner explicitly requires tables for a large asset directory. Starting from main a44c1e8 with no open PRs observed, this revision restores every entry to both README languages and both catalogs as 15 genuine three-column tables. Preview and project share a cell; license evidence and use descriptions remain separate. Narrow screens may scroll inside tables, never silently receive cards. AGENTS.md and regression tests now preserve this requirement. Original data and permissions remain unchanged. A newly generated game-specific hero is being prepared; actual rendering and final CI evidence will be recorded in the PR.
+
+## 2026-11-12: About, topics and five-language discovery
+
+Inspected the owner's screenshot and live About/topics. Updated only repository description and six additional relevant topics through the owner's existing GitHub session, then read back the exact 18-topic set. No homepage/site, permissions or visibility were changed. Content work uses a separate branch: five-language reader routes and practical FAQ, a generated five-language llms.txt, metadata manifest, official-source rationale and regression tests. Source entries, licenses, previews and popularity values are unchanged. Independent review and public render/CI checks are recorded in the PR before delivery; no ranking or citation improvement is claimed.
