@@ -13,7 +13,7 @@
 
 ## Owner-required presentation
 
-- Keep all 297 resources in genuine category-grouped comparison tables in all five READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
+- Keep all catalog resources in genuine category-grouped comparison tables in all five READMEs and catalogs. Do not replace tables with cards or vertical entry lists to claim mobile responsiveness.
 - For narrow screens, reduce column count and use GitHub's native table scrolling. Keep project/source, preview attribution, license evidence and description. Test actual GitHub rendering and disclose horizontal table scrolling.
 - Keep an original, project-specific game-themed hero in all five README languages. Record the real generation prompt/tool; do not relabel third-party art as original.
 

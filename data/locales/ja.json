@@ -352,7 +352,30 @@
     "gdx-ai": "操舵行動、状態機械、ビヘイビアツリー、経路探索、メッセージングを備えた libGDX ゲーム AI フレームワーク。",
     "jumper": "LÖVE などの Lua 環境向け高速グリッド経路探索ライブラリ。A*、Jump Point Search などに対応。",
     "crystalai": "選択肢を採点してエージェントの行動を決める、C# の効用ベース AI フレームワーク。",
-    "bonsai-bt": "可視化ツールを備えた Rust ビヘイビアツリーライブラリ。ゲームやロボティクスに利用可能。"
+    "bonsai-bt": "可視化ツールを備えた Rust ビヘイビアツリーライブラリ。ゲームやロボティクスに利用可能。",
+    "cgbookcase": "Dorian Zgraggen によるフォトグラム・プロシージャル・近似の PBR テクスチャ（多くは 4K〜8K）。樹皮、石、布、タイルなど、写実シーン向け。",
+    "texturecan": "650 以上の無料 PBR テクスチャセット（レンガ、金属、木材、布、地面など）とプレビュー。利用規約ページでテクスチャを CC0 1.0 と明記。",
+    "3dtextures": "Katsukagi によるシームレス PBR マテリアル。Blender、Unreal、Unity、Godot 向け。About ページでサイト内テクスチャを CC0 と明記。",
+    "kenney-prototype-textures": "最終アート前のグレーボックス用グリッドと色分けテクスチャ 75 枚。",
+    "pixel-adventure": "Pixel Frog の 2D プラットフォーマーキット。プレイヤー、敵、タイル、アイテム、20 FPS の PNG アニメ。画像のみ。",
+    "treasure-hunters": "Pixel Frog の宝探し 2D キット。キャラクター、タイル、小物を横スクロール冒険向けに収録。",
+    "sunny-land": "Ansimuz の森のプラットフォーマー用ピクセルアート。プレイヤー、敵、タイルセット、アニメで 2D 開始シーンを組める。",
+    "luizmelo-medieval-king": "LuizMelo の 2D 中世王スプライト。待機、走行、攻撃、ジャンプ、落下、被弾、死亡フレームを収録。",
+    "0x72-industrial-tileset": "0x72 による 16x16 の工業／SF ピクセルタイル、ロボット、小物。DungeonTileset II と組み合わせ可能。",
+    "kaykit-dungeon": "Kay Lousberg のモジュール式ローポリダンジョン。壁、床、階段、扉、小物 200 点以上を FBX／glTF／OBJ で提供。追加・ソース版は有料。",
+    "kaykit-adventurers": "リギング済みの KayKit ローポリ冒険者（騎士、盗賊、魔術師など）。FBX／glTF。三人称やダンジョン試作向け。",
+    "kenney-nature-kit": "屋外 3D シーン向けのローポリ樹木、岩、植生パーツ 330 点。",
+    "kenney-interface-sounds": "HUD や設定画面向けのクリック、確定、エラー、メニュー効果音 100 点。",
+    "kenney-impact-sounds": "衝突や戦闘向けの打撃・フォーリー 130 点（木、金属、石、身体）。",
+    "juhani-chiptunes": "Juhani Junkala（SubspaceAudio）によるループ可能な 8-bit アクション曲 5 曲。ステージ、ボス、タイトル画面向け。",
+    "subspaceaudio-512-sfx": "Juhani Junkala（SubspaceAudio）による整理済み 8-bit／レトロ効果音 512 点。ジャンプ、取得、ヒット、UI 向け。",
+    "silkscreen": "Jason Kottke の太いピクセル輪郭のラテンフォント。HUD ラベル、タイトル、ウェブゲームのグラフィック向け。",
+    "kenney-board-game-icons": "資源、トークン、行動などのボードゲーム風アイコン 250 点。テーブルゲーム UI や 2D ストラテジー HUD 向け。",
+    "oga-golden-ui": "Buch による金色の RPG UI セット。パネル、ボタン、バナー、メッセージ枠の古典ファンタジー調。",
+    "ravenmore-fantasy-ui": "Ravenmore のファンタジー UI 案（ボタン、枠、バー）。元は ADOM 試作用。クレジット必須。",
+    "kenney-smoke-particles": "2D パーティクル向けの煙、噴煙、爆発スプライト 70 枚。Kenney Particle Pack とは別セット。",
+    "oga-2d-explosion": "Sinestesia のコマ撮り 2D 爆発シート。4 種のアニメ、512px フレーム、透明 PNG アトラス。",
+    "kaykit-character-animations": "現行の KayKit ヒューマノイドアニメ（待機、歩行、走行、ジャンプ、攻撃）。FBX／glTF。収録済みの旧版パックとは別。"
   },
   "license_summaries": {
     "CC0-1.0": "商用利用・改変可。クレジット不要",
@@ -419,5 +442,5 @@
     "pixabay-sfx": "自動チェックではサイトが 403 を返します。ライセンスは手動で確認済み",
     "blender": "自動チェックでは公式サイトが 403 を返します。ライセンスは手動で確認済み"
   },
-  "source_sha256": "c70c6ab14fc3009d04650edc96f4b9232de8ed43b853a8c2305bcdf6eedf9a96"
+  "source_sha256": "67f207f294926df921e94df36d5662a591e0ce360b444032e0fd7a41dd0c84e0"
 }

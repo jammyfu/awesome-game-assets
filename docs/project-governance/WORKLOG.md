@@ -1,5 +1,16 @@
 # WORKLOG.md
 
+## 2026-11-21（PLAN-007 素材扩充）
+
+- 基线：main `b99daf5`，无开放 PR。遵循仓内 AGENTS 与 CoderSkills `continuous-project-loop` / `git-project-harness`（不改造项目骨架）。
+- 缺口：贴图仅 5 条且多为工具；音频多为库/生成器；2D/3D 偏 Kenney。本轮只收许可证在官方页写明、链接可达、可公开推荐的素材。
+- 新增 23 条（核验日 2026-11-21）：贴图 4（cgbookcase、TextureCan、3DTextures.me、Kenney Prototype Textures）；2D/3D 8（Pixel Adventure、Treasure Hunters、Sunny Land、Medieval King Pack 2、16x16 Industrial Tileset、KayKit Dungeon、KayKit Adventurers、Kenney Nature Kit）；音频 4（Kenney Interface/Impact、5 Chiptunes、512 8-bit SFX）；字体 1（Silkscreen OFL）；UI 3（Kenney Board Game Icons、Golden UI、Ravenmore Fantasy UI）；特效 2（Kenney Smoke Particles、Sinestesia 2D explosions）；动画 1（KayKit Character Animations，区别于已收旧版）。
+- 许可证：GitHub 条目核 API `license`（Silkscreen = OFL-1.1，27★，2026-11-21）；网站读官方条款页或素材页的 CC0 / CC-BY-3.0 原文。Kenney 条目以 kenney.nl/support 为许可证据，并在各素材页看到 Creative Commons CC0。
+- 配图：全部热链官方预览（Kenney media、itch.zone、OGA files、cgbookcase CDN、TextureCan、3dtextures、GitHub documentation specimen）。核验 HTTP 与魔数；不复制进仓、不生成图。展示不等于再分发授权。
+- 未收：ShareTextures（自定义 CC0 + 禁再分发/热链条款）、m6x11（页上写需署名但无标准许可证字段）、Zpix（商业收费）、NASA 3D Resources（GitHub `license` 为空且 NASA 媒体使用限制）、GameArt2D（许可页 404）、Patrick de Arteaga / soundimage（条款不够具体）、Mixamo（专有）、Tiny Swords（禁止再打包）、KayKit furniture-bits 404。
+- 五语描述写入 `data/locales/` 后按 `tools/check_locales.py` 刷新 `source_sha256`。生成 README/catalog，不手改。
+- 验证：`python3 tools/verify.py` 绿（41 tests）；`python3 tools/check_links.py` 0 错误 / 10 警告，警告均为既有 pixabay/blender 403 与 GitHub 未识别许可证条目，本轮新增链接无 404。
+
 ## 2026-11-12
 
 - 按 CoderSkills `multi-project-program-management`（`bootstrap_project.py`）生成骨架，接 `continuous-project-loop` 循环。

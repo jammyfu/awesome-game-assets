@@ -6,7 +6,7 @@
 
 原創頭圖：開局一把木劍，素材全靠撿。
 
-**297 項資源 · 15 個分類 · 5 種語言。** 為獨立遊戲開發者整理原專案預覽、實際使用條件與來源。內容包含素材包、工具及程式碼範例，並非每項都可直接下載或免費商用。
+**320 項資源 · 15 個分類 · 5 種語言。** 為獨立遊戲開發者整理原專案預覽、實際使用條件與來源。內容包含素材包、工具及程式碼範例，並非每項都可直接下載或免費商用。
 
 ## 依開發需求找素材
 
@@ -68,7 +68,7 @@
 | [Kenney Roguelike Characters](https://kenney.nl/assets/roguelike-characters)<br><img src="https://kenney.nl/media/pages/assets/roguelike-characters/da661e4fb3-1677694932/sample.png" alt="Kenney Roguelike Characters" width="160"><br><sub>圖片出處：專案 [Kenney Roguelike Characters](https://kenney.nl/assets/roguelike-characters)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/assets/roguelike-characters))</sub> | 16×16 像素 Roguelike 角色精靈圖，附裝備與服裝。 |
 
 <details>
-<summary>展開其餘 12 項</summary>
+<summary>展開其餘 20 項</summary>
 
 | 專案／預覽 | 授權與使用方式 | 適合用途 |
 | --- | --- | --- |
@@ -84,6 +84,14 @@
 | [16x16 DungeonTileset II](https://0x72.itch.io/dungeontileset-ii)<br><img src="https://img.itch.zone/aW1hZ2UvMzA5MDI4LzE1MTk3MjcucG5n/original/VCoz5j.png" alt="16x16 DungeonTileset II" width="160"><br><sub>圖片出處：專案 [16x16 DungeonTileset II](https://0x72.itch.io/dungeontileset-ii)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 素材可商用、免署名；程式碼須保留 MIT 聲明<br><sub>([CC0-1.0 (assets) / MIT (code)](https://0x72.itch.io/dungeontileset-ii))</sub> | 16×16 地城圖塊集，包含具動畫的角色、怪物與武器。 |
 | [16x16 Fantasy tileset](https://opengameart.org/content/16x16-fantasy-tileset)<br><img src="https://opengameart.org/sites/default/files/fantasy_16x_example2.png" alt="16x16 Fantasy tileset" width="160"><br><sub>圖片出處：專案 [16x16 Fantasy tileset](https://opengameart.org/content/16x16-fantasy-tileset)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名；改作須以相同條款分享<br><sub>([CC-BY-SA-3.0](https://opengameart.org/content/16x16-fantasy-tileset))</sub> | 迷你角色與奇幻道具，適合 Game Boy／Famicom 風格的 Roguelike 及 RPG。 |
 | [A Blocky Dungeon](https://opengameart.org/content/a-blocky-dungeon)<br><img src="https://opengameart.org/sites/default/files/dungeon_pre_small.png" alt="A Blocky Dungeon" width="160"><br><sub>圖片出處：專案 [A Blocky Dungeon](https://opengameart.org/content/a-blocky-dungeon)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/a-blocky-dungeon))</sub> | 方塊風格的 16×16 地城圖塊，含門、開關與動畫物件，不含角色。 |
+| [Pixel Adventure](https://pixelfrog-assets.itch.io/pixel-adventure-1)<br><img src="https://img.itch.zone/aW1nLzI1MzgxMjIucG5n/original/xx%2BcXh.png" alt="Pixel Adventure" width="160"><br><sub>圖片出處：專案 [Pixel Adventure](https://pixelfrog-assets.itch.io/pixel-adventure-1)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://pixelfrog-assets.itch.io/pixel-adventure-1))</sub> | Pixel Frog 的 2D 平台遊戲套件：玩家、敵人、圖塊、道具及 20 FPS 的 PNG 動畫。僅含圖像。 |
+| [Treasure Hunters](https://pixelfrog-assets.itch.io/treasure-hunters)<br><img src="https://img.itch.zone/aW1nLzQyMDM2MTMuZ2lm/original/ZD9Se3.gif" alt="Treasure Hunters" width="160"><br><sub>圖片出處：專案 [Treasure Hunters](https://pixelfrog-assets.itch.io/treasure-hunters)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://pixelfrog-assets.itch.io/treasure-hunters))</sub> | Pixel Frog 的尋寶橫向捲軸 2D 套件，含角色、圖塊與道具，適合冒險關卡。 |
+| [Sunny Land](https://ansimuz.itch.io/sunny-land-pixel-game-art)<br><img src="https://img.itch.zone/aW1nLzI2NTY5MjM2LnBuZw==/original/4eZFq0.png" alt="Sunny Land" width="160"><br><sub>圖片出處：專案 [Sunny Land](https://ansimuz.itch.io/sunny-land-pixel-game-art)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://ansimuz.itch.io/sunny-land-pixel-game-art))</sub> | Ansimuz 的森林平台像素畫：玩家、敵人、圖塊與動畫，可搭一套完整 2D 開場場景。 |
+| [Medieval King Pack 2](https://luizmelo.itch.io/medieval-king-pack-2)<br><img src="https://img.itch.zone/aW1nLzM3OTQ4MDMuZ2lm/original/DR5ODd.gif" alt="Medieval King Pack 2" width="160"><br><sub>圖片出處：專案 [Medieval King Pack 2](https://luizmelo.itch.io/medieval-king-pack-2)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://luizmelo.itch.io/medieval-king-pack-2))</sub> | LuizMelo 的 2D 中世紀國王精靈圖，含待機、跑、攻擊、跳、落地、受擊與死亡幀。 |
+| [16x16 Industrial Tileset](https://0x72.itch.io/16x16-industrial-tileset)<br><img src="https://img.itch.zone/aW1hZ2UvMTYyMzY0Lzc0Nzk4Mi5wbmc=/original/IwYfRf.png" alt="16x16 Industrial Tileset" width="160"><br><sub>圖片出處：專案 [16x16 Industrial Tileset](https://0x72.itch.io/16x16-industrial-tileset)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://0x72.itch.io/16x16-industrial-tileset))</sub> | 0x72 的 16×16 工業／科幻像素圖塊、機器人與道具，可與 DungeonTileset II 搭配。 |
+| [KayKit Dungeon Pack](https://kaylousberg.itch.io/kaykit-dungeon-pack)<br><img src="https://img.itch.zone/aW1nLzMxOTg2MDc4LnBuZw==/original/ZtGJzA.png" alt="KayKit Dungeon Pack" width="160"><br><sub>圖片出處：專案 [KayKit Dungeon Pack](https://kaylousberg.itch.io/kaykit-dungeon-pack)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kaylousberg.itch.io/kaykit-dungeon-pack))</sub> | Kay Lousberg 的模組化低多邊形地城：200+ 面牆、地板、樓梯、門與道具，FBX／glTF／OBJ。額外與原始檔方案需付費。 |
+| [KayKit Adventurers](https://kaylousberg.itch.io/kaykit-adventurers)<br><img src="https://img.itch.zone/aW1nLzMxOTg2MDU1LnBuZw==/original/bTqYqb.png" alt="KayKit Adventurers" width="160"><br><sub>圖片出處：專案 [KayKit Adventurers](https://kaylousberg.itch.io/kaykit-adventurers)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kaylousberg.itch.io/kaykit-adventurers))</sub> | 已綁定的 KayKit 低多邊形冒險者（騎士、盜賊、法師等），FBX／glTF，適合第三人稱或地城原型。 |
+| [Kenney Nature Kit](https://kenney.nl/assets/nature-kit)<br><img src="https://kenney.nl/media/pages/assets/nature-kit/2d81fc716e-1677698893/preview.png" alt="Kenney Nature Kit" width="160"><br><sub>圖片出處：專案 [Kenney Nature Kit](https://kenney.nl/assets/nature-kit)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 330 個低多邊形樹木、岩石與植栽部件，適合搭室外 3D 場景。 |
 
 </details>
 
@@ -110,7 +118,7 @@
 | [Kenney UI Pack](https://kenney.nl/assets/ui-pack)<br><img src="https://kenney.nl/media/pages/assets/ui-pack/ab9e396e4d-1718203978/preview.png" alt="Kenney UI Pack" width="160"><br><sub>圖片出處：專案 [Kenney UI Pack](https://kenney.nl/assets/ui-pack)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/assets/ui-pack))</sub> | 430 個多色 UI 元件，含按鈕、滑桿與面板，適合選單及 HUD。 |
 
 <details>
-<summary>展開其餘 5 項</summary>
+<summary>展開其餘 8 項</summary>
 
 | 專案／預覽 | 授權與使用方式 | 適合用途 |
 | --- | --- | --- |
@@ -119,6 +127,9 @@
 | [Kenney UI Pack (RPG Expansion)](https://kenney.nl/assets/ui-pack-rpg-expansion)<br><img src="https://kenney.nl/media/pages/assets/ui-pack-rpg-expansion/3cbd16d800-1677661820/sample.png" alt="Kenney UI Pack (RPG Expansion)" width="160"><br><sub>圖片出處：專案 [Kenney UI Pack (RPG Expansion)](https://kenney.nl/assets/ui-pack-rpg-expansion)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/assets/ui-pack-rpg-expansion))</sub> | RPG 風格 UI 元件，包含面板、狀態條、按鈕與邊框。 |
 | [RPG GUI construction kit v1.0](https://opengameart.org/content/rpg-gui-construction-kit-v10)<br><img src="https://opengameart.org/sites/default/files/preview_6.jpg" alt="RPG GUI construction kit v1.0" width="160"><br><sub>圖片出處：專案 [RPG GUI construction kit v1.0](https://opengameart.org/content/rpg-gui-construction-kit-v10)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名<br><sub>([CC-BY-3.0](https://opengameart.org/content/rpg-gui-construction-kit-v10))</sub> | RPG GUI 組件包，提供邊框、狀態條與按鈕，可組合奇幻風格選單。 |
 | [Sci-fi User Interface](https://opengameart.org/content/sci-fi-user-interface)<br><img src="https://opengameart.org/sites/default/files/ui_preview_1.png" alt="Sci-fi User Interface" width="160"><br><sub>圖片出處：專案 [Sci-fi User Interface](https://opengameart.org/content/sci-fi-user-interface)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/sci-fi-user-interface))</sub> | 科幻風格介面元件，適合未來感 HUD 與選單。 |
+| [Kenney Board Game Icons](https://kenney.nl/assets/board-game-icons)<br><img src="https://kenney.nl/media/pages/assets/board-game-icons/d5c5bd2f28-1674933139/preview.png" alt="Kenney Board Game Icons" width="160"><br><sub>圖片出處：專案 [Kenney Board Game Icons](https://kenney.nl/assets/board-game-icons)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 250 個桌遊風格圖示（資源、代幣、行動），適合桌上遊戲介面與 2D 策略 HUD。 |
+| [Golden UI](https://opengameart.org/content/golden-ui)<br><img src="https://opengameart.org/sites/default/files/ui_preview_upscaled.png" alt="Golden UI" width="160"><br><sub>圖片出處：專案 [Golden UI](https://opengameart.org/content/golden-ui)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/golden-ui))</sub> | Buch 的金色 RPG 介面套件：面板、按鈕、橫幅與對話框，偏經典奇幻風。 |
+| [Fantasy UI Elements by Ravenmore](https://opengameart.org/content/fantasy-ui-elements-by-ravenmore)<br><img src="https://opengameart.org/sites/default/files/ADOM-OGA-UI-Preview.png" alt="Fantasy UI Elements by Ravenmore" width="160"><br><sub>圖片出處：專案 [Fantasy UI Elements by Ravenmore](https://opengameart.org/content/fantasy-ui-elements-by-ravenmore)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名<br><sub>([CC-BY-3.0](https://opengameart.org/content/fantasy-ui-elements-by-ravenmore))</sub> | Ravenmore 的奇幻介面稿（按鈕、邊框、條）最初給 ADOM 做原型；使用須署名。 |
 
 </details>
 
@@ -133,6 +144,10 @@
 | [azagaya/laigter](https://github.com/azagaya/laigter)<br><img src="https://user-images.githubusercontent.com/46932830/90258696-4c14b780-de1f-11ea-8e33-33dbfc9fd86c.png" alt="azagaya/laigter" width="160"><br><sub>圖片出處：專案 [azagaya/laigter](https://raw.githubusercontent.com/azagaya/laigter/master/README.md)</sub><br><sub>GitHub ★ 1,402</sub> | 可商用；散布受授權涵蓋的程式碼時須依規定開放原始碼<br><sub>([GPL-3.0](https://github.com/azagaya/laigter))</sub> | 為 2D 精靈圖產生法線、鏡面反射與遮蔽貼圖，製作動態光照效果。 |
 | [Poly Haven](https://polyhaven.com/)<br><img src="https://cdn.polyhaven.com/site_images/home/window_rend.jpg?width=630&quality=95" alt="Poly Haven" width="160"><br><sub>圖片出處：專案 [Poly Haven](https://polyhaven.com/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://polyhaven.com/license))</sub> | 高品質 PBR 貼圖、HDRI 與攝影掃描模型，適合寫實場景及打光。 |
 | [ambientCG](https://ambientcg.com/)<br>[尚未找到可用原始預覽圖 · 查看專案](https://ambientcg.com/)<br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://docs.ambientcg.com/license/))</sub> | 大型 CC0 素材庫，提供多種解析度的 PBR 材質、HDRI 與模型。 |
+| [cgbookcase](https://www.cgbookcase.com/textures)<br><img src="https://cgbookcase.b-cdn.net/textures/renders/2024_b/BirchBark01_render_default.jpg" alt="cgbookcase" width="160"><br><sub>圖片出處：專案 [cgbookcase](https://www.cgbookcase.com/textures)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://www.cgbookcase.com/textures))</sub> | Dorian Zgraggen 的攝影測量、程序化與近似 PBR 貼圖（常見 4K–8K），含樹皮、石材、織物、地磚等，適合寫實場景。 |
+| [TextureCan](https://www.texturecan.com/)<br><img src="https://www.texturecan.com/img/textures/bricks_0001/bricks_0001_1200.jpg" alt="TextureCan" width="160"><br><sub>圖片出處：專案 [TextureCan](https://www.texturecan.com/details/1/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://www.texturecan.com/terms/))</sub> | 650+ 套免費 PBR 貼圖（磚牆、金屬、木材、織物、地面等）並附預覽圖；條款頁寫明貼圖為 CC0 1.0。 |
+| [3DTextures.me](https://3dtextures.me/)<br><img src="https://i0.wp.com/3dtextures.me/wp-content/uploads/2026/11/Material_2005.png" alt="3DTextures.me" width="160"><br><sub>圖片出處：專案 [3DTextures.me](https://3dtextures.me/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://3dtextures.me/about/))</sub> | Katsukagi 的無縫 PBR 材質，適用 Blender、Unreal、Unity 與 Godot；關於頁寫明站內貼圖均為 CC0。 |
+| [Kenney Prototype Textures](https://kenney.nl/assets/prototype-textures)<br><img src="https://kenney.nl/media/pages/assets/prototype-textures/25b7a81022-1677578300/preview.png" alt="Kenney Prototype Textures" width="160"><br><sub>圖片出處：專案 [Kenney Prototype Textures](https://kenney.nl/assets/prototype-textures)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 75 張原型網格與色塊貼圖，適合在定稿美術前做白盒關卡。 |
 
 ## 音效與音訊
 
@@ -156,13 +171,17 @@
 | [chr15m/jsfxr](https://github.com/chr15m/jsfxr)<br><img src="https://raw.githubusercontent.com/chr15m/jsfxr/master/screenshot.png" alt="chr15m/jsfxr" width="160"><br><sub>圖片出處：專案 [chr15m/jsfxr](https://github.com/chr15m/jsfxr)</sub><br><sub>GitHub ★ 464</sub> | 可商用、可修改，免署名<br><sub>([Unlicense](https://github.com/chr15m/jsfxr))</sub> | 瀏覽器版復古音效產生器，由 sfxr 移植，適合跳躍、金幣、擊中與雷射音效。 |
 
 <details>
-<summary>展開其餘 3 項</summary>
+<summary>展開其餘 7 項</summary>
 
 | 專案／預覽 | 授權與使用方式 | 適合用途 |
 | --- | --- | --- |
 | [Freesound](https://freesound.org/)<br>[尚未找到可用原始預覽圖 · 查看專案](https://freesound.org/)<br><sub>尚無可比較的熱門程度數據</sub> | 使用前逐項確認素材或元件的授權條件<br><sub>([Per sound (CC0 / CC-BY-4.0 / CC-BY-NC-4.0)](https://freesound.org/help/faq/))</sub> | 大型社群音效庫；請依授權篩選，商業遊戲可選 CC0 或 CC-BY，並依規定署名。 |
 | [Sonniss #GameAudioGDC Bundles](https://sonniss.com/gameaudiogdc)<br><img src="https://cdn.sonniss.com/storage/2025/03/Sonniss-Metaimage.png" alt="Sonniss #GameAudioGDC Bundles" width="160"><br><sub>圖片出處：專案 [Sonniss #GameAudioGDC Bundles](https://sonniss.com/gameaudiogdc)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、免署名，不可單獨再散布<br><sub>([Royalty-free (Sonniss license: commercial use, no attribution required)](https://sonniss.com/gameaudiogdc))</sub> | 每年推出的免費專業音效包，可用於商業遊戲，免逐次支付權利金。 |
 | [Pixabay Sound Effects](https://pixabay.com/sound-effects/)<br>[尚未找到可用原始預覽圖 · 查看專案](https://pixabay.com/sound-effects/)<br><sub>⚠ 網站對自動檢查回傳 403；授權已人工核對</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，不可原樣單獨轉售<br><sub>([Pixabay Content License (free, no attribution; no standalone resale)](https://pixabay.com/service/license-summary/))</sub> | 依 Pixabay Content License 提供的大型音效與音樂庫，免逐次支付權利金。 |
+| [Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds)<br><img src="https://kenney.nl/media/pages/assets/interface-sounds/428fc5f14c-1677589445/preview_interface.png" alt="Kenney Interface Sounds" width="160"><br><sub>圖片出處：專案 [Kenney Interface Sounds](https://kenney.nl/assets/interface-sounds)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 100 個介面點擊、確認、錯誤與選單音效，適合 HUD 與設定頁。 |
+| [Kenney Impact Sounds](https://kenney.nl/assets/impact-sounds)<br><img src="https://kenney.nl/media/pages/assets/impact-sounds/37d145475f-1677589720/audio_impact.png" alt="Kenney Impact Sounds" width="160"><br><sub>圖片出處：專案 [Kenney Impact Sounds](https://kenney.nl/assets/impact-sounds)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 130 個撞擊與擬音（木、金屬、石、身體），適合碰撞與戰鬥。 |
+| [5 Chiptunes (Action)](https://opengameart.org/content/5-chiptunes-action)<br><img src="https://opengameart.org/sites/default/files/styles/audio_with_background/public/audio_preview/level3.mp3.png" alt="5 Chiptunes (Action)" width="160"><br><sub>圖片出處：專案 [5 Chiptunes (Action)](https://opengameart.org/content/5-chiptunes-action)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/5-chiptunes-action))</sub> | Juhani Junkala（SubspaceAudio）的 5 首循環 8-bit 動作曲，適合關卡、Boss 與標題畫面。 |
+| [512 Sound Effects (8-bit style)](https://opengameart.org/content/512-sound-effects-8-bit-style)<br><img src="https://opengameart.org/sites/default/files/styles/audio_with_background/public/audio_preview/sfx%20pack%20preview.mp3.png" alt="512 Sound Effects (8-bit style)" width="160"><br><sub>圖片出處：專案 [512 Sound Effects (8-bit style)](https://opengameart.org/content/512-sound-effects-8-bit-style)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/512-sound-effects-8-bit-style))</sub> | Juhani Junkala（SubspaceAudio）整理的 512 個 8-bit／復古音效，適合跳躍、拾取、擊中與介面。 |
 
 </details>
 
@@ -181,6 +200,7 @@
 | [fcambus/spleen](https://github.com/fcambus/spleen)<br><img src="https://www.cambus.net/content/2018/09/spleen-hello.png" alt="fcambus/spleen" width="160"><br><sub>圖片出處：專案 [fcambus/spleen](https://github.com/fcambus/spleen)</sub><br><sub>GitHub ★ 1,421</sub> | 可商用、可修改；保留必要的著作權與授權聲明<br><sub>([BSD-2-Clause](https://github.com/fcambus/spleen))</sub> | 從 5×8 到 32×64 的等寬點陣字型，適合清晰的像素 UI。 |
 | [scott0107000/BoutiqueBitmap7x7](https://github.com/scott0107000/BoutiqueBitmap7x7)<br><img src="https://raw.githubusercontent.com/scott0107000/BoutiqueBitmap7x7/9f0788524045082a216987151c9c6bec8867921f/README_PIC/0080.png" alt="scott0107000/BoutiqueBitmap7x7" width="160"><br><sub>圖片出處：專案 [scott0107000/BoutiqueBitmap7x7](https://github.com/scott0107000/BoutiqueBitmap7x7)</sub><br><sub>GitHub ★ 165</sub> | 可商用及嵌入；保留字型授權，不可單獨販售字型<br><sub>([OFL-1.1](https://github.com/scott0107000/BoutiqueBitmap7x7))</sub> | 開放原始碼的 7×7 點陣字型，涵蓋中文、日文與拉丁字元。 |
 | [sgigou/NF-Pixels](https://github.com/sgigou/NF-Pixels)<br><img src="https://raw.githubusercontent.com/sgigou/NF-Pixels/master/showcases/illustrations/logo.png" alt="sgigou/NF-Pixels" width="160"><br><sub>圖片出處：專案 [sgigou/NF-Pixels](https://github.com/sgigou/NF-Pixels)</sub><br><sub>GitHub ★ 32</sub> | 可商用及嵌入；保留字型授權，不可單獨販售字型<br><sub>([OFL-1.1](https://github.com/sgigou/NF-Pixels))</sub> | 免費像素字型，提供標準與粗體，適合復古遊戲文字。 |
+| [Silkscreen](https://github.com/googlefonts/silkscreen)<br><img src="https://raw.githubusercontent.com/googlefonts/silkscreen/main/documentation/image1.png" alt="Silkscreen" width="160"><br><sub>圖片出處：專案 [Silkscreen](https://github.com/googlefonts/silkscreen)</sub><br><sub>GitHub ★ 27</sub> | 可商用及嵌入；保留字型授權，不可單獨販售字型<br><sub>([OFL-1.1](https://github.com/googlefonts/silkscreen/blob/main/OFL.txt))</sub> | Jason Kottke 的粗像素描邊拉丁字型，適合 HUD 標籤、標題與網頁遊戲畫面。 |
 | [Kenney Fonts](https://kenney.nl/assets/kenney-fonts)<br><img src="https://kenney.nl/media/pages/assets/kenney-fonts/703183582c-1677661704/preview.png" alt="Kenney Fonts" width="160"><br><sub>圖片出處：專案 [Kenney Fonts](https://kenney.nl/assets/kenney-fonts)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/assets/kenney-fonts))</sub> | Kenney 提供的 11 款活潑遊戲字型，可免費用於各類專案。 |
 | [monogram](https://datagoblin.itch.io/monogram)<br><img src="https://img.itch.zone/aW1nLzE3MjQyNDY3LnBuZw==/original/j47gjt.png" alt="monogram" width="160"><br><sub>圖片出處：專案 [monogram](https://datagoblin.itch.io/monogram)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://datagoblin.itch.io/monogram))</sub> | monogram：免費等寬像素字型，涵蓋多種字元。 |
 | [m5x7](https://managore.itch.io/m5x7)<br><img src="https://img.itch.zone/aW1hZ2UvNTcwNzgvMjU2MzI2LnBuZw==/original/Lhy9L2.png" alt="m5x7" width="160"><br><sub>圖片出處：專案 [m5x7](https://managore.itch.io/m5x7)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://managore.itch.io/m5x7))</sub> | m5x7：Daniel Linssen 製作的小巧易讀像素字型。 |
@@ -209,7 +229,7 @@
 | [gdquest-demos/godot-4-stylized-sky](https://github.com/gdquest-demos/godot-4-stylized-sky)<br><img src="https://raw.githubusercontent.com/gdquest-demos/godot-4-stylized-sky/main/icon.png" alt="gdquest-demos/godot-4-stylized-sky" width="160"><br><sub>圖片出處：專案 [gdquest-demos/godot-4-stylized-sky](https://github.com/gdquest-demos/godot-4-stylized-sky)</sub><br><sub>專案識別圖，非素材效果預覽</sub><br><sub>GitHub ★ 311</sub> | 所列內容／權重僅限非商用，須署名；改作須沿用相同授權<br><sub>([MIT (code) / CC-BY-NC-SA-4.0 (art)](https://github.com/gdquest-demos/godot-4-stylized-sky))</sub> | 開放原始碼的 Godot 4 風格化天空著色器，含太陽、月亮、雲層與星星。 |
 
 <details>
-<summary>展開其餘 4 項</summary>
+<summary>展開其餘 6 項</summary>
 
 | 專案／預覽 | 授權與使用方式 | 適合用途 |
 | --- | --- | --- |
@@ -217,6 +237,8 @@
 | [Kenney Particle Pack](https://kenney.nl/assets/particle-pack)<br><img src="https://kenney.nl/media/pages/assets/particle-pack/d50c7fc9b6-1677578655/preview.png" alt="Kenney Particle Pack" width="160"><br><sub>圖片出處：專案 [Kenney Particle Pack](https://kenney.nl/assets/particle-pack)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/assets/particle-pack))</sub> | 80 張粒子精靈圖，涵蓋煙霧、火焰、火花與魔法，可搭配各種粒子系統。 |
 | [JangaFX Free VDB Animations](https://jangafx.com/software/embergen/download/free-vdb-animations/)<br><img src="https://jangafx.com/opengraph-image.png?opengraph-image.2xwmfd9hv7l5u.png" alt="JangaFX Free VDB Animations" width="160"><br><sub>圖片出處：專案 [JangaFX Free VDB Animations](https://jangafx.com/)</sub><br><sub>收錄於 [madjin/awesome-cc0](https://github.com/madjin/awesome-cc0)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://jangafx.com/software/embergen/download/free-vdb-animations/))</sub> | 免費的體積火焰、煙霧與爆炸模擬素材，採 OpenVDB 格式，適用 Blender、Houdini 與離線算圖。 |
 | [Godot Shaders](https://godotshaders.com/)<br><img src="https://godotshaders.com/wp-content/uploads/2026/11/shine_cover-1024x576.png" alt="Godot Shaders" width="160"><br><sub>圖片出處：專案 [Godot Shaders](https://godotshaders.com/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 使用前逐項確認素材或元件的授權條件<br><sub>([Per shader (CC0 / MIT / GPL-3.0); images not covered](https://godotshaders.com/license/))</sub> | Godot 著色器社群資料庫；每篇貼文會標示授權，僅涵蓋程式碼，不含圖片。 |
+| [Kenney Smoke Particles](https://kenney.nl/assets/smoke-particles)<br><img src="https://kenney.nl/media/pages/assets/smoke-particles/0e73ec90dd-1677695164/preview.png" alt="Kenney Smoke Particles" width="160"><br><sub>圖片出處：專案 [Kenney Smoke Particles](https://kenney.nl/assets/smoke-particles)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kenney.nl/support))</sub> | 70 張煙霧、氣團與爆炸精靈圖，給 2D 粒子系統使用；與 Kenney Particle Pack 是另一套。 |
+| [2D Explosion Animations](https://opengameart.org/content/2d-explosion-animations-frame-by-frame)<br><img src="https://opengameart.org/sites/default/files/i1kMVZ.png" alt="2D Explosion Animations" width="160"><br><sub>圖片出處：專案 [2D Explosion Animations](https://opengameart.org/content/2d-explosion-animations-frame-by-frame)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://opengameart.org/content/2d-explosion-animations-frame-by-frame))</sub> | Sinestesia 的逐幀 2D 爆炸圖集：4 組動畫，512px 幀，含透明通道的 PNG 圖集。 |
 
 </details>
 
@@ -264,7 +286,7 @@
 | [DragonBones/DragonBonesJS](https://github.com/DragonBones/DragonBonesJS)<br><img src="https://dragonbones.github.io/demo/demos.jpg" alt="DragonBones/DragonBonesJS" width="160"><br><sub>圖片出處：專案 [DragonBones/DragonBonesJS](https://github.com/DragonBones/DragonBonesJS)</sub><br><sub>GitHub ★ 862</sub> | 可商用、可修改；保留必要的著作權與授權聲明<br><sub>([MIT](https://github.com/DragonBones/DragonBonesJS))</sub> | DragonBones 2D 骨骼動畫的 JavaScript 執行環境，支援 Pixi、Phaser、Egret 等。 |
 
 <details>
-<summary>展開其餘 11 項</summary>
+<summary>展開其餘 12 項</summary>
 
 | 專案／預覽 | 授權與使用方式 | 適合用途 |
 | --- | --- | --- |
@@ -279,6 +301,7 @@
 | [Blender Studio — Rain rig](https://studio.blender.org/characters/rain/v3/)<br><img src="https://studio.blender.org/files/public/thumbnail/ee/a7/eea73e55dba1cea31c09848df6a794b2-4_m.webp" alt="Blender Studio — Rain rig" width="160"><br><sub>圖片出處：專案 [Blender Studio — Rain rig](https://studio.blender.org/characters/rain/v3/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名<br><sub>([CC-BY (credit required)](https://studio.blender.org/characters/rain/v3/))</sub> | Rain：Blender Studio 免費角色骨架，適合學習與練習動畫。 |
 | [Blender Studio — Snow rig](https://studio.blender.org/characters/snow/v4/)<br><img src="https://studio.blender.org/files/public/thumbnail/ba/0f/ba0fe6d810333b1d73c1c359e4dc03cb-6_m.webp" alt="Blender Studio — Snow rig" width="160"><br><sub>圖片出處：專案 [Blender Studio — Snow rig](https://studio.blender.org/characters/snow/v4/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名<br><sub>([CC-BY (credit required)](https://studio.blender.org/characters/snow/v4/))</sub> | Snow：Blender Studio 免費角色骨架，適合學習與練習動畫。 |
 | [Blender Studio — Vincent rig](https://studio.blender.org/characters/vincent/v2/)<br><img src="https://studio.blender.org/files/public/thumbnail/de/dc/dedc9ffd643bbcbf15b6b540c44e1895_m.webp" alt="Blender Studio — Vincent rig" width="160"><br><sub>圖片出處：專案 [Blender Studio — Vincent rig](https://studio.blender.org/characters/vincent/v2/)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用，須署名<br><sub>([CC-BY (credit required)](https://studio.blender.org/characters/vincent/v2/))</sub> | Vincent：Blender Studio 卡通角色骨架，供動畫練習使用。 |
+| [KayKit Character Animations](https://kaylousberg.itch.io/kaykit-character-animations)<br><img src="https://img.itch.zone/aW1nLzMxOTg2MDY4LnBuZw==/original/o9MdWs.png" alt="KayKit Character Animations" width="160"><br><sub>圖片出處：專案 [KayKit Character Animations](https://kaylousberg.itch.io/kaykit-character-animations)</sub><br><sub>尚無可比較的熱門程度數據</sub> | 可商用、可修改，免署名<br><sub>([CC0-1.0](https://kaylousberg.itch.io/kaykit-character-animations))</sub> | 現行 KayKit 人形動畫集（待機、走、跑、跳、攻擊），FBX／glTF；不是已收錄的舊版動畫包。 |
 
 </details>
 

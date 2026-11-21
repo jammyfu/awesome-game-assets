@@ -2,9 +2,9 @@
 
 ## Ordering / 排序
 
-Every category shows up to 15 rows initially; remaining rows stay in a native GitHub disclosure and expand into the same comparison table. All 297 entries remain in all five languages. GitHub rows sort by observed **total stars**, descending, with original data order breaking ties. Each of the 250 repository counts was read from its public repository page on 2026-11-12; exact source and timestamp are stored per entry in `data/entries.json`. The 47 non-GitHub sources have no comparable metric and follow, keeping their data order. A missing value is not zero. This is cumulative popularity, **not recent growth or a cross-platform ranking**.
+Every category shows up to 15 rows initially; remaining rows stay in a native GitHub disclosure and expand into the same comparison table. All catalog entries remain in all five languages. GitHub rows sort by observed **total stars**, descending, with original data order breaking ties. Most repository counts were read from public repository pages on 2026-11-12; entries added later store their own dated snapshot in `data/entries.json`. Non-GitHub sources have no comparable metric and follow, keeping their data order. A missing value is not zero. This is cumulative popularity, **not recent growth or a cross-platform ranking**.
 
-每类默认最多 15 条，其余点击展开仍是表格，297 条全部保留。250 个 GitHub 项目按 2026-11-12 抓取的累计星标倒序，同数保留原顺序；47 个非 GitHub 网站无可比指标，随后显示。不能将这份快照称为近期趋势或跨平台热榜。
+每类默认最多 15 条，其余点击展开仍是表格，全部条目五语保留。GitHub 项目按各条目记录的累计星标倒序，同数保留原顺序；多数星标快照摄于 2026-11-12，后续新增条目使用各自观察日期。非 GitHub 网站无可比指标，随后显示。不能将这份快照称为近期趋势或跨平台热榜。
 
 ## Original previews / 原项目图片
 
