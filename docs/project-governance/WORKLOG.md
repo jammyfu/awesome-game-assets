@@ -7,7 +7,8 @@
 - 已正确未改：首页总述已是 320·15·5；15 类表格与 hero；精选 ID 仍为 kenney-pixel-platformer / quaternius-base-characters / kenney-ui-pack。
 - 缺口：目录无分类计数；特色入口无条数；收录规则仍写许可证于 2026-11-12 核实；排序注记只提 2026-11-12 星标快照；CONTRIBUTING 仍写只做中英。
 - 修正：渲染器从条目计算分类计数与最早/最晚核验日（2026-11-12–2026-11-21）；目录与六条特色入口加条数；标题不加数字以免锚点变化；五语 sort_note / 许可规则改占位符；CONTRIBUTING、discovery、llms.txt、GEO 入口同步。不搜集新素材。
-- 验证：`python3 tools/verify.py` 绿（42 tests）；`GITHUB_TOKEN` 下 `python3 tools/check_links.py` 0 错误 / 10 警告，警告均为既有 pixabay/blender 403 与 GitHub 未识别许可证条目。无 token 时 GitHub API 会 403 限流，不代表新增链接失效。
+- 验证：`python3 tools/verify.py` 绿（43 tests）；`GITHUB_TOKEN` 下 `python3 tools/check_links.py` 0 错误 / 10 警告，警告均为既有 pixabay/blender 403 与 GitHub 未识别许可证条目。无 token 时 GitHub API 会 403 限流，不代表新增链接失效。
+- Codex P2：许可窗口不得用预览核验日或星标观察日顶替。已在 `entries.json` 增加明确的 `additions_verified_on`（2026-11-21）；收录规则改为清单快照 + 后续新增，并写明旧条目未在较晚日期重核。排序说明仍只用星标快照日期。
 
 ## 2026-11-21（PLAN-007 素材扩充）
 

@@ -39,7 +39,7 @@ Resources include 2D sprites, pixel art, 3D models, PBR textures, UI, audio, VFX
 
 ## Data and provenance
 
-- [Source dataset](https://github.com/jammyfu/awesome-game-assets/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged. Recorded check dates currently span 2026-11-12 through 2026-11-21.
+- [Source dataset](https://github.com/jammyfu/awesome-game-assets/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is the catalog license-check snapshot; `additions_verified_on` is the later-addition license-check date. These are not a guarantee that today's terms are unchanged. Current license-check window: 2026-11-12 through 2026-11-21. Star snapshots are dated separately and are not a license recrawl.
 - [Localization files](https://github.com/jammyfu/awesome-game-assets/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.
 - [Discovery and use-rights methodology](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.
 - [Contributing](https://github.com/jammyfu/awesome-game-assets/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).

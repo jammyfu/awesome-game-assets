@@ -43,7 +43,7 @@ On phones, swipe tables sideways to compare projects, licenses and uses.
 - Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.
 - No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.
 - Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.
-- Each row records its license-check date (catalog snapshot 2026-11-12; later additions through 2026-11-21). GitHub repos use the API `license` field; websites use the official license page linked in each row.
+- Licenses were checked on the catalog snapshot 2026-11-12; later additions through 2026-11-21. Older rows were not rechecked on the later date. GitHub repos use the API `license` field; websites use the official license page linked in each row.
 - Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results.
 
 ## 3D Models & 2D Sprites
