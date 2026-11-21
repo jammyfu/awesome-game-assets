@@ -12,32 +12,32 @@ A curated directory of game assets and tools with license notes, including restr
 
 **[Browse the asset tables](#3d-models--2d-sprites)** · [Contribute](../CONTRIBUTING.md)
 
-First 15 resources per category; expand for the rest. GitHub repos sort by total stars (2026-11-12 snapshot); sites without comparable data follow. This is not recent growth. [Ordering notes](discovery.md).
+First 15 resources per category; expand for the rest. GitHub repos sort by total stars (dated snapshots; most from 2026-11-12, later additions keep their own date through 2026-11-21); sites without comparable data follow. This is not recent growth. [Ordering notes](discovery.md).
 
 On phones, swipe tables sideways to compare projects, licenses and uses.
 
-- [3D Models & 2D Sprites](#3d-models--2d-sprites)
-- [UI, Icons & HUD](#ui-icons--hud)
-- [Textures & Materials](#textures--materials)
-- [Sound Effects & Audio](#sound-effects--audio)
-- [Fonts](#fonts)
-- [VFX, Particles & Shaders](#vfx-particles--shaders)
-- [Ability, Casting & Combat Demos](#ability-casting--combat-demos)
-- [Animation & Motion Capture](#animation--motion-capture)
-- [Physics](#physics)
-- [Game AI & Pathfinding](#game-ai--pathfinding)
-- [Procedural Generation](#procedural-generation)
-- [Engines & Frameworks](#engines--frameworks)
-- [Tools & Pipelines](#tools--pipelines)
-- [AI Asset Generation & Agent Skills](#ai-asset-generation--agent-skills)
-- [Curated Lists & Design References](#curated-lists--design-references)
+- [3D Models & 2D Sprites](#3d-models--2d-sprites) (35)
+- [UI, Icons & HUD](#ui-icons--hud) (23)
+- [Textures & Materials](#textures--materials) (9)
+- [Sound Effects & Audio](#sound-effects--audio) (22)
+- [Fonts](#fonts) (15)
+- [VFX, Particles & Shaders](#vfx-particles--shaders) (21)
+- [Ability, Casting & Combat Demos](#ability-casting--combat-demos) (15)
+- [Animation & Motion Capture](#animation--motion-capture) (27)
+- [Physics](#physics) (21)
+- [Game AI & Pathfinding](#game-ai--pathfinding) (13)
+- [Procedural Generation](#procedural-generation) (21)
+- [Engines & Frameworks](#engines--frameworks) (29)
+- [Tools & Pipelines](#tools--pipelines) (29)
+- [AI Asset Generation & Agent Skills](#ai-asset-generation--agent-skills) (23)
+- [Curated Lists & Design References](#curated-lists--design-references) (17)
 
 ## Inclusion rules
 
 - Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.
 - No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.
 - Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.
-- Licenses were checked on 2026-11-12 via the GitHub API `license` field or the official license page linked in each row.
+- Each row records its license-check date (catalog snapshot 2026-11-12; later additions through 2026-11-21). GitHub repos use the API `license` field; websites use the official license page linked in each row.
 - Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results.
 
 ## 3D Models & 2D Sprites

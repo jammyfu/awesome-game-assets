@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import sys
 import json
+from collections import Counter
 from functools import lru_cache
 
 from common import ROOT, load_entries, load_prompts, load_warnings
@@ -27,11 +28,33 @@ def locale_data(lang):
 def discovery_data():
     return json.loads((ROOT / "data/discovery.json").read_text(encoding="utf-8"))
 
+def category_counts(data):
+    return Counter(e["category"] for e in data["entries"])
+
+
+def recorded_dates(data):
+    dates = {data["verified_on"][:10]}
+    for e in data["entries"]:
+        checked = (e.get("image") or {}).get("checked_on")
+        if checked:
+            dates.add(str(checked)[:10])
+        observed = (e.get("popularity") or {}).get("observed_at")
+        if observed:
+            dates.add(str(observed)[:10])
+    return min(dates), max(dates)
+
+
+def date_fields(data):
+    earliest, latest = recorded_dates(data)
+    return {"date": earliest, "latest": latest}
+
+
 def render_reader_routes(lang):
     data, spec = load_entries(), discovery_data()
     loc = spec["locales"][lang]
     cats = locale_data(lang)["categories"]
-    links = [f"[{label}](#{anchor(cats[key])})" for key, label in zip(spec["routes"], loc["route_labels"])]
+    counts = category_counts(data)
+    links = [f"[{label} ({counts[key]})](#{anchor(cats[key])})" for key, label in zip(spec["routes"], loc["route_labels"])]
     return [loc["summary"].format(entries=len(data["entries"]), categories=len(data["categories"])), "", loc["heading"], "", " · ".join(links), ""]
 
 def render_reader_faq(lang):
@@ -48,7 +71,12 @@ def render_llms():
     for lang, (label, suffix) in LOCALES.items():
         lines.append(f"- [{label} overview]({repo}/blob/main/README{suffix}.md): full catalog with original-source previews, practical license summaries and expandable category tables.")
         lines.append(f"- [{label} catalog]({repo}/blob/main/docs/catalog{suffix}.md): the same complete entries in a separate document.")
-    lines += ["", "## Data and provenance", "", f"- [Source dataset]({repo}/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged.", f"- [Localization files]({repo}/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.", f"- [Discovery and use-rights methodology]({repo}/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.", f"- [Contributing]({repo}/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).", f"- [List license]({repo}/blob/main/LICENSE): CC0 applies to the list text only.", f"- [Risk warnings]({repo}/blob/main/WARNING.md): excluded sources to avoid, not recommended resources (English/Chinese).", "", "## Interpretation limits", "", "Categories show at most 15 entries initially; remaining rows are inside expandable tables. GitHub stars are a dated cumulative snapshot, not recent growth, quality or cross-platform popularity. Non-GitHub sources have no comparable star metric. A project logo is not an asset screenshot; missing previews are labelled. No universal engine compatibility or commercial-use clearance is claimed.", "", "This file is optional navigation for tools that choose to read it. It does not guarantee indexing, search ranking or AI citations.", ""]
+    counts = category_counts(data)
+    earliest, latest = recorded_dates(data)
+    lines += ["", "## Categories", ""]
+    for c in data["categories"]:
+        lines.append(f"- {c['en']}: {counts[c['id']]}")
+    lines += ["", "## Data and provenance", "", f"- [Source dataset]({repo}/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged. Recorded check dates currently span {earliest} through {latest}.", f"- [Localization files]({repo}/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.", f"- [Discovery and use-rights methodology]({repo}/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.", f"- [Contributing]({repo}/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).", f"- [List license]({repo}/blob/main/LICENSE): CC0 applies to the list text only.", f"- [Risk warnings]({repo}/blob/main/WARNING.md): excluded sources to avoid, not recommended resources (English/Chinese).", "", "## Interpretation limits", "", "Categories show at most 15 entries initially; remaining rows are inside expandable tables. GitHub stars are a dated cumulative snapshot, not recent growth, quality or cross-platform popularity. Non-GitHub sources have no comparable star metric. A project logo is not an asset screenshot; missing previews are labelled. No universal engine compatibility or commercial-use clearance is claimed.", "", "This file is optional navigation for tools that choose to read it. It does not guarantee indexing, search ranking or AI citations.", ""]
     return "\n".join(lines)
 
 def language_nav(lang, stem):
@@ -134,11 +162,13 @@ def render_catalog(lang: str, homepage: bool = False) -> str:
     lines = [t["title"], "", switch, "", f'[{t["back"]}](README{suffix}.md)', "", t["intro"], "", t["warn_line"], "", t["contents"], ""]
     if homepage:
         lines = [t["title"], "", language_nav(lang, "README"), "", f'<img src="{data["discovery"]["hero"]}" alt="{t["hero_alt"]}" width="1200">', "", t["hero_caption"], ""] + render_reader_routes(lang) + [t["warn_line"], "", t["contents"], ""]
-    lines += [f'**[{t["browse"]}](#{anchor(data["categories"][0][lang])})** · [{t["contribute_label"]}](CONTRIBUTING.md)', "", t["sort_note"], "", t["mobile"], ""]
+    counts = category_counts(data)
+    dates = date_fields(data)
+    lines += [f'**[{t["browse"]}](#{anchor(data["categories"][0][lang])})** · [{t["contribute_label"]}](CONTRIBUTING.md)', "", t["sort_note"].format(**dates), "", t["mobile"], ""]
     for c in data["categories"]:
-        lines.append(f"- [{c[lang]}](#{anchor(c[lang])})")
+        lines.append(f"- [{c[lang]}](#{anchor(c[lang])}) ({counts[c['id']]})")
     lines += ["", t["rules_h"], ""]
-    lines += [f"- {r.format(date=data['verified_on'])}" for r in t["rules"]]
+    lines += [f"- {r.format(**dates)}" for r in t["rules"]]
     for c in data["categories"]:
         lines += ["", f"## {c[lang]}", ""]
         lines += ["", t["cols"], "| --- | --- | --- |"]

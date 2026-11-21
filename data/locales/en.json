@@ -10,7 +10,7 @@
       "Only sources whose license is stated clearly on the project or its official site. Per-asset licenses are marked as such; check each asset before use.",
       "No pirated, cracked or star-farmed repositories (stars, forks and activity are checked), and no archived or unusable ones.",
       "Automated checks report broken links and bot-blocked or timed-out sources; a warning is not proof that a source is reachable.",
-      "Licenses were checked on {date} via the GitHub API `license` field or the official license page linked in each row.",
+      "Each row records its license-check date (catalog snapshot {date}; later additions through {latest}). GitHub repos use the API `license` field; websites use the official license page linked in each row.",
       "Preview images are linked from the original project and credited. Display here does not grant reuse rights: check the linked asset terms. The hero/category art is generated; missing original previews are labelled, never replaced with invented results."
     ],
     "cols": "| Project / Preview | License | Good for |",
@@ -29,7 +29,7 @@
     "hero_caption": "Original illustration: starter sword equipped. Asset loot unlocked.",
     "browse": "Browse the asset tables",
     "contribute_label": "Contribute",
-    "sort_note": "First 15 resources per category; expand for the rest. GitHub repos sort by total stars (2026-11-12 snapshot); sites without comparable data follow. This is not recent growth. [Ordering notes](docs/discovery.md).",
+    "sort_note": "First 15 resources per category; expand for the rest. GitHub repos sort by total stars (dated snapshots; most from {date}, later additions keep their own date through {latest}); sites without comparable data follow. This is not recent growth. [Ordering notes](docs/discovery.md).",
     "mobile": "On phones, swipe tables sideways to compare projects, licenses and uses.",
     "expand": "Show remaining {count} resources",
     "identity": "Project identity, not an asset preview",

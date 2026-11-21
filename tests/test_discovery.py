@@ -3,10 +3,11 @@ import json
 import re
 import sys
 import unittest
+from collections import Counter
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from common import load_entries
-from render_readme import discovery_data, LOCALES, render, render_catalog, render_llms, anchor, locale_data
+from render_readme import discovery_data, LOCALES, render, render_catalog, render_llms, anchor, locale_data, category_counts, recorded_dates
 
 
 def source_digest(spec):
@@ -37,6 +38,36 @@ class DiscoveryTests(unittest.TestCase):
             if lang != 'en':
                 self.assertNotEqual(loc['faq'], d['locales']['en']['faq'])
                 self.assertEqual(d['reviewed_source_sha256'][lang], source_digest(d))
+
+    def test_toc_and_featured_counts_match_live_data(self):
+        data = load_entries()
+        counts = category_counts(data)
+        earliest, latest = recorded_dates(data)
+        self.assertEqual(sum(counts.values()), len(data['entries']))
+        self.assertEqual(len(data['categories']), 15)
+        self.assertEqual(counts, Counter(e['category'] for e in data['entries']))
+        spec = discovery_data()
+        for lang in LOCALES:
+            text = render(lang)
+            catalog = render_catalog(lang)
+            loc = locale_data(lang)
+            self.assertIn(str(len(data['entries'])), text)
+            self.assertIn(earliest, text)
+            self.assertIn(latest, text)
+            for c in data['categories']:
+                title = loc['categories'][c['id']]
+                n = counts[c['id']]
+                expected = f'- [{title}](#{anchor(title)}) ({n})'
+                self.assertIn(expected, text)
+                self.assertIn(expected, catalog)
+                self.assertIn(f'## {title}\n', text)
+                self.assertNotIn(f'## {title} ({n})', text)
+            for key, label in zip(spec['routes'], spec['locales'][lang]['route_labels']):
+                self.assertIn(f'[{label} ({counts[key]})](#{anchor(loc["categories"][key])})', text)
+        llms = render_llms()
+        for c in data['categories']:
+            self.assertIn(f"- {c['en']}: {counts[c['id']]}", llms)
+        self.assertIn(f'through {latest}', llms)
 
     def test_all_reader_route_anchors_exist(self):
         d = discovery_data()

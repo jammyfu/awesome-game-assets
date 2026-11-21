@@ -2,35 +2,36 @@
 
 ## Plan ID
 
-PLAN-007
+PLAN-008
 
 ## Goal
 
-实质补充至少 20 条许可证明确、可核验的游戏素材，覆盖仓库缺口（贴图、2D/3D、UI、音效音乐、字体、特效、动画），不改分类骨架。
+从已合并的 320 条清单同步 README：目录分类计数、特色入口、许可/排序日期与贡献入口与 `data/entries.json` 实数相符。
 
 ## Current Focus
 
-Verified asset expansion
+README catalog count sync
 
 ## In Scope
 
-- 在 `data/entries.json` 新增已核验条目（2026-11-21）
-- 五语描述、原项目预览热链、许可证证据与使用限制
+- 五语 README / catalog 目录与特色入口显示由数据计算的分类条数
+- 许可核验与星标快照说明覆盖 2026-11-12 清单快照及后续新增日期
+- 同步 CONTRIBUTING / discovery / llms.txt 等文档入口
 - 重新生成 README/catalog 并跑仓内校验
 
 ## Out of Scope
 
 - 不合并 PR、不部署、不新建仓库
-- 不生成替代预览图，不收录许可证不明或收费再分发资源
-- 不改 About/Topics，不重排已有条目热度快照
+- 不新增素材、不改 15 类骨架与表格视觉、不重排已有热度快照
+- 不改 About/Topics，不复用或追加已合 PR #8
 
 ## Tasks
 
-- [x] Inspect categories, contribution rules, open PRs and existing IDs
-- [x] Verify candidate URLs, licenses and original previews
-- [x] Add entries plus five-language descriptions
-- [x] Run `python3 tools/verify.py` and `python3 tools/check_links.py`; fix issues from this round
-- [ ] Open PR for owner review; no merge
+- [x] Inspect latest main READMEs against live `entries.json` counts and dates
+- [x] Add live category counts to Contents and featured routes; keep heading anchors stable
+- [x] Update license/sort copy from recorded dates; sync related doc entry points
+- [x] Run `python3 tools/verify.py` and `python3 tools/check_links.py`
+- [ ] Open independent PR for owner review; no merge
 
 ## Verification
 

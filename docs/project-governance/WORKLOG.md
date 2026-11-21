@@ -1,5 +1,14 @@
 # WORKLOG.md
 
+## 2026-11-21（PLAN-008 README 同步）
+
+- 基线：main `2b08ede`（已合 PR #8），无开放 PR。不复用已合分支，新开 `cursor/readme-sync-counts-3603`。
+- 实核：`data/entries.json` 320 条、15 类。分类条数：models 35、ui 23、textures 9、audio 22、fonts 15、vfx 21、abilities 15、animation 27、physics 21、ai 13、procgen 21、engines 29、tools 29、aigen 23、lists 17。GitHub 251 / 网站 69。2026-11-21 新增 23 条。
+- 已正确未改：首页总述已是 320·15·5；15 类表格与 hero；精选 ID 仍为 kenney-pixel-platformer / quaternius-base-characters / kenney-ui-pack。
+- 缺口：目录无分类计数；特色入口无条数；收录规则仍写许可证于 2026-11-12 核实；排序注记只提 2026-11-12 星标快照；CONTRIBUTING 仍写只做中英。
+- 修正：渲染器从条目计算分类计数与最早/最晚核验日（2026-11-12–2026-11-21）；目录与六条特色入口加条数；标题不加数字以免锚点变化；五语 sort_note / 许可规则改占位符；CONTRIBUTING、discovery、llms.txt、GEO 入口同步。不搜集新素材。
+- 验证：`python3 tools/verify.py` 绿（42 tests）；`GITHUB_TOKEN` 下 `python3 tools/check_links.py` 0 错误 / 10 警告，警告均为既有 pixabay/blender 403 与 GitHub 未识别许可证条目。无 token 时 GitHub API 会 403 限流，不代表新增链接失效。
+
 ## 2026-11-21（PLAN-007 素材扩充）
 
 - 基线：main `b99daf5`，无开放 PR。遵循仓内 AGENTS 与 CoderSkills `continuous-project-loop` / `git-project-harness`（不改造项目骨架）。
