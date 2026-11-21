@@ -2,36 +2,27 @@
 
 ## Plan ID
 
-PLAN-008
+PLAN-NEXT
 
 ## Goal
 
-从已合并的 320 条清单同步 README：目录分类计数、特色入口、许可/排序日期与贡献入口与 `data/entries.json` 实数相符。
+基于上一轮结果推进下一个最小稳定闭环（见 TODO_BACKLOG.md 的 Next）。
 
 ## Current Focus
 
-README catalog count sync
+Next iteration
 
 ## In Scope
 
-- 五语 README / catalog 目录与特色入口显示由数据计算的分类条数
-- 许可核验与星标快照说明覆盖 2026-11-12 清单快照及后续新增日期
-- 同步 CONTRIBUTING / discovery / llms.txt 等文档入口
-- 重新生成 README/catalog 并跑仓内校验
+- 收敛新的最小闭环
 
 ## Out of Scope
 
-- 不合并 PR、不部署、不新建仓库
-- 不新增素材、不改 15 类骨架与表格视觉、不重排已有热度快照
-- 不改 About/Topics，不复用或追加已合 PR #8
+- 不并行扩张多个大方向
 
 ## Tasks
 
-- [x] Inspect latest main READMEs against live `entries.json` counts and dates
-- [x] Add live category counts to Contents and featured routes; keep heading anchors stable
-- [x] Update license/sort copy from recorded dates; sync related doc entry points
-- [x] Run `python3 tools/verify.py` and `python3 tools/check_links.py`
-- [ ] Open independent PR for owner review; no merge
+- [ ] 根据上一轮 worklog 补充下一轮任务
 
 ## Verification
 
@@ -40,5 +31,4 @@ README catalog count sync
 
 ## Next Candidates
 
-- Further original previews for source-only entries
-- Animation and ability/combat demo sources with clear licenses
+- 根据 backlog 与验证结果继续细化
