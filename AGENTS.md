@@ -3,7 +3,7 @@
 ## Working Rules
 
 - `CURRENT_PLAN.md` is the only current execution entry point; `MASTER_PLAN.md` is the roadmap; `TODO_BACKLOG.md` holds candidates.
-- `data/entries.json` is the single source of truth. Never hand-edit `README.md`, `README.zh-CN.md` or `docs/image-prompts.md`; run `python3 tools/render_readme.py`.
+- `data/entries.json` is the single source of truth. Never hand-edit generated README/catalog files (`README.md`, `README.zh-CN.md`, `README.zh-TW.md`, `README.ja.md`, `README.ko.md`, `docs/catalog*.md`) or `docs/image-prompts.md`; run `python3 tools/render_readme.py`.
 - Maintain English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean. Every entry needs URL, verified license and a complete description in all five languages. `data/locales/` holds translations; update them when English sources change. Run `tools/check_locales.py`; never refresh source hashes without reviewing translations. Use natural Taiwan terminology (專案、程式碼、授權、檔案、音訊), not mechanical character conversion.
 - Verify licenses for real: GitHub API `license` field for repos, the official license page for websites. Unclear license = do not add. No pirated, cracked or star-farmed repos. Never make up data.
 - Images: prefer the project's own preview, hotlinked from its original address with credit. Only for covers or entries without an original image, add an original generated image to `docs/images/` (WebP/PNG, < 300 KB) and its prompt to `data/image-prompts.json`. Never copy third-party images into the repo.

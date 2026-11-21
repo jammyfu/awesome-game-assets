@@ -2,7 +2,7 @@
 
 ## Now
 
-- [ ] 用户审阅素材扩充 PR
+- [ ] 用户审阅 README 同步 PR
 
 ## Next
 

@@ -19,9 +19,27 @@ Resources include 2D sprites, pixel art, 3D models, PBR textures, UI, audio, VFX
 - [한국어 overview](https://github.com/jammyfu/awesome-game-assets/blob/main/README.ko.md): full catalog with original-source previews, practical license summaries and expandable category tables.
 - [한국어 catalog](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/catalog.ko.md): the same complete entries in a separate document.
 
+## Categories
+
+- 3D Models & 2D Sprites: 35
+- UI, Icons & HUD: 23
+- Textures & Materials: 9
+- Sound Effects & Audio: 22
+- Fonts: 15
+- VFX, Particles & Shaders: 21
+- Ability, Casting & Combat Demos: 15
+- Animation & Motion Capture: 27
+- Physics: 21
+- Game AI & Pathfinding: 13
+- Procedural Generation: 21
+- Engines & Frameworks: 29
+- Tools & Pipelines: 29
+- AI Asset Generation & Agent Skills: 23
+- Curated Lists & Design References: 17
+
 ## Data and provenance
 
-- [Source dataset](https://github.com/jammyfu/awesome-game-assets/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is a recorded source-check date, not a guarantee that today's terms are unchanged.
+- [Source dataset](https://github.com/jammyfu/awesome-game-assets/blob/main/data/entries.json): stable IDs, categories, source URLs, license labels and evidence URLs, previews and dated popularity snapshots. `verified_on` is the catalog license-check snapshot; `additions_verified_on` is the later-addition license-check date. These are not a guarantee that today's terms are unchanged. Current license-check window: 2026-11-12 through 2026-11-21. Star snapshots are dated separately and are not a license recrawl.
 - [Localization files](https://github.com/jammyfu/awesome-game-assets/tree/main/data/locales): translated descriptions and use notes keyed by the same entry IDs. Do not count translations as additional assets.
 - [Discovery and use-rights methodology](https://github.com/jammyfu/awesome-game-assets/blob/main/docs/discovery.md): ordering, image provenance and permission boundaries.
 - [Contributing](https://github.com/jammyfu/awesome-game-assets/blob/main/CONTRIBUTING.md): source and review workflow (English/Chinese).

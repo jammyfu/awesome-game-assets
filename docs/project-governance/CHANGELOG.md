@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 2026-11-21（README 同步）
+
+- 五语 README / catalog 目录与六条特色入口改为显示由 `data/entries.json` 计算的分类条数；分类标题不加数字，锚点保持不变。
+- 许可说明改为清单快照 2026-11-12、后续新增至 2026-11-21，并写明旧条目未在较晚日期重核；日期来自 `verified_on` / `additions_verified_on`，不用预览或星标日期顶替。
+- 同步 CONTRIBUTING、discovery、llms.txt 入口；不新增素材、不改 15 类表格骨架。
+
 ## 2026-11-21（素材扩充）
 
 - 新增 23 条已核验素材，清单共 320 条、仍为 15 类五语表格。

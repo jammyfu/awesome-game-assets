@@ -3,10 +3,11 @@ import json
 import re
 import sys
 import unittest
+from collections import Counter
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 from common import load_entries
-from render_readme import discovery_data, LOCALES, render, render_catalog, render_llms, anchor, locale_data
+from render_readme import discovery_data, LOCALES, render, render_catalog, render_llms, anchor, locale_data, category_counts, license_dates, star_dates
 
 
 def source_digest(spec):
@@ -37,6 +38,54 @@ class DiscoveryTests(unittest.TestCase):
             if lang != 'en':
                 self.assertNotEqual(loc['faq'], d['locales']['en']['faq'])
                 self.assertEqual(d['reviewed_source_sha256'][lang], source_digest(d))
+
+    def test_toc_and_featured_counts_match_live_data(self):
+        data = load_entries()
+        counts = category_counts(data)
+        license_start, license_end = license_dates(data)
+        star_start, star_end = star_dates(data)
+        self.assertEqual(sum(counts.values()), len(data['entries']))
+        self.assertEqual(len(data['categories']), 15)
+        self.assertEqual(counts, Counter(e['category'] for e in data['entries']))
+        self.assertEqual(license_start, data['verified_on'][:10])
+        self.assertEqual(license_end, data['additions_verified_on'][:10])
+        spec = discovery_data()
+        for lang in LOCALES:
+            text = render(lang)
+            catalog = render_catalog(lang)
+            loc = locale_data(lang)
+            self.assertIn(str(len(data['entries'])), text)
+            self.assertIn(license_start, text)
+            self.assertIn(license_end, text)
+            self.assertIn(star_start, text)
+            self.assertIn(star_end, text)
+            self.assertNotIn('Each row records its license-check date', text)
+            for c in data['categories']:
+                title = loc['categories'][c['id']]
+                n = counts[c['id']]
+                expected = f'- [{title}](#{anchor(title)}) ({n})'
+                self.assertIn(expected, text)
+                self.assertIn(expected, catalog)
+                self.assertIn(f'## {title}\n', text)
+                self.assertNotIn(f'## {title} ({n})', text)
+            for key, label in zip(spec['routes'], spec['locales'][lang]['route_labels']):
+                self.assertIn(f'[{label} ({counts[key]})](#{anchor(loc["categories"][key])})', text)
+        llms = render_llms()
+        for c in data['categories']:
+            self.assertIn(f"- {c['en']}: {counts[c['id']]}", llms)
+        self.assertIn(f'through {license_end}', llms)
+        self.assertIn('additions_verified_on', llms)
+
+    def test_license_dates_ignore_preview_and_star_fields(self):
+        import copy
+        data = copy.deepcopy(load_entries())
+        expected = license_dates(data)
+        data['entries'][0].setdefault('image', {})['checked_on'] = '2099-01-01'
+        data['entries'][0]['popularity'] = {'value': 1, 'observed_at': '2099-01-01'}
+        self.assertEqual(license_dates(data), expected)
+        self.assertEqual(star_dates(data)[1], '2099-01-01')
+        data['additions_verified_on'] = '2026-12-01'
+        self.assertEqual(license_dates(data)[1], '2026-12-01')
 
     def test_all_reader_route_anchors_exist(self):
         d = discovery_data()
