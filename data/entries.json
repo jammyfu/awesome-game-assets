@@ -7741,6 +7741,626 @@
         "source": "https://github.com/Sollimann/bonsai",
         "observed_at": "2026-11-12T08:19:00.186693+00:00"
       }
+    },
+    {
+      "id": "cgbookcase",
+      "category": "textures",
+      "name": "cgbookcase",
+      "url": "https://www.cgbookcase.com/textures",
+      "license": "CC0-1.0",
+      "license_source": "https://www.cgbookcase.com/textures",
+      "en": "Photogrammetry, procedural and approximated PBR sets by Dorian Zgraggen (often 4K-8K): bark, stone, fabric, tiles and more for realistic scenes.",
+      "zh": "Dorian Zgraggen 的摄影测量、程序化与近似 PBR 贴图（常见 4K–8K），含树皮、石材、织物、地砖等，适合写实场景。",
+      "image": {
+        "type": "original",
+        "src": "https://cgbookcase.b-cdn.net/textures/renders/2024_b/BirchBark01_render_default.jpg",
+        "source": "https://www.cgbookcase.com/textures",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://www.cgbookcase.com/textures"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "texturecan",
+      "category": "textures",
+      "name": "TextureCan",
+      "url": "https://www.texturecan.com/",
+      "license": "CC0-1.0",
+      "license_source": "https://www.texturecan.com/terms/",
+      "en": "650+ free PBR texture sets (bricks, metal, wood, fabric, ground and more) with preview maps; the terms page states CC0 1.0 for the textures.",
+      "zh": "650+ 套免费 PBR 贴图（砖墙、金属、木材、织物、地面等）并附预览图；条款页写明贴图为 CC0 1.0。",
+      "image": {
+        "type": "original",
+        "src": "https://www.texturecan.com/img/textures/bricks_0001/bricks_0001_1200.jpg",
+        "source": "https://www.texturecan.com/details/1/",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://www.texturecan.com/"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "3dtextures",
+      "category": "textures",
+      "name": "3DTextures.me",
+      "url": "https://3dtextures.me/",
+      "license": "CC0-1.0",
+      "license_source": "https://3dtextures.me/about/",
+      "en": "Seamless PBR materials by Katsukagi for Blender, Unreal, Unity and Godot; the about page licenses all site textures as CC0.",
+      "zh": "Katsukagi 的无缝 PBR 材质，面向 Blender、Unreal、Unity 与 Godot；关于页写明站内贴图均为 CC0。",
+      "image": {
+        "type": "original",
+        "src": "https://i0.wp.com/3dtextures.me/wp-content/uploads/2026/11/Material_2005.png",
+        "source": "https://3dtextures.me/",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://3dtextures.me/"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kenney-prototype-textures",
+      "category": "textures",
+      "name": "Kenney Prototype Textures",
+      "url": "https://kenney.nl/assets/prototype-textures",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "75 prototype grid and color textures for greyboxing levels before final art.",
+      "zh": "75 张原型网格与色块贴图，适合在定稿美术前做白盒关卡。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/prototype-textures/25b7a81022-1677578300/preview.png",
+        "source": "https://kenney.nl/assets/prototype-textures",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/prototype-textures"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "pixel-adventure",
+      "category": "models",
+      "name": "Pixel Adventure",
+      "url": "https://pixelfrog-assets.itch.io/pixel-adventure-1",
+      "license": "CC0-1.0",
+      "license_source": "https://pixelfrog-assets.itch.io/pixel-adventure-1",
+      "en": "Pixel Frog 2D platformer kit: player, enemies, tiles, items and 20 FPS PNG animations. Graphics only.",
+      "zh": "Pixel Frog 的 2D 平台游戏套件：玩家、敌人、图块、道具及 20 FPS 的 PNG 动画。仅含图像。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzI1MzgxMjIucG5n/original/xx%2BcXh.png",
+        "source": "https://pixelfrog-assets.itch.io/pixel-adventure-1",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://pixelfrog-assets.itch.io/pixel-adventure-1"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "treasure-hunters",
+      "category": "models",
+      "name": "Treasure Hunters",
+      "url": "https://pixelfrog-assets.itch.io/treasure-hunters",
+      "license": "CC0-1.0",
+      "license_source": "https://pixelfrog-assets.itch.io/treasure-hunters",
+        "en": "Pixel Frog treasure-hunting 2D kit with characters, tiles and props for side-scroll adventures.",
+        "zh": "Pixel Frog 的寻宝横版 2D 套件，含角色、图块与道具，适合冒险关卡。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzQyMDM2MTMuZ2lm/original/ZD9Se3.gif",
+        "source": "https://pixelfrog-assets.itch.io/treasure-hunters",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://pixelfrog-assets.itch.io/treasure-hunters"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "sunny-land",
+      "category": "models",
+      "name": "Sunny Land",
+      "url": "https://ansimuz.itch.io/sunny-land-pixel-game-art",
+      "license": "CC0-1.0",
+      "license_source": "https://ansimuz.itch.io/sunny-land-pixel-game-art",
+      "en": "Ansimuz forest platformer pixel art: player, enemies, tilesets and animations for a complete 2D starter scene.",
+      "zh": "Ansimuz 的森林平台像素画：玩家、敌人、图块和动画，可搭一套完整 2D 开场场景。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzI2NTY5MjM2LnBuZw==/original/4eZFq0.png",
+        "source": "https://ansimuz.itch.io/sunny-land-pixel-game-art",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://ansimuz.itch.io/sunny-land-pixel-game-art"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "luizmelo-medieval-king",
+      "category": "models",
+      "name": "Medieval King Pack 2",
+      "url": "https://luizmelo.itch.io/medieval-king-pack-2",
+      "license": "CC0-1.0",
+      "license_source": "https://luizmelo.itch.io/medieval-king-pack-2",
+      "en": "LuizMelo 2D medieval king sprites with idle, run, attack, jump, fall, take-hit and death frames.",
+      "zh": "LuizMelo 的 2D 中世纪国王精灵，含待机、跑、攻击、跳、落地、受击与死亡帧。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzM3OTQ4MDMuZ2lm/original/DR5ODd.gif",
+        "source": "https://luizmelo.itch.io/medieval-king-pack-2",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://luizmelo.itch.io/medieval-king-pack-2"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "0x72-industrial-tileset",
+      "category": "models",
+      "name": "16x16 Industrial Tileset",
+      "url": "https://0x72.itch.io/16x16-industrial-tileset",
+      "license": "CC0-1.0",
+      "license_source": "https://0x72.itch.io/16x16-industrial-tileset",
+      "en": "16x16 industrial/sci-fi pixel tiles, robots and props by 0x72; pairs with DungeonTileset II.",
+      "zh": "0x72 的 16×16 工业/科幻像素图块、机器人和道具，可与 DungeonTileset II 搭配。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1hZ2UvMTYyMzY0Lzc0Nzk4Mi5wbmc=/original/IwYfRf.png",
+        "source": "https://0x72.itch.io/16x16-industrial-tileset",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://0x72.itch.io/16x16-industrial-tileset"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kaykit-dungeon",
+      "category": "models",
+      "name": "KayKit Dungeon Pack",
+      "url": "https://kaylousberg.itch.io/kaykit-dungeon-pack",
+      "license": "CC0-1.0",
+      "license_source": "https://kaylousberg.itch.io/kaykit-dungeon-pack",
+      "en": "Kay Lousberg modular low-poly dungeon: 200+ walls, floors, stairs, doors and props in FBX/glTF/OBJ. Extra/source tiers are paid.",
+      "zh": "Kay Lousberg 的模块化低多边形地城：200+ 面墙、地板、楼梯、门和道具，FBX/glTF/OBJ。额外与源文件档收费。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzMxOTg2MDc4LnBuZw==/original/ZtGJzA.png",
+        "source": "https://kaylousberg.itch.io/kaykit-dungeon-pack",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kaylousberg.itch.io/kaykit-dungeon-pack"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kaykit-adventurers",
+      "category": "models",
+      "name": "KayKit Adventurers",
+      "url": "https://kaylousberg.itch.io/kaykit-adventurers",
+      "license": "CC0-1.0",
+      "license_source": "https://kaylousberg.itch.io/kaykit-adventurers",
+      "en": "Rigged KayKit low-poly adventurers (knight, rogue, mage and more) in FBX/glTF for third-person or dungeon prototypes.",
+      "zh": "已绑定的 KayKit 低多边形冒险者（骑士、盗贼、法师等），FBX/glTF，适合第三人称或地城原型。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzMxOTg2MDU1LnBuZw==/original/bTqYqb.png",
+        "source": "https://kaylousberg.itch.io/kaykit-adventurers",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kaylousberg.itch.io/kaykit-adventurers"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kenney-nature-kit",
+      "category": "models",
+      "name": "Kenney Nature Kit",
+      "url": "https://kenney.nl/assets/nature-kit",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "330 low-poly trees, rocks and foliage pieces for outdoor 3D scenes.",
+      "zh": "330 个低多边形树木、岩石和植被部件，适合搭室外 3D 场景。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/nature-kit/2d81fc716e-1677698893/preview.png",
+        "source": "https://kenney.nl/assets/nature-kit",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/nature-kit"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kenney-interface-sounds",
+      "category": "audio",
+      "name": "Kenney Interface Sounds",
+      "url": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "100 UI clicks, confirms, errors and menu sounds for HUDs and settings screens.",
+      "zh": "100 个界面点击、确认、报错和菜单音效，适合 HUD 与设置页。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/interface-sounds/428fc5f14c-1677589445/preview_interface.png",
+        "source": "https://kenney.nl/assets/interface-sounds",
+        "kind": "preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/interface-sounds"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kenney-impact-sounds",
+      "category": "audio",
+      "name": "Kenney Impact Sounds",
+      "url": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "130 impact and foley hits (wood, metal, stone, body) for collisions and combat.",
+      "zh": "130 个撞击与拟音（木、金属、石、身体），适合碰撞和战斗。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/impact-sounds/37d145475f-1677589720/audio_impact.png",
+        "source": "https://kenney.nl/assets/impact-sounds",
+        "kind": "preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/impact-sounds"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "juhani-chiptunes",
+      "category": "audio",
+      "name": "5 Chiptunes (Action)",
+      "url": "https://opengameart.org/content/5-chiptunes-action",
+      "license": "CC0-1.0",
+      "license_source": "https://opengameart.org/content/5-chiptunes-action",
+      "en": "Five looping 8-bit action tracks by Juhani Junkala (SubspaceAudio) for levels, bosses and title screens.",
+      "zh": "Juhani Junkala（SubspaceAudio）的 5 首循环 8-bit 动作曲，适合关卡、Boss 和标题画面。",
+      "image": {
+        "type": "original",
+        "src": "https://opengameart.org/sites/default/files/styles/audio_with_background/public/audio_preview/level3.mp3.png",
+        "source": "https://opengameart.org/content/5-chiptunes-action",
+        "kind": "preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://opengameart.org/content/5-chiptunes-action"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "subspaceaudio-512-sfx",
+      "category": "audio",
+      "name": "512 Sound Effects (8-bit style)",
+      "url": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "license": "CC0-1.0",
+      "license_source": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+      "en": "512 organized 8-bit/retro sound effects by Juhani Junkala (SubspaceAudio) for jumps, pickups, hits and UI.",
+      "zh": "Juhani Junkala（SubspaceAudio）整理的 512 个 8-bit/复古音效，适合跳跃、拾取、击中和界面。",
+      "image": {
+        "type": "original",
+        "src": "https://opengameart.org/sites/default/files/styles/audio_with_background/public/audio_preview/sfx%20pack%20preview.mp3.png",
+        "source": "https://opengameart.org/content/512-sound-effects-8-bit-style",
+        "kind": "preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://opengameart.org/content/512-sound-effects-8-bit-style"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "silkscreen",
+      "category": "fonts",
+      "name": "Silkscreen",
+      "url": "https://github.com/googlefonts/silkscreen",
+      "license": "OFL-1.1",
+      "license_source": "https://github.com/googlefonts/silkscreen/blob/main/OFL.txt",
+      "en": "Jason Kottke's chunky pixel-outline Latin font for HUD labels, titles and web-game graphics.",
+      "zh": "Jason Kottke 的粗像素描边拉丁字体，适合 HUD 标签、标题和网页游戏图形。",
+      "image": {
+        "type": "original",
+        "src": "https://raw.githubusercontent.com/googlefonts/silkscreen/main/documentation/image1.png",
+        "source": "https://github.com/googlefonts/silkscreen",
+        "kind": "font-specimen",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": "github_stars",
+        "value": 27,
+        "source": "https://github.com/googlefonts/silkscreen",
+        "observed_at": "2026-11-21T11:21:13.149291+00:00"
+      },
+      "license_zh": "OFL-1.1"
+    },
+    {
+      "id": "kenney-board-game-icons",
+      "category": "ui",
+      "name": "Kenney Board Game Icons",
+      "url": "https://kenney.nl/assets/board-game-icons",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "250 board-game style icons (resources, tokens, actions) for tabletop UIs and 2D strategy HUDs.",
+      "zh": "250 个桌游风格图标（资源、代币、行动），适合桌面游戏 UI 和 2D 策略 HUD。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/board-game-icons/d5c5bd2f28-1674933139/preview.png",
+        "source": "https://kenney.nl/assets/board-game-icons",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/board-game-icons"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "oga-golden-ui",
+      "category": "ui",
+      "name": "Golden UI",
+      "url": "https://opengameart.org/content/golden-ui",
+      "license": "CC0-1.0",
+      "license_source": "https://opengameart.org/content/golden-ui",
+      "en": "Buch's golden RPG UI set: panels, buttons, banners and message boxes in a classic fantasy style.",
+      "zh": "Buch 的金色 RPG 界面套件：面板、按钮、横幅和对话框，偏经典奇幻风。",
+      "image": {
+        "type": "original",
+        "src": "https://opengameart.org/sites/default/files/ui_preview_upscaled.png",
+        "source": "https://opengameart.org/content/golden-ui",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://opengameart.org/content/golden-ui"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "ravenmore-fantasy-ui",
+      "category": "ui",
+      "name": "Fantasy UI Elements by Ravenmore",
+      "url": "https://opengameart.org/content/fantasy-ui-elements-by-ravenmore",
+      "license": "CC-BY-3.0",
+      "license_source": "https://opengameart.org/content/fantasy-ui-elements-by-ravenmore",
+      "en": "Ravenmore fantasy UI mockup (buttons, frames, bars) originally for ADOM prototyping; credit required.",
+      "zh": "Ravenmore 的奇幻 UI 稿（按钮、边框、条）最初给 ADOM 做原型；使用须署名。",
+      "image": {
+        "type": "original",
+        "src": "https://opengameart.org/sites/default/files/ADOM-OGA-UI-Preview.png",
+        "source": "https://opengameart.org/content/fantasy-ui-elements-by-ravenmore",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://opengameart.org/content/fantasy-ui-elements-by-ravenmore"
+      },
+      "license_zh": "CC-BY-3.0"
+    },
+    {
+      "id": "kenney-smoke-particles",
+      "category": "vfx",
+      "name": "Kenney Smoke Particles",
+      "url": "https://kenney.nl/assets/smoke-particles",
+      "license": "CC0-1.0",
+      "license_source": "https://kenney.nl/support",
+      "en": "70 smoke, puff and explosion sprites for 2D particle systems; separate from Kenney Particle Pack.",
+      "zh": "70 张烟雾、气团和爆炸精灵，给 2D 粒子系统用；与 Kenney Particle Pack 是另一套。",
+      "image": {
+        "type": "original",
+        "src": "https://kenney.nl/media/pages/assets/smoke-particles/0e73ec90dd-1677695164/preview.png",
+        "source": "https://kenney.nl/assets/smoke-particles",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kenney.nl/assets/smoke-particles"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "oga-2d-explosion",
+      "category": "vfx",
+      "name": "2D Explosion Animations",
+      "url": "https://opengameart.org/content/2d-explosion-animations-frame-by-frame",
+      "license": "CC0-1.0",
+      "license_source": "https://opengameart.org/content/2d-explosion-animations-frame-by-frame",
+      "en": "Sinestesia frame-by-frame 2D explosion sheets: 4 animations, 512px frames, PNG atlas with transparency.",
+      "zh": "Sinestesia 的逐帧 2D 爆炸图集：4 组动画，512px 帧，带透明通道的 PNG 图集。",
+      "image": {
+        "type": "original",
+        "src": "https://opengameart.org/sites/default/files/i1kMVZ.png",
+        "source": "https://opengameart.org/content/2d-explosion-animations-frame-by-frame",
+        "kind": "asset-preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://opengameart.org/content/2d-explosion-animations-frame-by-frame"
+      },
+      "license_zh": "CC0-1.0"
+    },
+    {
+      "id": "kaykit-character-animations",
+      "category": "animation",
+      "name": "KayKit Character Animations",
+      "url": "https://kaylousberg.itch.io/kaykit-character-animations",
+      "license": "CC0-1.0",
+      "license_source": "https://kaylousberg.itch.io/kaykit-character-animations",
+      "en": "Current KayKit humanoid animation set (idle, walk, run, jump, attacks) in FBX/glTF; not the older legacy pack.",
+      "zh": "现行 KayKit 人形动画集（待机、走、跑、跳、攻击），FBX/glTF；不是已收录的旧版动画包。",
+      "image": {
+        "type": "original",
+        "src": "https://img.itch.zone/aW1nLzMxOTg2MDY4LnBuZw==/original/o9MdWs.png",
+        "source": "https://kaylousberg.itch.io/kaykit-character-animations",
+        "kind": "preview",
+        "display_status": "verified",
+        "checked_on": "2026-11-21",
+        "provenance": "Official project preview or documentation image; URL and image bytes reviewed 2026-11-21. Display is a hotlinked reference, not a license grant."
+      },
+      "popularity": {
+        "metric": null,
+        "value": null,
+        "observed_at": "2026-11-21",
+        "status": "no_comparable_metric",
+        "source": "https://kaylousberg.itch.io/kaykit-character-animations"
+      },
+      "license_zh": "CC0-1.0"
     }
   ],
   "credits": [

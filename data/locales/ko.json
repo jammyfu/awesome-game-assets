@@ -352,7 +352,30 @@
     "gdx-ai": "조향 행동, 상태 머신, 행동 트리, 경로 탐색, 메시지 전달을 제공하는 libGDX 게임 AI 프레임워크입니다.",
     "jumper": "A*, Jump Point Search 등을 지원하는 Lua용 고속 격자 경로 탐색 라이브러리로 LÖVE 등에서 사용합니다.",
     "crystalai": "선택지를 점수화해 에이전트 행동을 고르는 C# 유틸리티 기반 AI 프레임워크입니다.",
-    "bonsai-bt": "시각화 도구를 갖춘 Rust 행동 트리 라이브러리로 게임과 로봇 공학에 사용할 수 있습니다."
+    "bonsai-bt": "시각화 도구를 갖춘 Rust 행동 트리 라이브러리로 게임과 로봇 공학에 사용할 수 있습니다.",
+    "cgbookcase": "Dorian Zgraggen의 포토그래메트리·절차적·근사 PBR 텍스처(대개 4K–8K). 나무껍질, 돌, 직물, 타일 등 사실적 장면에 적합합니다.",
+    "texturecan": "벽돌, 금속, 나무, 직물, 지면 등 무료 PBR 텍스처 650세트 이상과 미리보기. 약관 페이지에서 텍스처를 CC0 1.0으로 명시합니다.",
+    "3dtextures": "Katsukagi의 심리스 PBR 머티리얼로 Blender, Unreal, Unity, Godot용입니다. 소개 페이지에서 사이트 텍스처를 CC0로 명시합니다.",
+    "kenney-prototype-textures": "최종 아트 전 그레이박싱용 격자·색상 텍스처 75장입니다.",
+    "pixel-adventure": "Pixel Frog의 2D 플랫포머 키트입니다. 플레이어, 적, 타일, 아이템과 20 FPS PNG 애니메이션이 있으며 그래픽만 포함합니다.",
+    "treasure-hunters": "Pixel Frog의 보물 찾기 2D 키트로 캐릭터, 타일, 소품이 사이드스크롤 모험에 맞습니다.",
+    "sunny-land": "Ansimuz의 숲 플랫포머 픽셀 아트입니다. 플레이어, 적, 타일셋, 애니메이션으로 2D 시작 장면을 구성할 수 있습니다.",
+    "luizmelo-medieval-king": "LuizMelo의 2D 중세 왕 스프라이트로 대기, 달리기, 공격, 점프, 낙하, 피격, 사망 프레임이 있습니다.",
+    "0x72-industrial-tileset": "0x72의 16×16 산업/SF 픽셀 타일, 로봇, 소품이며 DungeonTileset II와 함께 쓸 수 있습니다.",
+    "kaykit-dungeon": "Kay Lousberg의 모듈형 로우폴리 던전입니다. 벽, 바닥, 계단, 문, 소품 200개 이상을 FBX/glTF/OBJ로 제공합니다. Extra/소스 단계는 유료입니다.",
+    "kaykit-adventurers": "리깅된 KayKit 로우폴리 모험가(기사, 도적, 마법사 등)로 FBX/glTF이며 3인칭이나 던전 프로토타입에 맞습니다.",
+    "kenney-nature-kit": "야외 3D 장면용 로우폴리 나무, 바위, 식생 부품 330개입니다.",
+    "kenney-interface-sounds": "HUD와 설정 화면용 클릭, 확인, 오류, 메뉴 효과음 100개입니다.",
+    "kenney-impact-sounds": "충돌과 전투용 타격·폴리 효과음 130개(나무, 금속, 돌, 신체)입니다.",
+    "juhani-chiptunes": "Juhani Junkala(SubspaceAudio)의 루프 가능한 8비트 액션 곡 5곡으로 스테이지, 보스, 타이틀 화면에 맞습니다.",
+    "subspaceaudio-512-sfx": "Juhani Junkala(SubspaceAudio)가 정리한 8비트/레트로 효과음 512개로 점프, 획득, 타격, UI에 맞습니다.",
+    "silkscreen": "Jason Kottke의 두꺼운 픽셀 외곽선 라틴 글꼴로 HUD 라벨, 제목, 웹 게임 그래픽에 맞습니다.",
+    "kenney-board-game-icons": "자원, 토큰, 행동 등 보드게임 스타일 아이콘 250개로 테이블톱 UI와 2D 전략 HUD에 맞습니다.",
+    "oga-golden-ui": "Buch의 금색 RPG UI 세트로 패널, 버튼, 배너, 메시지 상자가 고전 판타지 풍입니다.",
+    "ravenmore-fantasy-ui": "Ravenmore의 판타지 UI 시안(버튼, 프레임, 바)으로 원래 ADOM 프로토타입용이며 출처 표기가 필요합니다.",
+    "kenney-smoke-particles": "2D 파티클용 연기, 분출, 폭발 스프라이트 70장입니다. Kenney Particle Pack과는 다른 세트입니다.",
+    "oga-2d-explosion": "Sinestesia의 프레임별 2D 폭발 시트입니다. 애니메이션 4종, 512px 프레임, 투명 PNG 아틀라스입니다.",
+    "kaykit-character-animations": "현재 KayKit 휴머노이드 애니메이션(대기, 걷기, 달리기, 점프, 공격)으로 FBX/glTF입니다. 이미 수록된 구버전 팩이 아닙니다."
   },
   "license_summaries": {
     "CC0-1.0": "상업적 이용·수정 가능, 출처 표기 불필요",
@@ -419,5 +442,5 @@
     "pixabay-sfx": "자동 검사에 사이트가 403을 반환합니다. 라이선스는 수동 확인했습니다.",
     "blender": "자동 검사에 공식 사이트가 403을 반환합니다. 라이선스는 수동 확인했습니다."
   },
-  "source_sha256": "c70c6ab14fc3009d04650edc96f4b9232de8ed43b853a8c2305bcdf6eedf9a96"
+  "source_sha256": "67f207f294926df921e94df36d5662a591e0ce360b444032e0fd7a41dd0c84e0"
 }

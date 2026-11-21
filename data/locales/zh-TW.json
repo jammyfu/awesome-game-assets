@@ -352,7 +352,30 @@
     "gdx-ai": "libGDX 遊戲 AI 框架，支援轉向行為、狀態機、行為樹、路徑搜尋與訊息傳遞。",
     "jumper": "Lua（LÖVE 等）用的快速網格路徑搜尋函式庫，支援 A*、Jump Point Search 等演算法。",
     "crystalai": "C# 效用型 AI 框架，為各選項評分以決定代理行動。",
-    "bonsai-bt": "Rust 行為樹函式庫，附視覺化工具，可用於遊戲與機器人。"
+    "bonsai-bt": "Rust 行為樹函式庫，附視覺化工具，可用於遊戲與機器人。",
+    "cgbookcase": "Dorian Zgraggen 的攝影測量、程序化與近似 PBR 貼圖（常見 4K–8K），含樹皮、石材、織物、地磚等，適合寫實場景。",
+    "texturecan": "650+ 套免費 PBR 貼圖（磚牆、金屬、木材、織物、地面等）並附預覽圖；條款頁寫明貼圖為 CC0 1.0。",
+    "3dtextures": "Katsukagi 的無縫 PBR 材質，適用 Blender、Unreal、Unity 與 Godot；關於頁寫明站內貼圖均為 CC0。",
+    "kenney-prototype-textures": "75 張原型網格與色塊貼圖，適合在定稿美術前做白盒關卡。",
+    "pixel-adventure": "Pixel Frog 的 2D 平台遊戲套件：玩家、敵人、圖塊、道具及 20 FPS 的 PNG 動畫。僅含圖像。",
+    "treasure-hunters": "Pixel Frog 的尋寶橫向捲軸 2D 套件，含角色、圖塊與道具，適合冒險關卡。",
+    "sunny-land": "Ansimuz 的森林平台像素畫：玩家、敵人、圖塊與動畫，可搭一套完整 2D 開場場景。",
+    "luizmelo-medieval-king": "LuizMelo 的 2D 中世紀國王精靈圖，含待機、跑、攻擊、跳、落地、受擊與死亡幀。",
+    "0x72-industrial-tileset": "0x72 的 16×16 工業／科幻像素圖塊、機器人與道具，可與 DungeonTileset II 搭配。",
+    "kaykit-dungeon": "Kay Lousberg 的模組化低多邊形地城：200+ 面牆、地板、樓梯、門與道具，FBX／glTF／OBJ。額外與原始檔方案需付費。",
+    "kaykit-adventurers": "已綁定的 KayKit 低多邊形冒險者（騎士、盜賊、法師等），FBX／glTF，適合第三人稱或地城原型。",
+    "kenney-nature-kit": "330 個低多邊形樹木、岩石與植栽部件，適合搭室外 3D 場景。",
+    "kenney-interface-sounds": "100 個介面點擊、確認、錯誤與選單音效，適合 HUD 與設定頁。",
+    "kenney-impact-sounds": "130 個撞擊與擬音（木、金屬、石、身體），適合碰撞與戰鬥。",
+    "juhani-chiptunes": "Juhani Junkala（SubspaceAudio）的 5 首循環 8-bit 動作曲，適合關卡、Boss 與標題畫面。",
+    "subspaceaudio-512-sfx": "Juhani Junkala（SubspaceAudio）整理的 512 個 8-bit／復古音效，適合跳躍、拾取、擊中與介面。",
+    "silkscreen": "Jason Kottke 的粗像素描邊拉丁字型，適合 HUD 標籤、標題與網頁遊戲畫面。",
+    "kenney-board-game-icons": "250 個桌遊風格圖示（資源、代幣、行動），適合桌上遊戲介面與 2D 策略 HUD。",
+    "oga-golden-ui": "Buch 的金色 RPG 介面套件：面板、按鈕、橫幅與對話框，偏經典奇幻風。",
+    "ravenmore-fantasy-ui": "Ravenmore 的奇幻介面稿（按鈕、邊框、條）最初給 ADOM 做原型；使用須署名。",
+    "kenney-smoke-particles": "70 張煙霧、氣團與爆炸精靈圖，給 2D 粒子系統使用；與 Kenney Particle Pack 是另一套。",
+    "oga-2d-explosion": "Sinestesia 的逐幀 2D 爆炸圖集：4 組動畫，512px 幀，含透明通道的 PNG 圖集。",
+    "kaykit-character-animations": "現行 KayKit 人形動畫集（待機、走、跑、跳、攻擊），FBX／glTF；不是已收錄的舊版動畫包。"
   },
   "license_summaries": {
     "CC0-1.0": "可商用、可修改，免署名",
@@ -419,5 +442,5 @@
     "pixabay-sfx": "網站對自動檢查回傳 403；授權已人工核對",
     "blender": "官方網站對自動檢查回傳 403；授權已人工核對"
   },
-  "source_sha256": "c70c6ab14fc3009d04650edc96f4b9232de8ed43b853a8c2305bcdf6eedf9a96"
+  "source_sha256": "67f207f294926df921e94df36d5662a591e0ce360b444032e0fd7a41dd0c84e0"
 }

@@ -1,6 +1,6 @@
 # Awesome Game Assets
 
-> A curated directory of 297 game-development resources in 15 categories, with complete English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean catalogs. Includes asset packs, tools and code examples, not 297 interchangeable downloads.
+> A curated directory of 320 game-development resources in 15 categories, with complete English, Simplified Chinese, Traditional Chinese (Taiwan), Japanese and Korean catalogs. Includes asset packs, tools and code examples, not 320 interchangeable downloads.
 
 ## Scope and use rights
 

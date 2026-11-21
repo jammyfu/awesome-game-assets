@@ -27,7 +27,7 @@ These are intent-based editorial choices, not measured search-volume rankings. N
 
 ## README and GEO implementation
 
-- Five-language summaries state what is indexed: resources include asset packs, tools and code examples, not 297 uniformly downloadable or commercially cleared assets.
+- Five-language summaries state what is indexed: resources include asset packs, tools and code examples, not a uniform set of downloadable or commercially cleared assets. The live count comes from `data/entries.json`.
 - Six use-case links go directly to existing category anchors; the complete 15-category navigation and comparison tables remain intact.
 - Four brief, localized questions address commercial use, code versus media licenses, engine compatibility and ranking provenance. They are visible reader content, not hidden keyword blocks.
 - `llms.txt` is generated from the same dataset and language map. It links all five overviews and full catalogs, source JSON, translations and rights methodology using absolute public URLs.

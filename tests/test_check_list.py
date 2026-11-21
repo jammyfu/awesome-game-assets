@@ -118,7 +118,7 @@ class ListTests(unittest.TestCase):
     def test_homepage_preserves_all_entries_and_original_hero(self):
         for lang in ("en", "zh"):
             text = render_readme.render(lang)
-            self.assertEqual(len(check_list.readme_urls(text)), 297)
+            self.assertEqual(len(check_list.readme_urls(text)), len(self.data["entries"]))
             self.assertIn("docs/images/hero-loot.webp", text)
             hero = ROOT / "docs/images/hero-loot.webp"
             self.assertTrue(hero.is_file())
@@ -152,7 +152,7 @@ class ListTests(unittest.TestCase):
         self.assertEqual(text.count("<details>"), text.count("</details>"))
         expected = sum(sum(e["category"] == c["id"] for e in self.data["entries"]) > 15 for c in self.data["categories"])
         self.assertEqual(text.count("<details>"), expected)
-        self.assertEqual(len(check_list.readme_urls(text)), 297)
+        self.assertEqual(len(check_list.readme_urls(text)), len(self.data["entries"]))
         self.assertIn("snapshot", text)
         for section in text.split("<details>")[1:]:
             self.assertIn("| --- | --- | --- |", section.split("</details>")[0])
